@@ -1,0 +1,4380 @@
+.mediaViewInfo {
+    --web-view-name: Jobs;
+    --web-view-id: Jobs;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+:root {
+    --web-view-ids: Jobs;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+#Jobs {
+    position: absolute;
+    width: 1920px;
+    height: 5394px;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    --web-view-name: Jobs;
+    --web-view-id: Jobs;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+#Background_Image {
+    position: absolute;
+    width: 1920px;
+    height: 448px;
+    left: 0px;
+    top: 114px;
+    overflow: visible;
+}
+#Mask_Group_1 {
+    position: absolute;
+    width: 1920px;
+    height: 448px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_2 {
+    opacity: 0.8;
+    fill: rgba(76,92,104,1);
+}
+.Rectangle_2 {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 448px;
+    left: 0px;
+    top: 0px;
+}
+#Header {
+    position: absolute;
+    width: 1920px;
+    height: 114px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_17 {
+    fill: rgba(255,255,255,1);
+}
+.Rectangle_17 {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 114px;
+    left: 0px;
+    top: 0px;
+}
+#Rectangle_26 {
+    fill: rgba(255,255,255,1);
+}
+.Rectangle_26 {
+    position: absolute;
+    overflow: visible;
+    width: 424px;
+    height: 114px;
+    left: 60px;
+    top: 0px;
+}
+#Menu {
+    position: absolute;
+    width: 919px;
+    height: 32px;
+    left: 941px;
+    top: 41px;
+    overflow: visible;
+}
+#Jobs_o {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 63px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: rgba(240,125,34,1);
+}
+#Firmen {
+    left: 144px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 97px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: rgba(76,92,104,1);
+}
+#Lebenslauf {
+    left: 322px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 149px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: rgba(76,92,104,1);
+}
+#Tipps {
+    left: 552px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 73px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: rgba(76,92,104,1);
+}
+#Fur_Ardeitgeber {
+    left: 706px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 214px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: rgba(76,92,104,1);
+}
+#n_RD3_jobs_long {
+    position: absolute;
+    width: 400px;
+    height: 91px;
+    left: 60px;
+    top: 12px;
+    overflow: visible;
+}
+#Banner_Text {
+    position: absolute;
+    width: 1236px;
+    height: 133px;
+    left: 342px;
+    top: 240px;
+    overflow: visible;
+}
+#Den_Sprung_ins_kalte_Wasser_wa {
+    left: 95px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 1047px;
+    white-space: nowrap;
+    line-height: 66px;
+    margin-top: -11px;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    color: rgba(255,255,255,1);
+}
+#Eines_neuen_Job_mit_echten_Can {
+    left: 0px;
+    top: 79px;
+    position: absolute;
+    overflow: visible;
+    width: 1237px;
+    white-space: nowrap;
+    line-height: 66px;
+    margin-top: -11px;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    color: rgba(255,255,255,1);
+}
+#Job {
+    position: absolute;
+    width: 1920px;
+    height: 520px;
+    left: 0px;
+    top: 562px;
+    overflow: visible;
+}
+#Rectangle_13 {
+    opacity: 0.16;
+    fill: rgba(76,92,104,1);
+}
+.Rectangle_13 {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 520px;
+    left: 0px;
+    top: 0px;
+}
+#Jobs_z {
+    position: absolute;
+    width: 1800px;
+    height: 320px;
+    left: 60px;
+    top: 134px;
+    overflow: visible;
+}
+#n_ {
+    position: absolute;
+    width: 594px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_8 {
+    fill: rgba(255,255,255,1);
+}
+.Rectangle_8 {
+    width: 594px;
+    height: 100px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-60px, -513px) matrix(1,0,0,1,60,513) rotate(180deg);
+    transform-origin: center;
+}
+#Burgenland {
+    left: 20px;
+    top: 36px;
+    position: absolute;
+    overflow: visible;
+    width: 146px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(244,158,85,1);
+}
+#Group_1 {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    left: 454px;
+    top: 25px;
+    overflow: visible;
+}
+#Rectangle_16 {
+    opacity: 0.6;
+    fill: rgba(76,92,104,1);
+}
+.Rectangle_16 {
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-491px, -537px) matrix(1,0,0,1,491,537) rotate(180deg);
+    transform-origin: center;
+}
+#n_072 {
+    left: 31px;
+    top: 11px;
+    position: absolute;
+    overflow: visible;
+    width: 59px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#n__ {
+    position: absolute;
+    width: 594px;
+    height: 100px;
+    left: 603px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_8_ {
+    fill: rgba(255,255,255,1);
+}
+.Rectangle_8_ {
+    width: 594px;
+    height: 100px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-60px, -513px) matrix(1,0,0,1,60,513) rotate(180deg);
+    transform-origin: center;
+}
+#Carinthia {
+    left: 20px;
+    top: 36px;
+    position: absolute;
+    overflow: visible;
+    width: 113px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(244,158,85,1);
+}
+#Group_1_ {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    left: 454px;
+    top: 25px;
+    overflow: visible;
+}
+#Rectangle_16_ba {
+    opacity: 0.6;
+    fill: rgba(76,92,104,1);
+}
+.Rectangle_16_ba {
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-491px, -537px) matrix(1,0,0,1,491,537) rotate(180deg);
+    transform-origin: center;
+}
+#n_081 {
+    left: 33px;
+    top: 11px;
+    position: absolute;
+    overflow: visible;
+    width: 55px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#n__bc {
+    position: absolute;
+    width: 594px;
+    height: 100px;
+    left: 1206px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_8_bd {
+    fill: rgba(255,255,255,1);
+}
+.Rectangle_8_bd {
+    width: 594px;
+    height: 100px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-60px, -513px) matrix(1,0,0,1,60,513) rotate(180deg);
+    transform-origin: center;
+}
+#Lower_Austria {
+    left: 20px;
+    top: 36px;
+    position: absolute;
+    overflow: visible;
+    width: 168px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(244,158,85,1);
+}
+#Group_1_bf {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    left: 454px;
+    top: 25px;
+    overflow: visible;
+}
+#Rectangle_16_bg {
+    opacity: 0.6;
+    fill: rgba(76,92,104,1);
+}
+.Rectangle_16_bg {
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-491px, -537px) matrix(1,0,0,1,491,537) rotate(180deg);
+    transform-origin: center;
+}
+#n_398 {
+    left: 34px;
+    top: 11px;
+    position: absolute;
+    overflow: visible;
+    width: 53px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#n__bi {
+    position: absolute;
+    width: 594px;
+    height: 100px;
+    left: 0px;
+    top: 110px;
+    overflow: visible;
+}
+#Rectangle_8_bj {
+    fill: rgba(255,255,255,1);
+}
+.Rectangle_8_bj {
+    width: 594px;
+    height: 100px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-60px, -513px) matrix(1,0,0,1,60,513) rotate(180deg);
+    transform-origin: center;
+}
+#Upper_Austria {
+    left: 20px;
+    top: 36px;
+    position: absolute;
+    overflow: visible;
+    width: 170px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(244,158,85,1);
+}
+#Group_1_bl {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    left: 454px;
+    top: 25px;
+    overflow: visible;
+}
+#Rectangle_16_bm {
+    opacity: 0.6;
+    fill: rgba(76,92,104,1);
+}
+.Rectangle_16_bm {
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-491px, -537px) matrix(1,0,0,1,491,537) rotate(180deg);
+    transform-origin: center;
+}
+#n_125 {
+    left: 35px;
+    top: 11px;
+    position: absolute;
+    overflow: visible;
+    width: 51px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#n__bo {
+    position: absolute;
+    width: 594px;
+    height: 100px;
+    left: 603px;
+    top: 110px;
+    overflow: visible;
+}
+#Rectangle_8_bp {
+    fill: rgba(255,255,255,1);
+}
+.Rectangle_8_bp {
+    width: 594px;
+    height: 100px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-60px, -513px) matrix(1,0,0,1,60,513) rotate(180deg);
+    transform-origin: center;
+}
+#Salzburg {
+    left: 20px;
+    top: 36px;
+    position: absolute;
+    overflow: visible;
+    width: 108px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(244,158,85,1);
+}
+#Group_1_br {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    left: 454px;
+    top: 25px;
+    overflow: visible;
+}
+#Rectangle_16_bs {
+    opacity: 0.6;
+    fill: rgba(76,92,104,1);
+}
+.Rectangle_16_bs {
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-491px, -537px) matrix(1,0,0,1,491,537) rotate(180deg);
+    transform-origin: center;
+}
+#n_585 {
+    left: 34px;
+    top: 11px;
+    position: absolute;
+    overflow: visible;
+    width: 53px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#n__bu {
+    position: absolute;
+    width: 594px;
+    height: 100px;
+    left: 1206px;
+    top: 110px;
+    overflow: visible;
+}
+#Rectangle_8_bv {
+    fill: rgba(255,255,255,1);
+}
+.Rectangle_8_bv {
+    width: 594px;
+    height: 100px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-60px, -513px) matrix(1,0,0,1,60,513) rotate(180deg);
+    transform-origin: center;
+}
+#Styria {
+    left: 20px;
+    top: 36px;
+    position: absolute;
+    overflow: visible;
+    width: 70px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(244,158,85,1);
+}
+#Group_1_bx {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    left: 454px;
+    top: 25px;
+    overflow: visible;
+}
+#Rectangle_16_by {
+    opacity: 0.6;
+    fill: rgba(76,92,104,1);
+}
+.Rectangle_16_by {
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-491px, -537px) matrix(1,0,0,1,491,537) rotate(180deg);
+    transform-origin: center;
+}
+#n_55 {
+    left: 39px;
+    top: 11px;
+    position: absolute;
+    overflow: visible;
+    width: 43px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#n__b {
+    position: absolute;
+    width: 594px;
+    height: 100px;
+    left: 0px;
+    top: 220px;
+    overflow: visible;
+}
+#Rectangle_8_b {
+    fill: rgba(255,255,255,1);
+}
+.Rectangle_8_b {
+    width: 594px;
+    height: 100px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-60px, -513px) matrix(1,0,0,1,60,513) rotate(180deg);
+    transform-origin: center;
+}
+#Tyrol {
+    left: 20px;
+    top: 36px;
+    position: absolute;
+    overflow: visible;
+    width: 59px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(244,158,85,1);
+}
+#Group_1_b {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    left: 454px;
+    top: 25px;
+    overflow: visible;
+}
+#Rectangle_16_b {
+    opacity: 0.6;
+    fill: rgba(76,92,104,1);
+}
+.Rectangle_16_b {
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-491px, -537px) matrix(1,0,0,1,491,537) rotate(180deg);
+    transform-origin: center;
+}
+#n_449 {
+    left: 32px;
+    top: 11px;
+    position: absolute;
+    overflow: visible;
+    width: 57px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#n__ca {
+    position: absolute;
+    width: 594px;
+    height: 100px;
+    left: 603px;
+    top: 220px;
+    overflow: visible;
+}
+#Rectangle_8_ca {
+    fill: rgba(255,255,255,1);
+}
+.Rectangle_8_ca {
+    width: 594px;
+    height: 100px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-60px, -513px) matrix(1,0,0,1,60,513) rotate(180deg);
+    transform-origin: center;
+}
+#Vorarlberg_ {
+    left: 20px;
+    top: 36px;
+    position: absolute;
+    overflow: visible;
+    width: 136px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(244,158,85,1);
+}
+#Group_1_ca {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    left: 454px;
+    top: 25px;
+    overflow: visible;
+}
+#Rectangle_16_ca {
+    opacity: 0.6;
+    fill: rgba(76,92,104,1);
+}
+.Rectangle_16_ca {
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-491px, -538px) matrix(1,0,0,1,491,538) rotate(180deg);
+    transform-origin: center;
+}
+#n_014 {
+    left: 33px;
+    top: 11px;
+    position: absolute;
+    overflow: visible;
+    width: 55px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#n__cc {
+    position: absolute;
+    width: 594px;
+    height: 100px;
+    left: 1206px;
+    top: 220px;
+    overflow: visible;
+}
+#Rectangle_8_cd {
+    fill: rgba(255,255,255,1);
+}
+.Rectangle_8_cd {
+    width: 594px;
+    height: 100px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-60px, -513px) matrix(1,0,0,1,60,513) rotate(180deg);
+    transform-origin: center;
+}
+#Vienna {
+    left: 20px;
+    top: 36px;
+    position: absolute;
+    overflow: visible;
+    width: 86px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(244,158,85,1);
+}
+#Group_1_cf {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    left: 454px;
+    top: 25px;
+    overflow: visible;
+}
+#Rectangle_16_cg {
+    opacity: 0.6;
+    fill: rgba(76,92,104,1);
+}
+.Rectangle_16_cg {
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-491px, -538px) matrix(1,0,0,1,491,538) rotate(180deg);
+    transform-origin: center;
+}
+#n_74 {
+    left: 39px;
+    top: 11px;
+    position: absolute;
+    overflow: visible;
+    width: 43px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#Filter__Search {
+    position: absolute;
+    width: 1800px;
+    height: 126px;
+    left: 60px;
+    top: 499px;
+    overflow: visible;
+}
+#Rectangle_7 {
+    fill: rgba(255,255,255,1);
+}
+.Rectangle_7 {
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.2));
+    position: absolute;
+    overflow: visible;
+    width: 1860px;
+    height: 186px;
+    left: 0px;
+    top: 0px;
+}
+#search-outline {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 30.494px;
+    top: 46px;
+    overflow: visible;
+}
+#Path_1 {
+    fill: transparent;
+    stroke: rgba(244,158,85,1);
+    stroke-width: 4px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 10;
+    shape-rendering: auto;
+}
+.Path_1 {
+    overflow: visible;
+    position: absolute;
+    width: 31.817px;
+    height: 31.817px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_2 {
+    fill: transparent;
+    stroke: rgba(244,158,85,1);
+    stroke-width: 4px;
+    stroke-linejoin: miter;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    shape-rendering: auto;
+}
+.Path_2 {
+    overflow: visible;
+    position: absolute;
+    width: 15.371px;
+    height: 15.371px;
+    left: 24.286px;
+    top: 24.286px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Beruf_Begriff {
+    left: 82px;
+    top: 45px;
+    position: absolute;
+    overflow: visible;
+    width: 204px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(244,158,85,1);
+}
+#Rectangle_9 {
+    fill: rgba(244,158,85,1);
+}
+.Rectangle_9 {
+    position: absolute;
+    overflow: visible;
+    width: 4px;
+    height: 126px;
+    left: 635px;
+    top: 0px;
+}
+#location-pin {
+    position: absolute;
+    width: 28.25px;
+    height: 38px;
+    left: 669px;
+    top: 44px;
+    overflow: visible;
+}
+#Path_3 {
+    fill: rgba(244,158,85,1);
+    stroke: rgba(244,158,85,1);
+    stroke-width: 0.5px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Path_3 {
+    overflow: visible;
+    position: absolute;
+    width: 11.396px;
+    height: 11.396px;
+    left: 8.926px;
+    top: 8.933px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_4 {
+    fill: rgba(244,158,85,1);
+    stroke: rgba(244,158,85,1);
+    stroke-width: 0.5px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Path_4 {
+    overflow: visible;
+    position: absolute;
+    width: 29.249px;
+    height: 39px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Ort_Region_Bundesland {
+    left: 723px;
+    top: 45px;
+    position: absolute;
+    overflow: visible;
+    width: 375px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(244,158,85,1);
+}
+#Rectangle_11 {
+    fill: rgba(244,158,85,1);
+}
+.Rectangle_11 {
+    position: absolute;
+    overflow: visible;
+    width: 1px;
+    height: 126px;
+    left: 1169px;
+    top: 0px;
+}
+#Umkreis {
+    left: 1200px;
+    top: 45px;
+    position: absolute;
+    overflow: visible;
+    width: 128px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(244,158,85,1);
+}
+#caret-right-fill {
+    transform: translate(-60px, -499px) matrix(1,0,0,1,1512.1924,554.0224) rotate(90deg);
+    transform-origin: center;
+    position: absolute;
+    width: 10.83px;
+    height: 16.785px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Path_5 {
+    fill: rgba(159,159,159,1);
+}
+.Path_5 {
+    overflow: visible;
+    position: absolute;
+    width: 16.785px;
+    height: 10.83px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Rectangle_8_cx {
+    fill: rgba(244,158,85,1);
+}
+.Rectangle_8_cx {
+    position: absolute;
+    overflow: visible;
+    width: 314px;
+    height: 126px;
+    left: 1486px;
+    top: 0px;
+}
+#Jobs_Finden {
+    left: 1551px;
+    top: 45px;
+    position: absolute;
+    overflow: visible;
+    width: 186px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(255,255,255,1);
+}
+#Discover_Austrias_top_Companie {
+    position: absolute;
+    width: 1800px;
+    height: 963px;
+    left: 60px;
+    top: 1168px;
+    overflow: visible;
+}
+#Heading {
+    position: absolute;
+    width: 946px;
+    height: 159px;
+    left: 427px;
+    top: 0px;
+    overflow: visible;
+}
+#Heading_Pattern {
+    position: absolute;
+    width: 946px;
+    height: 80px;
+    left: 0px;
+    top: 79px;
+    overflow: visible;
+}
+#business-and-trade_c {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 433px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_18 {
+    fill: rgba(244,158,85,1);
+}
+.Rectangle_18 {
+    position: absolute;
+    overflow: visible;
+    width: 400px;
+    height: 6px;
+    left: 546px;
+    top: 37px;
+}
+#Rectangle_19 {
+    fill: rgba(244,158,85,1);
+}
+.Rectangle_19 {
+    position: absolute;
+    overflow: visible;
+    width: 400px;
+    height: 6px;
+    left: 0px;
+    top: 37px;
+}
+#business-and-trade_c {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 433px;
+    top: 0px;
+    overflow: visible;
+}
+#Discover_Austrias_top_Companie_c {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 947px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    color: rgba(244,158,85,1);
+}
+#SSI {
+    position: absolute;
+    width: 578px;
+    height: 749px;
+    left: 0px;
+    top: 214px;
+    overflow: visible;
+}
+#Rectangle_20 {
+    fill: rgba(239,239,239,1);
+}
+.Rectangle_20 {
+    position: absolute;
+    overflow: visible;
+    width: 578px;
+    height: 707px;
+    left: 0px;
+    top: 0px;
+}
+#Mask_Group_2 {
+    position: absolute;
+    width: 578px;
+    height: 327px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Group_4 {
+    position: absolute;
+    width: 266px;
+    height: 93px;
+    left: 156px;
+    top: 281px;
+    overflow: visible;
+}
+#Rectangle_25 {
+    fill: rgba(255,238,0,1);
+}
+.Rectangle_25 {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 284px;
+    height: 111px;
+    left: 0px;
+    top: 0px;
+}
+#Mask_Group_3 {
+    position: absolute;
+    width: 266px;
+    height: 93px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Group_5 {
+    position: absolute;
+    width: 266px;
+    height: 85px;
+    left: 18px;
+    top: 664px;
+    overflow: visible;
+}
+#Rectangle_25_de {
+    fill: rgba(244,158,85,1);
+}
+.Rectangle_25_de {
+    position: absolute;
+    overflow: visible;
+    width: 266px;
+    height: 85px;
+    left: 0px;
+    top: 0px;
+}
+#heart {
+    position: absolute;
+    width: 45.82px;
+    height: 42.958px;
+    left: 35.001px;
+    top: 21px;
+    overflow: visible;
+}
+#Path_6 {
+    fill: rgba(255,255,255,1);
+}
+.Path_6 {
+    overflow: visible;
+    position: absolute;
+    width: 45.82px;
+    height: 42.958px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Follow_Company {
+    left: 112px;
+    top: 14px;
+    position: absolute;
+    overflow: visible;
+    width: 119px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#Group_6 {
+    position: absolute;
+    width: 266px;
+    height: 85px;
+    left: 294px;
+    top: 664px;
+    overflow: visible;
+}
+#Rectangle_25_dj {
+    fill: rgba(76,92,104,1);
+}
+.Rectangle_25_dj {
+    position: absolute;
+    overflow: visible;
+    width: 266px;
+    height: 85px;
+    left: 0px;
+    top: 0px;
+}
+#n_0_Jobs {
+    left: 112px;
+    top: 28px;
+    position: absolute;
+    overflow: visible;
+    width: 95px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#businessman {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 36px;
+    top: 19px;
+    overflow: visible;
+}
+#SSI_Shepherd_Austria {
+    left: 20px;
+    top: 401px;
+    position: absolute;
+    overflow: visible;
+    width: 326px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgba(244,158,85,1);
+}
+#Tube {
+    position: absolute;
+    width: 243px;
+    height: 30px;
+    left: 20px;
+    top: 490px;
+    overflow: visible;
+}
+#Graz {
+    position: absolute;
+    width: 57px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_27 {
+    fill: rgba(216,216,216,1);
+}
+.Rectangle_27 {
+    position: absolute;
+    overflow: visible;
+    width: 57px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+}
+#Graz_dq {
+    left: 10px;
+    top: 6px;
+    position: absolute;
+    overflow: visible;
+    width: 38px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(76,92,104,1);
+}
+#Friesach {
+    position: absolute;
+    width: 88px;
+    height: 30px;
+    left: 67px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_27_ds {
+    fill: rgba(216,216,216,1);
+}
+.Rectangle_27_ds {
+    position: absolute;
+    overflow: visible;
+    width: 88px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+}
+#Friesach_dt {
+    left: 10px;
+    top: 6px;
+    position: absolute;
+    overflow: visible;
+    width: 69px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(76,92,104,1);
+}
+#Catfish {
+    position: absolute;
+    width: 78px;
+    height: 30px;
+    left: 165px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_27_dv {
+    fill: rgba(216,216,216,1);
+}
+.Rectangle_27_dv {
+    position: absolute;
+    overflow: visible;
+    width: 78px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+}
+#Catfish_dw {
+    left: 10px;
+    top: 6px;
+    position: absolute;
+    overflow: visible;
+    width: 59px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(76,92,104,1);
+}
+#Internet_IT_telecom {
+    left: 20px;
+    top: 532px;
+    position: absolute;
+    overflow: visible;
+    width: 163px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(159,159,159,1);
+}
+#Tube_dy {
+    position: absolute;
+    width: 476px;
+    height: 72px;
+    left: 20px;
+    top: 563px;
+    overflow: visible;
+}
+#work_preparation {
+    position: absolute;
+    width: 160px;
+    height: 31px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_27_d {
+    fill: rgba(255,229,207,1);
+}
+.Rectangle_27_d {
+    position: absolute;
+    overflow: visible;
+    width: 160px;
+    height: 31px;
+    left: 0px;
+    top: 0px;
+}
+#Work_Preparation_d {
+    left: 8px;
+    top: 6px;
+    position: absolute;
+    overflow: visible;
+    width: 145px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(244,158,85,1);
+}
+#Project_Engineer {
+    position: absolute;
+    width: 153px;
+    height: 31px;
+    left: 170px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_27_ea {
+    fill: rgba(255,229,207,1);
+}
+.Rectangle_27_ea {
+    position: absolute;
+    overflow: visible;
+    width: 153px;
+    height: 31px;
+    left: 0px;
+    top: 0px;
+}
+#Project_Engineer_d {
+    left: 8px;
+    top: 6px;
+    position: absolute;
+    overflow: visible;
+    width: 138px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(244,158,85,1);
+}
+#Mechanics {
+    position: absolute;
+    width: 103px;
+    height: 31px;
+    left: 333px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_27_eb {
+    fill: rgba(255,229,207,1);
+}
+.Rectangle_27_eb {
+    position: absolute;
+    overflow: visible;
+    width: 103px;
+    height: 31px;
+    left: 0px;
+    top: 0px;
+}
+#Mechanics_d {
+    left: 8px;
+    top: 6px;
+    position: absolute;
+    overflow: visible;
+    width: 88px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(244,158,85,1);
+}
+#IT {
+    position: absolute;
+    width: 30px;
+    height: 31px;
+    left: 446px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_27_ec {
+    fill: rgba(255,229,207,1);
+}
+.Rectangle_27_ec {
+    position: absolute;
+    overflow: visible;
+    width: 30px;
+    height: 31px;
+    left: 0px;
+    top: 0px;
+}
+#IT_ea {
+    left: 8px;
+    top: 6px;
+    position: absolute;
+    overflow: visible;
+    width: 15px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(244,158,85,1);
+}
+#work_preparation_eb {
+    position: absolute;
+    width: 143px;
+    height: 31px;
+    left: 0px;
+    top: 41px;
+    overflow: visible;
+}
+#Rectangle_27_ed {
+    fill: rgba(255,229,207,1);
+}
+.Rectangle_27_ed {
+    position: absolute;
+    overflow: visible;
+    width: 143px;
+    height: 31px;
+    left: 0px;
+    top: 0px;
+}
+#Sales_Managers {
+    left: 8px;
+    top: 6px;
+    position: absolute;
+    overflow: visible;
+    width: 128px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(244,158,85,1);
+}
+#BIPA {
+    position: absolute;
+    width: 578px;
+    height: 749px;
+    left: 611px;
+    top: 214px;
+    overflow: visible;
+}
+#Rectangle_20_ef {
+    fill: rgba(239,239,239,1);
+}
+.Rectangle_20_ef {
+    position: absolute;
+    overflow: visible;
+    width: 578px;
+    height: 707px;
+    left: 0px;
+    top: 0px;
+}
+#Mask_Group_2_eg {
+    position: absolute;
+    width: 578px;
+    height: 327px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Group_4_eh {
+    position: absolute;
+    width: 266px;
+    height: 93px;
+    left: 156px;
+    top: 281px;
+    overflow: visible;
+}
+#Rectangle_25_ei {
+    fill: rgba(230,0,126,1);
+}
+.Rectangle_25_ei {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 284px;
+    height: 111px;
+    left: 0px;
+    top: 0px;
+}
+#Mask_Group_3_ej {
+    position: absolute;
+    width: 266px;
+    height: 93px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Group_5_ek {
+    position: absolute;
+    width: 266px;
+    height: 85px;
+    left: 18px;
+    top: 664px;
+    overflow: visible;
+}
+#Rectangle_25_el {
+    fill: rgba(244,158,85,1);
+}
+.Rectangle_25_el {
+    position: absolute;
+    overflow: visible;
+    width: 266px;
+    height: 85px;
+    left: 0px;
+    top: 0px;
+}
+#heart_em {
+    position: absolute;
+    width: 45.82px;
+    height: 42.958px;
+    left: 35.001px;
+    top: 21px;
+    overflow: visible;
+}
+#Path_6_en {
+    fill: rgba(255,255,255,1);
+}
+.Path_6_en {
+    overflow: visible;
+    position: absolute;
+    width: 45.82px;
+    height: 42.958px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Follow_Company_eo {
+    left: 112px;
+    top: 14px;
+    position: absolute;
+    overflow: visible;
+    width: 119px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#Group_6_ep {
+    position: absolute;
+    width: 266px;
+    height: 85px;
+    left: 294px;
+    top: 664px;
+    overflow: visible;
+}
+#Rectangle_25_eq {
+    fill: rgba(76,92,104,1);
+}
+.Rectangle_25_eq {
+    position: absolute;
+    overflow: visible;
+    width: 266px;
+    height: 85px;
+    left: 0px;
+    top: 0px;
+}
+#n_7_Jobs {
+    left: 112px;
+    top: 28px;
+    position: absolute;
+    overflow: visible;
+    width: 87px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#businessman_es {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 36px;
+    top: 19px;
+    overflow: visible;
+}
+#BIPA_Perfumery_Society_Ltd {
+    left: 20px;
+    top: 401px;
+    position: absolute;
+    overflow: visible;
+    width: 429px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgba(244,158,85,1);
+}
+#Tube_eu {
+    position: absolute;
+    width: 151px;
+    height: 30px;
+    left: 20px;
+    top: 490px;
+    overflow: visible;
+}
+#Graz_ev {
+    position: absolute;
+    width: 151px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_27_ew {
+    fill: rgba(216,216,216,1);
+}
+.Rectangle_27_ew {
+    position: absolute;
+    overflow: visible;
+    width: 151px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+}
+#Wiener_Neudorf {
+    left: 10px;
+    top: 6px;
+    position: absolute;
+    overflow: visible;
+    width: 132px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(76,92,104,1);
+}
+#trade {
+    left: 20px;
+    top: 532px;
+    position: absolute;
+    overflow: visible;
+    width: 44px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(159,159,159,1);
+}
+#Tube_ez {
+    position: absolute;
+    width: 417px;
+    height: 31px;
+    left: 20px;
+    top: 563px;
+    overflow: visible;
+}
+#Beauty {
+    position: absolute;
+    width: 73px;
+    height: 31px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_27_e {
+    fill: rgba(255,229,207,1);
+}
+.Rectangle_27_e {
+    position: absolute;
+    overflow: visible;
+    width: 73px;
+    height: 31px;
+    left: 0px;
+    top: 0px;
+}
+#Beauty_e {
+    left: 8px;
+    top: 6px;
+    position: absolute;
+    overflow: visible;
+    width: 58px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(244,158,85,1);
+}
+#Drugstore {
+    position: absolute;
+    width: 98px;
+    height: 31px;
+    left: 83px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_27_fa {
+    fill: rgba(255,229,207,1);
+}
+.Rectangle_27_fa {
+    position: absolute;
+    overflow: visible;
+    width: 98px;
+    height: 31px;
+    left: 0px;
+    top: 0px;
+}
+#Drugstore_e {
+    left: 8px;
+    top: 6px;
+    position: absolute;
+    overflow: visible;
+    width: 83px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(244,158,85,1);
+}
+#Perfumery {
+    position: absolute;
+    width: 103px;
+    height: 31px;
+    left: 191px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_27_fb {
+    fill: rgba(255,229,207,1);
+}
+.Rectangle_27_fb {
+    position: absolute;
+    overflow: visible;
+    width: 103px;
+    height: 31px;
+    left: 0px;
+    top: 0px;
+}
+#Perfumery_e {
+    left: 8px;
+    top: 6px;
+    position: absolute;
+    overflow: visible;
+    width: 88px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(244,158,85,1);
+}
+#Retail_Trade {
+    position: absolute;
+    width: 113px;
+    height: 31px;
+    left: 304px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_27_fc {
+    fill: rgba(255,229,207,1);
+}
+.Rectangle_27_fc {
+    position: absolute;
+    overflow: visible;
+    width: 113px;
+    height: 31px;
+    left: 0px;
+    top: 0px;
+}
+#Retail_Trade_fb {
+    left: 8px;
+    top: 6px;
+    position: absolute;
+    overflow: visible;
+    width: 98px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(244,158,85,1);
+}
+#SDS {
+    position: absolute;
+    width: 578px;
+    height: 749px;
+    left: 1222px;
+    top: 214px;
+    overflow: visible;
+}
+#Rectangle_20_fd {
+    fill: rgba(239,239,239,1);
+}
+.Rectangle_20_fd {
+    position: absolute;
+    overflow: visible;
+    width: 578px;
+    height: 707px;
+    left: 0px;
+    top: 0px;
+}
+#Mask_Group_2_fe {
+    position: absolute;
+    width: 578px;
+    height: 327px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Group_4_ff {
+    position: absolute;
+    width: 266px;
+    height: 93px;
+    left: 156px;
+    top: 281px;
+    overflow: visible;
+}
+#Rectangle_25_fg {
+    fill: rgba(255,255,255,1);
+}
+.Rectangle_25_fg {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 284px;
+    height: 111px;
+    left: 0px;
+    top: 0px;
+}
+#Mask_Group_3_fh {
+    position: absolute;
+    width: 266px;
+    height: 93px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Group_5_fi {
+    position: absolute;
+    width: 266px;
+    height: 85px;
+    left: 18px;
+    top: 664px;
+    overflow: visible;
+}
+#Rectangle_25_fj {
+    fill: rgba(244,158,85,1);
+}
+.Rectangle_25_fj {
+    position: absolute;
+    overflow: visible;
+    width: 266px;
+    height: 85px;
+    left: 0px;
+    top: 0px;
+}
+#heart_fk {
+    position: absolute;
+    width: 45.82px;
+    height: 42.958px;
+    left: 35.001px;
+    top: 21px;
+    overflow: visible;
+}
+#Path_6_fl {
+    fill: rgba(255,255,255,1);
+}
+.Path_6_fl {
+    overflow: visible;
+    position: absolute;
+    width: 45.82px;
+    height: 42.958px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Follow_Company_fm {
+    left: 112px;
+    top: 14px;
+    position: absolute;
+    overflow: visible;
+    width: 119px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#Group_6_fn {
+    position: absolute;
+    width: 266px;
+    height: 85px;
+    left: 294px;
+    top: 664px;
+    overflow: visible;
+}
+#Rectangle_25_fo {
+    fill: rgba(76,92,104,1);
+}
+.Rectangle_25_fo {
+    position: absolute;
+    overflow: visible;
+    width: 266px;
+    height: 85px;
+    left: 0px;
+    top: 0px;
+}
+#n_4_Jobs {
+    left: 112px;
+    top: 28px;
+    position: absolute;
+    overflow: visible;
+    width: 88px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#businessman_fq {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 36px;
+    top: 19px;
+    overflow: visible;
+}
+#Software_Daten_Service_Gesells {
+    left: 20px;
+    top: 401px;
+    position: absolute;
+    overflow: visible;
+    width: 362px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgba(244,158,85,1);
+}
+#Tube_fs {
+    position: absolute;
+    width: 77px;
+    height: 30px;
+    left: 20px;
+    top: 490px;
+    overflow: visible;
+}
+#Graz_ft {
+    position: absolute;
+    width: 77px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_27_fu {
+    fill: rgba(216,216,216,1);
+}
+.Rectangle_27_fu {
+    position: absolute;
+    overflow: visible;
+    width: 77px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+}
+#Vienna_fv {
+    left: 10px;
+    top: 6px;
+    position: absolute;
+    overflow: visible;
+    width: 58px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(76,92,104,1);
+}
+#Internet_IT_telecom_fw {
+    left: 20px;
+    top: 532px;
+    position: absolute;
+    overflow: visible;
+    width: 163px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(159,159,159,1);
+}
+#Tube_fx {
+    position: absolute;
+    width: 510px;
+    height: 72px;
+    left: 20px;
+    top: 563px;
+    overflow: visible;
+}
+#Software_Testers {
+    position: absolute;
+    width: 149px;
+    height: 31px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_27_fz {
+    fill: rgba(255,229,207,1);
+}
+.Rectangle_27_fz {
+    position: absolute;
+    overflow: visible;
+    width: 149px;
+    height: 31px;
+    left: 0px;
+    top: 0px;
+}
+#Software_Testers_f {
+    left: 8px;
+    top: 6px;
+    position: absolute;
+    overflow: visible;
+    width: 134px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(244,158,85,1);
+}
+#Project_Engineer_f {
+    position: absolute;
+    width: 188px;
+    height: 31px;
+    left: 159px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_27_f {
+    fill: rgba(255,229,207,1);
+}
+.Rectangle_27_f {
+    position: absolute;
+    overflow: visible;
+    width: 188px;
+    height: 31px;
+    left: 0px;
+    top: 0px;
+}
+#Internship_Marketing {
+    left: 8px;
+    top: 6px;
+    position: absolute;
+    overflow: visible;
+    width: 173px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(244,158,85,1);
+}
+#Mechanics_f {
+    position: absolute;
+    width: 153px;
+    height: 31px;
+    left: 357px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_27_ga {
+    fill: rgba(255,229,207,1);
+}
+.Rectangle_27_ga {
+    position: absolute;
+    overflow: visible;
+    width: 153px;
+    height: 31px;
+    left: 0px;
+    top: 0px;
+}
+#Business_Analyst {
+    left: 8px;
+    top: 6px;
+    position: absolute;
+    overflow: visible;
+    width: 138px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(244,158,85,1);
+}
+#work_preparation_f {
+    position: absolute;
+    width: 100px;
+    height: 31px;
+    left: 0px;
+    top: 41px;
+    overflow: visible;
+}
+#Rectangle_27_gb {
+    fill: rgba(255,229,207,1);
+}
+.Rectangle_27_gb {
+    position: absolute;
+    overflow: visible;
+    width: 100px;
+    height: 31px;
+    left: 0px;
+    top: 0px;
+}
+#Internship {
+    left: 8px;
+    top: 6px;
+    position: absolute;
+    overflow: visible;
+    width: 85px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(244,158,85,1);
+}
+#work_preparation_ga {
+    position: absolute;
+    width: 75px;
+    height: 31px;
+    left: 110px;
+    top: 41px;
+    overflow: visible;
+}
+#Rectangle_27_gc {
+    fill: rgba(255,229,207,1);
+}
+.Rectangle_27_gc {
+    position: absolute;
+    overflow: visible;
+    width: 75px;
+    height: 31px;
+    left: 0px;
+    top: 0px;
+}
+#Testing {
+    left: 8px;
+    top: 6px;
+    position: absolute;
+    overflow: visible;
+    width: 60px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(244,158,85,1);
+}
+#CV {
+    position: absolute;
+    width: 1920px;
+    height: 675.268px;
+    left: 0px;
+    top: 2217px;
+    overflow: visible;
+}
+#Rectangle_28 {
+    fill: rgba(76,92,104,1);
+}
+.Rectangle_28 {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 509px;
+    left: 0px;
+    top: 0px;
+}
+#Img {
+    position: absolute;
+    width: 659.946px;
+    height: 597.069px;
+    left: 60px;
+    top: 78.2px;
+    overflow: visible;
+}
+#Path_7 {
+    fill: rgba(255,255,255,1);
+}
+.Path_7 {
+    overflow: visible;
+    position: absolute;
+    width: 301.513px;
+    height: 399.967px;
+    left: 0px;
+    top: 93.839px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_8 {
+    fill: rgba(255,255,255,1);
+}
+.Path_8 {
+    overflow: visible;
+    position: absolute;
+    width: 102.305px;
+    height: 102.29px;
+    left: 36.039px;
+    top: 139.978px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Ellipse_1 {
+    fill: rgba(244,158,85,1);
+}
+.Ellipse_1 {
+    position: absolute;
+    overflow: visible;
+    width: 49.767px;
+    height: 49.767px;
+    left: 61.091px;
+    top: 175.244px;
+}
+#Path_9 {
+    fill: rgba(47,46,65,1);
+}
+.Path_9 {
+    overflow: visible;
+    position: absolute;
+    width: 6.443px;
+    height: 15.83px;
+    left: 81.01px;
+    top: 197.704px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Rectangle_29 {
+    fill: rgba(47,46,65,1);
+}
+.Rectangle_29 {
+    position: absolute;
+    overflow: visible;
+    width: 5.008px;
+    height: 0.93px;
+    left: 74.167px;
+    top: 198.622px;
+}
+#Rectangle_30 {
+    fill: rgba(47,46,65,1);
+}
+.Rectangle_30 {
+    position: absolute;
+    overflow: visible;
+    width: 5.008px;
+    height: 0.93px;
+    left: 89.974px;
+    top: 198.622px;
+}
+#Path_10 {
+    fill: rgba(47,46,65,1);
+}
+.Path_10 {
+    overflow: visible;
+    position: absolute;
+    width: 32.29px;
+    height: 12.702px;
+    left: 69.821px;
+    top: 229.567px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_11 {
+    fill: rgba(47,46,65,1);
+}
+.Path_11 {
+    overflow: visible;
+    position: absolute;
+    width: 7.537px;
+    height: 1.046px;
+    left: 90.524px;
+    top: 241.112px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_12 {
+    fill: rgba(47,46,65,1);
+}
+.Path_12 {
+    overflow: visible;
+    position: absolute;
+    width: 48.404px;
+    height: 31.635px;
+    left: 64.093px;
+    top: 162.695px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_13 {
+    fill: rgba(47,46,65,1);
+}
+.Path_13 {
+    overflow: visible;
+    position: absolute;
+    width: 57.868px;
+    height: 24.805px;
+    left: 54.374px;
+    top: 170.676px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Ellipse_2 {
+    fill: rgba(47,46,65,1);
+}
+.Ellipse_2 {
+    width: 4.184px;
+    height: 7.904px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(0px, 0px) matrix(1,0,0,1,93.1802,162.3063) rotate(-73.27deg);
+    transform-origin: center;
+}
+#Path_14 {
+    fill: rgba(204,204,204,1);
+}
+.Path_14 {
+    overflow: visible;
+    position: absolute;
+    width: 105.086px;
+    height: 105.065px;
+    left: 34.656px;
+    top: 138.599px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_15 {
+    fill: rgba(242,242,242,1);
+}
+.Path_15 {
+    overflow: visible;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: 17.576px;
+    top: 348.347px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_16 {
+    fill: rgba(204,204,204,1);
+}
+.Path_16 {
+    overflow: visible;
+    position: absolute;
+    width: 301.513px;
+    height: 399.967px;
+    left: 0px;
+    top: 93.839px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_17 {
+    fill: rgba(230,230,230,1);
+}
+.Path_17 {
+    overflow: visible;
+    position: absolute;
+    width: 90.247px;
+    height: 12.329px;
+    left: 151.049px;
+    top: 178.598px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_18 {
+    fill: rgba(230,230,230,1);
+}
+.Path_18 {
+    overflow: visible;
+    position: absolute;
+    width: 115.674px;
+    height: 12.329px;
+    left: 151.049px;
+    top: 199.402px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_19 {
+    fill: rgba(230,230,230,1);
+}
+.Path_19 {
+    overflow: visible;
+    position: absolute;
+    width: 206.391px;
+    height: 12.328px;
+    left: 34.791px;
+    top: 279.195px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_20 {
+    fill: rgba(230,230,230,1);
+}
+.Path_20 {
+    overflow: visible;
+    position: absolute;
+    width: 231.819px;
+    height: 12.329px;
+    left: 34.791px;
+    top: 299.999px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_21 {
+    fill: rgba(230,230,230,1);
+}
+.Path_21 {
+    overflow: visible;
+    position: absolute;
+    width: 206.391px;
+    height: 12.328px;
+    left: 34.791px;
+    top: 347.815px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_22 {
+    fill: rgba(230,230,230,1);
+}
+.Path_22 {
+    overflow: visible;
+    position: absolute;
+    width: 231.819px;
+    height: 12.328px;
+    left: 34.791px;
+    top: 368.619px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_23 {
+    fill: rgba(230,230,230,1);
+}
+.Path_23 {
+    overflow: visible;
+    position: absolute;
+    width: 206.391px;
+    height: 12.329px;
+    left: 34.791px;
+    top: 416.436px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_24 {
+    fill: rgba(230,230,230,1);
+}
+.Path_24 {
+    overflow: visible;
+    position: absolute;
+    width: 231.819px;
+    height: 12.329px;
+    left: 34.791px;
+    top: 437.239px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_25 {
+    fill: rgba(255,255,255,1);
+}
+.Path_25 {
+    overflow: visible;
+    position: absolute;
+    width: 301.515px;
+    height: 399.968px;
+    left: 358.431px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_26 {
+    fill: rgba(204,204,204,1);
+}
+.Path_26 {
+    overflow: visible;
+    position: absolute;
+    width: 301.515px;
+    height: 399.968px;
+    left: 358.431px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_27 {
+    fill: rgba(255,255,255,1);
+}
+.Path_27 {
+    overflow: visible;
+    position: absolute;
+    width: 102.287px;
+    height: 102.287px;
+    left: 394.618px;
+    top: 45.633px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_28 {
+    fill: rgba(244,158,85,1);
+}
+.Path_28 {
+    overflow: visible;
+    position: absolute;
+    width: 49.766px;
+    height: 49.06px;
+    left: 419.633px;
+    top: 80.999px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_29 {
+    fill: rgba(47,46,65,1);
+}
+.Path_29 {
+    overflow: visible;
+    position: absolute;
+    width: 6.489px;
+    height: 15.901px;
+    left: 443.503px;
+    top: 99.851px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Rectangle_31 {
+    fill: rgba(47,46,65,1);
+}
+.Rectangle_31 {
+    position: absolute;
+    overflow: visible;
+    width: 5.008px;
+    height: 0.93px;
+    left: 451.781px;
+    top: 100.769px;
+}
+#Rectangle_32 {
+    fill: rgba(47,46,65,1);
+}
+.Rectangle_32 {
+    position: absolute;
+    overflow: visible;
+    width: 5.008px;
+    height: 0.93px;
+    left: 435.972px;
+    top: 100.769px;
+}
+#Path_30 {
+    fill: rgba(47,46,65,1);
+}
+.Path_30 {
+    overflow: visible;
+    position: absolute;
+    width: 32.746px;
+    height: 13.017px;
+    left: 428.851px;
+    top: 134.904px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_31 {
+    fill: rgba(47,46,65,1);
+}
+.Path_31 {
+    overflow: visible;
+    position: absolute;
+    width: 54.457px;
+    height: 32.781px;
+    left: 416.206px;
+    top: 62.39px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_32 {
+    fill: rgba(204,204,204,1);
+}
+.Path_32 {
+    overflow: visible;
+    position: absolute;
+    width: 104.999px;
+    height: 104.994px;
+    left: 393.31px;
+    top: 44.321px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_33 {
+    fill: rgba(230,230,230,1);
+}
+.Path_33 {
+    overflow: visible;
+    position: absolute;
+    width: 90.246px;
+    height: 12.329px;
+    left: 509.48px;
+    top: 84.76px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_34 {
+    fill: rgba(230,230,230,1);
+}
+.Path_34 {
+    overflow: visible;
+    position: absolute;
+    width: 115.674px;
+    height: 12.329px;
+    left: 509.481px;
+    top: 105.563px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_35 {
+    fill: rgba(230,230,230,1);
+}
+.Path_35 {
+    overflow: visible;
+    position: absolute;
+    width: 206.39px;
+    height: 12.328px;
+    left: 393.224px;
+    top: 185.356px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_36 {
+    fill: rgba(230,230,230,1);
+}
+.Path_36 {
+    overflow: visible;
+    position: absolute;
+    width: 231.818px;
+    height: 12.329px;
+    left: 393.223px;
+    top: 206.16px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_37 {
+    fill: rgba(230,230,230,1);
+}
+.Path_37 {
+    overflow: visible;
+    position: absolute;
+    width: 206.39px;
+    height: 12.328px;
+    left: 393.224px;
+    top: 253.976px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_38 {
+    fill: rgba(230,230,230,1);
+}
+.Path_38 {
+    overflow: visible;
+    position: absolute;
+    width: 231.818px;
+    height: 12.329px;
+    left: 393.223px;
+    top: 274.781px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_39 {
+    fill: rgba(230,230,230,1);
+}
+.Path_39 {
+    overflow: visible;
+    position: absolute;
+    width: 206.39px;
+    height: 12.329px;
+    left: 393.224px;
+    top: 322.597px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_40 {
+    fill: rgba(230,230,230,1);
+}
+.Path_40 {
+    overflow: visible;
+    position: absolute;
+    width: 231.818px;
+    height: 12.329px;
+    left: 393.223px;
+    top: 343.401px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_41 {
+    fill: rgba(255,255,255,1);
+}
+.Path_41 {
+    overflow: visible;
+    position: absolute;
+    width: 301.513px;
+    height: 399.968px;
+    left: 192.292px;
+    top: 160.757px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_42 {
+    fill: rgba(255,255,255,1);
+}
+.Path_42 {
+    overflow: visible;
+    position: absolute;
+    width: 102.304px;
+    height: 102.291px;
+    left: 228.334px;
+    top: 205.845px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_43 {
+    fill: rgba(47,46,65,1);
+}
+.Path_43 {
+    overflow: visible;
+    position: absolute;
+    width: 20.845px;
+    height: 15.59px;
+    left: 247.832px;
+    top: 281.386px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Ellipse_3 {
+    fill: rgba(244,158,85,1);
+}
+.Ellipse_3 {
+    position: absolute;
+    overflow: visible;
+    width: 49.767px;
+    height: 49.767px;
+    left: 257.414px;
+    top: 241.16px;
+}
+#Path_44 {
+    fill: rgba(47,46,65,1);
+}
+.Path_44 {
+    overflow: visible;
+    position: absolute;
+    width: 6.443px;
+    height: 15.83px;
+    left: 280.998px;
+    top: 260.831px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Rectangle_33 {
+    fill: rgba(47,46,65,1);
+}
+.Rectangle_33 {
+    position: absolute;
+    overflow: visible;
+    width: 5.008px;
+    height: 0.93px;
+    left: 289.276px;
+    top: 261.748px;
+}
+#Rectangle_34 {
+    fill: rgba(47,46,65,1);
+}
+.Rectangle_34 {
+    position: absolute;
+    overflow: visible;
+    width: 5.008px;
+    height: 0.93px;
+    left: 273.468px;
+    top: 261.748px;
+}
+#Path_45 {
+    fill: rgba(47,46,65,1);
+}
+.Path_45 {
+    overflow: visible;
+    position: absolute;
+    width: 31.649px;
+    height: 12.419px;
+    left: 265.319px;
+    top: 295.717px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_46 {
+    fill: rgba(63,61,86,1);
+}
+.Path_46 {
+    overflow: visible;
+    position: absolute;
+    width: 11.163px;
+    height: 16.738px;
+    left: 301.789px;
+    top: 255.035px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_47 {
+    fill: rgba(63,61,86,1);
+}
+.Path_47 {
+    overflow: visible;
+    position: absolute;
+    width: 11.163px;
+    height: 16.738px;
+    left: 252.037px;
+    top: 255.035px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_48 {
+    fill: rgba(63,61,86,1);
+}
+.Path_48 {
+    overflow: visible;
+    position: absolute;
+    width: 57.192px;
+    height: 38.188px;
+    left: 253.897px;
+    top: 232.275px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_49 {
+    fill: rgba(47,46,65,1);
+}
+.Path_49 {
+    overflow: visible;
+    position: absolute;
+    width: 22.15px;
+    height: 8.042px;
+    left: 273.16px;
+    top: 249.62px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_50 {
+    fill: rgba(204,204,204,1);
+}
+.Path_50 {
+    overflow: visible;
+    position: absolute;
+    width: 105.07px;
+    height: 105.063px;
+    left: 226.946px;
+    top: 204.468px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_51 {
+    fill: rgba(63,61,86,1);
+}
+.Path_51 {
+    overflow: visible;
+    position: absolute;
+    width: 301.513px;
+    height: 399.968px;
+    left: 192.292px;
+    top: 160.757px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_52 {
+    fill: rgba(244,158,85,1);
+}
+.Path_52 {
+    overflow: visible;
+    position: absolute;
+    width: 90.246px;
+    height: 12.329px;
+    left: 343.341px;
+    top: 245.515px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_53 {
+    fill: rgba(244,158,85,1);
+}
+.Path_53 {
+    overflow: visible;
+    position: absolute;
+    width: 115.674px;
+    height: 12.328px;
+    left: 343.341px;
+    top: 266.32px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_54 {
+    fill: rgba(204,204,204,1);
+}
+.Path_54 {
+    overflow: visible;
+    position: absolute;
+    width: 206.392px;
+    height: 12.328px;
+    left: 227.083px;
+    top: 346.112px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_55 {
+    fill: rgba(204,204,204,1);
+}
+.Path_55 {
+    overflow: visible;
+    position: absolute;
+    width: 231.819px;
+    height: 12.329px;
+    left: 227.083px;
+    top: 366.917px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_56 {
+    fill: rgba(204,204,204,1);
+}
+.Path_56 {
+    overflow: visible;
+    position: absolute;
+    width: 206.392px;
+    height: 12.328px;
+    left: 227.083px;
+    top: 414.732px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_57 {
+    fill: rgba(204,204,204,1);
+}
+.Path_57 {
+    overflow: visible;
+    position: absolute;
+    width: 231.819px;
+    height: 12.328px;
+    left: 227.083px;
+    top: 435.537px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_58 {
+    fill: rgba(204,204,204,1);
+}
+.Path_58 {
+    overflow: visible;
+    position: absolute;
+    width: 206.392px;
+    height: 12.328px;
+    left: 227.083px;
+    top: 483.353px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_59 {
+    fill: rgba(204,204,204,1);
+}
+.Path_59 {
+    overflow: visible;
+    position: absolute;
+    width: 231.819px;
+    height: 12.329px;
+    left: 227.083px;
+    top: 504.157px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_60 {
+    fill: rgba(244,158,85,1);
+}
+.Path_60 {
+    overflow: visible;
+    position: absolute;
+    width: 121.467px;
+    height: 121.466px;
+    left: 416.801px;
+    top: 475.602px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#f276b720-7c73-4755-84a7-b208d5 {
+    fill: rgba(255,255,255,1);
+}
+.f276b720-7c73-4755-84a7-b208d5 {
+    overflow: visible;
+    position: absolute;
+    width: 61.629px;
+    height: 54.05px;
+    left: 447.65px;
+    top: 507.509px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Text {
+    position: absolute;
+    width: 784px;
+    height: 267px;
+    left: 917px;
+    top: 121px;
+    overflow: visible;
+}
+#Make_your_resume_stand_out {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 785px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    color: rgba(255,255,255,1);
+}
+#Stand_out_and_impress_with_fre {
+    left: 0px;
+    top: 83px;
+    position: absolute;
+    overflow: visible;
+    width: 774px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: rgba(255,255,255,1);
+}
+#Group_11 {
+    position: absolute;
+    width: 450px;
+    height: 100px;
+    left: 155px;
+    top: 167px;
+    overflow: visible;
+}
+#Rectangle_35 {
+    fill: rgba(244,158,85,1);
+}
+.Rectangle_35 {
+    position: absolute;
+    overflow: visible;
+    width: 450px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+}
+#Create_a_CV_Now {
+    left: 75px;
+    top: 28px;
+    position: absolute;
+    overflow: visible;
+    width: 302px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: rgba(255,255,255,1);
+}
+#Fuature {
+    position: absolute;
+    width: 910.545px;
+    height: 1157px;
+    left: 505px;
+    top: 2978px;
+    overflow: visible;
+}
+#Heading_if {
+    position: absolute;
+    width: 652px;
+    height: 159px;
+    left: 129px;
+    top: 0px;
+    overflow: visible;
+}
+#Heading_Pattern_ig {
+    position: absolute;
+    width: 634px;
+    height: 80px;
+    left: 9px;
+    top: 79px;
+    overflow: visible;
+}
+#business-and-trade_ik {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 277px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_18_ii {
+    fill: rgba(244,158,85,1);
+}
+.Rectangle_18_ii {
+    position: absolute;
+    overflow: visible;
+    width: 244px;
+    height: 6px;
+    left: 390px;
+    top: 37px;
+}
+#Rectangle_19_ij {
+    fill: rgba(244,158,85,1);
+}
+.Rectangle_19_ij {
+    position: absolute;
+    overflow: visible;
+    width: 244px;
+    height: 6px;
+    left: 0px;
+    top: 37px;
+}
+#business-and-trade_ik {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 277px;
+    top: 0px;
+    overflow: visible;
+}
+#Feature_Provided_by_us {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 653px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    color: rgba(244,158,85,1);
+}
+#Group_22 {
+    position: absolute;
+    width: 910.545px;
+    height: 942px;
+    left: 0px;
+    top: 215px;
+    overflow: visible;
+}
+#Ellipse_4 {
+    fill: rgba(244,158,85,1);
+}
+.Ellipse_4 {
+    position: absolute;
+    overflow: visible;
+    width: 752px;
+    height: 752px;
+    left: 79px;
+    top: 95px;
+}
+#n__io {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    left: 360px;
+    top: 0px;
+    overflow: visible;
+}
+#Ellipse_5 {
+    fill: rgba(76,92,104,1);
+    stroke: rgba(244,158,85,1);
+    stroke-width: 10px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Ellipse_5 {
+    filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.2));
+    position: absolute;
+    overflow: visible;
+    width: 280px;
+    height: 280px;
+    left: 0px;
+    top: 0px;
+}
+#n_11_ir {
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    left: 54px;
+    top: 54px;
+    overflow: visible;
+}
+#n_11_ir {
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    left: 54px;
+    top: 54px;
+    overflow: visible;
+}
+#n__is {
+    position: absolute;
+    width: 259.545px;
+    height: 259.545px;
+    left: 651px;
+    top: 153px;
+    overflow: visible;
+}
+#Ellipse_9 {
+    fill: rgba(76,92,104,1);
+}
+.Ellipse_9 {
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-1156px, -3239px) matrix(1,0,0,1,1190.7724,3273.7724) rotate(60deg);
+    transform-origin: center;
+}
+#n_22_iv {
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    left: 89px;
+    top: 89px;
+    overflow: visible;
+}
+#n_22_iv {
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    left: 89px;
+    top: 89px;
+    overflow: visible;
+}
+#n__iw {
+    position: absolute;
+    width: 259.545px;
+    height: 259.545px;
+    left: 651px;
+    top: 529px;
+    overflow: visible;
+}
+#Ellipse_7 {
+    fill: rgba(76,92,104,1);
+}
+.Ellipse_7 {
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-1156px, -3615px) matrix(1,0,0,1,1190.7724,3649.7724) rotate(120deg);
+    transform-origin: center;
+}
+#n_33_iz {
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    left: 89px;
+    top: 89px;
+    overflow: visible;
+}
+#n_33_iz {
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    left: 89px;
+    top: 89px;
+    overflow: visible;
+}
+#n__i {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    left: 360px;
+    top: 752px;
+    overflow: visible;
+}
+#Ellipse_6 {
+    fill: rgba(76,92,104,1);
+}
+.Ellipse_6 {
+    position: absolute;
+    overflow: visible;
+    width: 190px;
+    height: 190px;
+    left: 0px;
+    top: 0px;
+}
+#n_44_i {
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    left: 54px;
+    top: 54px;
+    overflow: visible;
+}
+#n_44_i {
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    left: 54px;
+    top: 54px;
+    overflow: visible;
+}
+#n__ja {
+    position: absolute;
+    width: 259.545px;
+    height: 259.545px;
+    left: 0px;
+    top: 529px;
+    overflow: visible;
+}
+#Ellipse_10 {
+    fill: rgba(76,92,104,1);
+}
+.Ellipse_10 {
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-505px, -3615px) matrix(1,0,0,1,539.7724,3649.7724) rotate(60deg);
+    transform-origin: center;
+}
+#n_55_ja {
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    left: 89px;
+    top: 89px;
+    overflow: visible;
+}
+#n_55_ja {
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    left: 89px;
+    top: 89px;
+    overflow: visible;
+}
+#n__jb {
+    position: absolute;
+    width: 259.545px;
+    height: 259.545px;
+    left: 0px;
+    top: 153px;
+    overflow: visible;
+}
+#Ellipse_8 {
+    fill: rgba(76,92,104,1);
+}
+.Ellipse_8 {
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-505px, -3239px) matrix(1,0,0,1,539.7724,3273.7724) rotate(120deg);
+    transform-origin: center;
+}
+#n_66_jb {
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    left: 89px;
+    top: 89px;
+    overflow: visible;
+}
+#n_66_jb {
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    left: 89px;
+    top: 89px;
+    overflow: visible;
+}
+#Application {
+    left: 307px;
+    top: 365px;
+    position: absolute;
+    overflow: visible;
+    width: 297px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    color: rgba(76,92,104,1);
+}
+#Lorem_Ipsum_simply_dummy_text_ {
+    left: 220px;
+    top: 460px;
+    position: absolute;
+    overflow: visible;
+    width: 471px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    color: rgba(76,92,104,1);
+}
+#Contact_Us {
+    position: absolute;
+    width: 1920px;
+    height: 487px;
+    left: 0px;
+    top: 4221px;
+    overflow: visible;
+}
+#Rectangle_28_jf {
+    fill: rgba(76,92,104,1);
+}
+.Rectangle_28_jf {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 341px;
+    left: 0px;
+    top: 0px;
+}
+#Contact_Us_jg {
+    left: 820px;
+    top: 64px;
+    position: absolute;
+    overflow: visible;
+    width: 281px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    color: rgba(255,255,255,1);
+}
+#Group_14 {
+    position: absolute;
+    width: 562px;
+    height: 292px;
+    left: 60px;
+    top: 195px;
+    overflow: visible;
+}
+#Rectangle_36 {
+    fill: rgba(255,255,255,1);
+}
+.Rectangle_36 {
+    filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
+    position: absolute;
+    overflow: visible;
+    width: 598px;
+    height: 328px;
+    left: 0px;
+    top: 0px;
+}
+#Group_13 {
+    position: absolute;
+    width: 76px;
+    height: 76px;
+    left: 243px;
+    top: 48px;
+    overflow: visible;
+}
+#Rectangle_37 {
+    fill: rgba(244,158,85,1);
+}
+.Rectangle_37 {
+    filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
+    position: absolute;
+    overflow: visible;
+    width: 112px;
+    height: 112px;
+    left: 0px;
+    top: 0px;
+}
+#call {
+    fill: rgba(255,255,255,1);
+}
+.call {
+    overflow: visible;
+    position: absolute;
+    width: 35.972px;
+    height: 35.892px;
+    left: 20px;
+    top: 20px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#n_3_998_877_6655 {
+    left: 150px;
+    top: 207px;
+    position: absolute;
+    overflow: visible;
+    width: 263px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(76,92,104,1);
+}
+#n_47_Phone {
+    left: 165px;
+    top: 145px;
+    position: absolute;
+    overflow: visible;
+    width: 233px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    color: rgba(76,92,104,1);
+}
+#Group_15 {
+    position: absolute;
+    width: 562px;
+    height: 292px;
+    left: 679px;
+    top: 195px;
+    overflow: visible;
+}
+#Rectangle_36_jp {
+    fill: rgba(255,255,255,1);
+}
+.Rectangle_36_jp {
+    filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
+    position: absolute;
+    overflow: visible;
+    width: 598px;
+    height: 328px;
+    left: 0px;
+    top: 0px;
+}
+#Group_13_jq {
+    position: absolute;
+    width: 76px;
+    height: 76px;
+    left: 243px;
+    top: 48px;
+    overflow: visible;
+}
+#Rectangle_37_jr {
+    fill: rgba(244,158,85,1);
+}
+.Rectangle_37_jr {
+    filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
+    position: absolute;
+    overflow: visible;
+    width: 112px;
+    height: 112px;
+    left: 0px;
+    top: 0px;
+}
+#mail {
+    fill: rgba(255,255,255,1);
+}
+.mail {
+    overflow: visible;
+    position: absolute;
+    width: 35.972px;
+    height: 28.264px;
+    left: 20px;
+    top: 23.625px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#testgmailcom {
+    left: 156px;
+    top: 207px;
+    position: absolute;
+    overflow: visible;
+    width: 251px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(76,92,104,1);
+}
+#Email {
+    left: 223px;
+    top: 145px;
+    position: absolute;
+    overflow: visible;
+    width: 117px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    color: rgba(76,92,104,1);
+}
+#Group_16 {
+    position: absolute;
+    width: 562px;
+    height: 292px;
+    left: 1298px;
+    top: 195px;
+    overflow: visible;
+}
+#Rectangle_36_jw {
+    fill: rgba(255,255,255,1);
+}
+.Rectangle_36_jw {
+    filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
+    position: absolute;
+    overflow: visible;
+    width: 598px;
+    height: 328px;
+    left: 0px;
+    top: 0px;
+}
+#Icon {
+    position: absolute;
+    width: 350px;
+    height: 54px;
+    left: 106px;
+    top: 152px;
+    overflow: visible;
+}
+#Group_17 {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_37_jz {
+    fill: rgba(244,158,85,1);
+}
+.Rectangle_37_jz {
+    filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
+    position: absolute;
+    overflow: visible;
+    width: 90px;
+    height: 90px;
+    left: 0px;
+    top: 0px;
+}
+#facebook_1 {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 11px;
+    top: 11px;
+    overflow: visible;
+}
+#Group_18 {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 74px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_37_j {
+    fill: rgba(244,158,85,1);
+}
+.Rectangle_37_j {
+    filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
+    position: absolute;
+    overflow: visible;
+    width: 90px;
+    height: 90px;
+    left: 0px;
+    top: 0px;
+}
+#twitter_1 {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 11px;
+    top: 11px;
+    overflow: visible;
+}
+#Group_19 {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 148px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_37_ka {
+    fill: rgba(244,158,85,1);
+}
+.Rectangle_37_ka {
+    filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
+    position: absolute;
+    overflow: visible;
+    width: 90px;
+    height: 90px;
+    left: 0px;
+    top: 0px;
+}
+#linkedin {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 11px;
+    top: 11px;
+    overflow: visible;
+}
+#Group_20 {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 222px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_37_kb {
+    fill: rgba(244,158,85,1);
+}
+.Rectangle_37_kb {
+    filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
+    position: absolute;
+    overflow: visible;
+    width: 90px;
+    height: 90px;
+    left: 0px;
+    top: 0px;
+}
+#google-plus {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 11px;
+    top: 11px;
+    overflow: visible;
+}
+#Group_21 {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 296px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_37_kc {
+    fill: rgba(244,158,85,1);
+}
+.Rectangle_37_kc {
+    filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
+    position: absolute;
+    overflow: visible;
+    width: 90px;
+    height: 90px;
+    left: 0px;
+    top: 0px;
+}
+#youtube-logotype {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 11px;
+    top: 11px;
+    overflow: visible;
+}
+#Social_Media {
+    left: 153px;
+    top: 87px;
+    position: absolute;
+    overflow: visible;
+    width: 257px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    color: rgba(76,92,104,1);
+}
+#Footer {
+    position: absolute;
+    width: 1920px;
+    height: 600px;
+    left: 0px;
+    top: 4794px;
+    overflow: visible;
+}
+#Rectangle_28_kf {
+    fill: rgba(76,92,104,1);
+}
+.Rectangle_28_kf {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 600px;
+    left: 0px;
+    top: 0px;
+}
+#About_karriereat {
+    position: absolute;
+    width: 257px;
+    height: 358px;
+    left: 60px;
+    top: 78px;
+    overflow: visible;
+}
+#About_karriereat_kh {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 258px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(255,255,255,1);
+}
+#about_us {
+    left: 0px;
+    top: 65px;
+    position: absolute;
+    overflow: visible;
+    width: 105px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#team {
+    left: 0px;
+    top: 104px;
+    position: absolute;
+    overflow: visible;
+    width: 64px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#Jobs_at_karriereat {
+    left: 0px;
+    top: 143px;
+    position: absolute;
+    overflow: visible;
+    width: 210px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#Press {
+    left: 0px;
+    top: 182px;
+    position: absolute;
+    overflow: visible;
+    width: 64px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#mobile_app {
+    left: 0px;
+    top: 251px;
+    position: absolute;
+    overflow: visible;
+    width: 137px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#careerblog {
+    left: 0px;
+    top: 290px;
+    position: absolute;
+    overflow: visible;
+    width: 134px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#dev_blog {
+    left: 0px;
+    top: 329px;
+    position: absolute;
+    overflow: visible;
+    width: 104px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#For_Employer {
+    position: absolute;
+    width: 230px;
+    height: 250px;
+    left: 495px;
+    top: 78px;
+    overflow: visible;
+}
+#For_Employer_kq {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 205px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(255,255,255,1);
+}
+#Products__Prices {
+    left: 0px;
+    top: 65px;
+    position: absolute;
+    overflow: visible;
+    width: 207px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#media_data {
+    left: 0px;
+    top: 104px;
+    position: absolute;
+    overflow: visible;
+    width: 137px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#place_an_ad {
+    left: 0px;
+    top: 143px;
+    position: absolute;
+    overflow: visible;
+    width: 138px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#candidate_search {
+    left: 0px;
+    top: 182px;
+    position: absolute;
+    overflow: visible;
+    width: 205px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#employer_branding {
+    left: 0px;
+    top: 221px;
+    position: absolute;
+    overflow: visible;
+    width: 231px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#Partners_and_Portals {
+    position: absolute;
+    width: 437px;
+    height: 328px;
+    left: 902px;
+    top: 78px;
+    overflow: visible;
+}
+#Partners_and_Portals_kx {
+    left: 2px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 313px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(255,255,255,1);
+}
+#itstellenat {
+    left: 2px;
+    top: 65px;
+    position: absolute;
+    overflow: visible;
+    width: 123px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#techtalentsat {
+    left: 2px;
+    top: 104px;
+    position: absolute;
+    overflow: visible;
+    width: 164px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#financejobsat {
+    left: 2px;
+    top: 143px;
+    position: absolute;
+    overflow: visible;
+    width: 168px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#salescareerat {
+    left: 2px;
+    top: 182px;
+    position: absolute;
+    overflow: visible;
+    width: 161px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#jobsat {
+    left: 0px;
+    top: 221px;
+    position: absolute;
+    overflow: visible;
+    width: 81px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#hokify_mobile_job_search {
+    left: 2px;
+    top: 260px;
+    position: absolute;
+    overflow: visible;
+    width: 290px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#eRecruiter_application_managem {
+    left: 2px;
+    top: 299px;
+    position: absolute;
+    overflow: visible;
+    width: 436px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#My_profile {
+    position: absolute;
+    width: 281px;
+    height: 250px;
+    left: 1517px;
+    top: 78px;
+    overflow: visible;
+}
+#My_profile_k {
+    left: 2px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 154px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(255,255,255,1);
+}
+#curriculum_vitae {
+    left: 2px;
+    top: 65px;
+    position: absolute;
+    overflow: visible;
+    width: 195px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#job_alert {
+    left: 0px;
+    top: 104px;
+    position: absolute;
+    overflow: visible;
+    width: 101px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#Bookmarks {
+    left: 2px;
+    top: 143px;
+    position: absolute;
+    overflow: visible;
+    width: 137px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#Company_Alert {
+    left: 2px;
+    top: 182px;
+    position: absolute;
+    overflow: visible;
+    width: 180px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#Job_Recommendations {
+    left: 2px;
+    top: 221px;
+    position: absolute;
+    overflow: visible;
+    width: 280px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#Rectangle_38 {
+    fill: rgba(61,77,90,1);
+}
+.Rectangle_38 {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 92px;
+    left: 0px;
+    top: 508px;
+}
+#n_2022_test_GmbH {
+    left: 851px;
+    top: 540px;
+    position: absolute;
+    overflow: visible;
+    width: 220px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
