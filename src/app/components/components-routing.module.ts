@@ -16,6 +16,10 @@ const routes: Routes = [
     path: 'stad',
     loadChildren: () => import('./stad/stad.module').then(m => m.StadModule),
   },
+  {
+    path: 'sport',
+    loadChildren: () => import('./sport/sport.module').then(m => m.SportModule),
+  },
  
 ];
 @NgModule({

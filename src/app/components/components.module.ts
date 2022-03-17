@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from '../app-routing.module';
 import { StadComponent } from './stad/stad.component';
+import { SportComponent } from './sport/sport.component';
 
 
 //Module decorator specifying all the components used in the application 
@@ -17,6 +18,7 @@ import { StadComponent } from './stad/stad.component';
 
     HomeComponent,
      StadComponent,
+     SportComponent,
 
   ],
   imports: [
