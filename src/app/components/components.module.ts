@@ -3,18 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { MainComponent } from './main/main.component';
+import { HomeComponent } from './home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from '../app-routing.module';
+import { StadComponent } from './stad/stad.component';
 
 
 //Module decorator specifying all the components used in the application 
 @NgModule({
   declarations: [
 
-    MainComponent,
+    HomeComponent,
+     StadComponent,
 
   ],
   imports: [

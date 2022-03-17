@@ -16,7 +16,7 @@
 #Jobs {
     position: absolute;
     width: 1920px;
-    height: 5394px;
+    height: 5183px;
     background-color: rgba(255,255,255,1);
     overflow: hidden;
     --web-view-name: Jobs;
@@ -55,7 +55,7 @@
 #Header {
     position: absolute;
     width: 1920px;
-    height: 114px;
+    height: 324px;
     left: 0px;
     top: 0px;
     overflow: visible;
@@ -84,13 +84,13 @@
 }
 #Menu {
     position: absolute;
-    width: 919px;
+    width: 913px;
     height: 32px;
-    left: 941px;
+    left: 810px;
     top: 41px;
     overflow: visible;
 }
-#Jobs_o {
+#Jobs_q {
     left: 0px;
     top: 0px;
     position: absolute;
@@ -146,12 +146,12 @@
     font-size: 26px;
     color: rgba(76,92,104,1);
 }
-#Fur_Ardeitgeber {
+#fr_Arbeitgeber {
     left: 706px;
     top: 0px;
     position: absolute;
     overflow: visible;
-    width: 214px;
+    width: 208px;
     white-space: nowrap;
     text-align: left;
     font-family: Montserrat;
@@ -159,6 +159,221 @@
     font-weight: bold;
     font-size: 26px;
     color: rgba(76,92,104,1);
+}
+#Menu_Icon {
+    position: absolute;
+    width: 237px;
+    height: 221px;
+    left: 1625px;
+    top: 103px;
+    overflow: visible;
+}
+#Rectangle_46 {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 2px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_46 {
+    filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.251));
+    position: absolute;
+    overflow: visible;
+    width: 297px;
+    height: 281px;
+    left: 0px;
+    top: 0px;
+}
+#Menu_x {
+    position: absolute;
+    width: 184.5px;
+    height: 184px;
+    left: 26px;
+    top: 19px;
+    overflow: visible;
+}
+#HOME {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 67px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(240,125,34,1);
+    text-transform: uppercase;
+}
+#Line_1 {
+    opacity: 0.4;
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Line_1 {
+    overflow: visible;
+    position: absolute;
+    width: 184px;
+    height: 1px;
+    left: 0.5px;
+    top: 38.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#BER_UNS {
+    left: 0px;
+    top: 53px;
+    position: absolute;
+    overflow: visible;
+    width: 110px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(76,92,104,1);
+    text-transform: uppercase;
+}
+#Line_2 {
+    opacity: 0.4;
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Line_2 {
+    overflow: visible;
+    position: absolute;
+    width: 184px;
+    height: 1px;
+    left: 0.5px;
+    top: 92.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#VISION {
+    left: 0px;
+    top: 107px;
+    position: absolute;
+    overflow: visible;
+    width: 74px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(76,92,104,1);
+    text-transform: uppercase;
+}
+#Line_3 {
+    opacity: 0.4;
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Line_3 {
+    overflow: visible;
+    position: absolute;
+    width: 184px;
+    height: 1px;
+    left: 0.5px;
+    top: 145.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#KONTAKT {
+    left: 0px;
+    top: 160px;
+    position: absolute;
+    overflow: visible;
+    width: 100px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(76,92,104,1);
+    text-transform: uppercase;
+}
+#Menu_Icon_ {
+    position: absolute;
+    width: 41px;
+    height: 32px;
+    left: 1819px;
+    top: 41px;
+    overflow: visible;
+}
+#Rectangle_46_ {
+    fill: rgba(76,92,104,1);
+}
+.Rectangle_46_ {
+    filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.251));
+    position: absolute;
+    overflow: visible;
+    width: 101px;
+    height: 92px;
+    left: 0px;
+    top: 0px;
+}
+#menu {
+    position: absolute;
+    width: 19px;
+    height: 13.361px;
+    left: 10.9px;
+    top: 9.2px;
+    overflow: visible;
+}
+#Path_61 {
+    fill: rgba(255,255,255,1);
+}
+.Path_61 {
+    overflow: visible;
+    position: absolute;
+    width: 19px;
+    height: 2.4px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_62 {
+    fill: rgba(255,255,255,1);
+}
+.Path_62 {
+    overflow: visible;
+    position: absolute;
+    width: 19px;
+    height: 2.4px;
+    left: 0px;
+    top: 5.48px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_63 {
+    fill: rgba(255,255,255,1);
+}
+.Path_63 {
+    overflow: visible;
+    position: absolute;
+    width: 19px;
+    height: 2.4px;
+    left: 0px;
+    top: 10.961px;
+    transform: matrix(1,0,0,1,0,0);
 }
 #n_RD3_jobs_long {
     position: absolute;
@@ -228,7 +443,7 @@
     left: 0px;
     top: 0px;
 }
-#Jobs_z {
+#Jobs_bh {
     position: absolute;
     width: 1800px;
     height: 320px;
@@ -255,12 +470,12 @@
     transform: translate(-60px, -513px) matrix(1,0,0,1,60,513) rotate(180deg);
     transform-origin: center;
 }
-#Burgenland {
+#Steiermark {
     left: 20px;
     top: 36px;
     position: absolute;
     overflow: visible;
-    width: 146px;
+    width: 135px;
     white-space: nowrap;
     text-align: left;
     font-family: Montserrat;
@@ -303,213 +518,12 @@
     font-size: 24px;
     color: rgba(255,255,255,1);
 }
-#n__ {
-    position: absolute;
-    width: 594px;
-    height: 100px;
-    left: 603px;
-    top: 0px;
-    overflow: visible;
-}
-#Rectangle_8_ {
-    fill: rgba(255,255,255,1);
-}
-.Rectangle_8_ {
-    width: 594px;
-    height: 100px;
-    position: absolute;
-    overflow: visible;
-    transform: translate(-60px, -513px) matrix(1,0,0,1,60,513) rotate(180deg);
-    transform-origin: center;
-}
-#Carinthia {
-    left: 20px;
-    top: 36px;
-    position: absolute;
-    overflow: visible;
-    width: 113px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    color: rgba(244,158,85,1);
-}
-#Group_1_ {
-    position: absolute;
-    width: 120px;
-    height: 50px;
-    left: 454px;
-    top: 25px;
-    overflow: visible;
-}
-#Rectangle_16_ba {
-    opacity: 0.6;
-    fill: rgba(76,92,104,1);
-}
-.Rectangle_16_ba {
-    width: 120px;
-    height: 50px;
-    position: absolute;
-    overflow: visible;
-    transform: translate(-491px, -537px) matrix(1,0,0,1,491,537) rotate(180deg);
-    transform-origin: center;
-}
-#n_081 {
-    left: 33px;
-    top: 11px;
-    position: absolute;
-    overflow: visible;
-    width: 55px;
-    white-space: nowrap;
-    text-align: center;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    color: rgba(255,255,255,1);
-}
-#n__bc {
-    position: absolute;
-    width: 594px;
-    height: 100px;
-    left: 1206px;
-    top: 0px;
-    overflow: visible;
-}
-#Rectangle_8_bd {
-    fill: rgba(255,255,255,1);
-}
-.Rectangle_8_bd {
-    width: 594px;
-    height: 100px;
-    position: absolute;
-    overflow: visible;
-    transform: translate(-60px, -513px) matrix(1,0,0,1,60,513) rotate(180deg);
-    transform-origin: center;
-}
-#Lower_Austria {
-    left: 20px;
-    top: 36px;
-    position: absolute;
-    overflow: visible;
-    width: 168px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    color: rgba(244,158,85,1);
-}
-#Group_1_bf {
-    position: absolute;
-    width: 120px;
-    height: 50px;
-    left: 454px;
-    top: 25px;
-    overflow: visible;
-}
-#Rectangle_16_bg {
-    opacity: 0.6;
-    fill: rgba(76,92,104,1);
-}
-.Rectangle_16_bg {
-    width: 120px;
-    height: 50px;
-    position: absolute;
-    overflow: visible;
-    transform: translate(-491px, -537px) matrix(1,0,0,1,491,537) rotate(180deg);
-    transform-origin: center;
-}
-#n_398 {
-    left: 34px;
-    top: 11px;
-    position: absolute;
-    overflow: visible;
-    width: 53px;
-    white-space: nowrap;
-    text-align: center;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    color: rgba(255,255,255,1);
-}
-#n__bi {
-    position: absolute;
-    width: 594px;
-    height: 100px;
-    left: 0px;
-    top: 110px;
-    overflow: visible;
-}
-#Rectangle_8_bj {
-    fill: rgba(255,255,255,1);
-}
-.Rectangle_8_bj {
-    width: 594px;
-    height: 100px;
-    position: absolute;
-    overflow: visible;
-    transform: translate(-60px, -513px) matrix(1,0,0,1,60,513) rotate(180deg);
-    transform-origin: center;
-}
-#Upper_Austria {
-    left: 20px;
-    top: 36px;
-    position: absolute;
-    overflow: visible;
-    width: 170px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    color: rgba(244,158,85,1);
-}
-#Group_1_bl {
-    position: absolute;
-    width: 120px;
-    height: 50px;
-    left: 454px;
-    top: 25px;
-    overflow: visible;
-}
-#Rectangle_16_bm {
-    opacity: 0.6;
-    fill: rgba(76,92,104,1);
-}
-.Rectangle_16_bm {
-    width: 120px;
-    height: 50px;
-    position: absolute;
-    overflow: visible;
-    transform: translate(-491px, -537px) matrix(1,0,0,1,491,537) rotate(180deg);
-    transform-origin: center;
-}
-#n_125 {
-    left: 35px;
-    top: 11px;
-    position: absolute;
-    overflow: visible;
-    width: 51px;
-    white-space: nowrap;
-    text-align: center;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    color: rgba(255,255,255,1);
-}
 #n__bo {
     position: absolute;
     width: 594px;
     height: 100px;
     left: 603px;
-    top: 110px;
+    top: 0px;
     overflow: visible;
 }
 #Rectangle_8_bp {
@@ -523,12 +537,12 @@
     transform: translate(-60px, -513px) matrix(1,0,0,1,60,513) rotate(180deg);
     transform-origin: center;
 }
-#Salzburg {
+#Obersterreich_ {
     left: 20px;
     top: 36px;
     position: absolute;
     overflow: visible;
-    width: 108px;
+    width: 184px;
     white-space: nowrap;
     text-align: left;
     font-family: Montserrat;
@@ -557,12 +571,12 @@
     transform: translate(-491px, -537px) matrix(1,0,0,1,491,537) rotate(180deg);
     transform-origin: center;
 }
-#n_585 {
-    left: 34px;
+#n_081 {
+    left: 33px;
     top: 11px;
     position: absolute;
     overflow: visible;
-    width: 53px;
+    width: 55px;
     white-space: nowrap;
     text-align: center;
     font-family: Montserrat;
@@ -576,7 +590,7 @@
     width: 594px;
     height: 100px;
     left: 1206px;
-    top: 110px;
+    top: 0px;
     overflow: visible;
 }
 #Rectangle_8_bv {
@@ -590,12 +604,12 @@
     transform: translate(-60px, -513px) matrix(1,0,0,1,60,513) rotate(180deg);
     transform-origin: center;
 }
-#Styria {
+#Tirol {
     left: 20px;
     top: 36px;
     position: absolute;
     overflow: visible;
-    width: 70px;
+    width: 53px;
     white-space: nowrap;
     text-align: left;
     font-family: Montserrat;
@@ -624,12 +638,12 @@
     transform: translate(-491px, -537px) matrix(1,0,0,1,491,537) rotate(180deg);
     transform-origin: center;
 }
-#n_55 {
-    left: 39px;
+#n_398 {
+    left: 34px;
     top: 11px;
     position: absolute;
     overflow: visible;
-    width: 43px;
+    width: 53px;
     white-space: nowrap;
     text-align: center;
     font-family: Montserrat;
@@ -643,7 +657,7 @@
     width: 594px;
     height: 100px;
     left: 0px;
-    top: 220px;
+    top: 110px;
     overflow: visible;
 }
 #Rectangle_8_b {
@@ -657,12 +671,12 @@
     transform: translate(-60px, -513px) matrix(1,0,0,1,60,513) rotate(180deg);
     transform-origin: center;
 }
-#Tyrol {
+#Krnten {
     left: 20px;
     top: 36px;
     position: absolute;
     overflow: visible;
-    width: 59px;
+    width: 99px;
     white-space: nowrap;
     text-align: left;
     font-family: Montserrat;
@@ -691,12 +705,12 @@
     transform: translate(-491px, -537px) matrix(1,0,0,1,491,537) rotate(180deg);
     transform-origin: center;
 }
-#n_449 {
-    left: 32px;
+#n_125 {
+    left: 35px;
     top: 11px;
     position: absolute;
     overflow: visible;
-    width: 57px;
+    width: 51px;
     white-space: nowrap;
     text-align: center;
     font-family: Montserrat;
@@ -710,7 +724,7 @@
     width: 594px;
     height: 100px;
     left: 603px;
-    top: 220px;
+    top: 110px;
     overflow: visible;
 }
 #Rectangle_8_ca {
@@ -724,12 +738,12 @@
     transform: translate(-60px, -513px) matrix(1,0,0,1,60,513) rotate(180deg);
     transform-origin: center;
 }
-#Vorarlberg_ {
+#Niedersterreich {
     left: 20px;
     top: 36px;
     position: absolute;
     overflow: visible;
-    width: 136px;
+    width: 204px;
     white-space: nowrap;
     text-align: left;
     font-family: Montserrat;
@@ -755,15 +769,15 @@
     height: 50px;
     position: absolute;
     overflow: visible;
-    transform: translate(-491px, -538px) matrix(1,0,0,1,491,538) rotate(180deg);
+    transform: translate(-491px, -537px) matrix(1,0,0,1,491,537) rotate(180deg);
     transform-origin: center;
 }
-#n_014 {
-    left: 33px;
+#n_585 {
+    left: 34px;
     top: 11px;
     position: absolute;
     overflow: visible;
-    width: 55px;
+    width: 53px;
     white-space: nowrap;
     text-align: center;
     font-family: Montserrat;
@@ -777,7 +791,7 @@
     width: 594px;
     height: 100px;
     left: 1206px;
-    top: 220px;
+    top: 110px;
     overflow: visible;
 }
 #Rectangle_8_cd {
@@ -791,12 +805,12 @@
     transform: translate(-60px, -513px) matrix(1,0,0,1,60,513) rotate(180deg);
     transform-origin: center;
 }
-#Vienna {
+#Vorarlberg {
     left: 20px;
     top: 36px;
     position: absolute;
     overflow: visible;
-    width: 86px;
+    width: 130px;
     white-space: nowrap;
     text-align: left;
     font-family: Montserrat;
@@ -818,6 +832,207 @@
     fill: rgba(76,92,104,1);
 }
 .Rectangle_16_cg {
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-491px, -537px) matrix(1,0,0,1,491,537) rotate(180deg);
+    transform-origin: center;
+}
+#n_55 {
+    left: 39px;
+    top: 11px;
+    position: absolute;
+    overflow: visible;
+    width: 43px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#n__ci {
+    position: absolute;
+    width: 594px;
+    height: 100px;
+    left: 0px;
+    top: 220px;
+    overflow: visible;
+}
+#Rectangle_8_cj {
+    fill: rgba(255,255,255,1);
+}
+.Rectangle_8_cj {
+    width: 594px;
+    height: 100px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-60px, -513px) matrix(1,0,0,1,60,513) rotate(180deg);
+    transform-origin: center;
+}
+#Burgenland {
+    left: 20px;
+    top: 36px;
+    position: absolute;
+    overflow: visible;
+    width: 146px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(244,158,85,1);
+}
+#Group_1_cl {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    left: 454px;
+    top: 25px;
+    overflow: visible;
+}
+#Rectangle_16_cm {
+    opacity: 0.6;
+    fill: rgba(76,92,104,1);
+}
+.Rectangle_16_cm {
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-491px, -537px) matrix(1,0,0,1,491,537) rotate(180deg);
+    transform-origin: center;
+}
+#n_449 {
+    left: 32px;
+    top: 11px;
+    position: absolute;
+    overflow: visible;
+    width: 57px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#n__co {
+    position: absolute;
+    width: 594px;
+    height: 100px;
+    left: 603px;
+    top: 220px;
+    overflow: visible;
+}
+#Rectangle_8_cp {
+    fill: rgba(255,255,255,1);
+}
+.Rectangle_8_cp {
+    width: 594px;
+    height: 100px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-60px, -513px) matrix(1,0,0,1,60,513) rotate(180deg);
+    transform-origin: center;
+}
+#Salzburg {
+    left: 20px;
+    top: 36px;
+    position: absolute;
+    overflow: visible;
+    width: 108px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(244,158,85,1);
+}
+#Group_1_cr {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    left: 454px;
+    top: 25px;
+    overflow: visible;
+}
+#Rectangle_16_cs {
+    opacity: 0.6;
+    fill: rgba(76,92,104,1);
+}
+.Rectangle_16_cs {
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-491px, -538px) matrix(1,0,0,1,491,538) rotate(180deg);
+    transform-origin: center;
+}
+#n_014 {
+    left: 33px;
+    top: 11px;
+    position: absolute;
+    overflow: visible;
+    width: 55px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#n__cu {
+    position: absolute;
+    width: 594px;
+    height: 100px;
+    left: 1206px;
+    top: 220px;
+    overflow: visible;
+}
+#Rectangle_8_cv {
+    fill: rgba(255,255,255,1);
+}
+.Rectangle_8_cv {
+    width: 594px;
+    height: 100px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-60px, -513px) matrix(1,0,0,1,60,513) rotate(180deg);
+    transform-origin: center;
+}
+#Wien {
+    left: 20px;
+    top: 36px;
+    position: absolute;
+    overflow: visible;
+    width: 65px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(244,158,85,1);
+}
+#Group_1_cx {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    left: 454px;
+    top: 25px;
+    overflow: visible;
+}
+#Rectangle_16_cy {
+    opacity: 0.6;
+    fill: rgba(76,92,104,1);
+}
+.Rectangle_16_cy {
     width: 120px;
     height: 50px;
     position: absolute;
@@ -1033,10 +1248,10 @@
     top: 0px;
     transform: matrix(1,0,0,1,0,0);
 }
-#Rectangle_8_cx {
+#Rectangle_8_df {
     fill: rgba(244,158,85,1);
 }
-.Rectangle_8_cx {
+.Rectangle_8_df {
     position: absolute;
     overflow: visible;
     width: 314px;
@@ -1082,7 +1297,7 @@
     top: 79px;
     overflow: visible;
 }
-#business-and-trade_c {
+#business-and-trade_dn {
     position: absolute;
     width: 80px;
     height: 80px;
@@ -1112,7 +1327,7 @@
     left: 0px;
     top: 37px;
 }
-#business-and-trade_c {
+#business-and-trade_dn {
     position: absolute;
     width: 80px;
     height: 80px;
@@ -1120,7 +1335,7 @@
     top: 0px;
     overflow: visible;
 }
-#Discover_Austrias_top_Companie_c {
+#Discover_Austrias_top_Companie_do {
     left: 0px;
     top: 0px;
     position: absolute;
@@ -1197,10 +1412,10 @@
     top: 664px;
     overflow: visible;
 }
-#Rectangle_25_de {
+#Rectangle_25_dw {
     fill: rgba(244,158,85,1);
 }
-.Rectangle_25_de {
+.Rectangle_25_dw {
     position: absolute;
     overflow: visible;
     width: 266px;
@@ -1250,10 +1465,10 @@
     top: 664px;
     overflow: visible;
 }
-#Rectangle_25_dj {
+#Rectangle_25_d {
     fill: rgba(76,92,104,1);
 }
-.Rectangle_25_dj {
+.Rectangle_25_d {
     position: absolute;
     overflow: visible;
     width: 266px;
@@ -1324,7 +1539,7 @@
     left: 0px;
     top: 0px;
 }
-#Graz_dq {
+#Graz_d {
     left: 10px;
     top: 6px;
     position: absolute;
@@ -1346,10 +1561,10 @@
     top: 0px;
     overflow: visible;
 }
-#Rectangle_27_ds {
+#Rectangle_27_ea {
     fill: rgba(216,216,216,1);
 }
-.Rectangle_27_ds {
+.Rectangle_27_ea {
     position: absolute;
     overflow: visible;
     width: 88px;
@@ -1357,7 +1572,7 @@
     left: 0px;
     top: 0px;
 }
-#Friesach_dt {
+#Friesach_eb {
     left: 10px;
     top: 6px;
     position: absolute;
@@ -1379,10 +1594,10 @@
     top: 0px;
     overflow: visible;
 }
-#Rectangle_27_dv {
+#Rectangle_27_ed {
     fill: rgba(216,216,216,1);
 }
-.Rectangle_27_dv {
+.Rectangle_27_ed {
     position: absolute;
     overflow: visible;
     width: 78px;
@@ -1390,7 +1605,7 @@
     left: 0px;
     top: 0px;
 }
-#Catfish_dw {
+#Catfish_ee {
     left: 10px;
     top: 6px;
     position: absolute;
@@ -1418,7 +1633,7 @@
     font-size: 16px;
     color: rgba(159,159,159,1);
 }
-#Tube_dy {
+#Tube_eg {
     position: absolute;
     width: 476px;
     height: 72px;
@@ -1434,10 +1649,10 @@
     top: 0px;
     overflow: visible;
 }
-#Rectangle_27_d {
+#Rectangle_27_ei {
     fill: rgba(255,229,207,1);
 }
-.Rectangle_27_d {
+.Rectangle_27_ei {
     position: absolute;
     overflow: visible;
     width: 160px;
@@ -1445,7 +1660,7 @@
     left: 0px;
     top: 0px;
 }
-#Work_Preparation_d {
+#Work_Preparation_ej {
     left: 8px;
     top: 6px;
     position: absolute;
@@ -1467,10 +1682,10 @@
     top: 0px;
     overflow: visible;
 }
-#Rectangle_27_ea {
+#Rectangle_27_el {
     fill: rgba(255,229,207,1);
 }
-.Rectangle_27_ea {
+.Rectangle_27_el {
     position: absolute;
     overflow: visible;
     width: 153px;
@@ -1478,7 +1693,7 @@
     left: 0px;
     top: 0px;
 }
-#Project_Engineer_d {
+#Project_Engineer_em {
     left: 8px;
     top: 6px;
     position: absolute;
@@ -1500,10 +1715,10 @@
     top: 0px;
     overflow: visible;
 }
-#Rectangle_27_eb {
+#Rectangle_27_eo {
     fill: rgba(255,229,207,1);
 }
-.Rectangle_27_eb {
+.Rectangle_27_eo {
     position: absolute;
     overflow: visible;
     width: 103px;
@@ -1511,7 +1726,7 @@
     left: 0px;
     top: 0px;
 }
-#Mechanics_d {
+#Mechanics_ep {
     left: 8px;
     top: 6px;
     position: absolute;
@@ -1533,10 +1748,10 @@
     top: 0px;
     overflow: visible;
 }
-#Rectangle_27_ec {
+#Rectangle_27_er {
     fill: rgba(255,229,207,1);
 }
-.Rectangle_27_ec {
+.Rectangle_27_er {
     position: absolute;
     overflow: visible;
     width: 30px;
@@ -1544,7 +1759,7 @@
     left: 0px;
     top: 0px;
 }
-#IT_ea {
+#IT_es {
     left: 8px;
     top: 6px;
     position: absolute;
@@ -1558,7 +1773,7 @@
     font-size: 16px;
     color: rgba(244,158,85,1);
 }
-#work_preparation_eb {
+#work_preparation_et {
     position: absolute;
     width: 143px;
     height: 31px;
@@ -1566,10 +1781,10 @@
     top: 41px;
     overflow: visible;
 }
-#Rectangle_27_ed {
+#Rectangle_27_eu {
     fill: rgba(255,229,207,1);
 }
-.Rectangle_27_ed {
+.Rectangle_27_eu {
     position: absolute;
     overflow: visible;
     width: 143px;
@@ -1599,10 +1814,10 @@
     top: 214px;
     overflow: visible;
 }
-#Rectangle_20_ef {
+#Rectangle_20_ex {
     fill: rgba(239,239,239,1);
 }
-.Rectangle_20_ef {
+.Rectangle_20_ex {
     position: absolute;
     overflow: visible;
     width: 578px;
@@ -1610,7 +1825,7 @@
     left: 0px;
     top: 0px;
 }
-#Mask_Group_2_eg {
+#Mask_Group_2_ey {
     position: absolute;
     width: 578px;
     height: 327px;
@@ -1618,7 +1833,7 @@
     top: 0px;
     overflow: visible;
 }
-#Group_4_eh {
+#Group_4_ez {
     position: absolute;
     width: 266px;
     height: 93px;
@@ -1626,10 +1841,10 @@
     top: 281px;
     overflow: visible;
 }
-#Rectangle_25_ei {
+#Rectangle_25_e {
     fill: rgba(230,0,126,1);
 }
-.Rectangle_25_ei {
+.Rectangle_25_e {
     filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
     position: absolute;
     overflow: visible;
@@ -1638,7 +1853,7 @@
     left: 0px;
     top: 0px;
 }
-#Mask_Group_3_ej {
+#Mask_Group_3_e {
     position: absolute;
     width: 266px;
     height: 93px;
@@ -1646,7 +1861,7 @@
     top: 0px;
     overflow: visible;
 }
-#Group_5_ek {
+#Group_5_e {
     position: absolute;
     width: 266px;
     height: 85px;
@@ -1654,10 +1869,10 @@
     top: 664px;
     overflow: visible;
 }
-#Rectangle_25_el {
+#Rectangle_25_fa {
     fill: rgba(244,158,85,1);
 }
-.Rectangle_25_el {
+.Rectangle_25_fa {
     position: absolute;
     overflow: visible;
     width: 266px;
@@ -1665,7 +1880,7 @@
     left: 0px;
     top: 0px;
 }
-#heart_em {
+#heart_e {
     position: absolute;
     width: 45.82px;
     height: 42.958px;
@@ -1673,10 +1888,10 @@
     top: 21px;
     overflow: visible;
 }
-#Path_6_en {
+#Path_6_e {
     fill: rgba(255,255,255,1);
 }
-.Path_6_en {
+.Path_6_e {
     overflow: visible;
     position: absolute;
     width: 45.82px;
@@ -1685,7 +1900,7 @@
     top: 0px;
     transform: matrix(1,0,0,1,0,0);
 }
-#Follow_Company_eo {
+#Follow_Company_e {
     left: 112px;
     top: 14px;
     position: absolute;
@@ -1699,7 +1914,7 @@
     font-size: 24px;
     color: rgba(255,255,255,1);
 }
-#Group_6_ep {
+#Group_6_e {
     position: absolute;
     width: 266px;
     height: 85px;
@@ -1707,10 +1922,10 @@
     top: 664px;
     overflow: visible;
 }
-#Rectangle_25_eq {
+#Rectangle_25_fb {
     fill: rgba(76,92,104,1);
 }
-.Rectangle_25_eq {
+.Rectangle_25_fb {
     position: absolute;
     overflow: visible;
     width: 266px;
@@ -1732,7 +1947,7 @@
     font-size: 24px;
     color: rgba(255,255,255,1);
 }
-#businessman_es {
+#businessman_fa {
     position: absolute;
     width: 48px;
     height: 48px;
@@ -1754,7 +1969,7 @@
     font-size: 30px;
     color: rgba(244,158,85,1);
 }
-#Tube_eu {
+#Tube_fc {
     position: absolute;
     width: 151px;
     height: 30px;
@@ -1762,7 +1977,7 @@
     top: 490px;
     overflow: visible;
 }
-#Graz_ev {
+#Graz_fd {
     position: absolute;
     width: 151px;
     height: 30px;
@@ -1770,10 +1985,10 @@
     top: 0px;
     overflow: visible;
 }
-#Rectangle_27_ew {
+#Rectangle_27_fe {
     fill: rgba(216,216,216,1);
 }
-.Rectangle_27_ew {
+.Rectangle_27_fe {
     position: absolute;
     overflow: visible;
     width: 151px;
@@ -1809,7 +2024,7 @@
     font-size: 16px;
     color: rgba(159,159,159,1);
 }
-#Tube_ez {
+#Tube_fh {
     position: absolute;
     width: 417px;
     height: 31px;
@@ -1825,10 +2040,10 @@
     top: 0px;
     overflow: visible;
 }
-#Rectangle_27_e {
+#Rectangle_27_fj {
     fill: rgba(255,229,207,1);
 }
-.Rectangle_27_e {
+.Rectangle_27_fj {
     position: absolute;
     overflow: visible;
     width: 73px;
@@ -1836,7 +2051,7 @@
     left: 0px;
     top: 0px;
 }
-#Beauty_e {
+#Beauty_fk {
     left: 8px;
     top: 6px;
     position: absolute;
@@ -1858,10 +2073,10 @@
     top: 0px;
     overflow: visible;
 }
-#Rectangle_27_fa {
+#Rectangle_27_fm {
     fill: rgba(255,229,207,1);
 }
-.Rectangle_27_fa {
+.Rectangle_27_fm {
     position: absolute;
     overflow: visible;
     width: 98px;
@@ -1869,7 +2084,7 @@
     left: 0px;
     top: 0px;
 }
-#Drugstore_e {
+#Drugstore_fn {
     left: 8px;
     top: 6px;
     position: absolute;
@@ -1891,10 +2106,10 @@
     top: 0px;
     overflow: visible;
 }
-#Rectangle_27_fb {
+#Rectangle_27_fp {
     fill: rgba(255,229,207,1);
 }
-.Rectangle_27_fb {
+.Rectangle_27_fp {
     position: absolute;
     overflow: visible;
     width: 103px;
@@ -1902,7 +2117,7 @@
     left: 0px;
     top: 0px;
 }
-#Perfumery_e {
+#Perfumery_fq {
     left: 8px;
     top: 6px;
     position: absolute;
@@ -1924,10 +2139,10 @@
     top: 0px;
     overflow: visible;
 }
-#Rectangle_27_fc {
+#Rectangle_27_fs {
     fill: rgba(255,229,207,1);
 }
-.Rectangle_27_fc {
+.Rectangle_27_fs {
     position: absolute;
     overflow: visible;
     width: 113px;
@@ -1935,7 +2150,7 @@
     left: 0px;
     top: 0px;
 }
-#Retail_Trade_fb {
+#Retail_Trade_ft {
     left: 8px;
     top: 6px;
     position: absolute;
@@ -1957,10 +2172,10 @@
     top: 214px;
     overflow: visible;
 }
-#Rectangle_20_fd {
+#Rectangle_20_fv {
     fill: rgba(239,239,239,1);
 }
-.Rectangle_20_fd {
+.Rectangle_20_fv {
     position: absolute;
     overflow: visible;
     width: 578px;
@@ -1968,7 +2183,7 @@
     left: 0px;
     top: 0px;
 }
-#Mask_Group_2_fe {
+#Mask_Group_2_fw {
     position: absolute;
     width: 578px;
     height: 327px;
@@ -1976,7 +2191,7 @@
     top: 0px;
     overflow: visible;
 }
-#Group_4_ff {
+#Group_4_fx {
     position: absolute;
     width: 266px;
     height: 93px;
@@ -1984,10 +2199,10 @@
     top: 281px;
     overflow: visible;
 }
-#Rectangle_25_fg {
+#Rectangle_25_fy {
     fill: rgba(255,255,255,1);
 }
-.Rectangle_25_fg {
+.Rectangle_25_fy {
     filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
     position: absolute;
     overflow: visible;
@@ -1996,7 +2211,7 @@
     left: 0px;
     top: 0px;
 }
-#Mask_Group_3_fh {
+#Mask_Group_3_fz {
     position: absolute;
     width: 266px;
     height: 93px;
@@ -2004,7 +2219,7 @@
     top: 0px;
     overflow: visible;
 }
-#Group_5_fi {
+#Group_5_f {
     position: absolute;
     width: 266px;
     height: 85px;
@@ -2012,10 +2227,10 @@
     top: 664px;
     overflow: visible;
 }
-#Rectangle_25_fj {
+#Rectangle_25_f {
     fill: rgba(244,158,85,1);
 }
-.Rectangle_25_fj {
+.Rectangle_25_f {
     position: absolute;
     overflow: visible;
     width: 266px;
@@ -2023,7 +2238,7 @@
     left: 0px;
     top: 0px;
 }
-#heart_fk {
+#heart_f {
     position: absolute;
     width: 45.82px;
     height: 42.958px;
@@ -2031,10 +2246,10 @@
     top: 21px;
     overflow: visible;
 }
-#Path_6_fl {
+#Path_6_f {
     fill: rgba(255,255,255,1);
 }
-.Path_6_fl {
+.Path_6_f {
     overflow: visible;
     position: absolute;
     width: 45.82px;
@@ -2043,7 +2258,7 @@
     top: 0px;
     transform: matrix(1,0,0,1,0,0);
 }
-#Follow_Company_fm {
+#Follow_Company_f {
     left: 112px;
     top: 14px;
     position: absolute;
@@ -2057,7 +2272,7 @@
     font-size: 24px;
     color: rgba(255,255,255,1);
 }
-#Group_6_fn {
+#Group_6_f {
     position: absolute;
     width: 266px;
     height: 85px;
@@ -2065,10 +2280,10 @@
     top: 664px;
     overflow: visible;
 }
-#Rectangle_25_fo {
+#Rectangle_25_ga {
     fill: rgba(76,92,104,1);
 }
-.Rectangle_25_fo {
+.Rectangle_25_ga {
     position: absolute;
     overflow: visible;
     width: 266px;
@@ -2090,7 +2305,7 @@
     font-size: 24px;
     color: rgba(255,255,255,1);
 }
-#businessman_fq {
+#businessman_f {
     position: absolute;
     width: 48px;
     height: 48px;
@@ -2112,7 +2327,7 @@
     font-size: 30px;
     color: rgba(244,158,85,1);
 }
-#Tube_fs {
+#Tube_ga {
     position: absolute;
     width: 77px;
     height: 30px;
@@ -2120,7 +2335,7 @@
     top: 490px;
     overflow: visible;
 }
-#Graz_ft {
+#Graz_gb {
     position: absolute;
     width: 77px;
     height: 30px;
@@ -2128,10 +2343,10 @@
     top: 0px;
     overflow: visible;
 }
-#Rectangle_27_fu {
+#Rectangle_27_gc {
     fill: rgba(216,216,216,1);
 }
-.Rectangle_27_fu {
+.Rectangle_27_gc {
     position: absolute;
     overflow: visible;
     width: 77px;
@@ -2139,7 +2354,7 @@
     left: 0px;
     top: 0px;
 }
-#Vienna_fv {
+#Vienna {
     left: 10px;
     top: 6px;
     position: absolute;
@@ -2153,7 +2368,7 @@
     font-size: 16px;
     color: rgba(76,92,104,1);
 }
-#Internet_IT_telecom_fw {
+#Internet_IT_telecom_ge {
     left: 20px;
     top: 532px;
     position: absolute;
@@ -2167,7 +2382,7 @@
     font-size: 16px;
     color: rgba(159,159,159,1);
 }
-#Tube_fx {
+#Tube_gf {
     position: absolute;
     width: 510px;
     height: 72px;
@@ -2183,10 +2398,10 @@
     top: 0px;
     overflow: visible;
 }
-#Rectangle_27_fz {
+#Rectangle_27_gh {
     fill: rgba(255,229,207,1);
 }
-.Rectangle_27_fz {
+.Rectangle_27_gh {
     position: absolute;
     overflow: visible;
     width: 149px;
@@ -2194,7 +2409,7 @@
     left: 0px;
     top: 0px;
 }
-#Software_Testers_f {
+#Software_Testers_gi {
     left: 8px;
     top: 6px;
     position: absolute;
@@ -2208,7 +2423,7 @@
     font-size: 16px;
     color: rgba(244,158,85,1);
 }
-#Project_Engineer_f {
+#Project_Engineer_gj {
     position: absolute;
     width: 188px;
     height: 31px;
@@ -2216,10 +2431,10 @@
     top: 0px;
     overflow: visible;
 }
-#Rectangle_27_f {
+#Rectangle_27_gk {
     fill: rgba(255,229,207,1);
 }
-.Rectangle_27_f {
+.Rectangle_27_gk {
     position: absolute;
     overflow: visible;
     width: 188px;
@@ -2241,7 +2456,7 @@
     font-size: 16px;
     color: rgba(244,158,85,1);
 }
-#Mechanics_f {
+#Mechanics_gm {
     position: absolute;
     width: 153px;
     height: 31px;
@@ -2249,10 +2464,10 @@
     top: 0px;
     overflow: visible;
 }
-#Rectangle_27_ga {
+#Rectangle_27_gn {
     fill: rgba(255,229,207,1);
 }
-.Rectangle_27_ga {
+.Rectangle_27_gn {
     position: absolute;
     overflow: visible;
     width: 153px;
@@ -2274,7 +2489,7 @@
     font-size: 16px;
     color: rgba(244,158,85,1);
 }
-#work_preparation_f {
+#work_preparation_gp {
     position: absolute;
     width: 100px;
     height: 31px;
@@ -2282,10 +2497,10 @@
     top: 41px;
     overflow: visible;
 }
-#Rectangle_27_gb {
+#Rectangle_27_gq {
     fill: rgba(255,229,207,1);
 }
-.Rectangle_27_gb {
+.Rectangle_27_gq {
     position: absolute;
     overflow: visible;
     width: 100px;
@@ -2307,7 +2522,7 @@
     font-size: 16px;
     color: rgba(244,158,85,1);
 }
-#work_preparation_ga {
+#work_preparation_gs {
     position: absolute;
     width: 75px;
     height: 31px;
@@ -2315,10 +2530,10 @@
     top: 41px;
     overflow: visible;
 }
-#Rectangle_27_gc {
+#Rectangle_27_gt {
     fill: rgba(255,229,207,1);
 }
-.Rectangle_27_gc {
+.Rectangle_27_gt {
     position: absolute;
     overflow: visible;
     width: 75px;
@@ -3203,7 +3418,7 @@
     top: 2978px;
     overflow: visible;
 }
-#Heading_if {
+#Heading_ix {
     position: absolute;
     width: 652px;
     height: 159px;
@@ -3211,7 +3426,7 @@
     top: 0px;
     overflow: visible;
 }
-#Heading_Pattern_ig {
+#Heading_Pattern_iy {
     position: absolute;
     width: 634px;
     height: 80px;
@@ -3219,7 +3434,7 @@
     top: 79px;
     overflow: visible;
 }
-#business-and-trade_ik {
+#business-and-trade_i {
     position: absolute;
     width: 80px;
     height: 80px;
@@ -3227,10 +3442,10 @@
     top: 0px;
     overflow: visible;
 }
-#Rectangle_18_ii {
+#Rectangle_18_i {
     fill: rgba(244,158,85,1);
 }
-.Rectangle_18_ii {
+.Rectangle_18_i {
     position: absolute;
     overflow: visible;
     width: 244px;
@@ -3238,10 +3453,10 @@
     left: 390px;
     top: 37px;
 }
-#Rectangle_19_ij {
+#Rectangle_19_i {
     fill: rgba(244,158,85,1);
 }
-.Rectangle_19_ij {
+.Rectangle_19_i {
     position: absolute;
     overflow: visible;
     width: 244px;
@@ -3249,7 +3464,7 @@
     left: 0px;
     top: 37px;
 }
-#business-and-trade_ik {
+#business-and-trade_i {
     position: absolute;
     width: 80px;
     height: 80px;
@@ -3290,7 +3505,7 @@
     left: 79px;
     top: 95px;
 }
-#n__io {
+#n__i {
     position: absolute;
     width: 190px;
     height: 190px;
@@ -3316,7 +3531,7 @@
     left: 0px;
     top: 0px;
 }
-#n_11_ir {
+#n_11_i {
     position: absolute;
     width: 82px;
     height: 82px;
@@ -3324,7 +3539,7 @@
     top: 54px;
     overflow: visible;
 }
-#n_11_ir {
+#n_11_i {
     position: absolute;
     width: 82px;
     height: 82px;
@@ -3332,7 +3547,7 @@
     top: 54px;
     overflow: visible;
 }
-#n__is {
+#n__ja {
     position: absolute;
     width: 259.545px;
     height: 259.545px;
@@ -3351,7 +3566,7 @@
     transform: translate(-1156px, -3239px) matrix(1,0,0,1,1190.7724,3273.7724) rotate(60deg);
     transform-origin: center;
 }
-#n_22_iv {
+#n_22_jd {
     position: absolute;
     width: 82px;
     height: 82px;
@@ -3359,7 +3574,7 @@
     top: 89px;
     overflow: visible;
 }
-#n_22_iv {
+#n_22_jd {
     position: absolute;
     width: 82px;
     height: 82px;
@@ -3367,7 +3582,7 @@
     top: 89px;
     overflow: visible;
 }
-#n__iw {
+#n__je {
     position: absolute;
     width: 259.545px;
     height: 259.545px;
@@ -3386,7 +3601,7 @@
     transform: translate(-1156px, -3615px) matrix(1,0,0,1,1190.7724,3649.7724) rotate(120deg);
     transform-origin: center;
 }
-#n_33_iz {
+#n_33_jh {
     position: absolute;
     width: 82px;
     height: 82px;
@@ -3394,7 +3609,7 @@
     top: 89px;
     overflow: visible;
 }
-#n_33_iz {
+#n_33_jh {
     position: absolute;
     width: 82px;
     height: 82px;
@@ -3402,7 +3617,7 @@
     top: 89px;
     overflow: visible;
 }
-#n__i {
+#n__ji {
     position: absolute;
     width: 190px;
     height: 190px;
@@ -3421,7 +3636,7 @@
     left: 0px;
     top: 0px;
 }
-#n_44_i {
+#n_44_jl {
     position: absolute;
     width: 82px;
     height: 82px;
@@ -3429,7 +3644,7 @@
     top: 54px;
     overflow: visible;
 }
-#n_44_i {
+#n_44_jl {
     position: absolute;
     width: 82px;
     height: 82px;
@@ -3437,7 +3652,7 @@
     top: 54px;
     overflow: visible;
 }
-#n__ja {
+#n__jm {
     position: absolute;
     width: 259.545px;
     height: 259.545px;
@@ -3456,7 +3671,7 @@
     transform: translate(-505px, -3615px) matrix(1,0,0,1,539.7724,3649.7724) rotate(60deg);
     transform-origin: center;
 }
-#n_55_ja {
+#n_55_jp {
     position: absolute;
     width: 82px;
     height: 82px;
@@ -3464,7 +3679,7 @@
     top: 89px;
     overflow: visible;
 }
-#n_55_ja {
+#n_55_jp {
     position: absolute;
     width: 82px;
     height: 82px;
@@ -3472,7 +3687,7 @@
     top: 89px;
     overflow: visible;
 }
-#n__jb {
+#n__jq {
     position: absolute;
     width: 259.545px;
     height: 259.545px;
@@ -3491,7 +3706,7 @@
     transform: translate(-505px, -3239px) matrix(1,0,0,1,539.7724,3273.7724) rotate(120deg);
     transform-origin: center;
 }
-#n_66_jb {
+#n_66_jt {
     position: absolute;
     width: 82px;
     height: 82px;
@@ -3499,7 +3714,7 @@
     top: 89px;
     overflow: visible;
 }
-#n_66_jb {
+#n_66_jt {
     position: absolute;
     width: 82px;
     height: 82px;
@@ -3543,10 +3758,10 @@
     top: 4221px;
     overflow: visible;
 }
-#Rectangle_28_jf {
+#Rectangle_28_jx {
     fill: rgba(76,92,104,1);
 }
-.Rectangle_28_jf {
+.Rectangle_28_jx {
     position: absolute;
     overflow: visible;
     width: 1920px;
@@ -3554,7 +3769,7 @@
     left: 0px;
     top: 0px;
 }
-#Contact_Us_jg {
+#Contact_Us_jy {
     left: 820px;
     top: 64px;
     position: absolute;
@@ -3656,10 +3871,10 @@
     top: 195px;
     overflow: visible;
 }
-#Rectangle_36_jp {
+#Rectangle_36_j {
     fill: rgba(255,255,255,1);
 }
-.Rectangle_36_jp {
+.Rectangle_36_j {
     filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
     position: absolute;
     overflow: visible;
@@ -3668,7 +3883,7 @@
     left: 0px;
     top: 0px;
 }
-#Group_13_jq {
+#Group_13_j {
     position: absolute;
     width: 76px;
     height: 76px;
@@ -3676,10 +3891,10 @@
     top: 48px;
     overflow: visible;
 }
-#Rectangle_37_jr {
+#Rectangle_37_j {
     fill: rgba(244,158,85,1);
 }
-.Rectangle_37_jr {
+.Rectangle_37_j {
     filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
     position: absolute;
     overflow: visible;
@@ -3736,10 +3951,10 @@
     top: 195px;
     overflow: visible;
 }
-#Rectangle_36_jw {
+#Rectangle_36_ke {
     fill: rgba(255,255,255,1);
 }
-.Rectangle_36_jw {
+.Rectangle_36_ke {
     filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
     position: absolute;
     overflow: visible;
@@ -3764,10 +3979,10 @@
     top: 0px;
     overflow: visible;
 }
-#Rectangle_37_jz {
+#Rectangle_37_kh {
     fill: rgba(244,158,85,1);
 }
-.Rectangle_37_jz {
+.Rectangle_37_kh {
     filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
     position: absolute;
     overflow: visible;
@@ -3792,10 +4007,10 @@
     top: 0px;
     overflow: visible;
 }
-#Rectangle_37_j {
+#Rectangle_37_kk {
     fill: rgba(244,158,85,1);
 }
-.Rectangle_37_j {
+.Rectangle_37_kk {
     filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
     position: absolute;
     overflow: visible;
@@ -3820,10 +4035,10 @@
     top: 0px;
     overflow: visible;
 }
-#Rectangle_37_ka {
+#Rectangle_37_kn {
     fill: rgba(244,158,85,1);
 }
-.Rectangle_37_ka {
+.Rectangle_37_kn {
     filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
     position: absolute;
     overflow: visible;
@@ -3848,10 +4063,10 @@
     top: 0px;
     overflow: visible;
 }
-#Rectangle_37_kb {
+#Rectangle_37_kq {
     fill: rgba(244,158,85,1);
 }
-.Rectangle_37_kb {
+.Rectangle_37_kq {
     filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
     position: absolute;
     overflow: visible;
@@ -3876,10 +4091,10 @@
     top: 0px;
     overflow: visible;
 }
-#Rectangle_37_kc {
+#Rectangle_37_kt {
     fill: rgba(244,158,85,1);
 }
-.Rectangle_37_kc {
+.Rectangle_37_kt {
     filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
     position: absolute;
     overflow: visible;
@@ -3913,36 +4128,37 @@
 #Footer {
     position: absolute;
     width: 1920px;
-    height: 600px;
+    height: 390px;
     left: 0px;
-    top: 4794px;
+    top: 4793px;
     overflow: visible;
 }
-#Rectangle_28_kf {
+#Rectangle_28_kx {
     fill: rgba(76,92,104,1);
 }
-.Rectangle_28_kf {
+.Rectangle_28_kx {
     position: absolute;
     overflow: visible;
     width: 1920px;
-    height: 600px;
+    height: 390px;
     left: 0px;
     top: 0px;
 }
-#About_karriereat {
+#Sitemap {
     position: absolute;
-    width: 257px;
-    height: 358px;
-    left: 60px;
-    top: 78px;
+    width: 127px;
+    height: 211px;
+    left: 623px;
+    top: -44px;
+    display: none;
     overflow: visible;
 }
-#About_karriereat_kh {
+#Sitemap_kz {
     left: 0px;
     top: 0px;
     position: absolute;
     overflow: visible;
-    width: 258px;
+    width: 128px;
     white-space: nowrap;
     text-align: left;
     font-family: Montserrat;
@@ -3951,12 +4167,12 @@
     font-size: 30px;
     color: rgba(255,255,255,1);
 }
-#about_us {
+#Contact {
     left: 0px;
     top: 65px;
     position: absolute;
     overflow: visible;
-    width: 105px;
+    width: 95px;
     white-space: nowrap;
     text-align: left;
     font-family: Montserrat;
@@ -3965,9 +4181,23 @@
     font-size: 24px;
     color: rgba(255,255,255,1);
 }
-#team {
+#About {
     left: 0px;
     top: 104px;
+    position: absolute;
+    overflow: visible;
+    width: 75px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#FAQs {
+    left: 0px;
+    top: 143px;
     position: absolute;
     overflow: visible;
     width: 64px;
@@ -3979,26 +4209,12 @@
     font-size: 24px;
     color: rgba(255,255,255,1);
 }
-#Jobs_at_karriereat {
-    left: 0px;
-    top: 143px;
-    position: absolute;
-    overflow: visible;
-    width: 210px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 24px;
-    color: rgba(255,255,255,1);
-}
-#Press {
+#Team {
     left: 0px;
     top: 182px;
     position: absolute;
     overflow: visible;
-    width: 64px;
+    width: 67px;
     white-space: nowrap;
     text-align: left;
     font-family: Montserrat;
@@ -4007,62 +4223,20 @@
     font-size: 24px;
     color: rgba(255,255,255,1);
 }
-#mobile_app {
-    left: 0px;
-    top: 251px;
+#Resouries {
     position: absolute;
-    overflow: visible;
-    width: 137px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 24px;
-    color: rgba(255,255,255,1);
-}
-#careerblog {
-    left: 0px;
-    top: 290px;
-    position: absolute;
-    overflow: visible;
-    width: 134px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 24px;
-    color: rgba(255,255,255,1);
-}
-#dev_blog {
-    left: 0px;
-    top: 329px;
-    position: absolute;
-    overflow: visible;
-    width: 104px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 24px;
-    color: rgba(255,255,255,1);
-}
-#For_Employer {
-    position: absolute;
-    width: 230px;
-    height: 250px;
-    left: 495px;
-    top: 78px;
+    width: 363px;
+    height: 172px;
+    left: 654px;
+    top: 56px;
     overflow: visible;
 }
-#For_Employer_kq {
+#Ressourcen {
     left: 0px;
     top: 0px;
     position: absolute;
     overflow: visible;
-    width: 205px;
+    width: 178px;
     white-space: nowrap;
     text-align: left;
     font-family: Montserrat;
@@ -4071,37 +4245,9 @@
     font-size: 30px;
     color: rgba(255,255,255,1);
 }
-#Products__Prices {
+#Impressum {
     left: 0px;
     top: 65px;
-    position: absolute;
-    overflow: visible;
-    width: 207px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 24px;
-    color: rgba(255,255,255,1);
-}
-#media_data {
-    left: 0px;
-    top: 104px;
-    position: absolute;
-    overflow: visible;
-    width: 137px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 24px;
-    color: rgba(255,255,255,1);
-}
-#place_an_ad {
-    left: 0px;
-    top: 143px;
     position: absolute;
     overflow: visible;
     width: 138px;
@@ -4113,76 +4259,12 @@
     font-size: 24px;
     color: rgba(255,255,255,1);
 }
-#candidate_search {
+#Kontakt {
     left: 0px;
-    top: 182px;
-    position: absolute;
-    overflow: visible;
-    width: 205px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 24px;
-    color: rgba(255,255,255,1);
-}
-#employer_branding {
-    left: 0px;
-    top: 221px;
-    position: absolute;
-    overflow: visible;
-    width: 231px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 24px;
-    color: rgba(255,255,255,1);
-}
-#Partners_and_Portals {
-    position: absolute;
-    width: 437px;
-    height: 328px;
-    left: 902px;
-    top: 78px;
-    overflow: visible;
-}
-#Partners_and_Portals_kx {
-    left: 2px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 313px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    color: rgba(255,255,255,1);
-}
-#itstellenat {
-    left: 2px;
-    top: 65px;
-    position: absolute;
-    overflow: visible;
-    width: 123px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 24px;
-    color: rgba(255,255,255,1);
-}
-#techtalentsat {
-    left: 2px;
     top: 104px;
     position: absolute;
     overflow: visible;
-    width: 164px;
+    width: 96px;
     white-space: nowrap;
     text-align: left;
     font-family: Montserrat;
@@ -4191,12 +4273,12 @@
     font-size: 24px;
     color: rgba(255,255,255,1);
 }
-#financejobsat {
-    left: 2px;
+#Datenschutz {
+    left: 0px;
     top: 143px;
     position: absolute;
     overflow: visible;
-    width: 168px;
+    width: 153px;
     white-space: nowrap;
     text-align: left;
     font-family: Montserrat;
@@ -4205,90 +4287,12 @@
     font-size: 24px;
     color: rgba(255,255,255,1);
 }
-#salescareerat {
-    left: 2px;
-    top: 182px;
-    position: absolute;
-    overflow: visible;
-    width: 161px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 24px;
-    color: rgba(255,255,255,1);
-}
-#jobsat {
-    left: 0px;
-    top: 221px;
-    position: absolute;
-    overflow: visible;
-    width: 81px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 24px;
-    color: rgba(255,255,255,1);
-}
-#hokify_mobile_job_search {
-    left: 2px;
-    top: 260px;
-    position: absolute;
-    overflow: visible;
-    width: 290px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 24px;
-    color: rgba(255,255,255,1);
-}
-#eRecruiter_application_managem {
-    left: 2px;
-    top: 299px;
-    position: absolute;
-    overflow: visible;
-    width: 436px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 24px;
-    color: rgba(255,255,255,1);
-}
-#My_profile {
-    position: absolute;
-    width: 281px;
-    height: 250px;
-    left: 1517px;
-    top: 78px;
-    overflow: visible;
-}
-#My_profile_k {
-    left: 2px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 154px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    color: rgba(255,255,255,1);
-}
-#curriculum_vitae {
-    left: 2px;
+#AGB {
+    left: 263px;
     top: 65px;
     position: absolute;
     overflow: visible;
-    width: 195px;
+    width: 54px;
     white-space: nowrap;
     text-align: left;
     font-family: Montserrat;
@@ -4297,8 +4301,8 @@
     font-size: 24px;
     color: rgba(255,255,255,1);
 }
-#job_alert {
-    left: 0px;
+#Sitemap_la {
+    left: 263px;
     top: 104px;
     position: absolute;
     overflow: visible;
@@ -4311,12 +4315,12 @@
     font-size: 24px;
     color: rgba(255,255,255,1);
 }
-#Bookmarks {
-    left: 2px;
+#Presse {
+    left: 263px;
     top: 143px;
     position: absolute;
     overflow: visible;
-    width: 137px;
+    width: 78px;
     white-space: nowrap;
     text-align: left;
     font-family: Montserrat;
@@ -4325,33 +4329,60 @@
     font-size: 24px;
     color: rgba(255,255,255,1);
 }
-#Company_Alert {
-    left: 2px;
-    top: 182px;
+#Mobile_App {
+    position: absolute;
+    width: 535px;
+    height: 150.688px;
+    left: 1324px;
+    top: 56px;
+    overflow: visible;
+}
+#Mobile_App_ld {
+    left: 0px;
+    top: 0px;
     position: absolute;
     overflow: visible;
-    width: 180px;
+    width: 175px;
     white-space: nowrap;
     text-align: left;
     font-family: Montserrat;
     font-style: normal;
-    font-weight: lighter;
-    font-size: 24px;
+    font-weight: normal;
+    font-size: 30px;
     color: rgba(255,255,255,1);
 }
-#Job_Recommendations {
-    left: 2px;
-    top: 221px;
+#apple-app-store-travel-awards- {
     position: absolute;
+    width: 255px;
+    height: 76.688px;
+    left: 280px;
+    top: 74px;
     overflow: visible;
-    width: 280px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 24px;
-    color: rgba(255,255,255,1);
+}
+#apple-app-store-travel-awards-_lf {
+    position: absolute;
+    width: 255px;
+    height: 76.688px;
+    left: 0px;
+    top: 74px;
+    overflow: visible;
+}
+#RD3_meinjobportal1 {
+    display: none;
+    position: absolute;
+    width: 287px;
+    height: 124.579px;
+    left: 60px;
+    top: -44px;
+    overflow: visible;
+}
+#Rd3_on_white_with_slogan_white {
+    position: absolute;
+    width: 287px;
+    height: 139.065px;
+    left: 60px;
+    top: 56px;
+    overflow: visible;
 }
 #Rectangle_38 {
     fill: rgba(61,77,90,1);
@@ -4362,11 +4393,11 @@
     width: 1920px;
     height: 92px;
     left: 0px;
-    top: 508px;
+    top: 298px;
 }
 #n_2022_test_GmbH {
     left: 851px;
-    top: 540px;
+    top: 330px;
     position: absolute;
     overflow: visible;
     width: 220px;

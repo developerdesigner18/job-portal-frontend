@@ -5,20 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { MainComponent } from './components/main/main.component';
+import { HomeComponent } from './components/home/home.component';
 import { JobsComponent } from './components/jobs/jobs.component';
-import { HeaderJobsComponent } from './shared/header-jobs/header-jobs.component';
-import { FooterJobsComponent } from './shared/footer-jobs/footer-jobs.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    MainComponent,
+    HomeComponent,
     JobsComponent,
-    HeaderJobsComponent,
-    FooterJobsComponent
+
   ],
   imports: [
     BrowserModule,

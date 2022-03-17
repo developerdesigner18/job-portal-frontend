@@ -6,11 +6,15 @@ const routes: Routes = [
 
   {
     path: '',
-    loadChildren: () => import('./main/main.module').then(m => m.MainModule),
+    loadChildren: () => import('./home/main.module').then(m => m.MainModule),
   },
   {
     path: 'jobs',
     loadChildren: () => import('./jobs/jobs.module').then(m => m.JobsModule),
+  },
+  {
+    path: 'stad',
+    loadChildren: () => import('./stad/stad.module').then(m => m.StadModule),
   },
  
 ];
