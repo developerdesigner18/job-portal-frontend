@@ -13,12 +13,24 @@ const routes: Routes = [
     loadChildren: () => import('./jobs/jobs.module').then(m => m.JobsModule),
   },
   {
-    path: 'stad',
-    loadChildren: () => import('./stad/stad.module').then(m => m.StadModule),
+    path: 'stadt',
+    loadChildren: () => import('./stadt/stadt.module').then(m => m.StadtModule),
   },
   {
     path: 'sport',
     loadChildren: () => import('./sport/sport.module').then(m => m.SportModule),
+  },
+  {
+    path: 'kontakt',
+    loadChildren: () => import('./kontakt/kontakt.module').then(m => m.KontaktModule),
+  },
+  {
+    path: 'ubreuns',
+    loadChildren: () => import('./ubreuns/ubreuns.module').then(m => m.UbreunsModule),
+  },
+  {
+    path: 'vision',
+    loadChildren: () => import('./vision/vision.module').then(m => m.VisionModule),
   },
  
 ];

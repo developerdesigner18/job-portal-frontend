@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { StadRoutingModule } from './stad-routing.module';
+import { KontaktRoutingModule } from './kontakt-routing.module';
 
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    StadRoutingModule
+    KontaktRoutingModule
   ]
 })
-export class StadModule { }
+export class KontaktModule { }
