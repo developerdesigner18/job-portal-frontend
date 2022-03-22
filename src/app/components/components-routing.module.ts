@@ -32,6 +32,10 @@ const routes: Routes = [
     path: 'vision',
     loadChildren: () => import('./vision/vision.module').then(m => m.VisionModule),
   },
+  {
+    path: 'privacy',
+    loadChildren: () => import('./privacy/privacy.module').then(m => m.PrivacyModule),
+  },
  
 ];
 @NgModule({

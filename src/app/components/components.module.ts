@@ -13,6 +13,7 @@ import { UbreunsComponent } from './ubreuns/ubreuns.component';
 import { VisionComponent } from './vision/vision.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { StadtComponent } from './stadt/stadt.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 
 //Module decorator specifying all the components used in the application 
@@ -25,6 +26,7 @@ import { StadtComponent } from './stadt/stadt.component';
      UbreunsComponent,
      VisionComponent,
      KontaktComponent,
+     PrivacyComponent,
 
   ],
   imports: [
