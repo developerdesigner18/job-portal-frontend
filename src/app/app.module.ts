@@ -7,6 +7,9 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { JobsComponent } from './components/jobs/jobs.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -19,7 +22,12 @@ import { JobsComponent } from './components/jobs/jobs.component';
 
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
+    FormsModule,
+    HttpClientModule,
+  
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],

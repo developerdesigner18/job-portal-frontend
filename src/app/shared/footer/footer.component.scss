@@ -1,0 +1,191 @@
+footer,
+section {
+    display: block;
+}
+img {
+    border: 0;
+}
+@media print {
+    *,
+    :after,
+    :before {
+        color: #000 !important;
+        text-shadow: none !important;
+        background: 0 0 !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+img {
+    vertical-align: middle;
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-md-4 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (min-width: 992px) {
+    .col-md-4 {
+        float: left;
+    }
+    .col-md-4 {
+        width: 33.33333333%;
+    }
+}
+.container-fluid:after,
+.container-fluid:before,
+.row:after,
+.row:before {
+    display: table;
+    content: " ";
+}
+.container-fluid:after,
+.row:after {
+    clear: both;
+}
+/*! CSS Used from: https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css */
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+footer,
+section {
+    display: block;
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-md-4 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (min-width: 768px) {
+    .col-md-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+@media print {
+    *,
+    ::after,
+    ::before {
+        text-shadow: none !important;
+        box-shadow: none !important;
+    }
+    img {
+        page-break-inside: avoid;
+    }
+}
+/*! CSS Used from: Embedded */
+* {
+    box-sizing: border-box;
+}
+.footer-pd {
+    padding: 50px 0;
+    background-color: #4c5c68;
+}
+.footer-md {
+    display: flex;
+    margin-top: 25px;
+}
+.footer-md ul li {
+    list-style: none;
+    list-style: none;
+    font-size: 27px;
+    color: #fff;
+}
+span.ft-title {
+    font-size: 30px;
+    color: #fff;
+    margin-left: 30px;
+}
+.footer-end {
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-evenly;
+}
+.img-ft {
+    width: 100%;
+    max-width: 200px;
+}
+.ft-title-mobile {
+    font-size: 30px;
+    color: #fff;
+    margin-left: 15px;
+}
+.footer-logo-img {
+    width: 100%;
+    max-width: 400px;
+    padding: 0 12px;
+    text-align: center !important;
+}
+
+.bottom-footer {
+    background-color: #3d4d5a;
+    text-align: center;
+    padding: 15px;
+}
+
+
+.footer-txt-bottom {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+

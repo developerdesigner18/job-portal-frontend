@@ -1,6 +1,8 @@
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
-body { 
+.home { 
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
@@ -43,20 +45,6 @@ body {
   text-decoration: none;
 }
 
-  /*.header a.active {
-    background-color: dodgerblue;
-    color: white;
-  }*/
-
-/*.header-right {
-  float: right;
-}
-*/
-/*
-  .header-right a {
-    align-items: center;
-    justify-content: center;
-  }*/
 .img-logo{
     width: 100%;
     max-width: 150px;
@@ -79,9 +67,6 @@ body {
     border-radius: 5px;
 }
 
-/*.dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
-}*/
 
 .dropdown {
   position: relative;
@@ -91,24 +76,30 @@ body {
 .dropdown-content {
   display: none;
   right: 0;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 130px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 203px;
+    border-radius: 8px;
+    overflow: auto;
+    border: 2px solid #8c8c8c;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+   top: 55px;
 }
 
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
+  color: #4b5b67;
+  padding: 8px 16px;
   text-decoration: none;
   display: block;
+  position: relative;
+  width: 100%;
+  border-bottom: 2px solid #e2e2e2;
 }
 
-.dropdown a:hover {background-color: #ddd;}
-
 .show {display: block;}
+
+/*navbar css*/
 
 
 /* our business */
@@ -119,7 +110,67 @@ h1.custom-business {
     color: #4c5c68;
     text-align: center;
     font-weight: bold;
-    padding-bottom: 1em;
+    padding-bottom: 15px;
+}
+
+.line-2{
+  text-align: center;
+   padding-bottom:  5.2em;
+   position: relative;
+}
+.line-2:before{
+  position: absolute;
+    content: '';
+    border: 2px solid #fff;
+    width: 155px;
+    top: 20px;
+    right: 50em;
+}
+
+.line-2:after{
+  position: absolute;
+    content: '';
+    border: 2px solid #fff;
+    width: 155px;
+    top: 20px;
+    left: 50em;
+}
+
+.line{
+  text-align: center;
+   padding-bottom:  5.2em;
+   position: relative;
+}
+.line:before{
+  position: absolute;
+    content: '';
+    border: 2px solid #4c5c68;
+    width: 121px;
+    top: 20px;
+    right: 55em;
+}
+
+.line:after{
+  position: absolute;
+    content: '';
+    border: 2px solid #4c5c68;
+    width: 121px;
+    top: 20px;
+    left: 55em;
+}
+.section-title-img{
+  width: 100%;
+  max-width: 50px;
+}
+.business-pd {
+    padding: 0 0;
+}
+.card-set-pd{
+  display: flex;
+}
+.card-set-pd, .card-dotted {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .custom-pd{
   padding: 50px 0;
@@ -128,25 +179,116 @@ h1.custom-business {
 
 .card-dotted {
     border: 2px dashed #4c5c68;
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;
+    position: relative;
 }
 .card-bg {
     border-radius: 20px !important;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 }
-.card-bg::before {
+
+.orang-bg-left{
+  position: relative;
+}
+.orang-bg-left::before{
+       position: absolute;
+    content: '';
+    background-image: url(/assets/img/home/orange-2.png);
+    background-size: 100%;
+    height: 237px;
+    background-repeat: no-repeat;
+    width: 178px;
+    bottom: -18px;
+    border-radius: 15px;
+    left: 2px;
+}
+
+.orang-bg-right{
+  position: relative;
+}
+.orang-bg-right::before{
+   position: absolute;
+    content: '';
+    background-image: url(/assets/img/home/orange-1.png);
+    background-size:96%;
+    height: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    top: -21px;
+    left: 87px;
+}
+.green-bg-left{
+  position: relative;
+}
+
+.green-bg-left::before{
+  position: absolute;
+    content: '';
+    background-image: url(/assets/img/home/green-left.png);
+    background-size: 100%;
+    height: 367px;
+    background-repeat: no-repeat;
+    width: 250px;
+    bottom: -148px;
+    border-radius: 20px;
+    right: -22.5em;
+
+}
+.green-bg-right{
+  position: relative;
+}
+
+.green-bg-right::before{
+       position: absolute;
+    content: '';
+    background-image: url(/assets/img/home/green-right.png);
+    background-size:96%;
+    height: 100%;
+    background-repeat: no-repeat;
+    width:  100%;
+    top: -21px;
+    left: 91px;
+    border-radius: 20px !important;
+}
+
+.cream-bg-left{
+  position: relative;
+  margin: 0 55px
+}
+.cream-bg-left::before{
+   position: absolute;
+    content: '';
+    background-image: url(/assets/img/home/cream-left.png);
+   background-size: 100%;
+    height: 367px;
+    background-repeat: no-repeat;
+    width: 250px;
+    bottom: -148px;
+    border-radius: 20px;
+    right: -22.5em;
+}
+.cream-bg-right{
+  position: relative;
+}
+
+.cream-bg-right::before{
     position: absolute;
     content: '';
-    background-image: url(/assets/jobs/orange-1.png);
-    background-size: 100%;
-    height: 200px;
-    width: 200px;
-}
+    background-image: url(/assets/img/home/cream-right.png);
+    background-size: 96%;
+    height: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 335px;
+    top: -21px;
+    right: -6px;
+    border-radius: 20px;
+  }
 .custom-card-body {
     padding: 1rem 1rem 0;
 }
-.custom-img {
+.custom-img-orange{
     width: 100%;
     border: 3px solid #f49e55;
     padding: 20px;
@@ -157,9 +299,32 @@ h1.custom-business {
     right: 65px;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 }
+.custom-img-green{
+    width: 100%;
+    border: 3px solid #9cb900;
+    padding: 20px;
+    max-width: 250px;
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    right: 65px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.custom-img-cream{
+    width: 100%;
+    border: 3px solid #d1b681;
+    padding: 20px;
+    max-width: 250px;
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    right: 65px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
 .box {
     text-align: center;
-    padding: 25px;
+    padding: 20px;
 }
 .box h4 {
     color: #4c5c68;
@@ -180,6 +345,28 @@ h1.custom-business {
     border-radius: 10px;
     color: #fff;
     font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.green-btn {
+    background-color:#9cb900;
+    outline: none !important;
+    border: none !important;
+    padding: 13px 40px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.cream-btn {
+    background-color:#d1b681;
+    outline: none !important;
+    border: none !important;
+    padding: 13px 40px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /*our testimonial*/
@@ -195,7 +382,7 @@ h1.custom-business {
     color: #fff;
     text-align: center;
     font-weight: bold;
-    padding-bottom: 1em;
+    padding-bottom:15px;
 }
 
 .unser-left-img {
@@ -313,7 +500,7 @@ h1.custom-business {
     color:#4c5c68;
     text-align: center;
     font-weight: bold;
-    padding-bottom: 1em;
+    padding-bottom: 15px;
 }
 
 
@@ -322,8 +509,8 @@ h1.custom-business {
 .media-carousel 
 {
   margin-bottom: 0;
-  padding: 0 40px 30px 40px;
-  margin-top: 30px;
+  padding: 0 40px 0 40px;
+ /* margin-top: 30px;*/
 }
 /* Previous button  */
 .media-carousel .carousel-control.left 
@@ -340,6 +527,10 @@ h1.custom-business {
 }
 .thumbnail{
   border: none !important;
+    height: 100%;
+    width: 100%;
+    padding: 70px;
+    background-color: #eaeaea;
 }
 /* Next button  */
 .media-carousel .carousel-control.right 
@@ -437,6 +628,15 @@ span.ft-title {
     font-size: 25px;
     text-align: center;
  }
+
+
+/*new jobs page css strat*/
+
+.box-slider-bottom{
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
 /*media query start*/
 @media screen and (max-width: 500px) {
   .header a {

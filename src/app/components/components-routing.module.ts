@@ -36,6 +36,10 @@ const routes: Routes = [
     path: 'privacy',
     loadChildren: () => import('./privacy/privacy.module').then(m => m.PrivacyModule),
   },
+  {
+    path: 'imprint',
+    loadChildren: () => import('./imprint/imprint.module').then(m => m.ImprintModule),
+  },
  
 ];
 @NgModule({

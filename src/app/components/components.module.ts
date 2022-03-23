@@ -14,6 +14,7 @@ import { VisionComponent } from './vision/vision.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { StadtComponent } from './stadt/stadt.component';
 import { PrivacyComponent } from './privacy/privacy.component';
+import { ImprintComponent } from './imprint/imprint.component';
 
 
 //Module decorator specifying all the components used in the application 
@@ -27,6 +28,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
      VisionComponent,
      KontaktComponent,
      PrivacyComponent,
+     ImprintComponent,
 
   ],
   imports: [
