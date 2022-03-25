@@ -15,6 +15,7 @@ import { KontaktComponent } from './kontakt/kontakt.component';
 import { StadtComponent } from './stadt/stadt.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { ImprintComponent } from './imprint/imprint.component';
+import { AgbComponent } from './agb/agb.component';
 
 
 //Module decorator specifying all the components used in the application 
@@ -29,6 +30,7 @@ import { ImprintComponent } from './imprint/imprint.component';
      KontaktComponent,
      PrivacyComponent,
      ImprintComponent,
+     AgbComponent,
 
   ],
   imports: [

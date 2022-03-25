@@ -1,10 +1,13 @@
+// @import url('https://fonts.googleapis.com/css?family=Bebas+Neue');
+
+
 * {
   box-sizing: border-box;
 }
 
 .home { 
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif ;
   font-size: 100%;
 }
 
@@ -467,6 +470,13 @@ h1.custom-business {
     font-size: 20px;
     text-align: left;
 }
+.zone-txt p{
+  color: rgb(7, 6, 6);
+  font-size: 20px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 4rem;
+}
 .author-txt {
     display: flex;
     
@@ -637,6 +647,30 @@ span.ft-title {
   height: 100%;
   background-color: #fff;
 }
+
+.slider-img{
+  position: relative;
+}
+.slider-h1{
+  position: absolute;
+  top: 45%;
+  left: 23%;
+  color: #fff;
+  font-weight: 700;
+}
+
+
+// position: absolute;
+// top: 45%;
+// left: 8%;
+// color: #fff;
+// font-weight: 700;
+// text-transform: uppercase;
+// font-size: 31px;
+// text-align: center;
+// width: 169px;
+
+
 /*media query start*/
 @media screen and (max-width: 500px) {
   .header a {
@@ -649,3 +683,5 @@ span.ft-title {
     float: none;
   }
 }
+
+

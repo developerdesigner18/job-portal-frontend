@@ -1,6 +1,5 @@
-<section class="footer-pd">
+<section class="footer-pd" *ngIf="(router.url === '/')">
 	<footer>
-
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-4">
@@ -35,7 +34,7 @@
 		
 	</footer>
 </section>
-<div class="bottom-footer">
+<div class="bottom-footer" *ngIf="(router.url === '/')">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">

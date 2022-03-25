@@ -40,6 +40,10 @@ const routes: Routes = [
     path: 'imprint',
     loadChildren: () => import('./imprint/imprint.module').then(m => m.ImprintModule),
   },
+  {
+    path: 'agb',
+    loadChildren: () => import('./agb/agb.module').then(m => m.AgbModule),
+  },
  
 ];
 @NgModule({
