@@ -183,14 +183,14 @@ button::-moz-focus-inner {
 * {
     box-sizing: border-box;
 }
-.header {
+.homeheader {
     background-color: #fff;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header a {
+.homeheader a {
     float: left;
     color: #4c5c68;
     text-align: center;
@@ -202,20 +202,24 @@ button::-moz-focus-inner {
     text-transform: uppercase;
     font-weight: 700;
 }
-.header a.logo {
+.homeheader a.logo {
     font-size: 25px;
     font-weight: bold;
 }
-.header-right a.active {
+.homeheader-right a.active {
     color: #f07d22;
 }
-.header a:hover {
+.homeheader a:hover {
     color: #f07d22;
     text-decoration: none;
 }
 .img-logo {
     width: 100%;
     max-width: 150px;
+}
+.img-logo-stadt {
+    width: 100%;
+    max-width: 250px;
 }
 .dropbtn {
     background-color: #4c5c68;
@@ -253,12 +257,12 @@ button::-moz-focus-inner {
     border-bottom: 2px solid #e2e2e2;
 }
 @media screen and (max-width: 500px) {
-    .header a {
+    .homeheader a {
         float: none;
         display: block;
         text-align: left;
     }
-    .header-right {
+    .homeheader-right {
         float: none;
     }
 }

@@ -1,4 +1,4 @@
-// @import url('https://fonts.googleapis.com/css?family=Bebas+Neue');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@500&display=swap');
 
 
 * {
@@ -11,41 +11,21 @@
   font-size: 100%;
 }
 
-.header {
-  /*overflow: hidden;*/
-    background-color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.carousel-text-span {
+  font-size: 55px;
+  color: #000;
+  font-family: 'Bebas Neue', cursive;
+}
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  top: 45px !important;
+  word-break: break-all;
 }
 
-
-.header a {
-  float: left;
-  color: #4c5c68;
-  text-align: center;
-  padding: 7px 22px;
-  text-decoration: none;
-  font-size: 20px; 
-  line-height: 25px;
-  border-radius: 4px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.header-right a.active {
-  color: #f07d22;
-}
-
-.header a:hover {
-  color:#f07d22;
-  text-decoration: none;
+.carsoul-img{
+  background-color: #fff;
+    opacity: 70%;
 }
 
 .img-logo{
@@ -57,8 +37,6 @@
     width: 100%;
     height: 100%;
   }
-
-/*dropdown css*/
 
 .dropbtn {
  background-color: #4c5c68;
@@ -106,7 +84,6 @@
 
 
 /* our business */
-
 h1.custom-business {
     font-size: 46px;
     text-transform: uppercase;
@@ -471,12 +448,25 @@ h1.custom-business {
     text-align: left;
 }
 .zone-txt p{
-  color: rgb(7, 6, 6);
-  font-size: 20px;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 4rem;
+    text-align: center;
+    font-size: 18px;
+    padding: 0 8em 15px;
+    color: #4C5C68;
+    position: relative;
+    bottom: 21px;
 }
+
+.jobs{
+  text-align: center !important;
+}
+.stadt{
+  text-align: center !important;
+}
+.sport{
+  text-align: center !important;
+}
+
+
 .author-txt {
     display: flex;
     
@@ -659,29 +649,9 @@ span.ft-title {
   font-weight: 700;
 }
 
-
-// position: absolute;
-// top: 45%;
-// left: 8%;
-// color: #fff;
-// font-weight: 700;
-// text-transform: uppercase;
-// font-size: 31px;
-// text-align: center;
-// width: 169px;
-
-
 /*media query start*/
 @media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .header-right {
-    float: none;
-  }
+
 }
 
 
