@@ -7,15 +7,6 @@ import { HeaderComponent } from './shared/header/header.component';
 const routes: Routes = [
 
   {
-    path: 'header',
-    component:HeaderComponent
-  },
-  {
-    path: 'footer',
-    component:FooterComponent
-  },
-
-  {
     path: '',
     loadChildren: () => import('./components/components-routing.module').then(m => m.ComponentsRoutingModule),
   },

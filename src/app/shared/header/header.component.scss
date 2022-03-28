@@ -213,6 +213,66 @@ button::-moz-focus-inner {
     color: #f07d22;
     text-decoration: none;
 }
+.jobsheader {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.jobsheader a {
+    float: left;
+    color: #4c5c68;
+    text-align: center;
+    padding: 7px 22px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.jobsheader a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+.jobsheader-right a.active {
+    color: #f07d22;
+}
+.jobsheader a:hover {
+    color: #f07d22;
+    text-decoration: none;
+}
+.stadtheader {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stadtheader a {
+    float: left;
+    color: #4c5c68;
+    text-align: center;
+    padding: 7px 22px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.stadtheader a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+.stadtheader-right a.active {
+    color: #f07d22;
+}
+.stadtheader a:hover {
+    color: #f07d22;
+    text-decoration: none;
+}
 .img-logo {
     width: 100%;
     max-width: 150px;
@@ -263,6 +323,26 @@ button::-moz-focus-inner {
         text-align: left;
     }
     .homeheader-right {
+        float: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .jobsheader a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .jobsheader-right {
+        float: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .stadtheader a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .stadtheader-right {
         float: none;
     }
 }
