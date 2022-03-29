@@ -16,6 +16,7 @@ import { StadtComponent } from './stadt/stadt.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { AgbComponent } from './agb/agb.component';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 
 //Module decorator specifying all the components used in the application 
@@ -41,6 +42,7 @@ import { AgbComponent } from './agb/agb.component';
     ReactiveFormsModule,
     CommonModule,
     BrowserAnimationsModule, 
+    NgImageSliderModule
   ],
   providers: [],
 })

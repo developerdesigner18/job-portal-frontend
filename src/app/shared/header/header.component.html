@@ -21,20 +21,44 @@
 
 </div>
 
-
 <div class="stadtheader" *ngIf="(router.url === '/stadt')">
   <a class="logo" routerLink="/stadt">
     <img src="/assets/img/stadt/RD3_-_Style2-01@2x.png" class="img-logo-stadt">
   </a>
   <div class="stadtheader-right">
-    <a class="active">Jobs</a>
-    <a>Stadt</a>
-    <a>Sport</a>
+    <a class="active" routerLink="/jobs">Jobs</a>
+    <a routerLink="/stadt">Stadt</a>
+    <a routerLink="/sport">Sport</a>
 
     <div class="dropdown">
       <button onclick="myFunction()" class="dropbtn">
         <i class="fa fa-bars"></i></button>
       <div id="myDropdown" class="dropdown-content new-custom-dp">
+        <a routerLink="/">Home</a>
+        <a routerLink="/ubreuns">Uber UNS</a>
+        <a routerLink="/vision">Vision</a>
+        <a routerLink="/kontakt">Kontakt</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="jobsheader" *ngIf="(router.url === '/jobs')">
+  <a  class="logo">
+    <img src="/assets/img/jobs/logo-1.png" class="img-logo">
+  </a>
+  <div class="jobsheader-right">
+    <a class="active" >Jobs</a>
+    <a>Firmen</a>
+    <a>Lebenslauf</a>
+    <a>Tipps</a>
+    <a>für Arbeitgeber</a>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div id="myDropdown" class="dropdown-content new-custom-dp show">
         <a>Home</a>
         <a>Uber UNS</a>
         <a>Vision</a>
@@ -42,29 +66,27 @@
       </div>
     </div>
   </div>
-
 </div>
 
-
-<div class="jobsheader" *ngIf="(router.url === '/jobs')">
-  <a href="#default" class="logo">
+<div class="sportsheader" *ngIf="(router.url === '/sport')">
+  <a  class="logo">
     <img src="/assets/img/jobs/logo-1.png" class="img-logo">
   </a>
-  <div class="jobsheader-right">
-    <a class="active" href="#home">Jobs</a>
-    <a href="#contact">Firmen</a>
-    <a href="#about">Lebenslauf</a>
-    <a href="#">Tipps</a>
-    <a href="#">für Arbeitgeber</a>
+  <div class="sportsheader-right">
+    <a class="active" >Jobs</a>
+    <a>Firmen</a>
+    <a>Lebenslauf</a>
+    <a>Tipps</a>
+    <a>für Arbeitgeber</a>
     <div class="dropdown">
       <button onclick="myFunction()" class="dropbtn">
         <i class="fa fa-bars"></i>
       </button>
       <div id="myDropdown" class="dropdown-content new-custom-dp show">
-        <a href="#home">Home</a>
-        <a href="#about">Uber UNS</a>
-        <a href="#contact">Vision</a>
-        <a href="#contact">Kontakt</a>
+        <a>Home</a>
+        <a>Uber UNS</a>
+        <a>Vision</a>
+        <a>Kontakt</a>
       </div>
     </div>
   </div>
