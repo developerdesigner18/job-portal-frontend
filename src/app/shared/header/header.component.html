@@ -8,13 +8,13 @@
     <a routerLink="/sport">Sport</a>
 
     <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">
-        <i class="fa fa-bars"></i></button>
-      <div id="myDropdown" class="dropdown-content new-custom-dp">
-        <a>Home</a>
-        <a>Uber UNS</a>
-        <a>Vision</a>
-        <a>Kontakt</a>
+      <button type="submit" (click)="menudata1()" class="dropbtn">
+        <i class="fa fa-bars custome" style="pointer-events: none;"></i></button>
+      <div id="myDropdown" class="dropdown-content new-custom-dp" [ngClass]="{'show': (menu1 === true)}">
+        <a routerLink="/">Home</a>
+        <a routerLink="/about-us">Uber UNS</a>
+        <a routerLink="/vision">Vision</a>
+        <a routerLink="/contact">Kontakt</a>
       </div>
     </div>
   </div>
@@ -26,18 +26,18 @@
     <img src="/assets/img/stadt/RD3_-_Style2-01@2x.png" class="img-logo-stadt">
   </a>
   <div class="stadtheader-right">
-    <a class="active" routerLink="/jobs">Jobs</a>
-    <a routerLink="/stadt">Stadt</a>
+    <a routerLink="/jobs">Jobs</a>
+    <a class="active" routerLink="/stadt">Stadt</a>
     <a routerLink="/sport">Sport</a>
 
     <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">
-        <i class="fa fa-bars"></i></button>
-      <div id="myDropdown" class="dropdown-content new-custom-dp">
+      <button type="submit" (click)="menudata2()" class="dropbtn">
+        <i class="fa fa-bars" style="pointer-events: none;"></i></button>
+      <div id="myDropdown" class="dropdown-content new-custom-dp" [ngClass]="{'show': (menu2 === true)}">
         <a routerLink="/">Home</a>
-        <a routerLink="/ubreuns">Uber UNS</a>
+        <a routerLink="/about-us">Uber UNS</a>
         <a routerLink="/vision">Vision</a>
-        <a routerLink="/kontakt">Kontakt</a>
+        <a routerLink="/contact">Kontakt</a>
       </div>
     </div>
   </div>
@@ -45,48 +45,47 @@
 </div>
 
 <div class="jobsheader" *ngIf="(router.url === '/jobs')">
-  <a  class="logo">
+  <a class="logo">
     <img src="/assets/img/jobs/logo-1.png" class="img-logo">
   </a>
   <div class="jobsheader-right">
-    <a class="active" >Jobs</a>
+    <a class="active">Jobs</a>
     <a>Firmen</a>
     <a>Lebenslauf</a>
     <a>Tipps</a>
     <a>für Arbeitgeber</a>
     <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">
-        <i class="fa fa-bars"></i>
+      <button type="submit" (click)="menudata3()" class="dropbtn">
+        <i class="fa fa-bars" style="pointer-events: none;"></i>
       </button>
-      <div id="myDropdown" class="dropdown-content new-custom-dp show">
-        <a>Home</a>
-        <a>Uber UNS</a>
-        <a>Vision</a>
-        <a>Kontakt</a>
+      <div id="myDropdown" class="dropdown-content new-custom-dp" [ngClass]="{'show': (menu3 === true)}">
+        <a routerLink="/">Home</a>
+        <a routerLink="/about-us">Uber UNS</a>
+        <a routerLink="/vision">Vision</a>
+        <a routerLink="/contact">Kontakt</a>
       </div>
     </div>
   </div>
 </div>
 
 <div class="sportsheader" *ngIf="(router.url === '/sport')">
-  <a  class="logo">
+  <a class="logo">
     <img src="/assets/img/jobs/logo-1.png" class="img-logo">
   </a>
   <div class="sportsheader-right">
-    <a class="active" >Jobs</a>
+    <a>Jobs</a>
     <a>Firmen</a>
     <a>Lebenslauf</a>
     <a>Tipps</a>
     <a>für Arbeitgeber</a>
     <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">
-        <i class="fa fa-bars"></i>
+      <button type="submit" (click)="menudata4()" class="dropbtn">
+        <i class="fa fa-bars"  style="pointer-events: none;"></i>
       </button>
-      <div id="myDropdown" class="dropdown-content new-custom-dp show">
-        <a>Home</a>
-        <a>Uber UNS</a>
-        <a>Vision</a>
-        <a>Kontakt</a>
+      <div id="myDropdown" class="dropdown-content new-custom-dp" [ngClass]="{'show': (menu4 === true)}">
+        <a routerLink="/about-us">Uber UNS</a>
+        <a routerLink="/vision">Vision</a>
+        <a routerLink="/contact">Kontakt</a>
       </div>
     </div>
   </div>

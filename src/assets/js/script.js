@@ -3,9 +3,9 @@
 
 
 
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
+// function myFunction() {
+//   document.getElementById("myDropdown").classList.toggle("show");
+// }
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
@@ -26,12 +26,12 @@ window.onclick = function(event) {
 // Our partner js
 
 
-$(document).ready(function() {
-  $('#media').carousel({
-    pause: true,
-    interval: false,
-    autoplay:true,
-    items:4,
-  });
-});
+// $(document).ready(function() {
+//   $('#media').carousel({
+//     pause: true,
+//     interval: false,
+//     autoplay:true,
+//     items:4,
+//   });
+// });
 

@@ -17,6 +17,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { AgbComponent } from './agb/agb.component';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { SitemapComponent } from './sitemap/sitemap.component';
 
 
 //Module decorator specifying all the components used in the application 
@@ -32,6 +33,7 @@ import { NgImageSliderModule } from 'ng-image-slider';
      PrivacyComponent,
      ImprintComponent,
      AgbComponent,
+     SitemapComponent,
 
   ],
   imports: [

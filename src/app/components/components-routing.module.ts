@@ -21,11 +21,11 @@ const routes: Routes = [
     loadChildren: () => import('./sport/sport.module').then(m => m.SportModule),
   },
   {
-    path: 'kontakt',
+    path: 'contact',
     loadChildren: () => import('./kontakt/kontakt.module').then(m => m.KontaktModule),
   },
   {
-    path: 'ubreuns',
+    path: 'about-us',
     loadChildren: () => import('./ubreuns/ubreuns.module').then(m => m.UbreunsModule),
   },
   {
