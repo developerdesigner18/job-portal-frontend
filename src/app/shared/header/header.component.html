@@ -59,10 +59,11 @@
         <i class="fa fa-bars" style="pointer-events: none;"></i>
       </button>
       <div id="myDropdown" class="dropdown-content new-custom-dp" [ngClass]="{'show': (menu3 === true)}">
-        <a routerLink="/">Home</a>
-        <a routerLink="/about-us">Uber UNS</a>
-        <a routerLink="/vision">Vision</a>
-        <a routerLink="/contact">Kontakt</a>
+        <a routerLink="/jobs">Jobs</a>
+        <a>Firmen</a>
+        <a>Lebenslauf</a>
+        <a>Tipps</a>
+        <a>ür Arbeitgeber</a>
       </div>
     </div>
   </div>
@@ -70,22 +71,24 @@
 
 <div class="sportsheader" *ngIf="(router.url === '/sport')">
   <a class="logo">
-    <img src="/assets/img/jobs/logo-1.png" class="img-logo">
+    <img src="/assets/img/jobs/card-header-3.png" class="img-logo-sport">
   </a>
   <div class="sportsheader-right">
-    <a>Jobs</a>
-    <a>Firmen</a>
-    <a>Lebenslauf</a>
-    <a>Tipps</a>
-    <a>für Arbeitgeber</a>
+    <a>WERDE RD3 ATHLET</a>
+    <a>WERDE RD3 PARTNER</a>
+    <a>UNSERE ATHLETEN</a>
+    <a>PARTTNERTAFELN</a>
+    <a>BLOG</a>
     <div class="dropdown">
       <button type="submit" (click)="menudata4()" class="dropbtn">
         <i class="fa fa-bars"  style="pointer-events: none;"></i>
       </button>
       <div id="myDropdown" class="dropdown-content new-custom-dp" [ngClass]="{'show': (menu4 === true)}">
-        <a routerLink="/about-us">Uber UNS</a>
-        <a routerLink="/vision">Vision</a>
-        <a routerLink="/contact">Kontakt</a>
+        <a>WERDE RD3 ATHLET</a>
+        <a>WERDE RD3 PARTNER</a>
+        <a>UNSERE ATHLETEN</a>
+        <a>PARTTNERTAFELN</a>
+        <a>BLOG</a>
       </div>
     </div>
   </div>
