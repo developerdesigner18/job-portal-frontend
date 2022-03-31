@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -194,7 +195,7 @@ h1.custom-business {
 .orang-bg-left::before{
     position: absolute;
     content: '';
-   background-image: url(/assets/img/jobs/orange-2.png);
+    background-image: url(/assets/img/orange-2.png);
     background-size: 100%;
     height: 237px;
     background-repeat: no-repeat;
@@ -210,7 +211,7 @@ h1.custom-business {
 .orang-bg-right::before{
     position: absolute;
     content: '';
-   background-image: url(/assets/img/jobs/orange-1.png);
+    background-image: url(/assets/img/orange-1.png);
     background-size:96%;
     height: 100%;
     background-repeat: no-repeat;
@@ -225,7 +226,7 @@ h1.custom-business {
 .green-bg-left::before{
     position: absolute;
     content: '';
-   background-image: url(/assets/img/jobs/green-left.png);
+    background-image: url(/assets/img/green-left.png);
     background-size: 100%;
     height: 367px;
     background-repeat: no-repeat;
@@ -242,7 +243,7 @@ h1.custom-business {
 .green-bg-right::before{
     position: absolute;
     content: '';
-   background-image: url(/assets/img/jobs/green-right.png);
+    background-image: url(/assets/img/green-right.png);
     background-size:96%;
     height: 100%;
     background-repeat: no-repeat;
@@ -259,7 +260,7 @@ h1.custom-business {
 .cream-bg-left::before{
     position: absolute;
     content: '';
-   background-image: url(/assets/img/jobs/cream-left.png);
+    background-image: url(/assets/img/cream-left.png);
     background-size: 100%;
     height: 367px;
     background-repeat: no-repeat;
@@ -275,7 +276,7 @@ h1.custom-business {
 .cream-bg-right::before{
     position: absolute;
     content: '';
-   background-image: url(/assets/img/jobs/cream-right.png);
+    background-image: url(/assets/img/cream-right.png);
     background-size: 96%;
     height: 100%;
     background-repeat: no-repeat;
@@ -632,7 +633,7 @@ span.ft-title {
 
 /*new jobs page css strat*/
 
-.box-slider-bottom {
+.box-slider-bottom{
     width: 80%;
     height: 100%;
     background-color: #ffffff;
@@ -643,8 +644,8 @@ span.ft-title {
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
 .search-box {
     border: none;
     color: #F49E55;
@@ -834,6 +835,24 @@ section.slider-bottom {
     width: 25px;
 }
 
+.carousel-caption{
+    position: absolute;
+    right: 15%;
+    top: 45px !important;
+    word-break: break-all;
+}
+
+#jobs span {
+    font-size: 55px;
+    color: #FFFFFF;
+    font-family: "Bebas Neue";
+}
+
+.span-inner-color {
+    color: #D1B968 !important;
+}
+
+
 .heben_mn {
     background: #4C5C68;
 }
@@ -910,3 +929,94 @@ section.slider-bottom {
     height: 350px;
 }
 
+
+.funktion_blog_details {
+    position: relative;
+    height: 1000px;
+    display: inline-block;
+    width: 900px;
+    margin: 0 auto;
+}
+.funktion_blog_details:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    height: 700px;
+    width: 700px;
+    border-radius: 50%;
+    background: #F49E55;
+}
+.funktion_icon {
+    position: absolute;
+    background: #4C5C68;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.funktion_icon img {
+    width: 70px;
+}
+.funktion_icon.funktion_icon_1 , .funktion_icon.funktion_icon_4 {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.funktion_icon.funktion_icon_2 , .funktion_icon.funktion_icon_3 {
+    right: 0%;
+}
+.funktion_icon.funktion_icon_5 , .funktion_icon.funktion_icon_6 {
+    left: 0%;
+}
+.funktion_icon.funktion_icon_1 {
+    top: 75px;
+}
+.funktion_icon.funktion_icon_2 {
+    right: 75px;
+    top: 25%;
+}
+.funktion_icon.funktion_icon_3 {
+    right: 75px;
+    top: 60%;
+}
+.funktion_icon.funktion_icon_4 {
+    bottom: 75px;
+}
+.funktion_icon.funktion_icon_5 {
+    left: 75px;
+    top: 60%;
+}
+.funktion_icon.funktion_icon_6 {
+    left: 75px;
+    top: 25%;
+}
+.funktion_active{
+    border: 8px solid #f49e55;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 20%);
+}
+.funktion_details {
+    display: none;
+    position: absolute;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    color: #4C5C68;
+}
+.funktion_details.funktion_active_text {
+    display: block;
+}
+.funktion_details h4 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.funktion_details p {
+    font-size: 30px;
+    font-weight: 400;
+}

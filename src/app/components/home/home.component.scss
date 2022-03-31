@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+.bottomslider:hover{
+  color: #ffffff;
+  text-decoration: underline;
+}
+
 .home { 
   margin: 0;
   font-family: Arial, Helvetica, sans-serif ;
@@ -456,8 +461,9 @@ h1.custom-business {
     background-color: #717171;
   }*/
 .test-img{
-  width: 100%;
+    width: 100%;
     max-width: 100px;
+    border-radius: 50%;
 }
 
 .title {

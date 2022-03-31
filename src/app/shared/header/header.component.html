@@ -10,7 +10,7 @@
     <div class="dropdown">
       <button type="submit" (click)="menudata1()" class="dropbtn">
         <i class="fa fa-bars custome" style="pointer-events: none;"></i></button>
-      <div id="myDropdown" class="dropdown-content new-custom-dp" [ngClass]="{'show': (menu1 === true)}">
+      <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="menu1">
         <a routerLink="/">Home</a>
         <a routerLink="/about-us">Uber UNS</a>
         <a routerLink="/vision">Vision</a>
@@ -50,6 +50,8 @@
   </a>
   <div class="jobsheader-right">
     <a class="active">Jobs</a>
+    <a>stadt</a>
+    <a>Sport</a>
     <a>Firmen</a>
     <a>Lebenslauf</a>
     <a>Tipps</a>
@@ -59,11 +61,10 @@
         <i class="fa fa-bars" style="pointer-events: none;"></i>
       </button>
       <div id="myDropdown" class="dropdown-content new-custom-dp" [ngClass]="{'show': (menu3 === true)}">
-        <a routerLink="/jobs">Jobs</a>
-        <a>Firmen</a>
-        <a>Lebenslauf</a>
-        <a>Tipps</a>
-        <a>ür Arbeitgeber</a>
+        <a routerLink="/">Home</a>
+        <a routerLink="/about-us">Uber UNS</a>
+        <a routerLink="/vision">Vision</a>
+        <a routerLink="/contact">Kontakt</a>
       </div>
     </div>
   </div>
@@ -74,6 +75,9 @@
     <img src="/assets/img/jobs/card-header-3.png" class="img-logo-sport">
   </a>
   <div class="sportsheader-right">
+    <a routerLink="/jobs">Jobs</a>
+    <a routerLink="/stadt">Stadt</a>
+    <a class="active" routerLink="/sport">Sport</a>
     <a>WERDE RD3 ATHLET</a>
     <a>WERDE RD3 PARTNER</a>
     <a>UNSERE ATHLETEN</a>
@@ -84,11 +88,10 @@
         <i class="fa fa-bars"  style="pointer-events: none;"></i>
       </button>
       <div id="myDropdown" class="dropdown-content new-custom-dp" [ngClass]="{'show': (menu4 === true)}">
-        <a>WERDE RD3 ATHLET</a>
-        <a>WERDE RD3 PARTNER</a>
-        <a>UNSERE ATHLETEN</a>
-        <a>PARTTNERTAFELN</a>
-        <a>BLOG</a>
+        <a routerLink="/">Home</a>
+        <a routerLink="/about-us">Uber UNS</a>
+        <a routerLink="/vision">Vision</a>
+        <a routerLink="/contact">Kontakt</a>
       </div>
     </div>
   </div>

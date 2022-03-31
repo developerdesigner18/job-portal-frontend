@@ -1,3 +1,9 @@
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+
+
 a {
     background-color: transparent;
 }
@@ -224,7 +230,7 @@ button::-moz-focus-inner {
     float: left;
     color: #4c5c68;
     text-align: center;
-    padding: 7px 22px;
+    padding: 7px 5px;
     text-decoration: none;
     font-size: 20px;
     line-height: 25px;
@@ -237,10 +243,10 @@ button::-moz-focus-inner {
     font-weight: bold;
 }
 .sportsheader-right a.active {
-    color: #f07d22;
+    color: #D1B681;
 }
 .sportsheader a:hover {
-    color: #f07d22;
+    color: #D1B681;
     text-decoration: none;
 }
 .jobsheader {

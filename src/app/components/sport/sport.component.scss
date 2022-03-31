@@ -18,7 +18,7 @@ body {
 .carousel-text-span {
     font-size: 55px;
     color: #000;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', cursive !important;
 }
 .carousel-caption {
     position: absolute;
@@ -1144,6 +1144,7 @@ background-color: #fff;
     justify-content: space-between;
     border-radius: 10px;
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    letter-spacing: 1.5px;
 }
 
 .search-fa-color-1{

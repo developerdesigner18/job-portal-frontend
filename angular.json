@@ -34,8 +34,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "node_modules/@fortawesome/fontawesome-free/css/all.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -57,13 +56,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "600kb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "8mb",
+                  "maximumError": "15mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "50kb",
-                  "maximumError": "60kb"
+                  "maximumWarning": "5mb",
+                  "maximumError": "15mb"
                 }
               ]
             }

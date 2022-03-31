@@ -39,17 +39,15 @@ async menudata4(){
   
 
   ngOnInit(): void {
-    if(this.router.url == "/"){
-    this.menu1 = false
-    }
-    else if(this.router.url == "/stadt"){
-      this.menu2 = false
-    }
-    this.menu3 = false
-    this.menu4 = false
-  
+    // this.menu1 = false;
+    // this.menu2 = false
+    // this.menu3 = false
+    // this.menu4 = false  
   }
   ngAfterViewInit(): void{
+
+  }
+  ngOnDestroy(): void{
 
   }
 
