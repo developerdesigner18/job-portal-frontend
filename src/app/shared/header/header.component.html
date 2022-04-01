@@ -1,6 +1,7 @@
-<div class="homeheader" *ngIf="(router.url === '/')">
+<div class="homeheader" *ngIf="(router.url === '/' || router.url === '/contact' || router.url === '/about-us' || 
+router.url === '/vision' || router.url === '/privacy' || router.url === '/imprint')">
   <a class="logo" routerLink="/">
-    <img src="/assets/img/home/logo-1.png" class="img-logo">
+    <img src="/assets/img/home/logo-1.png" class="img-logo" routerLink="/">
   </a>
   <div class="homeheader-right">
     <a class="active" routerLink="/jobs">Jobs</a>
@@ -23,7 +24,7 @@
 
 <div class="stadtheader" *ngIf="(router.url === '/stadt')">
   <a class="logo" routerLink="/stadt">
-    <img src="/assets/img/stadt/RD3_-_Style2-01@2x.png" class="img-logo-stadt">
+    <img src="/assets/img/stadt/RD3_-_Style2-01@2x.png" class="img-logo-stadt" routerLink="/">
   </a>
   <div class="stadtheader-right">
     <a routerLink="/jobs">Jobs</a>
@@ -46,16 +47,12 @@
 
 <div class="jobsheader" *ngIf="(router.url === '/jobs')">
   <a class="logo">
-    <img src="/assets/img/jobs/logo-1.png" class="img-logo">
+    <img src="/assets/img/jobs/logo-1.png" class="img-logo" routerLink="/">
   </a>
   <div class="jobsheader-right">
-    <a class="active">Jobs</a>
-    <a>stadt</a>
-    <a>Sport</a>
-    <a>Firmen</a>
-    <a>Lebenslauf</a>
-    <a>Tipps</a>
-    <a>für Arbeitgeber</a>
+    <a class="active" routerLink="/jobs">Jobs</a>
+    <a routerLink="/stadt">stadt</a>
+    <a routerLink="/sport">Sport</a>
     <div class="dropdown">
       <button type="submit" (click)="menudata3()" class="dropbtn">
         <i class="fa fa-bars" style="pointer-events: none;"></i>
@@ -72,17 +69,12 @@
 
 <div class="sportsheader" *ngIf="(router.url === '/sport')">
   <a class="logo">
-    <img src="/assets/img/jobs/card-header-3.png" class="img-logo-sport">
+    <img src="/assets/img/jobs/card-header-3.png" class="img-logo-sport" routerLink="/">
   </a>
   <div class="sportsheader-right">
     <a routerLink="/jobs">Jobs</a>
     <a routerLink="/stadt">Stadt</a>
     <a class="active" routerLink="/sport">Sport</a>
-    <a>WERDE RD3 ATHLET</a>
-    <a>WERDE RD3 PARTNER</a>
-    <a>UNSERE ATHLETEN</a>
-    <a>PARTTNERTAFELN</a>
-    <a>BLOG</a>
     <div class="dropdown">
       <button type="submit" (click)="menudata4()" class="dropbtn">
         <i class="fa fa-bars"  style="pointer-events: none;"></i>

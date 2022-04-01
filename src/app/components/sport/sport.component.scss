@@ -28,40 +28,33 @@ body {
   }
 
 
-.header {
-  /*overflow: hidden;*/
-    background-color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.sportsheader {
+  background-color: #000000;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: right;
 }
-
-
-.header a {
+.sportsheader a {
   float: left;
-  color: #4c5c68;
+  color: #ffffff;
   text-align: center;
   padding: 7px 22px;
   text-decoration: none;
-  font-size: 20px; 
+  font-size: 20px;
   line-height: 25px;
   border-radius: 4px;
   text-transform: uppercase;
   font-weight: 700;
 }
-
-.header a.logo {
+.sportsheader a.logo {
   font-size: 25px;
   font-weight: bold;
 }
-
-.header-right a.active {
-  color: #f07d22;
+.sportsheader-right a.active {
+  color: #D1B681;
 }
-
-.header a:hover {
-  color:#f07d22;
+.sportsheader a:hover {
+  color: #D1B681;
   text-decoration: none;
 }
 
@@ -588,66 +581,6 @@ h1.custom-business {
     height: 150px;
 }
 /* End carousel */
-
-
-/*footer css*/
-
-.footer-pd{
-  padding: 50px 0;
-  background-color:#4c5c68;
-
-}
-.footer-md{
-  display: flex;
-  margin-top: 25px;
-}
-
-.footer-md ul li{
-  list-style: none;
-  list-style: none;
-    font-size: 27px;
-    color: #fff;
-}
-
-span.ft-title {
-    font-size: 30px;
-    color: #fff;
-    margin-left: 30px;
-  }
-  .footer-end{
-    display: flex;
-    margin-top: 25px;
-    justify-content: space-evenly;
-  }
-
-  .img-ft{
-    width: 100%;
-    max-width: 200px;
-  }
-  .ft-title-mobile{
-    font-size: 30px;
-    color: #fff;
-    margin-left: 15px;
-  }
-
-  .footer-logo-img{
-    width: 100%;
-    max-width: 400px;
-    padding: 0 12px;
-    text-align: center !important;
-  }
-
- .bottom-footer{
-  background-color: #3d4d5a;
-    text-align: center;
-    padding: 15px;
- }
-
- .footer-txt-bottom{
-  color: #fff;
-    font-size: 25px;
-    text-align: center;
- }
 
 
 /*new jobs page css strat*/
@@ -1317,13 +1250,12 @@ tr{
 }
 /*media query start*/
 @media screen and (max-width: 500px) {
-  .header a {
+  .sportsheader a {
     float: none;
     display: block;
     text-align: left;
-  }
-  
-  .header-right {
+}
+.sportsheader-right {
     float: none;
-  }
+}
 }

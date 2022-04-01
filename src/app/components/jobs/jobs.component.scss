@@ -9,43 +9,6 @@ body {
     font-size: 100%;
 }
 
-.header {
-/*overflow: hidden;*/
-background-color: #fff;
-padding: 10px 20px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-
-
-.header a {
-    float: left;
-    color: #4c5c68;
-    text-align: center;
-    padding: 7px 22px;
-    text-decoration: none;
-    font-size: 20px; 
-    line-height: 25px;
-    border-radius: 4px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-.header a.logo {
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.header-right a.active {
-    color: #f07d22;
-}
-
-.header a:hover {
-    color:#f07d22;
-    text-decoration: none;
-}
-
 .img-logo{
     width: 100%;
     max-width: 150px;
@@ -571,66 +534,6 @@ background-color: #717171;
 /* End carousel */
 
 
-/*footer css*/
-
-.footer-pd{
-    padding: 50px 0;
-    background-color:#4c5c68;
-
-}
-.footer-md{
-    display: flex;
-    margin-top: 25px;
-}
-
-.footer-md ul li{
-    list-style: none;
-    list-style: none;
-    font-size: 27px;
-    color: #fff;
-}
-
-span.ft-title {
-    font-size: 30px;
-    color: #fff;
-    margin-left: 30px;
-}
-.footer-end{
-    display: flex;
-    margin-top: 25px;
-    justify-content: space-evenly;
-}
-
-.img-ft{
-    width: 100%;
-    max-width: 200px;
-}
-.ft-title-mobile{
-    font-size: 30px;
-    color: #fff;
-    margin-left: 15px;
-}
-
-.footer-logo-img{
-    width: 100%;
-    max-width: 400px;
-    padding: 0 12px;
-    text-align: center !important;
-}
-
-.bottom-footer{
-    background-color: #3d4d5a;
-    text-align: center;
-    padding: 15px;
-}
-
-.footer-txt-bottom{
-    color: #fff;
-    font-size: 25px;
-    text-align: center;
-}
-
-
 /*new jobs page css strat*/
 
 .box-slider-bottom{
@@ -687,17 +590,6 @@ select.item-box:focus-visible{
     outline: none !important;
 }
 /*media query start*/
-@media screen and (max-width: 500px) {
-    .header a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-    .header-right {
-        float: none;
-    }
-}
-
 
 section.slider-bottom {
     background: #eaeced;
@@ -845,7 +737,7 @@ section.slider-bottom {
 #jobs span {
     font-size: 55px;
     color: #FFFFFF;
-    font-family: "Bebas Neue";
+    font-family: 'Bebas Neue' , cursive;;
 }
 
 .span-inner-color {
@@ -1019,4 +911,66 @@ section.slider-bottom {
 .funktion_details p {
     font-size: 30px;
     font-weight: 400;
+}
+
+
+/*! CSS Used fontfaces */
+@font-face {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/bebasneue/v8/JTUSjIg69CK48gW7PXoo9Wdhyzbi.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  @font-face {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/bebasneue/v8/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+
+  .jobsheader {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+}
+.jobsheader a {
+    float: left;
+    color: #4c5c68;
+    text-align: center;
+    padding: 7px 22px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.jobsheader a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+.jobsheader-right a.active {
+    color: #f07d22;
+}
+.jobsheader a:hover {
+    color: #f07d22;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 500px) {
+    .jobsheader a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .jobsheader-right {
+        float: none;
+    }
 }
