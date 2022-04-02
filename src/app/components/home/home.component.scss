@@ -460,10 +460,19 @@ h1.custom-business {
   /*.active, .dot:hover {
     background-color: #717171;
   }*/
-.test-img{
-    width: 100%;
-    max-width: 100px;
-    border-radius: 50%;
+.ref-image {
+  width: 130px;
+  height: 137px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.ref-image img{
+  display: inline;
+  margin: 0 auto;
+  height: 140%;
+  width: auto;
 }
 
 .title {
@@ -506,6 +515,7 @@ h1.custom-business {
 }
 .author, h3, h5 {
     color: #fff;
+    text-align: start;
 }
 .title-h3{
   font-size: 35px !important;

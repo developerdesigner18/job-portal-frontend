@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@500&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+.bottomslider:hover{
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.home { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif ;
+  font-size: 100%;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  top: 100px !important;
+  word-break: break-all;
+  font-size: 55px;
+  color: #FFFFFF;
+  font-family: "Bebas Neue", cursive;
+}
+
+.carsoul-img{
+  background-color: #fff;
+  filter: brightness(0.7);
+  // opacity: 100%;
+}
+
+
+.span-inner-color{
+  color: #D1B968 !important;
+}
+
+
+.img-logo{
+    width: 100%;
+    max-width: 150px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+#about-us span {
+  font-size: 55px;
+  color: #FFFFFF;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.dropbtn {
+ background-color: #4c5c68;
+    color: #fff;
+    padding: 7px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  right: 0;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 203px;
+    border-radius: 8px;
+    overflow: auto;
+    border: 2px solid #8c8c8c;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+   top: 55px;
+}
+
+.dropdown-content a {
+  color: #4b5b67;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  width: 100%;
+  border-bottom: 2px solid #e2e2e2;
+}
+
+.show {display: block;}
+
+/*navbar css*/
+
+
+/* our business */
+h1.custom-business {
+    font-size: 46px;
+    text-transform: uppercase;
+    color: #4c5c68;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.line-2{
+  text-align: center;
+   padding-bottom:  5.2em;
+   position: relative;
+}
+.line-2:before{
+  position: absolute;
+    content: '';
+    border: 2px solid #fff;
+    width: 155px;
+    top: 20px;
+    right: 50em;
+}
+
+.line-2:after{
+  position: absolute;
+    content: '';
+    border: 2px solid #fff;
+    width: 155px;
+    top: 20px;
+    left: 50em;
+}
+
+.line{
+  text-align: center;
+   padding-bottom:  5.2em;
+   position: relative;
+}
+.line:before{
+  position: absolute;
+    content: '';
+    border: 2px solid #4c5c68;
+    width: 121px;
+    top: 20px;
+    right: 55em;
+}
+
+.line:after{
+  position: absolute;
+    content: '';
+    border: 2px solid #4c5c68;
+    width: 121px;
+    top: 20px;
+    left: 55em;
+}
+.section-title-img{
+  width: 100%;
+  max-width: 50px;
+}
+.business-pd {
+    padding: 0 0;
+}
+.card-set-pd{
+  display: flex;
+}
+.card-set-pd, .card-dotted {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.custom-pd{
+  padding: 50px 0;
+  background-color: #eaeced;
+}
+
+.card-dotted {
+    border: 2px dashed #4c5c68;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+}
+.card-bg {
+    border-radius: 20px !important;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.orang-bg-left{
+  position: relative;
+}
+.orang-bg-left::before{
+       position: absolute;
+    content: '';
+    background-image: url(/assets/img/home/orange-2.png);
+    background-size: 100%;
+    height: 237px;
+    background-repeat: no-repeat;
+    width: 178px;
+    bottom: -18px;
+    border-radius: 15px;
+    left: 2px;
+}
+
+.orang-bg-right{
+  position: relative;
+}
+.orang-bg-right::before{
+   position: absolute;
+    content: '';
+    background-image: url(/assets/img/home/orange-1.png);
+    background-size:96%;
+    height: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    top: -21px;
+    left: 87px;
+}
+.green-bg-left{
+  position: relative;
+}
+
+.green-bg-left::before{
+  position: absolute;
+    content: '';
+    background-image: url(/assets/img/home/green-left.png);
+    background-size: 100%;
+    height: 367px;
+    background-repeat: no-repeat;
+    width: 250px;
+    bottom: -148px;
+    border-radius: 20px;
+    right: -22.5em;
+
+}
+.green-bg-right{
+  position: relative;
+}
+
+.green-bg-right::before{
+       position: absolute;
+    content: '';
+    background-image: url(/assets/img/home/green-right.png);
+    background-size:96%;
+    height: 100%;
+    background-repeat: no-repeat;
+    width:  100%;
+    top: -21px;
+    left: 91px;
+    border-radius: 20px !important;
+}
+
+.cream-bg-left{
+  position: relative;
+  margin: 0 55px
+}
+.cream-bg-left::before{
+   position: absolute;
+    content: '';
+    background-image: url(/assets/img/home/cream-left.png);
+   background-size: 100%;
+    height: 367px;
+    background-repeat: no-repeat;
+    width: 250px;
+    bottom: -148px;
+    border-radius: 20px;
+    right: -22.5em;
+}
+.cream-bg-right{
+  position: relative;
+}
+
+.cream-bg-right::before{
+    position: absolute;
+    content: '';
+    background-image: url(/assets/img/home/cream-right.png);
+    background-size: 96%;
+    height: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 335px;
+    top: -21px;
+    right: -6px;
+    border-radius: 20px;
+  }
+.custom-card-body {
+    padding: 1rem 1rem 0;
+}
+.custom-img-orange{
+    width: 100%;
+    border: 3px solid #f49e55;
+    padding: 20px;
+    max-width: 250px;
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    right: 65px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+.custom-img-green{
+    width: 100%;
+    border: 3px solid #9cb900;
+    padding: 20px;
+    max-width: 250px;
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    right: 65px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.custom-img-cream{
+    width: 100%;
+    border: 3px solid #d1b681;
+    padding: 20px;
+    max-width: 250px;
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    right: 65px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+.box {
+    text-align: center;
+    padding: 20px;
+}
+.box h4 {
+    color: #4c5c68;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.box p {
+    color: #4c5c68;
+    text-align: justify;
+    font-size: 17px;
+}
+.orange-btn {
+    background-color: #f49e55;
+    outline: none !important;
+    border: none !important;
+   padding: 13px 40px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.green-btn {
+    background-color:#9cb900;
+    outline: none !important;
+    border: none !important;
+    padding: 13px 40px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.cream-btn {
+    background-color:#d1b681;
+    outline: none !important;
+    border: none !important;
+    padding: 13px 40px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/*our testimonial*/
+
+.testimonial-pd{
+   padding: 50px 0;
+  background-color:#4c5c68;
+}
+
+.custom-testimonial{
+   font-size: 46px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom:15px;
+}
+
+.unser-left-img {
+    width: 100%;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align:left;
+    padding: 20px;
+    
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 0.8em;
+    text-align: left;
+}
+
+.zone-txt p{
+    text-align: center;
+    font-size: 18px;
+    padding: 0 8em 15px;
+    color: #4C5C68;
+    position: relative;
+    bottom: 21px;
+}
+
+.author {
+    margin-left: 2em;
+}
+.author, h3, h5 {
+    color: #fff;
+    text-align: start;
+}
+.title-h3{
+  font-size: 35px !important;
+}
+
+.title-h5{
+  font-size: 21px !important;
+}
+
+
+/*our partners*/
+
+.partners-pd{
+  padding: 50px 0;
+    background-color: #fff;
+}
+
+.custom-partners {
+    font-size: 46px;
+    text-transform: uppercase;
+    color:#4c5c68;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+
+/*our partner slider*/
+/* carousel */
+.media-carousel 
+{
+  margin-bottom: 0;
+  padding: 0 40px 0 40px;
+ /* margin-top: 30px;*/
+}
+/* Previous button  */
+.media-carousel .carousel-control.left 
+{
+  left: -30px;
+  background:#4c5c68;
+  opacity: 1;
+  border: 4px solid #FFFFFF;
+  border-radius: 12px 12px 12px 12px;
+  height: 45px;
+  width : 45px;
+  margin-top: 3em;
+  background-image: none;
+}
+.thumbnail{
+  border: none !important;
+    height: 100%;
+    width: 100%;
+    padding: 70px;
+    background-color: #eaeaea;
+}
+/* Next button  */
+.media-carousel .carousel-control.right 
+{
+  right: -30px !important;
+  background: #4c5c68;
+  opacity: 1;
+  border: 4px solid #FFFFFF;
+  border-radius: 12px 12px 12px 12px;
+  height: 45px;
+  width : 45px;
+  margin-top: 3em;
+  background-image: none;
+}
+/* Changes the position of the indicators */
+.media-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the colour of the indicators */
+.media-carousel .carousel-indicators li 
+{
+  background: #4c5c68;
+}
+.media-carousel .carousel-indicators .active 
+{
+  background: #333333;
+}
+.media-carousel img
+{
+  width: 250px;
+    height: 150px;
+}
+/* End carousel */
+
+
+/*new jobs page css strat*/
+
+.box-slider-bottom{
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.slider-img{
+  position: relative;
+}
+.slider-h1{
+  position: absolute;
+  top: 45%;
+  left: 23%;
+  color: #fff;
+  font-weight: 700;
+}
+
+/*media query start*/
+@media screen and (max-width: 500px) {
+
+}
+
+
