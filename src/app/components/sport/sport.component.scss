@@ -10,6 +10,11 @@ body {
   font-size: 100%;
 }
 
+.carsoul-img{
+  background-color: #fff;
+    filter: brightness(.7);
+
+}
 
 
 /*carousel css*/
@@ -17,7 +22,7 @@ body {
 
 .carousel-text-span {
     font-size: 55px;
-    color: #000;
+    color: #ffffff;
     font-family: 'Bebas Neue', cursive !important;
 }
 .carousel-caption {
@@ -124,6 +129,11 @@ h1.custom-business {
     text-align: center;
     font-weight: bold;
     padding-bottom: 15px;
+}
+
+
+.phnnumsports{
+  color: #4C5C68;
 }
 
 .line-2{
@@ -1029,13 +1039,22 @@ background-color: #fff;
     padding: 50px 0;
     margin-top: 6em;
 }
-.sport-section-3-heading{
-      font-size: 46px;
+.sport-section-3-headingb{
+      font-size: 30px;
     text-transform: uppercase;
-    color:#D1B681;
+    color:#4C5C68;
     text-align: center;
     font-weight: bold;
-    padding-bottom: 15px;
+    padding-bottom: 33px;
+}
+
+.sport-section-3-heading{
+  font-size: 46px;
+text-transform: uppercase;
+color:#D1B681;
+text-align: center;
+font-weight: bold;
+padding-bottom: 15px;
 }
 .sport-section-3-inner-text{
   text-align: center;
@@ -1072,7 +1091,7 @@ background-color: #fff;
     align-items: center;
     margin: 0 auto;
     position: relative;
-    top: -28px;
+    top: -17px;
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
