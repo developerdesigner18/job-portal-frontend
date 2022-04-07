@@ -10,7 +10,7 @@ import { JobsComponent } from './components/jobs/jobs.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
+import { ComponentsRoutingModule } from './components/components-routing.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
   
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ComponentsRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
