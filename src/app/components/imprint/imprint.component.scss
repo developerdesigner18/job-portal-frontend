@@ -38,3 +38,60 @@
   /*media query start*/
   @media screen and (max-width: 500px) {
   }
+
+  .impressum-section-1{
+    padding: 50px 0;
+  }
+  .impressum-box{
+    display: flex;
+    text-align: center;
+    margin-bottom: 50px;
+  
+  }
+  .impressum-h3{
+    color: #4C5C68;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 50px;
+  }
+  
+  .impressum-box-2{
+   display: flex;
+      flex-direction: column;
+      font-size: 20px;
+      color: #4c5c68;
+      font-weight: 500;
+  }
+  .impressum-fa-map{
+    color: #F07D22;
+    font-size: 30px;
+  }
+  .impressum-fa-phone {
+    color:#9CB900;
+     font-size: 30px;
+  }
+  .impressum-fa-envelope{
+    color: #D1B681;
+     font-size: 30px;
+  }
+  .impressum-box-span-txt{
+    font-size: 21px;
+      font-weight: normal;
+  }
+  
+  .impressum-box-span-txt-1{
+    font-size: 30px;
+  }
+  /*media query start*/
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .header-right {
+      float: none;
+    }
+  }

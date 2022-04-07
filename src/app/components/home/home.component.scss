@@ -603,5 +603,174 @@ h1.custom-business {
 @media screen and (max-width: 500px) {
 
 }
+@media (max-width: 1024px){
+
+  .orang-bg-right:before {
+    position: absolute;
+    content: "";
+    background-image: url(/assets/img/home/orange-1.png);
+    background-size: 82%;
+    height: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    top: -16px;
+    left: 87px;
+  }
+  .orang-bg-left:before {
+    position: absolute;
+    content: "";
+    background-image: url(/assets/img/home/orange-2.png);
+    background-size: 100%;
+    height: 237px;
+    background-repeat: no-repeat;
+    width: 178px;
+    bottom: -15px;
+    border-radius: 15px;
+    left: 2px;
+  }
+  .green-bg-right:before {
+    position: absolute;
+    content: "";
+    background-image: url(/assets/img/home/green-right.png);
+    background-size: 82%;
+    height: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    top: -16px;
+    left: 91px;
+  }
+  .cream-bg-right:before {
+    position: absolute;
+    content: "";
+    background-image: url(/assets/img/home/cream-right.png);
+    background-size: 94%;
+    height: 51%;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 335px;
+    top: -21px;
+    right: -6px;
+    border-radius: 20px;
+  }
+
+  .footer-end {
+      flex-direction: column;
+  }
+  span.ft-title , span.ft-title-mobile {
+      margin-left: 0 !important;
+  }
+  .footer-md ul {
+      padding-left: 0 !important;
+      padding-right: 30px !important;
+  }
+  .box {
+      text-align: center;
+      padding: 20px 0;
+  }
+  .box p.sport {
+      font-size: 15px !important;
+  }
+  .line-2:before {
+      right: 55em;
+  }
+  .line-2:after {
+      left: 55em;
+  }
+  .orange-btn , .green-btn , .cream-btn {
+      width: 100% !important;
+  }
+  .beruf_mn {
+      width: 30%;
+  }
+  .ort_mn {
+      width: calc(70% - 180px);
+  }
+  h1.custom-business {
+      font-size: 35px !important;
+  }
+  .jobsheader {
+      font-size: 16px !important;
+  }
+}
+
+@media (max-width: 991px){
+  .box {
+    text-align: center;
+    padding: 0px;
+  }
+  .green-btn, .orange-btn {
+    outline: none!important;
+    border: none!important;
+    padding: 8px 11px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 0 3px 8px #0000003d;
+  }
+  .cream-btn {
+    background-color: #D1B681;
+    outline: none!important;
+    border: none!important;
+    padding: 8px 11px;
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 18px;
+    box-shadow: 0 3px 8px #0000003d;
+  }
+  .green-bg-left:before {
+    position: absolute;
+    content: "";
+    background-image: url(/assets/img/home/green-left.png);
+    background-size: 81%;
+    height: 325px;
+    background-repeat: no-repeat;
+    width: 250px;
+    bottom: -148px;
+    border-radius: 20px;
+    right: -22.5em;
+  }
+  .cream-bg-right:before {
+    position: absolute;
+    content: "";
+    background-image: url(/assets/img/home/cream-right.png);
+    background-size: 78%;
+    height: 51%;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 335px;
+    top: -21px;
+    right: -6px;
+    border-radius: 20px;
+  }
+  .cream-bg-left:before {
+    position: absolute;
+    content: "";
+    background-image: url(/assets/img/home/cream-left.png);
+    background-size: 80%;
+    height: 322px;
+    background-repeat: no-repeat;
+    width: 250px;
+    bottom: -148px;
+    border-radius: 20px;
+    right: -22.5em;
+  }
+  .img-ft[_ngcontent-dgk-c8] {
+    width: 100%;
+    max-width: 115px;
+  }
+  .footer-md[_ngcontent-dgk-c8] ul[_ngcontent-dgk-c8] li[_ngcontent-dgk-c8] {
+    list-style: none;
+    font-size: 17px;
+    color: #fff;
+  }
+  .card-dotted, .card-set-pd {
+    margin-left: 16px;
+    margin-right: -7px;
+  }
+}
+@media (max-width: 767px){
+}
 
 

@@ -396,3 +396,45 @@ button::-moz-focus-inner {
         float: none;
     }
 }
+
+
+@media (max-width: 1024px){
+    .footer-end {
+        flex-direction: column;
+    }
+    span.ft-title , span.ft-title-mobile {
+        margin-left: 0 !important;
+    }
+    .footer-md ul {
+        padding-left: 0 !important;
+        padding-right: 30px !important;
+    }
+    .box {
+        text-align: center;
+        padding: 20px 0;
+    }
+    .box p.sport {
+        font-size: 15px !important;
+    }
+    .line-2:before {
+        right: 55em;
+    }
+    .line-2:after {
+        left: 55em;
+    }
+    .orange-btn , .green-btn , .cream-btn {
+        width: 100% !important;
+    }
+    .beruf_mn {
+        width: 30%;
+    }
+    .ort_mn {
+        width: calc(70% - 180px);
+    }
+    h1.custom-business {
+        font-size: 35px !important;
+    }
+    .jobsheader {
+        font-size: 16px !important;
+    }
+  }
