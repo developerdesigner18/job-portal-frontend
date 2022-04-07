@@ -1,0 +1,239 @@
+section {
+    display: block;
+}
+img {
+    border: 0;
+}
+@media print {
+    *,
+    :after,
+    :before {
+        color: #000 !important;
+        text-shadow: none !important;
+        background: 0 0 !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p {
+        orphans: 3;
+        widows: 3;
+    }
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+img {
+    vertical-align: middle;
+}
+p {
+    margin: 0 0 10px;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-md-6 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (min-width: 992px) {
+    .col-md-6 {
+        float: left;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+}
+.container:after,
+.container:before,
+.row:after,
+.row:before {
+    display: table;
+    content: " ";
+}
+.container:after,
+.row:after {
+    clear: both;
+}
+/*! CSS Used from: https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css */
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+section {
+    display: block;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-md-6 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (min-width: 768px) {
+    .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media print {
+    *,
+    ::after,
+    ::before {
+        text-shadow: none !important;
+        box-shadow: none !important;
+    }
+    img {
+        page-break-inside: avoid;
+    }
+    p {
+        orphans: 3;
+        widows: 3;
+    }
+    .container {
+        min-width: 992px !important;
+    }
+}
+
+
+.home {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 100%;
+  }
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  .carsoul-img {
+    background-color: #fff;
+    filter: brightness(0.7);
+  }
+  #about-us span {
+  font-size: 55px;
+  color: #FFFFFF;
+  font-family: 'Bebas Neue', cursive;
+  }
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    top: 100px !important;
+    word-break: break-all;
+    font-size: 55px;
+    color: #FFFFFF;
+    font-family: "Bebas Neue", cursive;
+  }
+  .home {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+  }
+  /*media query start*/
+  @media screen and (max-width: 500px) {
+  }
+
+  .vision-section-1{
+    padding: 50px 0;
+  }
+  
+  .vision-text {
+      color: #4C5C68;
+      font-size: 22px;
+  } 
+  .vision-img{
+    width: 100%;
+  }
+  
+  .vision-section-2{
+    padding: 50px 0;
+  }
+  .vision-text-1{
+     color: #4C5C68;
+      font-size: 20px;
+  }
