@@ -164,21 +164,21 @@ h1.custom-business {
    position: relative;
 }
 .line:before{
-  position: absolute;
+    position: absolute;
     content: '';
     border: 2px solid #4c5c68;
     width: 121px;
     top: 20px;
-    right: 55em;
+    right: 60em;
 }
 
 .line:after{
-  position: absolute;
+    position: absolute;
     content: '';
     border: 2px solid #4c5c68;
     width: 121px;
     top: 20px;
-    left: 55em;
+    left: 59em;
 }
 .section-title-img{
   width: 100%;
@@ -1099,12 +1099,13 @@ background-color: #fff;
     margin-top: 6em;
 }
 .sport-section-3-heading{
-      font-size: 46px;
+    font-size: 46px;
     text-transform: uppercase;
-    color:#D1B681;
+    color: #4c5c68;
     text-align: center;
     font-weight: bold;
     padding-bottom: 15px;
+    margin-top: 70px;
 }
 .sport-section-3-inner-text{
   text-align: center;
@@ -1475,4 +1476,80 @@ font-family: 'Bebas Neue', cursive;
 }
 /*media query start*/
 @media screen and (max-width: 500px) {
+}
+
+.Heading_b {
+  position: absolute;
+  width: 386px;
+  height: 159px;
+  left: 707px;
+  top: 0px;
+  overflow: visible;
+}
+
+.Heading_Pattern_b {
+  position: sticky;
+  width: 386px;
+  height: 80px;
+  left: 0px;
+  top: 79px;
+  overflow: visible;
+  display: flex;
+}
+
+.Rectangle_18_b {
+  position: absolute;
+  overflow: visible;
+  width: 120px;
+  height: 6px;
+  left: 266px;
+  top: 37px;
+}
+
+.Unser_Team {
+  left: 4px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 379px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  color: rgba(76,92,104,1);
+  text-transform: uppercase;
+}
+
+::ng-deep .current {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;  
+  border: 2px solid #777;
+  border-radius: 100%;
+  position: inherit;
+  border-radius: 10px;
+}
+
+::ng-deep .ngx-pagination .current {
+  padding: 0.1875rem 0.625rem;
+  background: #ffffff !important;
+  color: #fefefe;
+  cursor: default;
+  border-radius: 10px;
+}
+
+::ng-deep .ngx-pagination li {
+  padding: 0.1875rem 0.625rem;
+  // background: #ffffff !important;
+  color: #fefefe;
+  cursor: default;
+  border-radius: 10px !important;
+  // border: 1px solid #000;
+}
+
+::ng-deep .pagination-previous {
+    padding: 20px;
 }

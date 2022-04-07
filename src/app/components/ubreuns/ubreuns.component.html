@@ -71,5 +71,55 @@
 				</div>
 			</div>
 		 </div>
+
+		 <div class="container">
+            <h1 class="sport-section-3-heading">Unser Team</h1>
+			<!-- <div> -->
+				<!-- <img class="business-and-trade_cb" src="/assets/img/about-us/gray-business.png"> -->
+			<!-- </div> -->
+			<div class="line">
+				<img src="assets/img/home/business-img.png" class="section-title-img">
+			</div>
+
+			<!-- <div class="Heading_Pattern_b">
+				<svg class="Rectangle_18_b">
+					<rect class="Rectangle_18_b" rx="0" ry="0" x="0" y="0" width="120" height="6">
+					</rect>
+				</svg>
+				<svg class="Rectangle_19_ca">
+					<rect class="Rectangle_19_ca" rx="0" ry="0" x="0" y="0" width="120" height="6">
+					</rect>
+				</svg>
+				<img class="business-and-trade_cb" src="business-and-trade_cb.png" srcset="business-and-trade_cb.png 1x, business-and-trade_cb@2x.png 2x">
+					
+			</div> -->
+
+
+			<div class="col-md-4" *ngFor="let item of image | paginate: { itemsPerPage: 3, currentPage: p }">
+				<div class="section-3-main-box">
+					<div class="section-3-main-box-left-1">
+						<img src="{{item}}">
+					</div>
+					<div class="section-3-main-box-left-2">
+						<div class="main-box-left-2-inner">
+							<span>Many K.</span>
+						</div>
+						<div class="main-box-left-2-inner">
+							<span>CEO</span>
+						</div>
+						<div class="main-box-left-2-inner">
+							<span>manyk@gmail.com</span>
+						</div>
+						<div class="main-box-left-2-inner">
+							<span>+49 987 654 3210</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<pagination-controls (pageChange)="p = $event"></pagination-controls>
+
+		</div>
+		 
 	</section>
 </div>
