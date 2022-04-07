@@ -1454,22 +1454,22 @@ tr{
   width: 100%;
 }
 
-.vision-section-1{
+.privacy-section-1{
   padding: 50px 0;
 }
 
-.vision-text {
+.privacy-text {
   color: #4C5C68;
   font-size: 22px;
 } 
-.vision-img{
+.privacy-img{
   width: 100%;
 }
 
-.vision-section-2{
+.privacy-section-2{
   padding: 50px 0;
 }
-.vision-text-1{
+.privacy-text-1{
  color: #4C5C68;
  font-size: 20px;
 }
@@ -1623,4 +1623,20 @@ tr{
   .header-right {
     float: none;
   }
+}
+
+
+.section-privacy{
+  width: 30px;
+  height: 29px;
+  line-height: 58px;
+  font-size: 30px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  color: #4C5C68;
+  margin-left: 117px;
+  white-space: nowrap;
+  font-weight: bold;
 }

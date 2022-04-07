@@ -1,4 +1,3 @@
-
 .img-logo{
     width: 100%;
     max-width: 150px;
@@ -898,7 +897,7 @@ section.slider-bottom {
     font-weight: 400;
 }
 
-  .jobsheader {
+.jobsheader {
     background-color: #fff;
     padding: 10px 20px;
     display: flex;
@@ -941,6 +940,9 @@ section.slider-bottom {
 }
 
 @media (max-width: 1024px){
+    .box-slider-bottom {
+        width: 98%;
+    }
     .footer-end {
         flex-direction: column;
     }
@@ -976,7 +978,472 @@ section.slider-bottom {
     h1.custom-business {
         font-size: 35px !important;
     }
+}
+
+
+@media (max-width: 768px){
+    .carousel-caption {
+        top: 0px!important;
+    } 
+    .box-slider-bottom {
+        flex-wrap: wrap;
+    }
+    label.finden-box {
+        width: 100% !important;
+    }
+    .ort_mn{
+        width: 60%;
+    }
+    .beruf_mn {
+        width: 40%;
+    }
+    label.finden-box {
+        border-radius: 0 0 10px 10px !important;
+    }
     .jobsheader {
         font-size: 16px !important;
     }
+    .graz_fri_cat_mn > div {
+        margin-right: 10px !important;
+    }
+    .work_preparation_mn > div p {
+        padding: 4px 7px !important;
+    }
+    .heben_text h4 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .follow_jobs button.follow_btn{
+        font-size: 13px !important;
+    }
+    .companies_blog_mn > div {
+        display: inline-block;
+        flex: inherit !important;
+        width: 50% !important;
+        max-width: inherit !important;
+        margin-bottom: 40px;
+    }
+    .funktion_blog_details {
+        height: 800px;
+    }
+    .funktion_icon.funktion_icon_1 {
+        top: 30px;
+    }
+    .funktion_icon.funktion_icon_2 {
+        right: 20px;
+        top: 20%;
+    }
+    .funktion_icon.funktion_icon_3 {
+        right: 10px;
+        top: 56%;
+    }
+    .funktion_icon.funktion_icon_4 {
+        bottom: 30px;
+    }
+    .funktion_icon.funktion_icon_5 {
+        left: 10px;
+        top: 56%;
+    }
+    .funktion_icon.funktion_icon_6 {
+        left: 20px;
+        top: 20%;
+    }
+    section.footer-pd .row > div {
+        margin: 20px 0;
+        width: 100% !important;
+        flex: inherit !important;
+        max-width: inherit !important;
+        text-align: center !important;
+    }
+    .footer-md ul {
+        width: 50% !important;
+        padding: 0 !important;
+    }
+    .footer-end {
+        flex-direction: row;
+    }
+    .funktion_blog_details:before {
+        height: 600px !important;
+        width: 600px !important;
+    }
+    .line:before {
+        right: 45em;
+    }
+    .line:after {
+        left: 45em;
+    }
 }
+
+
+@media (max-width: 767px){
+    .ort_mn{
+        width: 100% !important;
+    }
+    .beruf_mn {
+        width: 100% !important;
+    }
+    h1.custom-business {
+        font-size: 20px!important;
+    }
+    .line:after, .line:before {
+        width: 36% !important;
+    }
+    .line:after {
+        right: 0 !important;
+    }
+    .line:before {
+        left: 0 !important;
+    }
+    .companies_blog_mn > div {
+        width: 100% !important;
+    }
+    .heben_enner_mn {
+        height: auto !important;
+        flex-direction: column-reverse;
+        padding-top: 50px !important;
+    }
+    .heben_text h4 {
+        font-size: 22px !important;
+    }
+    .heben_text p {
+        font-size: 18px !important;
+    }
+    .heben_text button {
+        font-size: 20px !important;
+    }
+    .heben_img {
+        width: 80% !important;
+        position: inherit !important;
+    }
+    .heben_text {
+        padding: 0 15px !important;
+        width: 100% !important;
+        float: inherit !important;
+        margin-right: 0 !important;
+    }
+    .funktion_blog_details {
+        height: 400px !important;
+    }
+    .funktion_icon {
+        height: 80px;
+        width: 80px;
+    }
+    .funktion_icon img {
+        width: 40px;
+    }    
+    .funktion_blog_details:before {
+        height: 300px;
+        width: 300px;
+    }
+    .funktion_icon.funktion_icon_1 {
+        top: 0px;
+    }
+    .funktion_icon.funktion_icon_2 {
+        right: -5px;
+        top: 60%;
+    }
+    .funktion_icon.funktion_icon_3 {
+        right: -5px;
+        top: 60%;
+    }
+    .funktion_icon.funktion_icon_4 {
+        bottom: 0px;
+    }
+    .funktion_icon.funktion_icon_5 {
+        left: 0px;
+        top: 60%;
+    }
+    .funktion_icon.funktion_icon_6 {
+        left: 0px;
+        top: 20%;
+    }
+    .funktion_details h4 {
+        font-size: 20px !important;
+    }
+    .funktion_details p {
+        font-size: 16px;
+        font-weight: 400;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+
+}
+
+
+
+
+
+/*! CSS Used from: https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css */
+section {
+    display: block;
+}
+a {
+    background-color: transparent;
+}
+a:active,
+a:hover {
+    outline: 0;
+}
+img {
+    border: 0;
+}
+@media print {
+    *,
+    :after,
+    :before {
+        color: #000 !important;
+        text-shadow: none !important;
+        background: 0 0 !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+a:focus,
+a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+a:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+img {
+    vertical-align: middle;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-md-4 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (min-width: 992px) {
+    .col-md-4 {
+        float: left;
+    }
+    .col-md-4 {
+        width: 33.33333333%;
+    }
+}
+.container:after,
+.container:before,
+.row:after,
+.row:before {
+    display: table;
+    content: " ";
+}
+.container:after,
+.row:after {
+    clear: both;
+}
+/*! CSS Used from: https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css */
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+section {
+    display: block;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-md-4 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (min-width: 768px) {
+    .col-md-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+@media print {
+    *,
+    ::after,
+    ::before {
+        text-shadow: none !important;
+        box-shadow: none !important;
+    }
+    a:not(.btn) {
+        text-decoration: underline;
+    }
+    img {
+        page-break-inside: avoid;
+    }
+    .container {
+        min-width: 992px !important;
+    }
+}
+/*! CSS Used from: http://localhost:4200/styles.css */
+* {
+    box-sizing: border-box;
+}
+/*! CSS Used from: Embedded */
+.section-6-pd {
+    padding: 30px 0 0;
+    background-color: #4c5c68;
+}
+.section-6-box-1 {
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 2em;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.section-6-span-text {
+    font-size: 20px;
+    color: #4c5c68;
+    font-weight: 500;
+}
+.section-6-span-text-1 {
+    font-size: 14px;
+    color: #4c5c68;
+    font-weight: 600;
+}
+.section-6-img {
+    width: 100%;
+    max-width: 60px;
+}
+.section-6-img-1 {
+    width: 100%;
+    max-width: 185px;
+}
+.section-6-box-2 {
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5em;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.section-6-main-box {
+    position: relative;
+    top: 70px;
+    margin-bottom: 15em;
+}
+.section-footer {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 580px;
+    white-space: nowrap;
+}
+
+
+
+
