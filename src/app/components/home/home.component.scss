@@ -194,7 +194,7 @@ h1.custom-business {
  height: 237px;
  background-repeat: no-repeat;
  width: 178px;
- bottom: -18px;
+ bottom: -21px;
  border-radius: 15px;
  left: 2px;
 }
@@ -642,7 +642,7 @@ h1.custom-business {
   height: 237px;
   background-repeat: no-repeat;
   width: 178px;
-  bottom: 8px;
+  bottom: -11px;
   border-radius: 15px;
   left: 2px;
 }
@@ -750,7 +750,7 @@ h1.custom-business {
     height: 325px;
     background-repeat: no-repeat;
     width: 250px;
-    bottom: -148px;
+    bottom: -153px;
     border-radius: 20px;
     right: -22.5em;
   }
@@ -771,11 +771,11 @@ h1.custom-business {
     position: absolute;
     content: "";
     background-image: url(/assets/img/cream-left.png);
-    background-size: 80%;
-    height: 322px;
+    background-size: 76%;
+    height: 294px;
     background-repeat: no-repeat;
     width: 250px;
-    bottom: -148px;
+    bottom: -104px;
     border-radius: 20px;
     right: -22.5em;
   }
@@ -834,6 +834,17 @@ h1.custom-business {
   position: relative;
   margin: 0 0px;
 }
+#sport span {
+  font-size: 30px !important;
+  color: #FFFFFF !important;
+  font-family: "Bebas Neue", cursive;
+}
+
+.carousel-caption {
+  position: absolute;
+    top: 15px !important;
+ }
+
 
   /*.footer-mobile-set{
     display: flex;
@@ -917,17 +928,17 @@ h1.custom-business {
   }
 
 
-  .line-2.active, .line-2.active:before {
+  .line-2:after, .line-2:before {
     position: absolute;
     content: "";
     border: 2px solid #fff;
     width: 60px;
     top: 20px;
   }
-  .line:before {
+  .line-2:before {
     right: 33em;
   }
-  .line:after {
+  .line-2:after {
     left: 33em;
   }
 }
@@ -946,10 +957,10 @@ h1.custom-business {
 .line:after {
   left: 25em;
 }
-.line:before {
+.line-2:before {
   right: 25em;
 }
-.line:after {
+.line-2:after {
   left: 25em;
 }
 /*.img-ft {
@@ -973,10 +984,10 @@ h1.custom-business {
 .line:after {
   left: 22em;
 }
-.line:before {
+.line-2:before {
   right: 22em;
 }
-.line:after {
+.line-2:after {
   left: 22em;
 }
 /*.img-ft {

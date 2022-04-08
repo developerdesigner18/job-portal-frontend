@@ -13,7 +13,7 @@ export class UbreunsComponent implements OnInit {
     "/assets/img/Rectangle_98_cy.png",
     "/assets/img/Rectangle_98_cy.png",
     "/assets/img/Rectangle_98@2x.png"]
-  p: number = 1;
+  pagination: number = 1;
 
   constructor() {
     // for (let i = 1; i <= 10; i++) {

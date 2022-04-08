@@ -317,7 +317,11 @@ button::-moz-focus-inner {
 }
 .img-logo-sport {
     width: 100%;
-    max-width: 196px;
+    max-width: 250px;
+}
+.img-logo-jobs {
+    width: 100%;
+    max-width: 250px;
 }
 .dropbtn {
     background-color: #4c5c68;
@@ -444,4 +448,10 @@ button::-moz-focus-inner {
   .show-mobile{
       display: block;
   }
+
+  .dropdown-content {
+    position: absolute !important;
+    z-index: 11 !important;
+   }
+
 }

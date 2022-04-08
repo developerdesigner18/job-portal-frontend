@@ -1,11 +1,12 @@
 <div class="home">
 	<div id="demo" class="carousel slide" data-ride="carousel">
 		<div class="carousel-inner">
-			<div class="carousel-item active">	
-				<img src="/assets/img/Background Image@2x.png" alt="about-us" width="1100" height="700" class="carsoul-img">
-				 <div class="carousel-caption" id="about-us">
+			<div class="carousel-item active">
+				<img src="/assets/img/Background Image@2x.png" alt="about-us" width="1100" height="700"
+					class="carsoul-img">
+				<div class="carousel-caption" id="about-us">
 					Über uns
-				  </div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -43,14 +44,14 @@
 	<section class="about-us-section-2">
 		<div class="container">
 			<h1 class="about-us-section-2-heading">Als Team bleiben wir den ursprünglichen
-			Werten des Unternehmens treu</h1>
+				Werten des Unternehmens treu</h1>
 			<div class="row ">
 				<div class="about-us-mb">
 					<div class="col-md-4">
 						<div class="about-us-box-orange">
 							<span class="about-us-box-orange-txt">Sinnvolles tun.
 								Positives
-							bewirken.</span>
+								bewirken.</span>
 						</div>
 					</div>
 					<div class="col-md-4">
@@ -58,50 +59,72 @@
 							<span class="about-us-box-orange-txt">Modern und
 								traditionell.
 								Zukunftsorientiert
-							und nachhaltig.</span>
+								und nachhaltig.</span>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="about-us-box-cream">
 							<span class="about-us-box-orange-txt">All das mit
 								Mit Herz und
-							Verstand.</span>
+								Verstand.</span>
 						</div>
 					</div>
 				</div>
 			</div>
-		 </div>
+		</div>
 
-		 <div class="container">
-            <h1 class="sport-section-3-heading">Unser Team</h1>
+		<div class="container">
+			<h1 class="sport-section-3-heading">Unser Team</h1>
 			<div class="line">
 				<img src="/assets/img/business-img.png" class="section-title-img">
 			</div>
-			<div class="col-md-4" *ngFor="let item of image | paginate: { itemsPerPage: 3, currentPage: p }">
-				<div class="section-3-main-box">
-					<div class="section-3-main-box-left-1">
-						<img src="{{item}}">
-					</div>
-					<div class="section-3-main-box-left-2">
-						<div class="main-box-left-2-inner">
+			<div class="row">
+				<div class="col-md-4" *ngFor="let item of image | paginate: { itemsPerPage: 3, currentPage: pagination , id:'filterdata'}">
+					<div class="section-3-main-box">
+						<div class="section-3-main-box-left-1">
+							<img src="{{item}}">
+							<div class="team-facebook-square">
+								<i class="fa fa-facebook-f"></i>
+							</div>
+							<div class="team-instagram-square">
+								<i class="fa fa-instagram"></i>
+							</div>
+							<div class="team-twitter-square">
+								<i class="fa fa-twitter"></i>
+							</div>
+							<div class="team-link-in-square">
+								<i class="fa fa-linkedin"></i>
+							</div>
+							<div class="team-youtub-square">
+								<i class="fa fa-youtube-play"></i>
+							</div>
+							
+						</div>
+						<div class="about-us-main-box-left-2">
 							<span>Many K.</span>
-						</div>
-						<div class="main-box-left-2-inner">
 							<span>CEO</span>
-						</div>
-						<div class="main-box-left-2-inner">
 							<span>manyk@gmail.com</span>
-						</div>
-						<div class="main-box-left-2-inner">
 							<span>+49 987 654 3210</span>
 						</div>
 					</div>
 				</div>
+				<!-- <div class="slider-button">
+					<div class="slider-square-1">
+						<i class="fa fa-angle-left"></i>
+					</div>
+					<div class="slider-square-2"></div>
+					<div class="slider-square-3"></div>
+					<div class="slider-square-4"></div>
+					<div class="slider-square-5">
+						<i class="fa fa-angle-right"></i>
+					</div>
+				</div> -->
 			</div>
-
-			<pagination-controls (pageChange)="p = $event"></pagination-controls>
-
 		</div>
-		 
+		<div class="pagination-div">
+			<pagination-controls class="pagination" (pageChange)="pagination = $event" id="filterdata">
+			</pagination-controls>
+		</div>
+
 	</section>
 </div>
