@@ -5,8 +5,6 @@ section {
 img {
     border: 0;
 }
-
-
 .footer-end {
     display: flex;
     margin-top: 25px;
@@ -41,7 +39,6 @@ span.ft-title {
     margin-left: 0;
     font-size: 26px;
 }
-
 @media print {
     *,
     :after,
@@ -212,14 +209,11 @@ span.ft-title {
     padding: 0 12px;
     text-align: center !important;
 }
-
 .bottom-footer {
     background-color: #3d4d5a;
     text-align: center;
     padding: 15px;
 }
-
-
 .footer-txt-bottom {
     color: #fff;
     font-size: 25px;
@@ -228,9 +222,6 @@ span.ft-title {
 .footer-menu {
     color: #fff;
 }
-
-
-
 @media (max-width: 1024px){
     .footer-end {
         flex-direction: column;
@@ -270,4 +261,19 @@ span.ft-title {
     .jobsheader {
         font-size: 16px !important;
     }
-  }
+}
+@media (max-width: 768px){
+    section.footer-pd .row > div {
+        max-width: inherit !important;
+        width: 50% !important;
+        flex: inherit !important;
+    }
+}
+@media (max-width: 767px){
+    section.footer-pd .row > div {
+        max-width: inherit !important;
+        width: 100% !important;
+        flex: inherit !important;
+        margin: 30px 0;
+    }
+}
