@@ -189,7 +189,7 @@ h1.custom-business {
 .orang-bg-left::before{
  position: absolute;
  content: '';
- background-image: url(/assets/img/home/orange-2.png);
+ background-image: url(/assets/img/orange-2.png);
  background-size: 100%;
  height: 237px;
  background-repeat: no-repeat;
@@ -205,7 +205,7 @@ h1.custom-business {
 .orang-bg-right::before{
  position: absolute;
  content: '';
- background-image: url(/assets/img/home/orange-1.png);
+ background-image: url(/assets/img/orange-1.png);
  background-size:96%;
  height: 100%;
  background-repeat: no-repeat;
@@ -220,7 +220,7 @@ h1.custom-business {
 .green-bg-left::before{
   position: absolute;
   content: '';
-  background-image: url(/assets/img/home/green-left.png);
+  background-image: url(/assets/img/green-left.png);
   background-size: 100%;
   height: 367px;
   background-repeat: no-repeat;
@@ -237,7 +237,7 @@ h1.custom-business {
 .green-bg-right::before{
  position: absolute;
  content: '';
- background-image: url(/assets/img/home/green-right.png);
+ background-image: url(/assets/img/green-right.png);
  background-size:96%;
  height: 100%;
  background-repeat: no-repeat;
@@ -254,7 +254,7 @@ h1.custom-business {
 .cream-bg-left::before{
  position: absolute;
  content: '';
- background-image: url(/assets/img/home/cream-left.png);
+ background-image: url(/assets/img/cream-left.png);
  background-size: 100%;
  height: 367px;
  background-repeat: no-repeat;
@@ -270,7 +270,7 @@ h1.custom-business {
 .cream-bg-right::before{
   position: absolute;
   content: '';
-  background-image: url(/assets/img/home/cream-right.png);
+  background-image: url(/assets/img/cream-right.png);
   background-size: 96%;
   height: 100%;
   background-repeat: no-repeat;
@@ -626,7 +626,7 @@ h1.custom-business {
  .orang-bg-right:before {
   position: absolute;
   content: "";
-  background-image: url(/assets/img/home/orange-1.png);
+  background-image: url(/assets/img/orange-1.png);
   background-size: 82%;
   height: 100%;
   background-repeat: no-repeat;
@@ -637,7 +637,7 @@ h1.custom-business {
 .orang-bg-left:before {
   position: absolute;
   content: "";
-  background-image: url(/assets/img/home/orange-2.png);
+  background-image: url(/assets/img/orange-2.png);
   background-size: 100%;
   height: 237px;
   background-repeat: no-repeat;
@@ -649,7 +649,7 @@ h1.custom-business {
 .green-bg-right:before {
   position: absolute;
   content: "";
-  background-image: url(/assets/img/home/green-right.png);
+  background-image: url(/assets/img/green-right.png);
   background-size: 82%;
   height: 100%;
   background-repeat: no-repeat;
@@ -660,7 +660,7 @@ h1.custom-business {
 .cream-bg-right:before {
   position: absolute;
   content: "";
-  background-image: url(/assets/img/home/cream-right.png);
+  background-image: url(/assets/img/cream-right.png);
   background-size: 94%;
   height: 51%;
   background-repeat: no-repeat;
@@ -745,7 +745,7 @@ h1.custom-business {
   .green-bg-left:before {
     position: absolute;
     content: "";
-    background-image: url(/assets/img/home/green-left.png);
+    background-image: url(/assets/img/green-left.png);
     background-size: 81%;
     height: 325px;
     background-repeat: no-repeat;
@@ -757,7 +757,7 @@ h1.custom-business {
   .cream-bg-right:before {
     position: absolute;
     content: "";
-    background-image: url(/assets/img/home/cream-right.png);
+    background-image: url(/assets/img/cream-right.png);
     background-size: 78%;
     height: 51%;
     background-repeat: no-repeat;
@@ -770,7 +770,7 @@ h1.custom-business {
   .cream-bg-left:before {
     position: absolute;
     content: "";
-    background-image: url(/assets/img/home/cream-left.png);
+    background-image: url(/assets/img/cream-left.png);
     background-size: 80%;
     height: 322px;
     background-repeat: no-repeat;
@@ -797,33 +797,28 @@ h1.custom-business {
 @media (max-width: 767px){
 
   .orang-bg-left:before {
-
-    background-image:unset;
+    display: none;
 
   }
   .orang-bg-right:before {
 
-    background-image:unset;
-
+    display: none;
   }
 
   .green-bg-left:before {
-
-    background-image:unset;
-
+    display: none;
   }
 
   .green-bg-right:before {
-
-    background-image:unset;
+    display: none;
   }
 
   .cream-bg-right:before {
-   background-image:unset;
+    display: none;
  }
 
  .cream-bg-left:before {
-   background-image:unset;
+  display: none;
  }
 
  .card-set-pd {

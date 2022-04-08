@@ -7,12 +7,12 @@ import { NgxPaginationModule } from 'ngx-pagination';
   styleUrls: ['./ubreuns.component.scss']
 })
 export class UbreunsComponent implements OnInit {
-  image:any[] = ["/assets/img/about-us/Rectangle_98.png",
-    "/assets/img/about-us/Rectangle_98_dg.png",
-    "/assets/img/about-us/Rectangle_98_dg@2x.png",
-    "/assets/img/about-us/Rectangle_98_cy.png",
-    "/assets/img/about-us/Rectangle_98_cy.png",
-    "/assets/img/about-us/Rectangle_98@2x.png"]
+  image:any[] = ["/assets/img/Rectangle_98.png",
+    "/assets/img/Rectangle_98_dg.png",
+    "/assets/img/Rectangle_98_dg@2x.png",
+    "/assets/img/Rectangle_98_cy.png",
+    "/assets/img/Rectangle_98_cy.png",
+    "/assets/img/Rectangle_98@2x.png"]
   p: number = 1;
 
   constructor() {
