@@ -1154,11 +1154,59 @@ section.slider-bottom {
     .line:after {
         left: 45em;
     }
+    .funktion_mn .row {
+        margin: 0 auto !important;
+    }
 }
 
 
 @media (max-width: 767px){
+    .funktion_mn .row {
+        margin: 0 auto !important;
+    }
+    .jobsheader-right {
+        width: 100% !important;
+    }
+    .jobsheader-right a {
+        text-align: center !important;
+    }
+    .jobsheader a {
+        padding: 0 !important;
+    }
+    div#jobs span {
+        font-size: 18px!important;
+    }
+    .box-slider-bottom {
+        top: -18px !important;
+    }
+    .custom-pd .label-box {
+        padding: 12px 14px !important;
+    }
+    .beruf_mn i {
+        padding: 12px 15px !important;
+    }
+    .ort_mn i {
+        padding: 12px 15px !important;
+        border: none !important;
+    }
+    .ort_mn select.item-box {
+        width: 100% !important;
+        border-top: 2px solid #f49e55;
+        padding: 12px 15px !important;
+        font-size: 19px !important;
+    }
+    label.finden-box {
+        padding: 12px 20px !important;
+        font-size: 18px !important;
+    }
+    .ort_mn {
+        flex-wrap: wrap;
+    }
+    .beruf_mn {
+        border-bottom: 2px solid #f49e55;
+    }
     .heben_mn {
+        height: 440px !important;
         margin-bottom: 200px !important;
     }
     .ort_mn{
@@ -1210,6 +1258,7 @@ section.slider-bottom {
         margin-bottom: 15px !important;
     }
     .funktion_blog_details {
+        width: 300px !important;
         height: 400px !important;
     }
     .funktion_icon {

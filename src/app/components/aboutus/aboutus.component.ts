@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { NgxPaginationModule } from 'ngx-pagination';
 
 @Component({
-  selector: 'app-ubreuns',
-  templateUrl: './ubreuns.component.html',
-  styleUrls: ['./ubreuns.component.scss']
+  selector: 'app-aboutus',
+  templateUrl: './aboutus.component.html',
+  styleUrls: ['./aboutus.component.scss']
 })
-export class UbreunsComponent implements OnInit {
+export class aboutusComponent implements OnInit {
   image:any[] = ["/assets/img/Rectangle_98.png",
     "/assets/img/Rectangle_98_dg.png",
     "/assets/img/Rectangle_98_dg@2x.png",

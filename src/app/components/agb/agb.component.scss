@@ -30,11 +30,7 @@
     color: #FFFFFF;
     font-family: "Bebas Neue", cursive;
   }
-  .home {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-  }
+
   /*media query start*/
   @media screen and (max-width: 500px) {
   }
@@ -241,4 +237,48 @@ section {
   background-color: #fff;
   border-radius: 50%;
   margin-bottom: 8px;
+}
+
+
+
+.agb-section-1{
+  padding: 50px 0;
+}
+
+
+.agb-text-upper {
+  color: #4C5C68;
+  font-size: 22px;
+} 
+
+.agb-text {
+  color: #4C5C68;
+  font-size: 22px;
+  line-height: 1.0em;
+} 
+.agb-img{
+  width: 100%;
+}
+
+.agb-section-2{
+  padding: 50px 0;
+}
+.agb-text-1{
+ color: #4C5C68;
+ font-size: 20px;
+}
+
+.section-agb{
+  width: 30px;
+  height: 29px;
+  line-height: 58px;
+  font-size: 30px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  color: #4C5C68;
+  margin-left: 117px;
+  white-space: nowrap;
+  font-weight: bold;
 }

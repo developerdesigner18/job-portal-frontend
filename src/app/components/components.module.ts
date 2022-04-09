@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import {NgModule } from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -9,15 +9,15 @@ import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from '../app-routing.module';
 import { SportComponent } from './sport/sport.component';
-import { UbreunsComponent } from './ubreuns/ubreuns.component';
+import { aboutusComponent } from './aboutus/aboutus.component';
 import { VisionComponent } from './vision/vision.component';
-import { KontaktComponent } from './kontakt/kontakt.component';
+import { contactusComponent } from './contactus/contactus.component';
 import { StadtComponent } from './stadt/stadt.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { AgbComponent } from './agb/agb.component';
 import { NgImageSliderModule } from 'ng-image-slider';
-
+import { NgxPaginationModule } from 'ngx-pagination';
 
 //Module decorator specifying all the components used in the application 
 @NgModule({
@@ -26,9 +26,9 @@ import { NgImageSliderModule } from 'ng-image-slider';
      HomeComponent,
      StadtComponent,
      SportComponent,
-     UbreunsComponent,
+     aboutusComponent,
      VisionComponent,
-     KontaktComponent,
+     contactusComponent,
      PrivacyComponent,
      ImprintComponent,
      AgbComponent,
@@ -43,6 +43,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
     CommonModule,
     BrowserAnimationsModule, 
     NgImageSliderModule,
+    NgxPaginationModule
+
   ],
   providers: [],
 })

@@ -6,7 +6,7 @@ const routes: Routes = [
 
   {
     path: '',
-    loadChildren: () => import('./home/main.module').then(m => m.MainModule),
+    loadChildren: () => import('./home/home.module').then(m => m.homeModule),
   },
   {
     path: 'jobs',
@@ -22,11 +22,11 @@ const routes: Routes = [
   },
   {
     path: 'contact',
-    loadChildren: () => import('./kontakt/kontakt.module').then(m => m.KontaktModule),
+    loadChildren: () => import('./contactus/contactus.module').then(m => m.contactusModule),
   },
   {
     path: 'about-us',
-    loadChildren: () => import('./ubreuns/ubreuns.module').then(m => m.UbreunsModule),
+    loadChildren: () => import('./aboutus/aboutus.module').then(m => m.aboutusModule),
   },
   {
     path: 'vision',

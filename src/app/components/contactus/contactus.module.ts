@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { MainRoutingModule } from './home-routing.module';
+import { contactusRoutingModule } from './contactus-routing.module';
 
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    MainRoutingModule
+    contactusRoutingModule
   ]
 })
-export class MainModule { }
+export class contactusModule { }

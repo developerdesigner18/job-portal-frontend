@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ComponentsRoutingModule } from './components/components-routing.module';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 @NgModule({
   declarations: [
@@ -26,8 +27,8 @@ import { ComponentsRoutingModule } from './components/components-routing.module'
     BrowserModule,
     FormsModule,
     HttpClientModule,
-  
     ReactiveFormsModule,
+    NgImageSliderModule,
     AppRoutingModule,
     ComponentsRoutingModule
   ],

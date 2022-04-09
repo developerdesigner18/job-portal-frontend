@@ -1,18 +1,18 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { UbreunsRoutingModule } from './ubreuns-routing.module';
 import { NgxPaginationModule } from 'ngx-pagination';
-import { UbreunsComponent } from './ubreuns.component';
+import { aboutusComponent } from './aboutus.component';
+import { aboutsusRoutingModule } from './aboutus-routing.module';
 
 @NgModule({
   declarations: [
-    UbreunsComponent
+    aboutusComponent
   ],
   imports: [
     CommonModule,
-    UbreunsRoutingModule,
+    aboutsusRoutingModule,
     NgxPaginationModule
   ],
 })
-export class UbreunsModule { }
+export class aboutusModule { }
