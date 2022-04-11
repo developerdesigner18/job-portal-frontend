@@ -11,8 +11,7 @@ export class aboutusComponent implements OnInit {
     "/assets/img/Rectangle_98_dg.png",
     "/assets/img/Rectangle_98_dg@2x.png",
     "/assets/img/Rectangle_98_cy.png",
-    "/assets/img/Rectangle_98_cy.png",
-    "/assets/img/Rectangle_98@2x.png"]
+   ]
   pagination: number = 1;
 
   constructor() {

@@ -41,21 +41,21 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
   height: 100%;
 }
 
-#jobs span {
+#home span {
   font-size: 55px;
   color: #FFFFFF;
   font-family: 'Bebas Neue', cursive;
 }
-#stadt span {
-  font-size: 55px;
-  color: #FFFFFF;
-  font-family: 'Bebas Neue', cursive;
-}
-#sport span {
-  font-size: 55px;
-  color: #FFFFFF;
-  font-family: 'Bebas Neue', cursive;
-}
+// #stadt span {
+//   font-size: 55px;
+//   color: #FFFFFF;
+//   font-family: 'Bebas Neue', cursive;
+// }
+// #sport span {
+//   font-size: 55px;
+//   color: #FFFFFF;
+//   font-family: 'Bebas Neue', cursive;
+// }
 
 .dropbtn {
  background-color: #4c5c68;
@@ -838,22 +838,22 @@ h1.custom-business {
   position: relative;
   margin: 0 0px;
 }
-#sport span {
-  font-size: 30px !important;
-  color: #FFFFFF !important;
-  font-family: "Bebas Neue", cursive;
-}
+// #sport span {
+//   font-size: 30px !important;
+//   color: #FFFFFF !important;
+//   font-family: "Bebas Neue", cursive;
+// }
 
-#jobs span {
+#home span {
   font-size: 30px !important;
   color: #FFFFFF !important;
   font-family: 'Bebas Neue', cursive;
 }
-#stadt span {
-  font-size: 30px !important;
-  color: #FFFFFF !important;
-  font-family: 'Bebas Neue', cursive;
-}
+// #stadt span {
+//   font-size: 30px !important;
+//   color: #FFFFFF !important;
+//   font-family: 'Bebas Neue', cursive;
+// }
 
 .carousel-caption {
   position: absolute;
@@ -966,6 +966,15 @@ h1.custom-business {
   width: 70px;
   top: 20px;
 }*/
+#home span{
+  font-size: 24px !important;
+  color: #FFFFFF !important;
+  font-family: "Bebas Neue", cursive;
+}
+.carousel-caption{
+  position: absolute;
+  top: 0px !important;
+}
 .line:before {
   right: 25em;
 }

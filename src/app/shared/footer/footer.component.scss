@@ -277,3 +277,22 @@ span.ft-title {
         margin: 30px 0;
     }
 }
+
+.footer-upper-bottom {
+    list-style: none;
+    display: flex;
+    color: #fff;
+    font-size: 20px;
+}
+ul.footer-upper-bottom li {
+    margin-right: 10px;
+}
+ul.footer-upper-bottom li:last-child{
+    margin-right: 0px;
+}
+
+.footer-upper-right{
+    position: relative;
+    right: 0;
+    top: 45px;
+}
