@@ -995,3 +995,340 @@ tr{
     float: none;
 }
 }
+
+.show-mobile{
+  display: none;
+}
+
+@media (max-width:  1024px)
+{
+
+  .sport-section-1-box {
+    height:unset; 
+  }
+  .section-2-h3 {
+    margin-bottom: 10px;
+  }
+  .sport-section-1-main-box {
+    position: relative;
+    top: 0px; 
+    margin: 12px 0;
+  }
+  .sport-section-3 {
+    margin-top: 2em;
+  }
+  .sport-section-3-inner-text {
+    padding: 0 0 15px;
+  }
+  .sport-section-3-line:before {
+    position: absolute;
+    content: '';
+    left: 51em;
+  }
+  .sport-section-3-line:after {
+    position: absolute;
+    content: '';
+    right: 51em;
+  }
+  .inner-img-kl {
+    position: absolute;
+    top: 180px;
+  }
+  .inner-img-kl-1 {
+    max-width: 100px;
+  }
+  .main-box-inner {
+    font-size: 25px;
+  }
+  .section-3-main-box-left-2 {
+    padding: 90px 0 30px;
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 30px!important;
+  }
+}
+
+@media (max-width:  991px){
+  .sport-section-2 {
+    background-color: #4C5C68;
+    margin-top: 7em;
+  }
+  .section-2-ul {
+    font-size: 20px;
+  }
+  .sport-section-3 {
+    margin-top: 0em;
+  }
+  .sport-section-3-line:before {
+    position: absolute;
+    content: '';
+    left: 39em;
+  }
+  .sport-section-3-line:after {
+    position: absolute;
+    content: '';
+    right: 39em;
+  }
+  .search-fa-color-1 {
+    display: flex;
+  }
+  .map-fa-color-1 {
+    display: flex;
+  }
+  .Athletes-box{
+    width: 31%;
+  }
+  .main-box-inner {
+    font-size: 20px;
+  }
+  .inner-img-kl-1 {
+    max-width: 80px;
+  }
+  .inner-img-kl {
+    position: absolute;
+    top: 128px;
+  }
+  .section-3-main-box-left-2 {
+    padding: 65px 0 30px;
+  }
+  .section-5-main-box-left-2 p {
+    font-size: 17px;
+  }
+  .bloggen-btn {
+    padding: 10px 25px;
+    font-size: 18px;
+    display: flex;
+    margin: 0 auto;
+  }
+  .section-6-main-box {
+    margin-bottom: 9em;
+  }
+  .section-6-box-2 {
+    padding: 0;
+    justify-content: center;
+  }
+  .section-6-span-text {
+    margin-bottom: 15px;
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 39px!important;
+  }
+  .carousel-text-span {	
+    font-size: 45px;
+  }
+}
+@media (max-width: 768px){
+  .carousel-caption {
+    position: absolute;
+    top: 24px!important;
+  }
+  .carousel-text-span {
+    font-size: 38px;
+  }
+}
+@media (max-width: 767px){
+  .show-mobile{
+    display: block;
+  }
+  .hide-mobile{
+    display: none;
+  }
+  .sport-section-1-box {
+    position: relative;
+    top: 15px;
+    bottom: 0;
+    margin-bottom: 20px;
+  }
+  .sport-section-1-box {
+    margin-bottom: 34px;
+  }
+  .sport-section-3-line:before {
+    position: absolute;
+    content: '';
+    left: 30em;
+  }
+  .sport-section-3-line:after {
+    position: absolute;
+    content: '';
+    right: 30em;
+  }
+  .sport-section-3-Athletes-box {
+    justify-content: center;
+  }
+  .search-fa-color-1 {
+    font-size: 18px;
+  }
+  .search-box-1 {
+    font-size: 18px;
+  }
+  .map-fa-color-1 {
+    font-size: 18px;
+  }
+  .location-box-1 {
+    font-size: 18px;
+  }
+  .Athletes-box {
+    font-size: 20px;
+    padding: 0 10px;
+    width: 48%;
+    justify-content: center;
+  }
+  .inner-img-kl-1 {
+    max-width: 125px;
+  }
+  .inner-img-kl {
+    position: absolute;
+    top: 315px;
+  }
+  .main-box-inner {
+    font-size: 35px;
+  }
+  .section-3-main-box-left-2 {
+    padding: 115px 50px 50px;
+  }
+  .mobile-pd{
+    margin:  40px 0;
+  }
+  .main-box-inner {
+    line-height: 40px;
+  }
+  .section-5-main-box-left-2 p {
+    font-size: 20px;
+  }
+  .section-6-main-box {
+    position: relative;	
+    top: 0px; 
+  }
+  .section-6-box-2 {
+    padding: 4em; 
+  }
+  .section-6-pd {
+    padding: 30px 0;
+  }
+  .section-6-main-box {
+    margin-bottom:0; 
+  }
+}
+@media (max-width: 580px){
+  .sport-section-3-Athletes-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .search-fa-color-1,.search-box-1, .map-fa-color-1, .location-box-1 {
+    font-size: 24px;
+  }
+  .map-fa-color-1 {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 15px;
+    border-bottom: 2px solid #d1b681;
+    border-left: none;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .Athletes-box {
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 24px;
+  }
+  .carousel-text-span {
+    font-size: 30px;
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 0px!important;
+  }
+
+}
+@media (max-width: 480px){
+  .inner-img-kl {
+    position: absolute;
+    top: 275px;
+  }
+}
+@media (max-width: 425px){
+  .inner-img-kl {
+    position: absolute;
+    top: 240px;
+  }
+  .sport-section-3-line:after {
+    position: absolute;
+    content: '';
+    right: 24em;
+    width: 100px;
+  }
+  .sport-section-3-line:before {
+    position: absolute;
+    content: '';
+    left: 24em;
+    width: 100px;
+  }
+  .carousel-text-span {
+    font-size: 25px;
+  }
+}
+@media (max-width: 375px){
+  .sport-section-3-line:before {
+    position: absolute;
+    content: '';
+    left: 21em;
+    width: 80px;
+  }
+  .sport-section-3-line:after {
+    position: absolute;
+    content: '';
+    right: 21em;
+    width: 80px;
+  }
+  .inner-img-kl {
+    position: absolute;
+    top: 200px;
+  }
+  .main-box-inner {
+    line-height: 22px;
+  }
+  .main-box-inner {
+    font-size: 25px;
+  }
+  .inner-img-kl-1 {
+    max-width: 110px;
+  }
+  .sport-section-3-heading {
+    font-size: 40px;
+  }	
+  .section-3-main-box-left-2 {
+    padding: 85px 50px 50px;
+  }
+}
+@media (max-width: 320px){
+  .carousel-text-span {
+    font-size: 18px;
+  }
+  .search-fa-color-1, .search-box-1, .map-fa-color-1, .location-box-1 {
+    font-size: 20px;
+  }	
+  .inner-img-kl {
+    position: absolute;
+    top: 180px;
+  }
+  .second-text-align {
+    padding: 10px 20px 0px 50px;
+  }
+  .sport-section-3-heading {
+    font-size: 30px;
+  }
+  .sport-section-3-line:after {
+    position: absolute;
+    content: '';
+    right: 18em;
+    width: 80px;
+  }
+  .sport-section-3-line:before {
+    position: absolute;
+    content: '';
+    left: 18em;
+    width: 80px;
+  }
+}

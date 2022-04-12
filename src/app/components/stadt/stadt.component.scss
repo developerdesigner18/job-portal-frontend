@@ -904,3 +904,250 @@
     margin-left: 580px;
     white-space: nowrap;
   }
+
+
+  .section-5-box-left-1{
+    height: unset;
+  }
+  .section-5-box-left-2{
+    height: unset;
+  }
+  .section-5-box-left-3{
+    height: unset;
+  }
+  .section-5-main-box{
+    height: unset;
+  }
+  .show-mobile{
+    display: none;
+  }
+
+  @media (max-width: 1200px){
+    .inner-text {
+      padding: 0 0em 15px;
+    }
+  }
+  @media (max-width: 1024px){
+    .line-stadt:before {
+      position: absolute;
+      content: '';
+      top: 20px;
+      left: 30em;
+    }
+    .line-stadt:after {
+      position: absolute;
+      content: '';
+      right: 30em;
+    }
+
+    .card-bg-dar-9 {
+      max-height: 100%;
+      padding: 10em 2em 0;
+    }
+
+    .screen-box {
+      height:unset;
+    }
+    .screen-box-2 {
+      position: relative;
+      top: 125px; 
+    }
+
+    .box-left-img {
+      width: 100%;
+      max-width: 150px;
+    }
+    .box-right-img {
+      width: 100%;
+      max-width: 150px;
+    }
+
+    .section-3-img {
+      max-width: 200px;
+    }
+    .line-3:before {
+      position: absolute;
+      left: 51em;
+    }
+    .line-3:after {
+      position: absolute;
+      right: 51em;
+    }
+  }
+  @media (max-width:991px){
+    .line-stadt:before {
+      position: absolute;
+      left: 19em;
+    }
+    .line-stadt:after {
+      position: absolute;
+      right: 19em;
+    }
+    .line-3:before {
+      position: absolute;
+      left: 39em;
+    }
+    .line-3:after {
+      position: absolute;
+      right: 39em;
+    }
+  }
+
+  @media (max-width:767px){
+    .line-stadt:before {
+      position: absolute;
+      left: 9em;
+    }	
+    .show-mobile{
+      display: block;
+    }
+    .hide-mobile{
+      display: none;
+    }
+
+    .line-stadt:after {
+      position: absolute;
+      right: 9em;
+    }
+    .mobile-rp-mb{
+      margin-bottom: 40px;
+    }
+    .section-1-pd {
+      padding: 50px 0 0;
+    }
+    .section-2-main-box {
+      position: relative;
+      top: 75px;
+    }
+    .section-2-pd {
+      padding: 0px 0 12em;
+    }
+    .section-3-img {
+      position: relative;
+      top: 0;
+      margin: 15px;
+    }
+    .section-2-main-box {
+      position: relative;
+      top: 20px;
+    }
+    .screen-box-2 {
+      position: relative;
+      top: 0;
+      background-color: unset;
+      box-shadow: none;
+    }
+    .img-screen {
+      margin: 30px 0;
+      max-width: 350px;
+    }
+    .section-5-pd {
+      margin-top: 0; 
+    }
+    .line-3:before {
+      position: absolute;
+      left: 30em;
+    }
+    .line-3:after {
+      position: absolute;
+      right: 30em;
+    }
+    .section-5-main-box {
+      margin-bottom: 30px;
+    }
+    .section-6-pd {
+      padding: 25px 0 25px;
+    }
+    .section-6-main-box {
+      position: relative;
+      top: 0px; 
+      margin-bottom: 0;
+    }
+    .mobile-rp-mb-1{
+      margin: 20px 0;
+    }
+  }
+  @media (max-width:500px){
+    .line-stadt:before {
+      position: absolute;
+      content: '';
+      width: 90px;
+      left: 7em;
+    }
+    .line-stadt:after {
+      position: absolute;
+      content: '';
+      width: 90px;
+      right:7em;
+    }
+    .screen-box {
+      margin-bottom: 40px;
+    }
+    .section-2-pd {
+      padding: 0px 0 6em;
+    }
+    .line-3:before {
+      position: absolute;
+      content: '';
+      width: 90px;
+      left: 27em;
+    }
+    .line-3:after {
+      position: absolute;
+      content: '';
+      width: 90px;
+      right: 27em;
+    }
+  }
+  @media (max-width:425px){
+       .line-stadt:before {
+      position: absolute;
+      content: '';
+      width: 75px;
+      left: 7em;
+    }
+    .line-stadt:after {
+      position: absolute;
+      content: '';
+      width: 75px;
+      right:7em;
+    }
+    .line-3:before {
+      position: absolute;
+      content: '';
+      width: 75px;
+      left: 25em;
+    }
+    .line-3:after {
+      position: absolute;
+      content: '';
+      width: 75px;
+      right: 25em;
+    }	
+  }
+  @media (max-width:375px){
+       .line-stadt:before {
+      position: absolute;
+      content: '';
+      width: 75px;
+      left: 3em;	
+    }
+    .line-stadt:after {
+      position: absolute;
+      content: '';
+      width: 75px;
+      right:3em;	
+    }
+    .line-3:before {
+      position: absolute;
+      content: '';
+      width: 75px;
+      left: 21em;
+    }
+    .line-3:after {
+      position: absolute;
+      content: '';
+      width: 75px;
+      right: 21em;
+    }
+  }

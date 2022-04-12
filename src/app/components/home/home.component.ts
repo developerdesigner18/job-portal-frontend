@@ -7,7 +7,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
   imageObject = [{
     image: "/assets/img/LOGO@2x.png",
     thumbImage: '/assets/img/LOGO@2x.png',
@@ -34,7 +33,7 @@ export class HomeComponent implements OnInit {
     image: "/assets/img/LOGO@2x.png",
     thumbImage: '/assets/img/LOGO@2x.png',
     title: 'RD3 lOGO'
-  }
+  },
   ];
 
   constructor(private router: Router) {
