@@ -20,59 +20,11 @@
   color: #ffffff;
   font-family: "Bebas Neue", cursive;
 }
-
-  .img-logo{
-      width: 100%;
-      max-width: 150px;
-  }
-  
   .carousel-inner img {
       width: 100%;
       height: 100%;
     }
-  /*dropdown css*/
   
-  .dropbtn {
-   background-color: #4c5c68;
-      color: #fff;
-      padding: 7px 15px;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-  }
-  
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    right: 0;
-      position: absolute;
-      background-color: #ffffff;
-      min-width: 203px;
-      border-radius: 8px;
-      overflow: auto;
-      border: 2px solid #8c8c8c;
-      box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
-      z-index: 1;
-     top: 55px;
-  }
-  
-  .dropdown-content a {
-    color: #4b5b67;
-    padding: 8px 16px;
-    text-decoration: none;
-    display: block;
-    position: relative;
-    width: 100%;
-    border-bottom: 2px solid #e2e2e2;
-  }
-  
-  .show {display: block;}
   
   /*navbar css*/
   
@@ -885,12 +837,6 @@
       top: 70px;
       margin-bottom: 15em;
   }
-  /*media query start*/
-  @media screen and (max-width: 500px) {
-
-  }
-
-
   .section-footer{
     width: 30px;
     height: 30px;
@@ -901,11 +847,9 @@
     vertical-align: top;
     cursor: pointer;
     color: #fff;
-    margin-left: 580px;
+    margin-left: 530px;
     white-space: nowrap;
   }
-
-
   .section-5-box-left-1{
     height: unset;
   }
@@ -1149,5 +1093,5 @@
       content: '';
       width: 75px;
       right: 21em;
-    }
+  	}
   }

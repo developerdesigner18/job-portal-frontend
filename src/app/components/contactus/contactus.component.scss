@@ -177,3 +177,51 @@
 .message-input{
   height: 115px;
 }
+@media (max-width:  1200px){
+  .kontakt-right-box-2 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+  }
+}
+@media (max-width:  767px){
+  .kontakt-right-box-2 {
+    position: unset;
+    transform: unset;
+  }
+  .kontakt-section-1 {
+    padding: 50px 0 0;
+  }
+}
+@media (max-width:  425px){
+  .kontakt-left-box-2 h4 {
+    color: #fff;
+    font-size: 25px;
+  }
+  .kontakt-mobile-icon-box {
+    width: 30px;
+    height: 30px;
+  }
+  .kontakt-mobile-fa {
+    font-size: 17px;
+  }
+  .kontakt-mobile-text-box {
+    font-size: 15px;
+  }
+  .kontakt-facebook-icon-box {
+    width: 25px;
+    height: 25px;
+  }
+  .kontakt-facebook-fa {
+    font-size: 15px;
+  }
+}
+@media (max-width:  320px){
+  .kontakt-mobile {
+    margin-bottom: 5px;
+  }
+  .kontakt-mail {
+    margin-bottom: 10px;
+  }
+}
