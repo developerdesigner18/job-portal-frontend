@@ -26,9 +26,9 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
   <!--Mobile css start -->
   <div class="show-mobile">
     <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">
-        <i class="fa fa-bars"></i></button>
-      <div id="myDropdown" class="dropdown-content new-custom-dp">
+      <button (click)="menudata1()" class="dropbtn">
+        <i class="fa fa-bars custome" style="pointer-events: none;"></i></button>
+      <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="menu1">
         <a routerLink="/">Home</a>
         <a routerLink="/about-us">Uber UNS</a>
         <a routerLink="/vision">Vision</a>
@@ -52,8 +52,8 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
 
       <div class="dropdown">
         <button type="submit" (click)="menudata2()" class="dropbtn">
-          <i class="fa fa-bars" style="pointer-events: none;"></i></button>
-        <div id="myDropdown" class="dropdown-content new-custom-dp" [ngClass]="{'show': (menu2 === true)}">
+          <i class="fa fa-bars custome" style="pointer-events: none;"></i></button>
+        <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="menu2">
           <a routerLink="/">Home</a>
           <a routerLink="/about-us">Uber UNS</a>
           <a routerLink="/vision">Vision</a>
@@ -66,9 +66,9 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
   <!--Mobile css start -->
   <div class="show-mobile">
     <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">
-        <i class="fa fa-bars"></i></button>
-      <div id="myDropdown" class="dropdown-content new-custom-dp">
+      <button (click)="menudata2()" class="dropbtn">
+        <i class="fa fa-bars custome" style="pointer-events: none;"></i></button>
+      <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="menu2">
         <a routerLink="/">Home</a>
         <a routerLink="/about-us">Uber UNS</a>
         <a routerLink="/vision">Vision</a>
@@ -90,11 +90,12 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
       <a class="active" routerLink="/jobs">Jobs</a>
       <a routerLink="/stadt">stadt</a>
       <a routerLink="/sport">Sport</a>
+    
       <div class="dropdown">
         <button type="submit" (click)="menudata3()" class="dropbtn">
-          <i class="fa fa-bars" style="pointer-events: none;"></i>
+          <i class="fa fa-bars custome" style="pointer-events: none;"></i>
         </button>
-        <div id="myDropdown" class="dropdown-content new-custom-dp" [ngClass]="{'show': (menu3 === true)}">
+        <div id="myDropdown" class="dropdown-content new-custom-dp show"  *ngIf="menu3">
           <a routerLink="/">Home</a>
           <a routerLink="/about-us">Uber UNS</a>
           <a routerLink="/vision">Vision</a>
@@ -106,9 +107,9 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
   <!--Mobile css start -->
   <div class="show-mobile">
     <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">
-        <i class="fa fa-bars"></i></button>
-      <div id="myDropdown" class="dropdown-content new-custom-dp">
+      <button (click)="menudata3()" class="dropbtn">
+        <i class="fa fa-bars custome" style="pointer-events: none;"></i></button>
+      <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="menu3">
         <a routerLink="/">Home</a>
         <a routerLink="/about-us">Uber UNS</a>
         <a routerLink="/vision">Vision</a>
@@ -129,11 +130,12 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
       <a routerLink="/jobs">Jobs</a>
       <a routerLink="/stadt">Stadt</a>
       <a class="active" routerLink="/sport">Sport</a>
+    
       <div class="dropdown">
         <button type="submit" (click)="menudata4()" class="dropbtn">
-          <i class="fa fa-bars" style="pointer-events: none;"></i>
+          <i class="fa fa-bars custome" style="pointer-events: none;"></i>
         </button>
-        <div id="myDropdown" class="dropdown-content new-custom-dp" [ngClass]="{'show': (menu4 === true)}">
+        <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="menu4">
           <a routerLink="/">Home</a>
           <a routerLink="/about-us">Uber UNS</a>
           <a routerLink="/vision">Vision</a>
@@ -145,9 +147,9 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
   <!--Mobile css start -->
   <div class="show-mobile">
     <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">
-        <i class="fa fa-bars"></i></button>
-      <div id="myDropdown" class="dropdown-content new-custom-dp">
+      <button (click)="menudata4()" class="dropbtn">
+        <i class="fa fa-bars custome" style="pointer-events: none;"></i></button>
+        <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="menu4">
         <a routerLink="/">Home</a>
         <a routerLink="/about-us">Uber UNS</a>
         <a routerLink="/vision">Vision</a>
