@@ -371,7 +371,18 @@ button::-moz-focus-inner {
         float: none;
     }
 }
-@media screen and (max-width: 500px) {
+// @media screen and (max-width: 500px) {
+//     .jobsheader a {
+//         float: none;
+//         display: block;
+//         text-align: left;
+//     }
+//     .jobsheader-right {
+//         float: none;
+//     }
+// }
+
+@media (max-width: 500px) {
     .jobsheader a {
         float: none;
         display: block;
@@ -381,6 +392,7 @@ button::-moz-focus-inner {
         float: none;
     }
 }
+
 @media screen and (max-width: 500px) {
     .stadtheader a {
         float: none;

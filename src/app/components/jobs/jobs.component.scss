@@ -933,18 +933,18 @@ section.slider-bottom {
     top: 70px;
     margin-bottom: 15em;
 }
-.section-footer {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 30px;
-    text-align: center;
-    display: inline-block;
-    vertical-align: top;
-    cursor: pointer;
-    color: #fff;
-    margin-left: 530px;
-    white-space: nowrap;
+.section-footer{
+	width: 100%;
+			height: 100%;
+			line-height: 30px;
+			font-size: 30px;
+	        display: flex !important;
+			justify-content: center;
+			vertical-align: top;
+			cursor: pointer;
+			color: #fff;
+			margin-left: 0 !important;
+			white-space: nowrap;
 }
 
 
@@ -952,16 +952,6 @@ section.slider-bottom {
 
 
 
-@media screen and (max-width: 500px) {
-    .jobsheader a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-    .jobsheader-right {
-        float: none;
-    }
-}
 
 @media (max-width: 1024px){
     .section-footer {
@@ -1018,6 +1008,102 @@ section.slider-bottom {
     }
 }
 
+@media (max-width: 820px){
+    .carousel-caption {
+        top: 0px!important;
+    } 
+    .box-slider-bottom {
+        flex-wrap: wrap;
+    }
+    label.finden-box {
+        width: 100% !important;
+    }
+
+    .beruf_mn {
+        width: 35% !important;
+    }
+    .ort_mn {
+        width: 65% !important;    
+    }
+    label.finden-box {
+        border-radius: 0 0 10px 10px !important;
+    }
+    .jobsheader {
+        font-size: 16px !important;
+    }
+    .graz_fri_cat_mn > div {
+        margin-right: 10px !important;
+    }
+    .work_preparation_mn > div p {
+        padding: 4px 7px !important;
+    }
+    .heben_text h4 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .follow_jobs button.follow_btn{
+        font-size: 13px !important;
+    }
+    .companies_blog_mn > div {
+        display: inline-block;
+        flex: inherit !important;
+        width: 50% !important;
+        max-width: inherit !important;
+        margin-bottom: 40px;
+    }
+    .funktion_blog_details {
+        height: 800px;
+    }
+    .funktion_icon.funktion_icon_1 {
+        top: 30px;
+    }
+    .funktion_icon.funktion_icon_2 {
+        right: 20px;
+        top: 20%;
+    }
+    .funktion_icon.funktion_icon_3 {
+        right: 10px;
+        top: 56%;
+    }
+    .funktion_icon.funktion_icon_4 {
+        bottom: 30px;
+    }
+    .funktion_icon.funktion_icon_5 {
+        left: 10px;
+        top: 56%;
+    }
+    .funktion_icon.funktion_icon_6 {
+        left: 20px;
+        top: 20%;
+    }
+    section.footer-pd .row > div {
+        margin: 20px 0 !important;
+        width: 100% !important;
+        flex: inherit !important;
+        max-width: inherit !important;
+        text-align: center !important;
+    }
+    .footer-md ul {
+        width: 50% !important;
+        padding: 0 !important;
+    }
+    .footer-end {
+        flex-direction: row;
+    }
+    .funktion_blog_details:before {
+        height: 600px !important;
+        width: 600px !important;
+    }
+    .line:before {
+        right: 45em;
+    }
+    .line:after {
+        left: 45em;
+    }
+    .funktion_mn .row {
+        margin: 0 auto !important;
+    }
+}
 
 @media (max-width: 768px){
     .carousel-caption {
@@ -1115,7 +1201,6 @@ section.slider-bottom {
         margin: 0 auto !important;
     }
 }
-
 
 @media (max-width: 767px){
     .funktion_mn .row {
@@ -1265,4 +1350,14 @@ section.slider-bottom {
     }
 }
 
+@media (max-width: 500px) {
+    .jobsheader a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .jobsheader-right {
+        float: none;
+    }
+}
 

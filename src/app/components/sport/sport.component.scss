@@ -740,24 +740,24 @@ padding-bottom: 15px;
 
 .sport-section-3-line{
   text-align: center;
-    padding-bottom: 5.2em;
-    position: relative;
+  padding-bottom: 5.2em;
+  position: relative;
 }
 .sport-section-3-line:before{
-    position: absolute;
-    content: '';
-    border: 2px solid #D1B681;
-    width: 121px;
-    top: 20px;
-    right: 60em;
+  position: absolute;
+  content: '';
+  border: 2px solid #D1B681;
+  width: 121px;
+  top: 20px;
+  left: 60em;
 }
 .sport-section-3-line:after{
-    position: absolute;
-    content: '';
-    border: 2px solid #D1B681;
-    width: 121px;
-    top: 20px;
-    left: 60em;
+  position: absolute;
+  content: '';
+  border: 2px solid #D1B681;
+  width: 121px;
+  top: 20px;
+  right: 60em;
 }
 .sport-section-3-Athletes-box{
   width: 100%;
@@ -1293,15 +1293,15 @@ tr{
 
 
 .section-footer{
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  font-size: 30px;
-  text-align: center;
-  display: inline-block;
-  vertical-align: top;
-  cursor: pointer;
-  color: #fff;
-  margin-left: 530px;
-  white-space: nowrap;
+	width: 100%;
+			height: 100%;
+			line-height: 30px;
+			font-size: 30px;
+	        display: flex !important;
+			justify-content: center;
+			vertical-align: top;
+			cursor: pointer;
+			color: #fff;
+			margin-left: 0 !important;
+			white-space: nowrap;
 }
