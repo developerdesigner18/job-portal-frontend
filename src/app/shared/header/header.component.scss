@@ -1,7 +1,8 @@
-$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
-@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "~@fortawesome/fontawesome-free/scss/solid.scss";
-@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+
+// $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+// @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+// @import "~@fortawesome/fontawesome-free/scss/solid.scss";
+// @import "~@fortawesome/fontawesome-free/scss/brands.scss";
 a {
     background-color: transparent;
 }
@@ -31,33 +32,7 @@ button::-moz-focus-inner {
     border: 0;
     padding: 0;
 }
-@media print {
-    *,
-    :after,
-    :before {
-        color: #000 !important;
-        text-shadow: none !important;
-        background: 0 0 !important;
-        -webkit-box-shadow: none !important;
-        box-shadow: none !important;
-    }
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-    a[href]:after {
-        content: " (" attr(href) ")";
-        }
-        a[href^="#"]:after {
-            content: "";
-        }
-        img {
-            page-break-inside: avoid;
-        }
-        img {
-            max-width: 100% !important;
-        }
-    }
+
     * {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -152,21 +127,7 @@ button::-moz-focus-inner {
 .dropdown {
     position: relative;
 }
-@media print {
-    *,
-    ::after,
-    ::before {
-        text-shadow: none !important;
-        box-shadow: none !important;
-    }
-    a:not(.btn) {
-        text-decoration: underline;
-    }
-    img {
-        page-break-inside: avoid;
-    }
-}
-/*! CSS Used from: http://localhost:4200/styles.css */
+
 .fa {
     font-family: var(--fa-style-family, "Font Awesome 6 Free");
     font-weight: var(--fa-style, 900);
@@ -371,16 +332,6 @@ button::-moz-focus-inner {
         float: none;
     }
 }
-// @media screen and (max-width: 500px) {
-//     .jobsheader a {
-//         float: none;
-//         display: block;
-//         text-align: left;
-//     }
-//     .jobsheader-right {
-//         float: none;
-//     }
-// }
 
 @media (max-width: 500px) {
     .jobsheader a {
@@ -467,3 +418,4 @@ button::-moz-focus-inner {
    }
 
 }
+

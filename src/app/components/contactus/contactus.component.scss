@@ -225,3 +225,9 @@
     margin-bottom: 10px;
   }
 }
+@media (max-width: 767px){
+  .carousel-caption {
+      position: absolute;
+      top: 0 !important;
+  }
+}

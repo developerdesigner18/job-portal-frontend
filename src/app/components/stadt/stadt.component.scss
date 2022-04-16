@@ -68,23 +68,23 @@
      padding-bottom:  5.2em;
      position: relative;
   }
-  .line:before{
-    position: absolute;
-      content: '';
-      border: 2px solid #4c5c68;
-      width: 121px;
-      top: 20px;
-      right: 55em;
-  }
+  // .line:before{
+  //   position: absolute;
+  //     content: '';
+  //     border: 2px solid #4c5c68;
+  //     width: 121px;
+  //     top: 20px;
+  //     right: 55em;
+  // }
   
-  .line:after{
-    position: absolute;
-      content: '';
-      border: 2px solid #4c5c68;
-      width: 121px;
-      top: 20px;
-      left: 55em;
-  }
+  // .line:after{
+  //   position: absolute;
+  //     content: '';
+  //     border: 2px solid #4c5c68;
+  //     width: 121px;
+  //     top: 20px;
+  //     left: 55em;
+  // }
   .section-title-img{
     width: 100%;
     max-width: 50px;
@@ -532,7 +532,7 @@
       border: 2px solid #9CB900;
       width: 121px;
       top: 20px;
-      right: 55em;
+      left: 55em;
   }
   .line-stadt:after {
       position: absolute;
@@ -540,7 +540,7 @@
       border: 2px solid #9CB900;
       width: 121px;
       top: 20px;
-      left: 55em;
+      right: 55em;
   }
   .card-bg-dar-9{
     width: 100%;
@@ -959,6 +959,10 @@
   }
 
   @media (max-width:767px){
+    .section-footer{
+        line-height: 0;
+        margin: 20px 0 30px; 
+    }
     .line-stadt:before {
       position: absolute;
       left: 9em;
@@ -1022,6 +1026,7 @@
     }
     .section-6-pd {
       padding: 25px 0 25px;
+      margin: 0 0 75px;
     }
     .section-6-main-box {
       position: relative;
@@ -1033,6 +1038,13 @@
     }
   }
   @media (max-width:500px){
+    .carousel-caption{
+      position: absolute;
+           top: 0 !important;
+       }
+       #stadt span {
+        font-size: 20px;
+          }
     .line-stadt:before {
       position: absolute;
       content: '';

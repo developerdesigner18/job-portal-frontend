@@ -933,8 +933,8 @@ background-color: #fff;
     font-size: 20px;
 }
 .sport-section-3 {
-    padding: 50px 0;
-    margin-top: 6em;
+    padding: 0 0 50px;
+    margin-top: 0;
 }
 .sport-section-3-heading{
     font-size: 46px;
@@ -963,7 +963,7 @@ background-color: #fff;
     border: 2px solid #D1B681;
     width: 121px;
     top: 20px;
-    right: 60em;
+    left: 60em;
 }
 .sport-section-3-line:after{
     position: absolute;
@@ -971,7 +971,7 @@ background-color: #fff;
     border: 2px solid #D1B681;
     width: 121px;
     top: 20px;
-    left: 60em;
+    right: 60em;
 }
 .sport-section-3-Athletes-box{
   width: 100%;
@@ -1214,7 +1214,7 @@ tr{
     border-radius: 30px;
 }
 .about-us-section-2{
-  padding: 50px 0;
+  padding: 50px 0 0 ;
 }
 .about-us-section-2-heading{
   font-size: 41px;
@@ -2052,7 +2052,7 @@ font-family: 'Bebas Neue', cursive;
     margin-bottom: 30px; 	
   }
   .sport-section-3 {
-    padding: 50px 0 0;
+    padding: 0 0 0;
   }
   .about-us-section-3-line:before {
     position: absolute;
