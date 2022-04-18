@@ -18,6 +18,7 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { AgbComponent } from './agb/agb.component';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { AdminComponent } from '../admin/admin.component';
 
 //Module decorator specifying all the components used in the application 
 @NgModule({
@@ -32,6 +33,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
      PrivacyComponent,
      ImprintComponent,
      AgbComponent,
+     AdminComponent,
 
   ],
   imports: [
