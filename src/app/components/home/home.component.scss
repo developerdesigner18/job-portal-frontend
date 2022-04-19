@@ -1,3 +1,7 @@
+::ng-deep .custom-image-main img{
+  background-color: #fff;
+  filter: brightness(.7);
+}
 
 
 .bottomslider:hover{
@@ -23,9 +27,6 @@
   filter: brightness(0.7);
   // opacity: 100%;
 }
-
-
-
 
 
 .img-logo{
@@ -393,12 +394,12 @@ h1.custom-business {
   
 }
 
-/* Slides */
-.mySlides {
-  display: none;
-  padding: 0px;
-  text-align: center;
-}
+// /* Slides */
+// .mySlides {
+//   display: none;
+//   padding: 0px;
+//   text-align: center;
+// }
 
 /* Next & previous buttons */
 .prev, .next {
@@ -970,7 +971,7 @@ h1.custom-business {
 }
 .carousel-caption{
   position: absolute;
-  top: 0px !important;
+  top: 15px !important;
 }
 .line:before {
   right: 25em;

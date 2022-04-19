@@ -12,6 +12,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ComponentsRoutingModule } from './components/components-routing.module';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { StadtComponent } from './components/stadt/stadt.component';
+import { SportComponent } from './components/sport/sport.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
     FooterComponent,
     HomeComponent,
     JobsComponent,
+    StadtComponent,
+    SportComponent
 
   ],
   imports: [

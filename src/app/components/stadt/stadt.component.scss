@@ -1,3 +1,7 @@
+::ng-deep .custom-image-main img{
+  background-color: #fff;
+  filter: brightness(.7);
+}
 
 .carousel-caption {
   position: absolute;

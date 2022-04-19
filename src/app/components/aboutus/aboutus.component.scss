@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@500&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@500&display=swap');
 
 
 /*carousel css*/
 
-// $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
-// @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
-// @import "~@fortawesome/fontawesome-free/scss/solid.scss";
-// @import "~@fortawesome/fontawesome-free/scss/brands.scss";
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
 
 .carousel-caption {
     position: absolute;
