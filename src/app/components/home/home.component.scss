@@ -3,6 +3,13 @@
   filter: brightness(.7);
 }
 
+::ng-deep .ng-image-slider {
+  height: 300px !important;
+}
+
+::ng-deep .ng-image-slider .ng-image-slider-container .main {
+  height: 300px !important;
+}
 
 .bottomslider:hover{
   color: #ffffff;
@@ -836,6 +843,13 @@ h1.custom-business {
   position: relative;
   margin: 0 0px;
 }
+
+::ng-deep .ng-image-slider .ng-image-slider-container .main {
+  height: 200px !important;
+}
+::ng-deep .ng-image-slider {
+  height: 200px !important;
+}
 // #sport span {
 //   font-size: 30px !important;
 //   color: #FFFFFF !important;
@@ -964,6 +978,14 @@ h1.custom-business {
   width: 70px;
   top: 20px;
 }*/
+
+::ng-deep .ng-image-slider {
+  height: 150px !important;
+}
+
+::ng-deep .ng-image-slider .ng-image-slider-container .main {
+  height: 150px !important;
+}
 #home span{
   font-size: 24px !important;
   color: #FFFFFF !important;

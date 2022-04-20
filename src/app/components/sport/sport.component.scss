@@ -1,5 +1,12 @@
 
 
+::ng-deep .ng-image-slider {
+  height: 300px !important;
+}
+
+::ng-deep .ng-image-slider .ng-image-slider-container .main {
+  height: 300px !important;
+}
 .carsoul-img{
   background-color: #fff;
     filter: brightness(.7);
@@ -1168,6 +1175,12 @@ tr{
   .section-6-main-box {
     margin-bottom:0; 
   }
+  ::ng-deep .ng-image-slider .ng-image-slider-container .main {
+    height: 200px !important;
+  }
+  ::ng-deep .ng-image-slider {
+    height: 200px !important;
+  }
 }
 @media (max-width: 580px){
   .sport-section-3-Athletes-box {
@@ -1226,6 +1239,12 @@ tr{
   .carousel-text-span {
     font-size: 25px;
   }
+  ::ng-deep .ng-image-slider {
+    height: 150px !important;
+  }
+  ::ng-deep .ng-image-slider .ng-image-slider-container .main {
+    height: 150px !important;
+  }
 }
 @media (max-width: 375px){
   .sport-section-3-line:before {
@@ -1259,6 +1278,8 @@ tr{
   .section-3-main-box-left-2 {
     padding: 85px 50px 50px;
   }
+
+
 }
 @media (max-width: 320px){
   .carousel-text-span {

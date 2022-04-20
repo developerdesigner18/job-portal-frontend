@@ -2,6 +2,13 @@
   background-color: #fff;
   filter: brightness(.7);
 }
+::ng-deep .ng-image-slider {
+  height: 300px !important;
+}
+
+::ng-deep .ng-image-slider .ng-image-slider-container .main {
+  height: 300px !important;
+}
 
 .carousel-caption {
   position: absolute;

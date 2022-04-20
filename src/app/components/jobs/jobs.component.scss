@@ -1,4 +1,12 @@
 
+::ng-deep .ng-image-slider {
+    height: 300px !important;
+  }
+  
+  ::ng-deep .ng-image-slider .ng-image-slider-container .main {
+    height: 300px !important;
+  }
+  
 .img-logo{
     width: 100%;
     max-width: 150px;
@@ -1349,7 +1357,24 @@ section.slider-bottom {
     .section-6-main-box .row > div {
         margin-top: 30px !important;
     }
+    ::ng-deep .ng-image-slider .ng-image-slider-container .main {
+        height: 200px !important;
+      }
+      ::ng-deep .ng-image-slider {
+        height: 200px !important;
+      }
 }
+@media (max-width: 425px) {
+    ::ng-deep .ng-image-slider {
+        height: 150px !important;
+      }
+      ::ng-deep .ng-image-slider .ng-image-slider-container .main {
+        height: 150px !important;
+      }
+}
+
+
+
 
 @media (max-width: 500px) {
     .jobsheader a {
