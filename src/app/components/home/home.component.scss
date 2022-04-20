@@ -611,6 +611,11 @@ h1.custom-business {
   display: none;
 }
 /*media query start*/
+@media (min-width: 1700px){
+  .zone-txt p {
+      padding: 0 30em 15px;
+   }
+}
 @media screen and (max-width: 500px) {
 
 }

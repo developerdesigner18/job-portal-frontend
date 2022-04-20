@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 import { AppComponent } from "../../app.component"
 
 @Component({
@@ -13,9 +13,9 @@ export class HeaderComponent implements OnInit {
  menu2:boolean = false; 
  menu3:boolean = false; 
  menu4:boolean = false; 
+ urlSegment: any;
 
   constructor(public router:Router) {
-
    }
 
 async menudata1(){
@@ -42,7 +42,17 @@ async menudata4(){
     // this.menu1 = false;
     // this.menu2 = false
     // this.menu3 = false
-    // this.menu4 = false  
+    // this.menu4 = false
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.urlSegment = event.url.split('/')[0]
+        this.urlSegment = event.url.split('#')[0]
+        
+        console.log(event.url);
+      }
+    })
+
+    
   }
   ngAfterViewInit(): void{
 

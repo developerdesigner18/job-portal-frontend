@@ -41,7 +41,8 @@ li.ft-title-1, li.ft-title-2, li.ft-title-3  {
     font-size: 18px;
     list-style: none;
     color: #fff;
-    padding-left: 0;   
+    padding-left: 0; 
+    cursor: pointer;  
 }
 .footer-ul-text :hover{
     // font-size: 18px;
@@ -165,11 +166,15 @@ ul.footer-upper-bottom li:last-child{
     margin-right: 0px;
 }
 ul.footer-ul-text li:hover, .footer-upper-bottom li:hover {
-    color:#b6b6ba;
+    color: #f9a500;
     // font-size: 20px;
     // text-decoration: underline;
 
 }
+ul.footer-ul-text li:first-child:hover {
+    color:#fff;
+   }
+
 
 // .footer-upper-right{
 //     position: relative;

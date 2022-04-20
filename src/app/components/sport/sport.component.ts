@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-sport',
@@ -35,9 +36,17 @@ export class SportComponent implements OnInit {
   //   title: 'RD3 lOGO'
   // },
   ];
-  constructor() { }
+  constructor(
+    public activatedRoute: ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
+    this.activatedRoute.fragment.subscribe((fragment: string) => {
+      const id = document.getElementById(fragment)
+      if (fragment && id != null) {
+        id.scrollIntoView();
+      }
+    });  
   }
 
 }
