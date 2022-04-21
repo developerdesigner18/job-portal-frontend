@@ -1,3 +1,36 @@
+<ng-template #content let-modal>
+	<div class="modal-header">
+	  <h4 class="modal-title" id="modal-basic-title"><Strong>This Site Is In A Under Construction</Strong></h4>
+	  <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+		<span aria-hidden="true">&times;</span>
+	  </button>
+	</div>
+	<div class="modal-body">
+	  <form>
+		<div class="form-group">
+		<img src="/assets/img/underconstruction.gif" class="underconstructionimage">
+		  <!-- <label for="dateOfBirth">Date of birth</label> -->
+		  <!-- <div class="input-group">
+			<input id="dateOfBirth" class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #dp="ngbDatepicker">
+			<div class="input-group-append">
+			  <button class="btn btn-outline-secondary calendar" (click)="dp.toggle()" type="button"></button>
+			</div>
+		  </div> -->
+		</div>
+	  </form>
+	</div>
+	<div class="modal-footer">
+	  <!-- <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button> -->
+	</div>
+  </ng-template>
+  
+  <!-- <button class="btn btn-lg btn-outline-primary" (click)="openModal()">Launch demo modal</button> -->
+  <!-- <hr>
+  <pre>{{closeResult}}</pre> -->
+  
+  
+
+
 <div class="home">
 	<div id="demo" class="carousel slide" data-ride="carousel">
 		<div class="carousel-inner">
@@ -6,6 +39,7 @@
 				[images]="imageObject"
 				[autoSlide]="1"
 				[infinite]="true"
+				[animationSpeed]="3"	
 				[imagePopup]="false"
 				[imageSize]="{width: '100%', height: '50%' ,space: 4}"
 				slideImage="1"></ng-image-slider>	
@@ -217,6 +251,7 @@
 					[images]="imagelogo"
 					[infinite]="true"
 					[autoSlide]="1"
+					[animationSpeed]="1"
 					[imageSize]="{space: 4}"					
 					slideImage="1"					
 					></ng-image-slider>

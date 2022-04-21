@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewChild , OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { NgbModal , ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  closeResult: any;
+  @ViewChild('content') content: any;
   tab1: boolean = false;
   tab2:boolean = false;
   tab3:boolean = false;
+
 
   imageObject = [{
     image: "/assets/img/RD3_Home_Slider3_jobs.jpg",
@@ -60,7 +64,7 @@ export class HomeComponent implements OnInit {
   },
   ];
 
-  constructor(private router: Router) {
+  constructor(private router: Router , private modalService: NgbModal) {
 
   }
 
@@ -77,11 +81,17 @@ export class HomeComponent implements OnInit {
     this.tab1 = false
   }
 
-
+  openModal(){
+    this.modalService.open(this.content, { centered: true });
+  }
 
 
   ngOnInit(): void {
     this.tab1 = true
+  }
+
+  ngAfterViewInit() {
+    this.openModal();
   }
 
 }

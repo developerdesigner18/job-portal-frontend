@@ -1139,3 +1139,21 @@
       right: 21em;
   	}
   }
+
+  @media (min-width: 1821px){
+    .carousel-caption{
+        position:absolute;
+        top: 20% !important;
+     }
+     #stadt span{
+       font-size: 65px;
+     }
+     ::ng-deep .ng-image-slider {
+       height: 400px !important;
+     }
+     
+     ::ng-deep .ng-image-slider .ng-image-slider-container .main {
+       height: 400px !important;
+     }
+     
+   }

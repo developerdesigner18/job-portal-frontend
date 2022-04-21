@@ -11,6 +11,26 @@
   height: 300px !important;
 }
 
+// Site under construction css start
+
+.underconstructionimage {
+  width: 100% !important;
+  max-width: 500px !important;
+}
+
+.close{
+  float: right;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: .2;
+}
+
+// Site under construction css End
+
 .bottomslider:hover{
   color: #ffffff;
   text-decoration: underline;
@@ -611,6 +631,24 @@ h1.custom-business {
   display: none;
 }
 /*media query start*/
+
+@media (min-width: 1821px){
+ .carousel-caption{
+     position:absolute;
+     top: 20% !important;
+  }
+  #home span{
+    font-size: 65px;
+  }
+  ::ng-deep .ng-image-slider {
+    height: 400px !important;
+  }
+  
+  ::ng-deep .ng-image-slider .ng-image-slider-container .main {
+    height: 400px !important;
+  }
+  
+}
 @media (min-width: 1700px){
   .zone-txt p {
       padding: 0 30em 15px;

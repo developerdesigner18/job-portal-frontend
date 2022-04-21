@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { homeRoutingModule } from './home-routing.module';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -9,6 +9,7 @@ import { homeRoutingModule } from './home-routing.module';
   imports: [
     CommonModule,
     homeRoutingModule,
+    NgbModule
     
   ]
 })
