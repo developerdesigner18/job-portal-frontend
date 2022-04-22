@@ -1363,6 +1363,12 @@ section.slider-bottom {
       ::ng-deep .ng-image-slider {
         height: 200px !important;
       }
+      .carousel-caption{
+        top: 38px !important;
+    }
+    div#jobs span {
+        font-size: 30px !important;
+    }
 }
 @media (max-width: 425px) {
     ::ng-deep .ng-image-slider {
@@ -1371,6 +1377,12 @@ section.slider-bottom {
       ::ng-deep .ng-image-slider .ng-image-slider-container .main {
         height: 150px !important;
       }
+      .carousel-caption{
+        top: 10px !important;
+    }
+    div#jobs span {
+        font-size: 23px !important;
+    }
 }
 
 

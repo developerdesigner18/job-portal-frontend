@@ -47,6 +47,12 @@ export class SportComponent implements OnInit {
         id.scrollIntoView();
       }
     });  
+    this.activatedRoute.fragment.subscribe((fragment: string) => {
+      const id = document.getElementById(fragment)
+      if (fragment && id != null) {
+        id.scrollIntoView();
+      }
+    });  
   }
 
 }

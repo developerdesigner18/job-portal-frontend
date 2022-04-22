@@ -174,6 +174,13 @@ ul.footer-ul-text li:hover, .footer-upper-bottom li:hover {
 ul.footer-ul-text li:first-child:hover {
     color:#fff;
    }
+   .footer-ul-text li a{
+       color: #fff !important;
+   }
+  .footer-ul-text li a:hover{
+    text-decoration: none;
+    color: #f9a500 !important;
+}
 
 
 // .footer-upper-right{

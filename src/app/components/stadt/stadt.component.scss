@@ -1047,6 +1047,18 @@
     .mobile-rp-mb-1{
       margin: 20px 0;
     }
+    ::ng-deep .ng-image-slider .ng-image-slider-container .main {
+      height: 200px !important;
+    }
+    ::ng-deep .ng-image-slider {
+      height: 200px !important;
+    }
+    .carousel-caption{
+      top: 38px !important;
+  }
+  div#stadt span {
+      font-size: 30px !important;
+  }
   }
   @media (max-width:500px){
     .carousel-caption{
@@ -1112,6 +1124,20 @@
       width: 75px;
       right: 25em;
     }	
+
+    ::ng-deep .ng-image-slider {
+      height: 150px !important;
+    }
+    ::ng-deep .ng-image-slider .ng-image-slider-container .main {
+      height: 150px !important;
+    }
+    .carousel-caption{
+      top: 10px !important;
+  }
+  div#stadt span {
+      font-size: 23px !important;
+  }
+
   }
   @media (max-width:375px){
        .line-stadt:before {
