@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-sport',
@@ -37,8 +37,14 @@ export class SportComponent implements OnInit {
   // },
   ];
   constructor(
-    public activatedRoute: ActivatedRoute
+    public activatedRoute: ActivatedRoute,
+    public router:Router
   ) { }
+
+  forms(){
+    let url = "https://forms.zohopublic.eu/test1001dds/form/ContactUs/formperma/-VD_D7umKbIWq6Yx0MMlEJSWLCLb_vRCxeX4yLOQkEE"
+    window.open(url, "_blank");
+  }
 
   ngOnInit(): void {
     this.activatedRoute.fragment.subscribe((fragment: string) => {

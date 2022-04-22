@@ -9,6 +9,7 @@ import { ListRoutingModule } from './list-routing.module';
   imports: [
     CommonModule,
     ListRoutingModule
+    
   ]
 })
 export class ListModule { }
