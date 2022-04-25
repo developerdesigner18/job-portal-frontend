@@ -48,11 +48,10 @@
      <div class="main-box">
         <div class="left-part">
           <label>Show</label>
-          <select>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
+          <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+              <option>select option</option>
+              <option value="https://regionalunddigital.at/beispiel/">Beispal city</option>
+              <option value="https://regionalunddigital.at/beispiel/">demo city</option>
           </select>
           <label>entries</label>
       </div>

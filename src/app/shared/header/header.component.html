@@ -11,9 +11,9 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
       <a routerLink="/sport">Sport</a>
 
       <div class="dropdown">
-        <button type="submit" (click)="menudata1()" class="dropbtn">
+        <button #toggleButton (click)="toggleMenu($event)" class="dropbtn">
           <i class="fa fa-bars custome" style="pointer-events: none;"></i></button>
-        <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="menu1">
+        <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="isMenuOpen">
           <a routerLink="/">Home</a>
           <a routerLink="/about-us">Uber UNS</a>
           <a routerLink="/vision">Vision</a>
@@ -26,9 +26,9 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
   <!--Mobile css start -->
   <div class="show-mobile">
     <div class="dropdown">
-      <button (click)="menudata1()" class="dropbtn">
+      <button #toggleButton (click)="toggleMenu($event)" class="dropbtn">
         <i class="fa fa-bars custome" style="pointer-events: none;"></i></button>
-      <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="menu1">
+      <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="isMenuOpen">
         <a routerLink="/">Home</a>
         <a routerLink="/about-us">Uber UNS</a>
         <a routerLink="/vision">Vision</a>
@@ -51,9 +51,9 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
       <a routerLink="/sport">Sport</a>
 
       <div class="dropdown">
-        <button type="submit" (click)="menudata2()" class="dropbtn">
+        <button #toggleButton (click)="toggleMenu($event)" class="dropbtn">
           <i class="fa fa-bars custome" style="pointer-events: none;"></i></button>
-        <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="menu2">
+        <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="isMenuOpen">
           <a routerLink="/">Home</a>
           <a routerLink="/about-us">Uber UNS</a>
           <a routerLink="/vision">Vision</a>
@@ -66,9 +66,9 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
   <!--Mobile css start -->
   <div class="show-mobile">
     <div class="dropdown">
-      <button (click)="menudata2()" class="dropbtn">
+      <button  #toggleButton (click)="toggleMenu($event)" class="dropbtn">
         <i class="fa fa-bars custome" style="pointer-events: none;"></i></button>
-      <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="menu2">
+      <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="isMenuOpen">
         <a routerLink="/">Home</a>
         <a routerLink="/about-us">Uber UNS</a>
         <a routerLink="/vision">Vision</a>
@@ -92,10 +92,10 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
       <a routerLink="/sport">Sport</a>
     
       <div class="dropdown">
-        <button type="submit" (click)="menudata3()" class="dropbtn">
+        <button #toggleButton (click)="toggleMenu($event)" class="dropbtn">
           <i class="fa fa-bars custome" style="pointer-events: none;"></i>
         </button>
-        <div id="myDropdown" class="dropdown-content new-custom-dp show"  *ngIf="menu3">
+        <div id="myDropdown" class="dropdown-content new-custom-dp show"  *ngIf="isMenuOpen">
           <a routerLink="/">Home</a>
           <a routerLink="/about-us">Uber UNS</a>
           <a routerLink="/vision">Vision</a>
@@ -107,9 +107,9 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
   <!--Mobile css start -->
   <div class="show-mobile">
     <div class="dropdown">
-      <button (click)="menudata3()" class="dropbtn">
+      <button #toggleButton (click)="toggleMenu($event)" class="dropbtn">
         <i class="fa fa-bars custome" style="pointer-events: none;"></i></button>
-      <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="menu3">
+      <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="isMenuOpen">
         <a routerLink="/">Home</a>
         <a routerLink="/about-us">Uber UNS</a>
         <a routerLink="/vision">Vision</a>
@@ -132,10 +132,10 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
       <a class="active" routerLink="/sport">Sport</a>
     
       <div class="dropdown">
-        <button type="submit" (click)="menudata4()" class="dropbtn">
+        <button #toggleButton (click)="toggleMenu($event)" class="dropbtn">
           <i class="fa fa-bars custome" style="pointer-events: none;"></i>
         </button>
-        <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="menu4">
+        <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="isMenuOpen">
           <a routerLink="/">Home</a>
           <a routerLink="/about-us">Uber UNS</a>
           <a routerLink="/vision">Vision</a>
@@ -147,9 +147,9 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
   <!--Mobile css start -->
   <div class="show-mobile">
     <div class="dropdown">
-      <button (click)="menudata4()" class="dropbtn">
+      <button #toggleButton (click)="toggleMenu($event)" class="dropbtn">
         <i class="fa fa-bars custome" style="pointer-events: none;"></i></button>
-        <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="menu4">
+        <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="isMenuOpen">
         <a routerLink="/">Home</a>
         <a routerLink="/about-us">Uber UNS</a>
         <a routerLink="/vision">Vision</a>
