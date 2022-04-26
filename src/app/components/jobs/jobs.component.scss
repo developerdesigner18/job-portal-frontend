@@ -1,3 +1,77 @@
+// new job pages css start
+
+
+.job-section-1{
+    padding: 30px 0 0 0;
+}
+h1.custom-job{
+    font-size: 46px;
+    text-transform: uppercase;
+    color: #f49e55;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.job-line{
+    text-align: center;
+    padding-bottom: 5.2em;
+    position: relative;
+}
+.job-line:before {
+    position: absolute;
+    content: '';
+    border: 2px solid #f49e55;
+    width: 121px;
+    top: 20px;
+    left: 54em;
+}
+.job-line:after {
+    position: absolute;
+    content: '';
+    border: 2px solid #f49e55;	
+    width: 121px;
+    top: 20px;
+    right: 54em;
+}
+.job-inner-text{
+    font-size: 20px;
+    padding: 0 18em 1em;
+    color: #4C5C68;
+    text-align: center;
+}
+@media (max-width:  768px){
+    .job-inner-text{
+        font-size: 20px;
+        padding: 0 0 1em;
+        color: #4C5C68;
+        text-align: center;
+    }
+    .job-line:before {
+    position: absolute;
+    content: '';
+    border: 2px solid #f49e55;
+    width: 121px;
+    top: 20px;
+    left: 41em;
+}
+.job-line:after {
+    position: absolute;
+    content: '';
+    border: 2px solid #f49e55;	
+    width: 121px;
+    top: 20px;
+    right: 41em;
+}
+}
+
+
+// new job pages css end
+
+
+
+
+
+
 
 ::ng-deep .ng-image-slider {
     height: 300px !important;
