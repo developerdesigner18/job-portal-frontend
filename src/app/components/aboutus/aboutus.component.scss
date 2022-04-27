@@ -8,6 +8,13 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import "~@fortawesome/fontawesome-free/scss/solid.scss";
 @import "~@fortawesome/fontawesome-free/scss/brands.scss";
 
+
+// .about-us{
+//   margin: 0;
+//   font-family: Arial, Helvetica, sans-serif ;
+//   font-size: 100%;
+// }
+
 .carousel-caption {
     position: absolute;
     right: 15%;
@@ -209,7 +216,7 @@ h1.custom-business {
     right: -6px;
     border-radius: 20px;
   }
-.custom-card-body {
+.custom-card {
     padding: 1rem 1rem 0;
 }
 .custom-img-orange{
