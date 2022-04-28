@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://164.92.180.113:8000',
+  apiUrl: 'https://www.rd3.at:8000',
 };
