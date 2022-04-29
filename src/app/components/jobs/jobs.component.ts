@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-jobs',
@@ -68,7 +69,30 @@ export class JobsComponent implements OnInit {
     title: 'RD3 lOGO'
   },
   ];
-  constructor() { }
+  constructor(private router:Router) { }
+
+
+  first(){
+    let url = "https://rd3.zohorecruit.eu/jobs/careers"
+    window.open(url, "_blank");
+  }
+  second(){
+    let url = "https://rd3.zohorecruit.eu/candidateportal"
+    window.open(url, "_blank");
+  }
+  third(){
+    let url = "https://rd3.zohorecruit.eu/clientportal"
+    window.open(url, "_blank");
+  }
+  fourth(){
+    let url = "https://rd3.zohorecruit.eu/vendorportal"
+    window.open(url, "_blank");
+  }
+  
+  fifth(){
+    let url = "mailto:info@rd3.at"
+    window.open(url);
+  }
 
   ngOnInit(): void {
   }
