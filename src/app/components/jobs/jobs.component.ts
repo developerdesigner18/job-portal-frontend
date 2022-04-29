@@ -35,6 +35,39 @@ export class JobsComponent implements OnInit {
   //   title: 'RD3 lOGO'
   // },
   ];
+  
+  imagelogo = [{
+ 
+    image: "/assets/img/LOGO@2x.png",
+    thumbImage: '/assets/img/LOGO@2x.png',
+    title: 'RD3 lOGO'
+  },
+  {
+    image: "/assets/img/LOGO@2x.png",
+    thumbImage: '/assets/img/LOGO@2x.png',
+    title: 'RD3 lOGO'
+  },
+  {
+    image: "/assets/img/LOGO@2x.png",
+    thumbImage: '/assets/img/LOGO@2x.png',
+    title: 'RD3 lOGO'
+  },
+  {
+    image: "/assets/img/LOGO@2x.png",
+    thumbImage: '/assets/img/LOGO@2x.png',
+    title: 'RD3 lOGO'
+  },
+  {
+    image: "/assets/img/LOGO@2x.png",
+    thumbImage: '/assets/img/LOGO@2x.png',
+    title: 'RD3 lOGO'
+  },
+  {
+    image: "/assets/img/LOGO@2x.png",
+    thumbImage: '/assets/img/LOGO@2x.png',
+    title: 'RD3 lOGO'
+  },
+  ];
   constructor() { }
 
   ngOnInit(): void {
