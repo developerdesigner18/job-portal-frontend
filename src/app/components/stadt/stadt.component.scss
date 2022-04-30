@@ -85,8 +85,9 @@ button.service-btn {
   flex-direction: column;*/
 }
 .service-box-2 h5, span{
-  color:#4c5c68;
+  // color:#4c5c68;
   font-size: 20px;
+  margin-left: 10px;
 }
 .service-box-2 span{
   font-size: 16px;
@@ -433,11 +434,15 @@ img.price-logo-img {
       width: 100%;
   }
   .preise-box-orange {
-      width: 142%;
+      width: 115%;
   }
   .job-inner-text {
-      padding: 0 0 1em;
+      
+    padding: 0 0 1em;
   }
+  .section-5-box-left-3 span{
+    font-size: 19px !important;
+   }
   .job-line:before {
       position: absolute;
       content: '';
