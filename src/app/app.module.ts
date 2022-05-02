@@ -14,6 +14,7 @@ import { ComponentsRoutingModule } from './components/components-routing.module'
 import { NgImageSliderModule } from 'ng-image-slider';
 import { StadtComponent } from './components/stadt/stadt.component';
 import { SportComponent } from './components/sport/sport.component';
+import { AgbComponent } from './components/agb/agb.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SportComponent } from './components/sport/sport.component';
     HomeComponent,
     JobsComponent,
     StadtComponent,
-    SportComponent
+    SportComponent,
+    AgbComponent
 
   ],
   imports: [

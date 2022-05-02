@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {NgModule } from '@angular/core';
-
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
@@ -23,7 +22,6 @@ import { AdminComponent } from '../admin/admin.component';
 //Module decorator specifying all the components used in the application 
 @NgModule({
   declarations: [
-
      HomeComponent,
      StadtComponent,
      SportComponent,
@@ -46,6 +44,7 @@ import { AdminComponent } from '../admin/admin.component';
     BrowserAnimationsModule, 
     NgImageSliderModule,
     NgxPaginationModule
+    
 
   ],
   providers: [],

@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
 // Out side elemet click function start----
 
    onClick() {
-    console.log("called out side");
+    // console.log("called out side");
     this.isMenuOpen = false;
   }
 
@@ -38,9 +38,8 @@ async toggleMenu(event:any){
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.urlSegment = event.url.split('/')[0]
-        this.urlSegment = event.url.split('#')[0]
-        
-        console.log(event.url);
+        this.urlSegment = event.url.split('#')[0] 
+        // console.log(event.url);
       }
     })
 

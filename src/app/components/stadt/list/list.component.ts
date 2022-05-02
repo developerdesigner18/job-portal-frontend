@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent implements OnInit {
+
   imageObject = [{
     image: "/assets/img/_RD3_Home_Slider2_stadt.jpg",
     thumbImage: '/assets/img/_RD3_Home_Slider2_stadt.jpg',

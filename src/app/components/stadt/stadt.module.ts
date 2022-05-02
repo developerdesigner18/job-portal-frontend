@@ -8,7 +8,7 @@ import { NgImageSliderModule } from 'ng-image-slider';
 
 @NgModule({
   declarations: [
-    ListComponent
+    ListComponent,
   ],
   imports: [
     CommonModule,
