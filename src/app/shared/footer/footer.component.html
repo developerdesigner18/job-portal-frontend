@@ -22,7 +22,8 @@
 					<!-- <span class="ft-title-1" routerLink="/jobs">RD3 JOBS</span> -->
 					<ul class="footer-ul-text">
 						<li class="ft-title-1" routerLink="/jobs" onclick="window.scrollTo(0, 0);">RD3 JOBS</li>
-						<li routerLink="/jobs">Infoseite</li>
+						<li routerLink="/jobs" onclick="window.scrollTo(0, 0);">Infoseite</li>
+						<li routerLink="/jobs" fragment="jobPriese" (click)="scrollFunc()">Preise</li>
 						<li><a href="https://rd3.zohorecruit.eu/jobs/careers" target="_blank">Jobsuche</a></li>
 						<li><a href="https://rd3.zohorecruit.eu/candidateportal" target="_blank">Bewerber Portal</a></li>
 						<li><a href="https://rd3.zohorecruit.eu/clientportal" target="_blank">Arbeitgeber Portal</a></li>
@@ -33,7 +34,8 @@
 					<!-- <span class="ft-title-2" routerLink="/stadt">RD3 STADT</span> -->
 					<ul class="footer-ul-text">
 						<li class="ft-title-2" routerLink="/stadt" onclick="window.scrollTo(0, 0);">RD3 STADT</li>
-						<li routerLink="/stadt">Infoseite</li>
+						<li routerLink="/stadt" onclick="window.scrollTo(0, 0);">Infoseite</li>
+						<li routerLink="/stadt" fragment="stadtPriese" (click)="scrollFunc()">Preise</li>
 						<li><a href="https://regionalunddigital.at/beispiel/" target="_blank">Beispielstadt</a></li>
 						<li routerLink="/stadt/list">Partner Städte</li>
 					</ul>
@@ -42,9 +44,10 @@
 					<!-- <span class="ft-title-3" routerLink="/sport">RD3 SPORT</span> -->
 					<ul class="footer-ul-text">
 						<li class="ft-title-3" routerLink="/sport" onclick="window.scrollTo(0, 0);">RD3 SPORT</li>
-						<li routerLink="/sport">Infoseite</li>
-						<li routerLink="/sport" fragment="Partner & sponseren">Partner &amp; Sponseren</li>
-						<li routerLink="/sport" fragment="athleten">Athleten</li>
+						<li routerLink="/sport" onclick="window.scrollTo(0, 0);">Infoseite</li>
+						<li routerLink="/sport" fragment="sportsPriese" (click)="scrollFunc()">Priese</li>
+						<li routerLink="/sport" fragment="partner&sponseren" (click)="scrollFunc()">Partner &amp; Sponseren</li>
+						<li routerLink="/sport" fragment="athleten" (click)="scrollFunc()">Athleten</li>
 					</ul>
 				</div>
 				<!-- <div class="col-md-2">

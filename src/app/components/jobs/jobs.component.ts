@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-jobs',
@@ -69,7 +69,7 @@ export class JobsComponent implements OnInit {
     title: 'RD3 lOGO'
   },
   ];
-  constructor(private router:Router) { }
+  constructor(private router:Router , private activatedroute:ActivatedRoute) { }
 
 
   first(){
@@ -95,6 +95,7 @@ export class JobsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
   }
 
 }

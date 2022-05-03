@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -8,9 +8,13 @@ import { Router } from '@angular/router';
 })
 export class FooterComponent implements OnInit {
 
-  constructor(public router:Router) { }
+  constructor(public router:Router, private actroute:ActivatedRoute) { }
 
-  
+  scrollFunc() {
+    let fragment = this.actroute.snapshot.fragment
+    let element = document.getElementById(fragment)
+    element?.scrollIntoView()
+  }
 
   ngOnInit(): void {
   }

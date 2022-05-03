@@ -13,14 +13,26 @@ export class AppComponent {
   title = 'jobportal';
   name = 'Get Current Url Route Demo';
   data:any;
-  pathName: any
 
-  constructor(private actroute:ActivatedRoute, public router: Router) {
-    router.events.subscribe((res) => {
-      this.pathName = window.location.pathname
-      // console.log(this.pathName);
-    })
+  constructor(private actroute:ActivatedRoute, public router: Router) { }
+  
+  scrollFunc() {
+    console.log('here');
     
-}
+    this.actroute.fragment.subscribe((fragment: string) => {
+      console.log("fragemnet============",fragment)
+      const element = document.getElementById(fragment)
+      console.log('fragment', fragment, 'element', element);
+      
+      if (fragment && element != null) {
+        element.scrollIntoView();
+      }
+    });
+  }
 
+  ngOnInit(): void { 
+    setTimeout(() => {
+      this.scrollFunc();
+    }, 4000)
+  }
 }
