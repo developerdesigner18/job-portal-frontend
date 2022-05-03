@@ -408,8 +408,17 @@ button::-moz-focus-inner {
     .hide-mobile{
       display: none;
   }
+  
   .show-mobile{
-      display: block;
+      width: 100%;
+      display: flex;
+       justify-content: space-between;
+       align-items: center;
+  }
+  .show-ul-mobile a{
+      font-size: 36px;
+      color: #4b5b67 !important;
+      font-weight: 600;
   }
 
   .dropdown-content {

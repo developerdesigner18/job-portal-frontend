@@ -1,7 +1,7 @@
 <div class="homeheader" *ngIf="(router.url === '/' || router.url === '/contact' || router.url === '/about-us' || 
 router.url === '/vision' || router.url === '/privacy' || router.url === '/imprint' || router.url === '/agb')">
   <a class="logo" routerLink="/">
-    <img src="assets/img/logo-1.png" class="img-logo" routerLink="/">
+    <img src="assets/img/logo-1.png" class="img-logo hide-mobile" routerLink="/">
   </a>
   <div class="homeheader-right">
     <div class="hide-mobile">
@@ -25,6 +25,9 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
 
   <!--Mobile css start -->
   <div class="show-mobile">
+    <a class="logo" routerLink="/">
+      <img src="assets/img/logo-1.png" class="img-logo" routerLink="/">
+    </a>
     <div class="dropdown">
       <button #toggleButton (click)="toggleMenu($event)" class="dropbtn">
         <i class="fa fa-bars custome" style="pointer-events: none;"></i></button>
@@ -35,9 +38,17 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
         <a routerLink="/contact">Kontakt</a>
       </div>
     </div>
+    
   </div>
+  
   <!-- Mobile css end -->
 </div>
+<!-- <div clsss ="show-ul-mobile show-mobile">
+    <a class="active" routerLink="/">Home</a>
+      <a routerLink="/jobs">Jobs</a>
+      <a routerLink="/stadt">Stadt</a>
+      <a routerLink="/sport">Sport</a>
+    </div> -->
 
 <div class="stadtheader" *ngIf="(router.url === '/stadt' ||router.url === '/stadt/list')">
   <a class="logo" routerLink="/">
