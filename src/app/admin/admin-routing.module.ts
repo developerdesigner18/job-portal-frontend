@@ -1,14 +1,12 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import {Routes ,RouterModule} from '@angular/router';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AdminComponent } from './admin.component';
 
 const routes: Routes = [
-  { path: '',redirectTo:'admin-login', pathMatch: 'full' },
-// { path: '', component:  AdminComponent},
+{ path: '',redirectTo:'admin-login', pathMatch: 'full' },
 { path: 'admin-login', loadChildren: () => import('./admin-login/admin-login.module').then(m => m.AdminLoginModule) },
-{ path: 'form', loadChildren: () => import('./form/form.module').then(m => m.FormModule) },
-{ path: 'admin-users', loadChildren: () => import('./admin-users/admin-users.module').then(m => m.AdminUsersModule) },
+{ path: 'admin-dashboard', loadChildren: () => import('./admin-dashboard/admin-dashboard.module').then(m => m.AdminDashboardModule) },
 ];
 
 @NgModule({

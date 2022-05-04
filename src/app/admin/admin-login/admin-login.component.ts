@@ -39,15 +39,11 @@ export class AdminLoginComponent implements OnInit {
         localStorage.setItem('u_info', JSON.stringify(res.data));
         localStorage.setItem('auth_token', res.token);
         
-        this.router.navigateByUrl('/admin')
+        this.router.navigateByUrl('/admin/admin-dashboard')
       } else {
         Notiflix.Loading.remove();
         Notiflix.Notify.failure(res.error);
-        // this.broadcastService.sendToastMessage({
-        //   msgTitle: 'Error',
-        //   msgType: 'error',
-        //   msgTxt: res.message
-        // });
+
         
       }
     },

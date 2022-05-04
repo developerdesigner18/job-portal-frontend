@@ -44,9 +44,8 @@ import { AdminComponent } from '../admin/admin.component';
     BrowserAnimationsModule, 
     NgImageSliderModule,
     NgxPaginationModule
-    
-
   ],
+ 
   providers: [],
 })
 export class ComponentsModule {}

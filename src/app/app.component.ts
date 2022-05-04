@@ -14,15 +14,15 @@ export class AppComponent {
   name = 'Get Current Url Route Demo';
   data:any;
 
-  constructor(private actroute:ActivatedRoute, public router: Router) { }
+  constructor(private actroute:ActivatedRoute, private router: Router) { }
   
   scrollFunc() {
-    console.log('here');
+    // console.log('here');
     
     this.actroute.fragment.subscribe((fragment: string) => {
-      console.log("fragemnet============",fragment)
+      // console.log("fragemnet============",fragment)
       const element = document.getElementById(fragment)
-      console.log('fragment', fragment, 'element', element);
+      // console.log('fragment', fragment, 'element', element);
       
       if (fragment && element != null) {
         element.scrollIntoView();
