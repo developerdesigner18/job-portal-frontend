@@ -8,7 +8,7 @@ import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 })
 export class FooterComponent implements OnInit {
 
-  constructor(public router:Router, private actroute:ActivatedRoute) { 
+  constructor(public router:Router, private actroute : ActivatedRoute) { 
 
 
 
@@ -16,46 +16,21 @@ export class FooterComponent implements OnInit {
 
 
   scrollFunc(): void {
-
-    this.router.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {
-          const tree = this.router.parseUrl(this.router.url);
-          if (tree.fragment) {
-        const element = document.querySelector("#" + tree.fragment);
-        if (element) { element?.scrollIntoView(); }
-          }
-        // let fragment = window.location.hash.slice(1)
-        // let element = document.getElementById(fragment)
-        // console.log(fragment , element)
-        // element?.scrollIntoView()
-       }
-  });
-
-    // let fragment = window.location.hash.slice(1)
-    // let element = document.getElementById(fragment)
+    let fragment = window.location.hash.slice(1)
+    let element = document.getElementById(fragment)
     // console.log(fragment , element)
-    // element?.scrollIntoView()
+    element?.scrollIntoView()
   }
-
-  // scrollFunc(fragment: any) {
-  //   document.addEventListener("DOMContentLoaded", (event) => { 
-  //   // let fragment = this.actroute.snapshot.fragment
-  //   let element = document.getElementById(fragment)
-
-  //   console.log(fragment, element);
-    
-  //   element?.scrollIntoView()
-  //   })
-  // }
 
   ngOnInit(): void {
-    // document.addEventListener("DOMContentLoaded", (event) => { 
-      this.scrollFunc()
-    // });    
+      this.actroute.fragment.subscribe(fragment => { 
+        setTimeout(() => {
+              this.scrollFunc();
+          }, 300);
+});
+
   }
 
-  // ngOnInit(): void {
 
-  // }
 
 }

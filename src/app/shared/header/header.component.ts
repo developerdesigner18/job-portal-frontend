@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
+import { NavigationEnd, Router, ResolveEnd } from '@angular/router';
 import { AppComponent } from "../../app.component"
 
 @Component({
@@ -15,8 +15,7 @@ export class HeaderComponent implements OnInit {
  isMenuOpen = true;
  urlSegment: any;
 
-  constructor(public router:Router) {
-   }
+  constructor(public router:Router) { }
 
 // Out side elemet click function start----
 

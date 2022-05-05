@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute, Router , NavigationEnd  } from '@angular/router';
+import { ActivatedRoute, Router , NavigationEnd, ResolveEnd  } from '@angular/router';
 import { Observable } from 'rxjs';
 import {filter} from 'rxjs/operators';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
@@ -17,7 +17,20 @@ export class AppComponent {
   name = 'Get Current Url Route Demo';
   data:any;
   closeResult = '';
-  constructor(private actroute:ActivatedRoute, private router: Router , private modalService: NgbModal) { }
+  constructor(private actroute:ActivatedRoute, private router: Router , private modalService: NgbModal) {
+
+// To get a clicked routes in a console start
+    this.router.events.subscribe((routerData) => {
+      if(routerData instanceof ResolveEnd){ 
+        console.log(routerData.url)
+         if(routerData.url === 'your url'){
+           //Do something
+         }
+    } 
+})
+// To get a clicked routes in a console end
+    
+   }
   
   open(content:any) {
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
