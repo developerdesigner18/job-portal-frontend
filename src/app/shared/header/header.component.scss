@@ -409,16 +409,57 @@ button::-moz-focus-inner {
       display: none;
   }
   
+  .homeheader {
+    background-color: #fff;
+    padding: 0;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+  .jobsheader {
+    background-color: #fff;
+    padding: 0;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+  .stadtheader {
+    background-color: #fff;
+    padding: 0;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+  .sportsheader {
+    background-color: #fff;
+    padding: 0;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
   .show-mobile{
       width: 100%;
       display: flex;
        justify-content: space-between;
        align-items: center;
   }
+  .custom-ul-mobile{
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .custom-ul-mobile a{
+    font-size: 36px;
+    color: #4b5b67 !important;
+    font-weight: 600;
+  }
   .show-ul-mobile a{
       font-size: 36px;
       color: #4b5b67 !important;
       font-weight: 600;
+  }
+  .show-ul-mobile{
+      display: flex !important;
+      justify-content: center !important;
   }
 
   .dropdown-content {

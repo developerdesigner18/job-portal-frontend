@@ -38,17 +38,21 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
         <a routerLink="/contact">Kontakt</a>
       </div>
     </div>
-    
-  </div>
-  
-  <!-- Mobile css end -->
-</div>
-<!-- <div clsss ="show-ul-mobile show-mobile">
-    <a class="active" routerLink="/">Home</a>
+    <div clsss="custom-ul-mobile">
+      <a class="active" routerLink="/">Home</a>
       <a routerLink="/jobs">Jobs</a>
       <a routerLink="/stadt">Stadt</a>
       <a routerLink="/sport">Sport</a>
-    </div> -->
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- Mobile css end -->
+
 
 <div class="stadtheader" *ngIf="(router.url === '/stadt' ||router.url === '/stadt/list')">
   <a class="logo" routerLink="/">
@@ -76,8 +80,11 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
 
   <!--Mobile css start -->
   <div class="show-mobile">
+    <a class="logo" routerLink="/">
+      <img src="assets/img/logo-1.png" class="img-logo" routerLink="/">
+    </a>
     <div class="dropdown">
-      <button  #toggleButton (click)="toggleMenu($event)" class="dropbtn">
+      <button #toggleButton (click)="toggleMenu($event)" class="dropbtn">
         <i class="fa fa-bars custome" style="pointer-events: none;"></i></button>
       <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="isMenuOpen">
         <a routerLink="/">Home</a>
@@ -85,6 +92,12 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
         <a routerLink="/vision">Vision</a>
         <a routerLink="/contact">Kontakt</a>
       </div>
+    </div>
+    <div clsss="custom-ul-mobile">
+      <a class="active" routerLink="/">Home</a>
+      <a routerLink="/jobs">Jobs</a>
+      <a routerLink="/stadt">Stadt</a>
+      <a routerLink="/sport">Sport</a>
     </div>
   </div>
   <!-- Mobile css end -->
@@ -101,12 +114,12 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
       <a class="active" routerLink="/jobs">Jobs</a>
       <a routerLink="/stadt">stadt</a>
       <a routerLink="/sport">Sport</a>
-    
+
       <div class="dropdown">
         <button #toggleButton (click)="toggleMenu($event)" class="dropbtn">
           <i class="fa fa-bars custome" style="pointer-events: none;"></i>
         </button>
-        <div id="myDropdown" class="dropdown-content new-custom-dp show"  *ngIf="isMenuOpen">
+        <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="isMenuOpen">
           <a routerLink="/">Home</a>
           <a routerLink="/about-us">Uber UNS</a>
           <a routerLink="/vision">Vision</a>
@@ -126,6 +139,13 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
         <a routerLink="/vision">Vision</a>
         <a routerLink="/contact">Kontakt</a>
       </div>
+
+    </div>
+    <div clsss="custom-ul-mobile">
+      <a class="active" routerLink="/">Home</a>
+      <a routerLink="/jobs">Jobs</a>
+      <a routerLink="/stadt">Stadt</a>
+      <a routerLink="/sport">Sport</a>
     </div>
   </div>
   <!-- Mobile css end -->
@@ -141,7 +161,6 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
       <a routerLink="/jobs">Jobs</a>
       <a routerLink="/stadt">Stadt</a>
       <a class="active" routerLink="/sport">Sport</a>
-    
       <div class="dropdown">
         <button #toggleButton (click)="toggleMenu($event)" class="dropbtn">
           <i class="fa fa-bars custome" style="pointer-events: none;"></i>
@@ -160,12 +179,19 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
     <div class="dropdown">
       <button #toggleButton (click)="toggleMenu($event)" class="dropbtn">
         <i class="fa fa-bars custome" style="pointer-events: none;"></i></button>
-        <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="isMenuOpen">
+      <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="isMenuOpen">
         <a routerLink="/">Home</a>
         <a routerLink="/about-us">Uber UNS</a>
         <a routerLink="/vision">Vision</a>
         <a routerLink="/contact">Kontakt</a>
       </div>
+
+    </div>
+    <div clsss="custom-ul-mobile">
+      <a class="active" routerLink="/">Home</a>
+      <a routerLink="/jobs">Jobs</a>
+      <a routerLink="/stadt">Stadt</a>
+      <a routerLink="/sport">Sport</a>
     </div>
   </div>
   <!-- Mobile css end -->
