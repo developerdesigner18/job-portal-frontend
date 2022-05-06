@@ -154,6 +154,11 @@ table {
   padding: 10px;
 }
 
+#table-data td, #table-data tr,#table-data th{
+  border-bottom: 2px solid #d1b968;
+  border-right: 3px solid #d1b968;
+}
+
 /*.last-td-table, td {
   border-bottom:none !important;
 }*/
@@ -347,7 +352,7 @@ img.price-logo-img {
   }
   .table-1 td, th {
       padding: 2px;
-      font-size: 15px;
+      font-size: 23px;
   }
   .preise-box-gray {
       width: 107% !important;

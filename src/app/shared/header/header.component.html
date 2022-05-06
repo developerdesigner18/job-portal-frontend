@@ -9,7 +9,6 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
       <a routerLink="/jobs">Jobs</a>
       <a routerLink="/stadt">Stadt</a>
       <a routerLink="/sport">Sport</a>
-
       <div class="dropdown">
         <button #toggleButton (click)="toggleMenu($event)" class="dropbtn">
           <i class="fa fa-bars custome" style="pointer-events: none;"></i></button>
@@ -22,8 +21,6 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
       </div>
     </div>
   </div>
-
-  <!--Mobile css start -->
   <div class="show-mobile">
     <a class="logo" routerLink="/">
       <img src="assets/img/logo-1.png" class="img-logo" routerLink="/">
@@ -32,31 +29,21 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
       <button #toggleButton (click)="toggleMenu($event)" class="dropbtn">
         <i class="fa fa-bars custome" style="pointer-events: none;"></i></button>
       <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="isMenuOpen">
-        <a routerLink="/">Home</a>
+        <a class="active" routerLink="/">Home</a>
         <a routerLink="/about-us">Uber UNS</a>
         <a routerLink="/vision">Vision</a>
         <a routerLink="/contact">Kontakt</a>
+        <a routerLink="/jobs">Jobs</a>
+        <a routerLink="/stadt">Stadt</a>
+        <a routerLink="/sport">Sport</a>
       </div>
     </div>
-    <div clsss="custom-ul-mobile">
-      <a class="active" routerLink="/">Home</a>
-      <a routerLink="/jobs">Jobs</a>
-      <a routerLink="/stadt">Stadt</a>
-      <a routerLink="/sport">Sport</a>
-    </div>
-
   </div>
-
 </div>
 
-
-
-<!-- Mobile css end -->
-
-
-<div class="stadtheader" *ngIf="(router.url === '/stadt' ||router.url === '/stadt/list')">
+<div class="stadtheader" *ngIf="(router.url === '/stadt' ||router.url === '/stadt/list' || router.url === '/stadt#stadtPreise')">
   <a class="logo" routerLink="/">
-    <img src="assets/img/RD3_-_Style2-01@2x.png" class="img-logo-stadt" routerLink="/">
+    <img src="assets/img/RD3_-_Style2-01@2x.png" class="img-logo-stadt hide-mobile" routerLink="/">
   </a>
   <div class="stadtheader-right">
     <div class="hide-mobile">
@@ -64,7 +51,6 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
       <a routerLink="/jobs">Jobs</a>
       <a class="active" routerLink="/stadt">Stadt</a>
       <a routerLink="/sport">Sport</a>
-
       <div class="dropdown">
         <button #toggleButton (click)="toggleMenu($event)" class="dropbtn">
           <i class="fa fa-bars custome" style="pointer-events: none;"></i></button>
@@ -77,11 +63,9 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
       </div>
     </div>
   </div>
-
-  <!--Mobile css start -->
   <div class="show-mobile">
     <a class="logo" routerLink="/">
-      <img src="assets/img/logo-1.png" class="img-logo" routerLink="/">
+      <img src="assets/img/RD3_-_Style2-01@2x.png" class="img-logo" routerLink="/">
     </a>
     <div class="dropdown">
       <button #toggleButton (click)="toggleMenu($event)" class="dropbtn">
@@ -91,22 +75,17 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
         <a routerLink="/about-us">Uber UNS</a>
         <a routerLink="/vision">Vision</a>
         <a routerLink="/contact">Kontakt</a>
+        <a routerLink="/jobs">Jobs</a>
+        <a routerLink="/stadt">Stadt</a>
+        <a routerLink="/sport">Sport</a>
       </div>
     </div>
-    <div clsss="custom-ul-mobile">
-      <a class="active" routerLink="/">Home</a>
-      <a routerLink="/jobs">Jobs</a>
-      <a routerLink="/stadt">Stadt</a>
-      <a routerLink="/sport">Sport</a>
-    </div>
   </div>
-  <!-- Mobile css end -->
-
 </div>
 
-<div class="jobsheader" *ngIf="(router.url === '/jobs')">
+<div class="jobsheader" *ngIf="(router.url === '/jobs' || router.url === '/jobs#jobPreise')">
   <a class="logo">
-    <img src="assets/img/RD3 - Style2-03.png" class="img-logo-jobs" routerLink="/">
+    <img src="assets/img/RD3 - Style2-03.png" class="img-logo-jobs hide-mobile" routerLink="/">
   </a>
   <div class="jobsheader-right">
     <div class="hide-mobile">
@@ -128,8 +107,11 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
       </div>
     </div>
   </div>
-  <!--Mobile css start -->
+  
   <div class="show-mobile">
+    <a class="logo" routerLink="/">
+      <img src="assets/img/RD3 - Style2-03.png" class="img-logo" routerLink="/">
+    </a>
     <div class="dropdown">
       <button #toggleButton (click)="toggleMenu($event)" class="dropbtn">
         <i class="fa fa-bars custome" style="pointer-events: none;"></i></button>
@@ -138,22 +120,19 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
         <a routerLink="/about-us">Uber UNS</a>
         <a routerLink="/vision">Vision</a>
         <a routerLink="/contact">Kontakt</a>
+        <a routerLink="/jobs">Jobs</a>
+        <a routerLink="/stadt">Stadt</a>
+        <a routerLink="/sport">Sport</a>
       </div>
-
-    </div>
-    <div clsss="custom-ul-mobile">
-      <a class="active" routerLink="/">Home</a>
-      <a routerLink="/jobs">Jobs</a>
-      <a routerLink="/stadt">Stadt</a>
-      <a routerLink="/sport">Sport</a>
     </div>
   </div>
-  <!-- Mobile css end -->
 </div>
 
-<div class="sportsheader" *ngIf="(router.url === '/sport' || router.url === '/sport#athleten')">
+
+
+<div class="sportsheader" *ngIf="(router.url === '/sport' || router.url === '/sport#athleten' || router.url === '/sport#partner&sponseren' || router.url === '/sport#sportsPreise')">
   <a class="logo">
-    <img src="assets/img/RD3 - Style2-02.png" class="img-logo-sport" routerLink="/">
+    <img src="assets/img/RD3 - Style2-02.png" class="img-logo-sport hide-mobile" routerLink="/">
   </a>
   <div class="sportsheader-right">
     <div class="hide-mobile">
@@ -174,8 +153,10 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
       </div>
     </div>
   </div>
-  <!--Mobile css start -->
   <div class="show-mobile">
+    <a class="logo" routerLink="/">
+      <img src="assets/img/RD3 - Style2-02.png" class="img-logo" routerLink="/">
+    </a>
     <div class="dropdown">
       <button #toggleButton (click)="toggleMenu($event)" class="dropbtn">
         <i class="fa fa-bars custome" style="pointer-events: none;"></i></button>
@@ -184,15 +165,10 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
         <a routerLink="/about-us">Uber UNS</a>
         <a routerLink="/vision">Vision</a>
         <a routerLink="/contact">Kontakt</a>
+        <a routerLink="/jobs">Jobs</a>
+        <a routerLink="/stadt">Stadt</a>
+        <a routerLink="/sport">Sport</a>
       </div>
-
-    </div>
-    <div clsss="custom-ul-mobile">
-      <a class="active" routerLink="/">Home</a>
-      <a routerLink="/jobs">Jobs</a>
-      <a routerLink="/stadt">Stadt</a>
-      <a routerLink="/sport">Sport</a>
     </div>
   </div>
-  <!-- Mobile css end -->
 </div>

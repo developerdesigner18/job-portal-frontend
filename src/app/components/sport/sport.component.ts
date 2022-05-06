@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-sport',
@@ -20,26 +21,35 @@ export class SportComponent implements OnInit {
     thumbImage: '/assets/img/RD3_Home_Slider3_sport_1600.jpg',
     // title: 'RD3 lOGO'
   }, 
-  // {
-  //   image: "/assets/img/LOGO@2x.png",
-  //   thumbImage: '/assets/img/LOGO@2x.png',
-  //   title: 'RD3 lOGO'
-  // },
-  // {
-  //   image: "/assets/img/LOGO@2x.png",
-  //   thumbImage: '/assets/img/LOGO@2x.png',
-  //   title: 'RD3 lOGO'
-  // },
-  // {
-  //   image: "/assets/img/LOGO@2x.png",
-  //   thumbImage: '/assets/img/LOGO@2x.png',
-  //   title: 'RD3 lOGO'
-  // },
+
   ];
   constructor(
     public activatedRoute: ActivatedRoute,
-    public router:Router
+    public router:Router,
+    private modalService: NgbModal
+
   ) { }
+  closeResult = '';
+
+
+  open(content:any) {
+    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
+      this.closeResult = `Closed with: ${result}`;
+    }, (reason) => {
+      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+    });
+  }
+
+  private getDismissReason(reason: any): string {
+    if (reason === ModalDismissReasons.ESC) {
+      return 'by pressing ESC';
+    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
+      return 'by clicking on a backdrop';
+    } else {
+      return `with: ${reason}`;
+    }
+  }
+
 
   forms(){
     let url = "https://forms.zohopublic.eu/test1001dds/form/ContactUs/formperma/-VD_D7umKbIWq6Yx0MMlEJSWLCLb_vRCxeX4yLOQkEE"
