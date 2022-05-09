@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import {
   ActivatedRoute,
   Router,
@@ -21,6 +21,7 @@ export class AppComponent {
   title = 'jobportal,sportmarketing,stadtmarketing';
   name = 'Get Current Url Route Demo';
   data: any;
+
   constructor(
     private actroute: ActivatedRoute,
     private router: Router,
@@ -41,15 +42,15 @@ export class AppComponent {
   }
 
   ngOnInit(): void {
-    this.titleService.setTitle(this.title);
-    this.meta.addTags([
-      { name: 'keywords', content: 'jobportal,sportmarketing,stadtmarketing' },
-      {
-        name: 'description',
-        content: 'jobportal,sportmarketing,stadtmarketing',
-      },
-      { name: 'robots', content: 'index, follow' },
-    ]);
+    // this.titleService.setTitle(this.title);
+    // this.meta.addTags([
+    //   { name: 'keywords', content: 'jobportal,sportmarketing,stadtmarketing' },
+    //   {
+    //     name: 'description',
+    //     content: 'jobportal,sportmarketing,stadtmarketing',
+    //   },
+    //   { name: 'robots', content: 'index, follow' },
+    // ]);
 
     // const writer = this.meta.getTag('name=description');
     // console.log(writer);

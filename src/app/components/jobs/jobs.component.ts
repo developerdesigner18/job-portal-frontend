@@ -73,19 +73,19 @@ export class JobsComponent implements OnInit {
 
 
   first(){
-    let url = "https://rd3.zohorecruit.eu/jobs/careers"
+    let url = "https://jobs.rd3.at/jobs"
     window.open(url, "_blank");
   }
   second(){
-    let url = "https://rd3.zohorecruit.eu/candidateportal"
+    let url = "https://jobs.rd3.at/candidateportal"
     window.open(url, "_blank");
   }
   third(){
-    let url = "https://rd3.zohorecruit.eu/clientportal"
+    let url = "https://jobs.rd3.at/clientportal"
     window.open(url, "_blank");
   }
   fourth(){
-    let url = "https://rd3.zohorecruit.eu/vendorportal"
+    let url = "https://jobs.rd3.at/vendorportal"
     window.open(url, "_blank");
   }
   
