@@ -121,7 +121,7 @@ table.popup-table tr td {
   border: 2px solid #d1b681;
   padding: 10px;
   position: relative;
-  height: 450px;
+  height: 100%;
 }
 .popup-circle {
   position: relative;
@@ -261,6 +261,9 @@ span.popup-box-3-span {
 //   font-size: 17px !important;
 // }
 
+
+
+
 // first popup ended
 
 
@@ -278,7 +281,7 @@ span.popup-box-3-span {
   border: 2px solid #d1b681;
   padding: 10px;
   position: relative;
-  height: 450px;
+  height: 100%;
 }
 .popup-circle {
   position: relative;
@@ -431,7 +434,7 @@ table.popup-table tr td {
   border: 2px solid #d1b681;
   padding: 10px;
   position: relative;
-  height: 450px;
+  height: 100%;
 }
 .popup-circle {
   position: relative;
@@ -584,7 +587,7 @@ table.popup-table tr td {
   border: 2px solid #d1b681;
   padding: 10px;
   position: relative;
-  height: 450px;
+  height: 100%;
 }
 .popup-circle {
   position: relative;
@@ -722,6 +725,178 @@ table.popup-table tr td {
 
 // fourth pop-up ended
 
+// popup media css start
+
+@media (max-width: 1024px){
+  span.popup-box-3-span {
+    font-size: 28px;
+  }
+  .sport-section-3-Athletes-box-popup {
+    width: 100%;
+  }
+  .Athletes-box-popup {
+    font-size: 11px;
+    padding: 5px 9px;
+  }
+  .box-orange-2 {
+    padding: 0;
+    position: absolute;
+    top: 38%;
+  }
+  .box-orange-2 span {
+    font-size: 13px;
+  }
+  .common-span-3 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 820px){
+  .sport-section-3-Athletes-box-popup {
+    width: 100%;
+  }
+  .Athletes-box-popup {
+    font-size: 9px;
+    padding: 5px 5px;
+  }
+  .search-fa-color-1-popup {
+    font-size: 11px;
+    padding: 6px;
+  }
+  .search-box-1-popup {
+    margin-left: 4px;
+    font-size: 11px;
+  }
+  .map-fa-color-1-popup {
+    font-size: 11px;
+    padding: 6px;
+  }
+  .location-box-1-popup {
+    margin-left: 4px;
+    font-size: 11px;
+  }
+  span.popup-box-3-span {
+    font-size: 28px;
+  }
+  .box-orange {
+    padding: 5px;
+  }
+  .box-orange span {
+    font-size: 11px;
+  }
+}
+@media (max-width: 768px){
+  .box-orange span {
+    font-size: 11px;
+  }
+  .sport-section-3-Athletes-box-popup {
+    width: 100%;
+  }
+  .Athletes-box-popup {
+    font-size: 9px;
+    padding: 5px 5px;
+  }
+  .search-fa-color-1-popup {
+    font-size: 11px;
+    padding: 6px;
+  }
+  .search-box-1-popup {
+    margin-left: 4px;
+    font-size: 11px;
+  }
+  .map-fa-color-1-popup {
+    font-size: 11px;
+    padding: 6px;
+  }
+  .location-box-1-popup {
+    margin-left: 4px;
+    font-size: 11px;
+  }
+  span.popup-box-3-span {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767px)
+{
+  .search-fa-color-1-popup {
+    font-size: 16px;
+    padding: 6px;
+  }
+  .search-box-1-popup {
+    margin-left: 13px;
+    font-size: 16px;
+  }
+  .map-fa-color-1-popup {
+    font-size: 16px;
+    padding: 6px;
+  }
+  .location-box-1-popup {
+    margin-left: 20px;
+    font-size: 16px;
+  }
+  .Athletes-box-popup {
+    font-size: 14px;
+    padding: 5px 20px;
+  }
+  .top-header{
+    width: 100%;
+  }
+  .popup-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .popup-set-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .popup-box-1 {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  .sport-section-3-Athletes-box-popup {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px){
+  .modal-dialog {
+    max-width: 100%!important;
+    padding: 0 2em;
+  }
+  .header-2 {
+    text-align: center;
+  }
+  .popup-logo-1 {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+@media (max-width: 375px){
+  .modal-body {
+    padding: 0 !important;
+  }
+  .modal-dialog {
+    max-width: 100%!important;
+    padding: 0 1em;
+  }
+  .search-fa-color-1-popup{
+    padding: 3px;
+  }
+  .map-fa-color-1-popup {
+    padding: 3px;
+  }
+  .header-2 span {
+    color: #000;
+    font-size: 18px;
+  }
+  .Athletes-box-popup {
+    font-size: 9px;
+    padding: 5px 8px;
+  }
+}
+
+// pop up media css end
 
 
 
