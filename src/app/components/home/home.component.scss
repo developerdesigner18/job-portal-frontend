@@ -458,9 +458,7 @@ h1.custom-business {
 
 /* The dot/bullet/indicator container */
 .dot-container {
-  text-align:left;
-  padding: 20px;
-
+  padding: 20px 20px 20px 0;
 }
 
 /* The dots/bullets/indicators */
@@ -530,7 +528,7 @@ h1.custom-business {
     align-items: center;
   }
   .author {
-    margin-left: 2em;
+    margin-left: 0;
   }
   .author, h3, h5 {
     color: #fff;

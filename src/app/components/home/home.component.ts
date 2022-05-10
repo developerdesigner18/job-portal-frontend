@@ -68,8 +68,13 @@ export class HomeComponent implements OnInit {
 
   }
 
+  async tab1slide(){
+    this.tab2 = false
+    this.tab1 = true
+    this.tab3 = false
+  }
+
   async tab2slide(){
-    console.log(this.tab2)
     this.tab2 = true
     this.tab1 = false
     this.tab3 = false

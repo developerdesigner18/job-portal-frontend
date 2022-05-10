@@ -9,6 +9,23 @@ export class AdminSportsComponent implements OnInit {
 
   constructor() { }
 
+  
+  imageObject = [{
+    image: "/assets/img/Reise-Empfehlungen.png",
+    thumbImage: '/assets/img/Reise-Empfehlungen.png',
+    // title: 'RD3 lOGO'
+  }, {
+    image: "/assets/img/Reise-Empfehlungen.png",
+    thumbImage: 'assets/img/Reise-Empfehlungen.png',
+    // title: 'RD3 lOGO'
+  }, {
+    image: "assets/img/Reise-Empfehlungen.png",
+    thumbImage: 'assets/img/Reise-Empfehlungen.png',
+    // title: 'RD3 lOGO'
+  }, 
+ 
+  ];
+
   ngOnInit(): void {
   }
 

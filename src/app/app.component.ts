@@ -18,7 +18,7 @@ declare var $: any;
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'jobportal,sportmarketing,stadtmarketing';
+  title = 'Jobportal,Sportmarketing,Stadtmarketing';
   name = 'Get Current Url Route Demo';
   data: any;
 
