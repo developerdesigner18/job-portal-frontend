@@ -21,8 +21,21 @@ export class SportComponent implements OnInit {
     thumbImage: '/assets/img/RD3_Home_Slider3_sport_1600.jpg',
     // title: 'RD3 lOGO'
   }, 
-
   ];
+
+
+  countries = [{
+    id: 1, name: 'France'
+  },
+  {
+    id: 2, name: 'Germany'
+  },
+  {
+    id: 3, name: 'Italy'
+  },
+  ];
+
+  
   constructor(
     public activatedRoute: ActivatedRoute,
     public router:Router,

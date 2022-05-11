@@ -363,6 +363,14 @@ img {
 .image-upload>input {
     display: none;
   }
+
+  .image-upload img {
+    display: block;
+    margin-left: 60%;
+    margin-right: auto;
+    width: 75%;
+  }
+
 .left-pannel{
     display: flex;
     flex-direction: column;
