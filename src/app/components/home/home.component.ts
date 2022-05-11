@@ -1,6 +1,7 @@
 import { Component, ViewChild , OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgbModal , ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +13,7 @@ export class HomeComponent implements OnInit {
   @ViewChild('content') content: any;
   tab1: boolean = false;
   tab2:boolean = false;
-  tab3:boolean = false;
+  // tab3:boolean = false;
 
 
   imageObject = [{
@@ -71,17 +72,17 @@ export class HomeComponent implements OnInit {
   async tab1slide(){
     this.tab2 = false
     this.tab1 = true
-    this.tab3 = false
+    // this.tab3 = false
   }
 
   async tab2slide(){
     this.tab2 = true
     this.tab1 = false
-    this.tab3 = false
+    // this.tab3 = false
   }
 
   async tab3slide(){
-    this.tab3 = true
+    // this.tab3 = true
     this.tab2 = false
     this.tab1 = false
   }
@@ -93,6 +94,10 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.tab1 = true
+    interval(5000).subscribe((data) => {
+      this.tab1 = !this.tab1
+      this.tab2 = !this.tab2
+  });
   }
 
   ngAfterViewInit() {

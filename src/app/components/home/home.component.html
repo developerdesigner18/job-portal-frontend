@@ -198,7 +198,12 @@
 		</div>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-6"  *ngIf="tab1">
+					<img src="assets/img/clemens_doppler_portrait.jpeg" class="unser-left-img">
+
+					<!-- <img src="assets/img/unser-left.png" class="unser-left-img"> -->
+				</div>
+				<div class="col-md-6"  *ngIf="tab2 == true">
 					<img src="assets/img/Attila_Kiss.jpeg" class="unser-left-img">
 
 					<!-- <img src="assets/img/unser-left.png" class="unser-left-img"> -->
@@ -207,6 +212,30 @@
 					<div class="slideshow-container">
 
 						<div class="mySlides" *ngIf="tab1">
+							<h3 class="title">Was Unsere Kunden Sagen?</h3>
+							<p class="testimonial-txt">Als ich mit Helly (Helmut Hirner) 1996 und 1997 unsere ersten
+								großen Erfolge feierte (zB Vize EM Titel bei den Junioren) waren wir ständig auf der
+								Suche nach Unterstützern und Sponsoren um die internationalen Turniere und die vielen
+								Trainingslager zu ermöglichen. Durch viel Einsatz und mit der wachsenden Erfahrung
+								gelang uns das auch immer besser. Helly hat Sportmarketing jedenfalls von Grund auf in
+								der Praxis gelernt und er kann heute auf seine umfassende Erfahrung zurückgreifen. Es
+								freut mich, dass er heute mit RD3 dieses Wissen nutzt, um jungen SportlerInnen zu
+								helfen.</p>
+							<div class="author-txt">
+								<a href="https://clemensdoppler.com/" target="_blank">
+									<!-- <div class="ref-image">
+										<img src="assets/img/clemens_doppler_portrait.jpeg">
+									</div> -->
+								</a>
+								<span class="author">
+									<h3 class="title-h3">Clemens Doppler</h3>
+									<h5 class="title-h5">Vize Weltmeister und zweifacher Europameister im Beach
+										Volleyball</h5>
+								</span>
+							</div>
+						</div>
+
+						<div class="mySlides" *ngIf="tab2 == true">
 							<h3 class="title">Was Unsere Kunden Sagen?</h3>
 							<p class="testimonial-txt">Ich bin sehr dankbar, dass mir das Team von RD3 Jobs in dieser
 								herausfordernden Zeit geholfen hat. Trotz des enormen Arbeitskräftemangel n der
@@ -226,24 +255,7 @@
 							</div>
 						</div>
 
-						<div class="mySlides" *ngIf="tab2 == true">
-							<h3 class="title">What Our Clients Are Saying? slide 2</h3>
-							<p class="testimonial-txt">Lorem Ipsum is simply dummy text of the printing and typesetting
-								industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-								when an unknown printer took a galley of type and scrambled it to make a type specimen
-								book. It has survived not only five centuries, but also the leap into electronic
-								typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-								release of Letraset sheets containing Lorem Ipsum passages.</p>
-							<div class="author-txt">
-								<img src="assets/img/test-1.png" class="test-img">
-								<span class="author">
-									<h3 class="title-h3">Meron Taylor</h3>
-									<h5 class="title-h5">Web Designer</h5>
-								</span>
-							</div>
-						</div>
-
-						<div class="mySlides" *ngIf="tab3 == true">
+						<!-- <div class="mySlides" *ngIf="tab3 == true">
 							<h3 class="title">What Our Clients Are Saying? slide 3</h3>
 							<p class="testimonial-txt">Lorem Ipsum is simply dummy text of the printing and typesetting
 								industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -258,7 +270,7 @@
 									<h5 class="title-h5">Web Tester</h5>
 								</span>
 							</div>
-						</div>
+						</div> -->
 
 
 					</div>
@@ -266,7 +278,7 @@
 					<div class="dot-container">
 						<span class="dot active" (click)="tab1slide()"></span>
 						<span class="dot" (click)="tab2slide()"></span>
-						<span class="dot" (click)="tab3slide()"></span>
+						<!-- <span class="dot" (click)="tab3slide()"></span> -->
 					</div>
 
 				</div>
