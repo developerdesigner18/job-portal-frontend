@@ -365,15 +365,13 @@ img {
   }
 
   .image-upload img {
-    display: block;
-    margin-left: 60%;
-    margin-right: auto;
-    width: 75%;
+    width: 100px;
   }
 
 .left-pannel{
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 .box{
     background-color: #4c5c68;
@@ -389,6 +387,10 @@ img {
     background-color: #d1b968;
     border-color: #4c5c68;
 }
+.actives{
+    background-color: #d1b968;
+    border-color: #4c5c68;
+}
 .box:last-child{
     margin-bottom: 0;
 }
@@ -400,6 +402,7 @@ img {
     width: 33.33%;
     height: 100%;
     border: 1px solid #a5a5a5;
+    margin-right: 10px;
 }
 .right-box-2{
     background-color: #e7e6e6;
@@ -407,6 +410,7 @@ img {
     height: 100%;
     margin: 0 20px;
     border: 1px solid #a5a5a5;
+    margin-right: 10px; 
 }
 .right-box-3{
     background-color: #e7e6e6;
@@ -417,9 +421,15 @@ img {
 .right-pannel{
     display: flex;
     width: 100%;
-    height: 100%;
-    
+    height: 100%;    
 }
+.right-pannel2{
+    background-color: #e7e6e6;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #a5a5a5;  
+}
+
 .middle-pannel {
     width: 100%;
     height: 100%;
@@ -430,16 +440,46 @@ img {
 }
 .header-img{
     width: 100%;
-    height: 30%;
+    // height: 30%;
     background-color: #4472c4;
     color: #fff;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 .space-price{
     width: 100%;
-    height: 70%;
     background-color: #4c5c68;
     color: #fff;
+    height: 66%;
+    padding: 10px;
+}
+.form-set {
+    display: flex;
+}
+.form-set label {
+    width: 44% !important;
+  }
+  .form-set:first-child {
+    margin-bottom: 10px;
+}
+button.form-submit-btn {
+    width: 46%;
+    padding: 5px 20px;
+    border: none;
+    background-color: #fff;
+    color: #4c5c68;
+    border-radius: 9px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin: 20px auto 0;
+    justify-content: center;
+}
+button.form-submit-btn:hover {
+    background-color: #d1b968;
+    color: #4c5c68;
 }
 @media (max-width: 767px){
     .right-pannel {
