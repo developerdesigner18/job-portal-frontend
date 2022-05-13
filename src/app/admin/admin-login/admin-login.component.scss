@@ -41,7 +41,7 @@ body {
 /*------------------------------------------------------------------
 [2. Contents / #auth-content]
 */
-.auth-content {
+.content {
     position: relative;
     width: 480px;
     padding: 15px;
@@ -51,7 +51,7 @@ body {
 /*------------------------------------------------------------------
 [3. Cards / .card]
 */
-.auth-content .card {
+.content .card {
     margin-bottom: 0;
     -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
     box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
@@ -60,12 +60,12 @@ body {
     transition: all 0.5s ease-in-out;
 }
 
-.auth-content .card .card-block,
-.auth-content .card .card-body {
+.content .card .card-block,
+.content .card .card-body {
     padding: 30px 25px;
 }
 
-.auth-content .form-control {
+.content .form-control {
     background: #f4f7fa;
     min-height: 42px;
     line-height: 42px;

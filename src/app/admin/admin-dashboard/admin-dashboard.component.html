@@ -5,25 +5,23 @@
         </div>
         <ul class="list-unstyled components text-secondary">
             <li>
-                <!-- <a (click)="appAdminsports = false"><i class="fas fa-file-alt"></i> Login</a> -->
-                <a><i class="fas fa-file-alt"></i> Login</a>
+                <a [ngClass]="{'active': tab1===true}" (click)="clickdata($event)"><i class="fas fa-file-alt"></i>Login</a>
             </li>
-            <!-- <li>
-                <a href="javascript:void(0)"><i class="fas fa-user-friends"></i>Jobs</a>
-            </li> -->
-            <!-- <li>
-                <a href="javascript:void(0)"><i class="fas fa-user-friends"></i>Stadt</a>
-            </li> -->
             <li>
-                <!-- <a (click)="appAdminsports = true"><i class="fas fa-user-friends"></i>Sports</a> -->
-                <a><i class="fas fa-user-friends"></i>Sports</a>
+                <a [ngClass]="{'active': tab2===true}" (click)="clickdata($event)"><i class="fas fa-user-friends"></i>Jobs</a>
             </li>
-            <!-- <li routerLink="/admin/admin-dashboard">
-                <a><i class="fas fa-user-friends"></i>Users</a>
-            </li> -->
-            <!-- <li>
-                <a href="javascript:void(0)"><i class="fas fa-cog"></i>Settings</a>
-            </li> -->
+            <li>
+                <a [ngClass]="{'active': tab3===true}" (click)="clickdata($event)"><i class="fas fa-user-friends"></i>Stadt</a>
+            </li>
+            <li>
+                <a [ngClass]="{'active': tab4===true}" (click)="clickdata($event)"><i class="fas fa-user-friends"></i>Sports</a>
+            </li>
+            <li>
+                <a [ngClass]="{'active': tab5===true}" (click)="clickdata($event)"><i class="fas fa-user-friends"></i>Users</a>
+            </li>
+            <li>
+                <a [ngClass]="{'active': tab6===true}" (click)="clickdata($event)"><i class="fas fa-cog"></i>Settings</a>
+            </li>
         </ul>
     </nav>
     <div id="body" class="active">
@@ -69,12 +67,10 @@
         </nav>
         <div class="content">
             <div class="container">
-                 <!-- <app-admin-login *ngIf="!appAdminsports"></app-admin-login>
-                <app-admin-sports *ngIf="appAdminsports"></app-admin-sports>  -->
-                <!-- <app-admin-sports></app-admin-sports> -->
+                 <app-admin-login *ngIf="tab1 == true"></app-admin-login>
+                <app-admin-sports *ngIf="tab4 == true"></app-admin-sports> 
             </div>
         </div>           
-   
     </div>
 </div>
 
