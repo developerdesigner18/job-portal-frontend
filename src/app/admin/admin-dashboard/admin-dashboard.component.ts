@@ -9,15 +9,18 @@ declare var $: any;
   styleUrls: ['./admin-dashboard.component.scss']
 })
 export class AdminDashboardComponent implements OnInit {
-// urldata:any;
+urldata:any;
+appAdminsports = false;
 @Input() parent: any; // decorate the property with @Input()
 
 
   constructor(public router:Router) { 
-    // this.urldata = localStorage.getItem("url")
-    // console.log("=====================",this.urldata)
+    this.urldata = localStorage.getItem("url")
+    console.log("=====================",this.urldata)
 
   }
+
+
 
   ngOnInit(): void {
     $('#sidebarCollapse').on('click', function() {
