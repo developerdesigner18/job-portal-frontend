@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -25,7 +25,8 @@ import { AgbComponent } from './components/agb/agb.component';
     JobsComponent,
     StadtComponent,
     SportComponent,
-    AgbComponent
+    AgbComponent,
+    // AdminSportsComponent
 
   ],
   imports: [
@@ -39,6 +40,7 @@ import { AgbComponent } from './components/agb/agb.component';
     ComponentsRoutingModule
   ],
   providers: [],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

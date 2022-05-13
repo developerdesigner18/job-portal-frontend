@@ -39,7 +39,7 @@ export class AdminLoginComponent implements OnInit {
         localStorage.setItem('u_info', JSON.stringify(res.data));
         localStorage.setItem('auth_token', res.token);
         
-        this.router.navigateByUrl('admin/admin-sports')
+        this.router.navigateByUrl('admin/admin-dashboard')
       } else {
         Notiflix.Loading.remove();
         Notiflix.Notify.failure(res.error);
@@ -56,7 +56,7 @@ export class AdminLoginComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log('LoginComponent ngOnInit()');
+    // console.log('LoginComponent ngOnInit()');
     this.loginForm = this.formbuilder.group({
       email: ["", Validators.required],
       password: ["", Validators.required],

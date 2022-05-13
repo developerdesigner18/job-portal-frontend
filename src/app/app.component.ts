@@ -21,6 +21,7 @@ export class AppComponent {
   title = 'Jobportal,Sportmarketing,Stadtmarketing';
   name = 'Get Current Url Route Demo';
   data: any;
+  parent:any;
 
   constructor(
     private actroute: ActivatedRoute,
@@ -33,6 +34,8 @@ export class AppComponent {
     this.router.events.subscribe((routerData) => {
       if (routerData instanceof ResolveEnd) {
         console.log(routerData.url);
+        this.parent = routerData.url
+        localStorage.setItem("url",routerData.url)
         if (routerData.url === 'your url') {
           //Do something
         }

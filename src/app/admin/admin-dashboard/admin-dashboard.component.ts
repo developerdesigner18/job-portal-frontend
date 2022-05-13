@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 declare var jquery: any;
 declare var $: any;
 
@@ -8,8 +9,15 @@ declare var $: any;
   styleUrls: ['./admin-dashboard.component.scss']
 })
 export class AdminDashboardComponent implements OnInit {
+// urldata:any;
+@Input() parent: any; // decorate the property with @Input()
 
-  constructor() { }
+
+  constructor(public router:Router) { 
+    // this.urldata = localStorage.getItem("url")
+    // console.log("=====================",this.urldata)
+
+  }
 
   ngOnInit(): void {
     $('#sidebarCollapse').on('click', function() {

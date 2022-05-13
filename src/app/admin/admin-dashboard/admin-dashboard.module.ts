@@ -10,6 +10,7 @@ import { AdminDashboardRoutingModule } from './admin-dashboard-routing.module';
   imports: [
     CommonModule,
     AdminDashboardRoutingModule
-  ]
+  ],
+  
 })
 export class AdminDashboardModule { }

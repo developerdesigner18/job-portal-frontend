@@ -5,6 +5,7 @@ import { AdminComponent } from './admin.component';
 
 const routes: Routes = [
 { path: '',redirectTo:'admin-login', pathMatch: 'full' },
+// { path: '',component:AdminComponent },
 { path: 'admin-login', loadChildren: () => import('./admin-login/admin-login.module').then(m => m.AdminLoginModule) },
 { path: 'admin-dashboard', loadChildren: () => import('./admin-dashboard/admin-dashboard.module').then(m => m.AdminDashboardModule) },
 { path: 'admin-sports', loadChildren: () => import('./admin-sports/admin-sports.module').then(m => m.AdminSportsModule) },
