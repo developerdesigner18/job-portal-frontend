@@ -1,4 +1,17 @@
 // first popup started 
+.popup-4-arrow{
+  width: 100%;
+  max-width: 40px;
+}
+.arrow{
+  width: 100%;
+  max-width: 75px;
+}
+.box-arrow-set{
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .popup-logo-1{
   width: 100%;
   max-width: 200px;
@@ -268,6 +281,11 @@ span.popup-box-3-span {
 
 
 // second popup started 
+
+img.popup-2-arrow {
+  width: 100%;
+  max-width: 40px;
+} 
 
 .popup-set-flex {
   display: flex;
