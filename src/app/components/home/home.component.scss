@@ -2,6 +2,9 @@
   background-color: #fff;
   filter: brightness(.7);
 }
+.custom_model{
+  width: 100% !important;
+}
 
 ::ng-deep .ng-image-slider {
   height: 300px !important;
@@ -10,6 +13,11 @@
 ::ng-deep .ng-image-slider .ng-image-slider-container .main {
   height: 300px !important;
 }
+
+  .modal-dialog{
+    width: 33%!important;
+    // padding: 0 15em;
+  }
 
 // Site under construction css start
 

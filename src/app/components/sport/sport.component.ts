@@ -86,7 +86,7 @@ export class SportComponent implements OnInit {
 
 
   forms(){
-    let url = "https://forms.zohopublic.eu/test1001dds/form/ContactUs/formperma/-VD_D7umKbIWq6Yx0MMlEJSWLCLb_vRCxeX4yLOQkEE"
+    let url = "https://forms.zohopublic.eu/rd3/form/RD3SportlerPoolAufnahmeAntrag/formperma/y9Pd6AdP2SSQbxOxSno6KSq4-IzzAAeEXEktieDXaaY"
     window.open(url, "_blank");
   }
 

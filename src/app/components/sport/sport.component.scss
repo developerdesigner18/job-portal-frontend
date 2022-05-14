@@ -1,4 +1,9 @@
 // first popup started 
+
+img.popup-3-arrow {
+  width: 100%;
+  max-width: 40px;
+}
 .popup-4-arrow{
   width: 100%;
   max-width: 40px;
@@ -264,12 +269,14 @@ span.popup-box-3-span {
   letter-spacing: 5px;
 }
 
+ 
 ::ng-deep {
   .modal-dialog{
     max-width: 100% !important;
     // padding: 0 15em;
   }
 }
+
 // .service-box-2 h5 , span {
 //   font-size: 17px !important;
 // }
