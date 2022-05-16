@@ -23,7 +23,6 @@ tab6:boolean = false;
   }
 
    clickdata(event:any){
-    // console.log("=============",event.target.innerText)
     this.data = event.target.innerText
     if(this.data == "Login"){
       this.tab1 = true
@@ -68,18 +67,18 @@ tab6:boolean = false;
     this.tab2 = false
     this.tab3 = false
     this.tab4 = false
-    this.tab5 = true
-    this.tab6 = false
+    this.tab5 = false
+    this.tab6 = true
 
   }
-  else if(this.data == "Settings"){
+  else if(this.data == "Home"){
     
     this.tab1 = false
     this.tab2 = false
     this.tab3 = false
     this.tab4 = false
-    this.tab5 = false
-    this.tab6 = true
+    this.tab5 = true
+    this.tab6 = false
 
   }
   }
