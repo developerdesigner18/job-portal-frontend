@@ -6,7 +6,18 @@
         <ul class="list-unstyled components text-secondary">
 
             <li>
-                <a [ngClass]="{'active': tab1===true}" (click)="clickdata($event)"><i class="fas fa-file-alt"></i>Login</a>
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" [ngClass]="{'active': tab1===true}" (click)="clickdata($event)"><i class="fas fa-file-alt"></i>Login</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a >Home 1</a>
+                    </li>
+                    <li>
+                        <a >Home 2</a>
+                    </li>
+                    <li>
+                        <a >Home 3</a>
+                    </li>
+                </ul>
             </li>
             <li>
                 <a [ngClass]="{'active': tab2===true}" (click)="clickdata($event)"><i class="fas fa-user-friends"></i>Jobs</a>
@@ -79,3 +90,85 @@
     </div>
 </div>
 
+<!-- updated html -->
+
+    <!-- <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+             <img src="assets/img/logo-1.png" class="sidebar_logo">
+         </div>
+
+         <ul class="list-unstyled components text-secondary">
+
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a >Home 1</a>
+                    </li>
+                    <li>
+                        <a >Home 2</a>
+                    </li>
+                    <li>
+                        <a >Home 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a >Login</a>
+            </li>
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Jobs</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a >Jobs 1</a>
+                    </li>
+                    <li>
+                        <a >Jobs 2</a>
+                    </li>
+                    <li>
+                        <a >Jobs 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a >Stadt</a>
+            </li>
+            <li>
+                <a >Sports</a>
+            </li>
+            <li>
+                <a >Users</a>
+            </li>
+            <li>
+                <a >Settings</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="content">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="dropdown">
+                        <button class="custom_toggle_btn" type="button" data-toggle="dropdown">
+                          <i class="fa fa-user"></i>                            
+                          <span>John Doe</span></button>
+                          <ul class="dropdown-menu">
+                              <li><a >Profile</a></li>
+                              <li><a >Message</a></li>
+                              <li><a >Settings</a></li>
+                              <li><a >Logout</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </nav>
+
+      </div>
+  </div>  -->
