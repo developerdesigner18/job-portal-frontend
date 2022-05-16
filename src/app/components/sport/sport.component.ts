@@ -90,6 +90,11 @@ export class SportComponent implements OnInit {
     window.open(url, "_blank");
   }
 
+  forms2(){
+    let url = "https://zfrmz.eu/3rmRFu9862EgFSeHxlaD"
+    window.open(url, "_blank");
+  }
+
   ngOnInit(): void {
     // this.activatedRoute.fragment.subscribe((fragment: string) => {
     //   const id = document.getElementById(fragment)

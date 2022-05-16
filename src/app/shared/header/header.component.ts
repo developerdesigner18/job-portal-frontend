@@ -24,6 +24,12 @@ export class HeaderComponent implements OnInit {
     this.isMenuOpen = false;
   }
 
+  forms(){
+    let url = "https://jobs.rd3.at/jobs"
+    window.open(url, "_blank");
+  }
+
+  
    // Out side elemet click function end----
 
 

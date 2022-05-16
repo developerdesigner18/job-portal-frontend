@@ -3,6 +3,17 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "~@fortawesome/fontawesome-free/scss/solid.scss";
 @import "~@fortawesome/fontawesome-free/scss/brands.scss";
+
+button.admin-button{
+    border-radius: 10px;
+    padding: 10px 30px;
+    background-color: #F27D22;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+}
+
 a {
     background-color: transparent;
 }
