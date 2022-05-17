@@ -1,147 +1,55 @@
 <div class="wrapper">
     <nav id="sidebar">
         <div class="sidebar-header">
-            <img src="assets/img/logo-1.png" alt="bootraper logo" class="app-logo">
+            <img src="assets/img/logo-1.png" class="sidebar_logo">
         </div>
+
         <ul class="list-unstyled components text-secondary">
 
-            <li>
-                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" [ngClass]="{'active': tab1===true}" (click)="clickdata($event)"><i class="fas fa-file-alt"></i>Login</a>
-                <ul class="collapse list-unstyled" id="homeSubmenu">
-                    <li>
-                        <a >Home 1</a>
-                    </li>
-                    <li>
-                        <a >Home 2</a>
-                    </li>
-                    <li>
-                        <a >Home 3</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a [ngClass]="{'active': tab2===true}" (click)="clickdata($event)"><i class="fas fa-user-friends"></i>Jobs</a>
-            </li>
-            <li>
-                <a [ngClass]="{'active': tab3===true}" (click)="clickdata($event)"><i class="fas fa-user-friends"></i>Stadt</a>
-            </li>
-            <li>
-                <a [ngClass]="{'active': tab4===true}" (click)="clickdata($event)"><i class="fas fa-user-friends"></i>Sports</a>
-            </li>
-            <li>
-                <a [ngClass]="{'active': tab5===true}" (click)="clickdata($event)"><i class="fas fa-file-alt"></i>Home</a>
-            </li>
-            <li>
-                <a [ngClass]="{'active': tab6===true}" (click)="clickdata($event)"><i class="fas fa-user-friends"></i>Users</a>
-            </li>
-        </ul>
-    </nav>
-    <div id="body" class="active">
-        <nav class="navbar navbar-expand-lg navbar-white bg-white">
-            <button  type="submit" id="sidebarCollapse" class="btn btn-light" >
-                <i class="fas fa-bars" style="pointer-events: none;"></i><span></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="nav navbar-nav ms-auto">
-                    <li class="nav-item dropdown">
-                        <div class="nav-dropdown">
-                            <div class="dropdown-menu dropdown-menu-end nav-link-menu" aria-labelledby="nav1">
-                                <ul class="nav-list">
-                                    <li><a href="javascript:void(0)" class="dropdown-item"><i class="fas fa-list"></i> Access Logs</a></li>
-                                    <div class="dropdown-divider"></div>
-                                    <li><a href="javascript:void(0)" class="dropdown-item"><i class="fas fa-database"></i> Back ups</a></li>
-                                    <div class="dropdown-divider"></div>
-                                    <li><a href="javascript:void(0)" class="dropdown-item"><i class="fas fa-cloud-download-alt"></i> Updates</a></li>
-                                    <div class="dropdown-divider"></div>
-                                    <li><a href="javascript:void(0)" class="dropdown-item"><i class="fas fa-user-shield"></i> Roles</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <div class="nav-dropdown">
-                            <a href="javascript:void(0)" id="nav2" class="nav-item nav-link dropdown-toggle text-secondary" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-user"></i> <span>John Doe</span> 
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end nav-link-menu">
-                                <ul class="nav-list">
-                                    <li><a href="javascript:void(0)" class="dropdown-item"><i class="fas fa-address-card"></i> Profile</a></li>
-                                    <li><a href="javascript:void(0)" class="dropdown-item"><i class="fas fa-envelope"></i> Messages</a></li>
-                                    <li><a href="javascript:void(0)" class="dropdown-item"><i class="fas fa-cog"></i> Settings</a></li>
-                                    <div class="dropdown-divider"></div>
-                                    <li><a href="javascript:void(0)" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="content">
-            <div class="container">
-                <app-admin-login *ngIf="tab1 == true"></app-admin-login>
-                <app-admin-jobs *ngIf="tab2 == true"></app-admin-jobs>
-                <app-admin-stadt *ngIf="tab3 == true"></app-admin-stadt>
-                <app-admin-sports *ngIf="tab4 == true"></app-admin-sports> 
-                <app-admin-home *ngIf="tab5 == true"></app-admin-home>
-                <app-admin-users *ngIf="tab6 == true"></app-admin-users>
-            </div>
-        </div>           
-    </div>
-</div>
-
-<!-- updated html -->
-
-    <!-- <div class="wrapper">
-        <nav id="sidebar">
-            <div class="sidebar-header">
-             <img src="assets/img/logo-1.png" class="sidebar_logo">
-         </div>
-
-         <ul class="list-unstyled components text-secondary">
-
             <li class="active">
-                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
+                    [ngClass]="{'actives': tab1===true}" (click)="clickdata($event)"><i
+                        class="fas fa-file-alt"></i>Home</a>
                 <ul class="collapse list-unstyled" id="homeSubmenu">
                     <li>
-                        <a >Home 1</a>
+                        <a>Home 1</a>
                     </li>
                     <li>
-                        <a >Home 2</a>
+                        <a>Home 2</a>
                     </li>
                     <li>
-                        <a >Home 3</a>
+                        <a>Home 3</a>
                     </li>
                 </ul>
             </li>
             <li>
-                <a >Login</a>
+                <a>Login</a>
             </li>
             <li>
                 <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Jobs</a>
                 <ul class="collapse list-unstyled" id="pageSubmenu">
                     <li>
-                        <a >Jobs 1</a>
+                        <a>Jobs 1</a>
                     </li>
                     <li>
-                        <a >Jobs 2</a>
+                        <a>Jobs 2</a>
                     </li>
                     <li>
-                        <a >Jobs 3</a>
+                        <a>Jobs 3</a>
                     </li>
                 </ul>
             </li>
             <li>
-                <a >Stadt</a>
+                <a>Stadt</a>
             </li>
             <li>
-                <a >Sports</a>
+                <a>Sports</a>
             </li>
             <li>
-                <a >Users</a>
+                <a>Users</a>
             </li>
             <li>
-                <a >Settings</a>
+                <a>Settings</a>
             </li>
         </ul>
     </nav>
@@ -157,18 +65,27 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="dropdown">
                         <button class="custom_toggle_btn" type="button" data-toggle="dropdown">
-                          <i class="fa fa-user"></i>                            
-                          <span>John Doe</span></button>
-                          <ul class="dropdown-menu">
-                              <li><a >Profile</a></li>
-                              <li><a >Message</a></li>
-                              <li><a >Settings</a></li>
-                              <li><a >Logout</a></li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-          </nav>
-
-      </div>
-  </div>  -->
+                            <i class="fa fa-user"></i>
+                            <span>John Doe</span></button>
+                        <ul class="dropdown-menu">
+                            <li><a><i class="fas fa-address-card"></i> Profile</a></li>
+                            <li><a><i class="fas fa-envelope"></i> Message</a></li>
+                            <li><a><i class="fas fa-cog"></i>Settings</a></li>
+                            <li><a><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="container">
+                <app-admin-login *ngIf="tab1 == true"></app-admin-login>
+                <app-admin-jobs *ngIf="tab2 == true"></app-admin-jobs>
+                <app-admin-stadt *ngIf="tab3 == true"></app-admin-stadt>
+                <app-admin-sports *ngIf="tab4 == true"></app-admin-sports>
+                <app-admin-home *ngIf="tab5 == true"></app-admin-home>
+                <app-admin-users *ngIf="tab6 == true"></app-admin-users>
+            </div>
+        </div>
+    </div>
+</div>

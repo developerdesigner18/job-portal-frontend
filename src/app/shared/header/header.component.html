@@ -3,6 +3,9 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
   <a class="logo" routerLink="/">
     <img src="assets/img/logo-1.png" class="img-logo hide-mobile" routerLink="/">
   </a>
+  <div class="hide-mobile">
+    <button class="admin-button" (click)="forms()">ZUM JOBPORTAL</button>
+  </div>
   <div class="homeheader-right">
     <div class="hide-mobile">
       <a class="active" routerLink="/">Home</a>
@@ -29,6 +32,7 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
       <button #toggleButton (click)="toggleMenu($event)" class="dropbtn">
         <i class="fa fa-bars custome" style="pointer-events: none;"></i></button>
       <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="isMenuOpen">
+        <button class="admin-button" (click)="forms()">ZUM JOBPORTAL</button>
         <a routerLink="/">Home</a>
         <a routerLink="/jobs">Jobs</a>
         <a routerLink="/stadt">Stadt</a>
@@ -45,6 +49,9 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
   <a class="logo" routerLink="/">
     <img src="assets/img/RD3_-_Style2-01@2x.png" class="img-logo-stadt hide-mobile" routerLink="/">
   </a>
+  <div class="hide-mobile">
+    <button class="admin-button" (click)="forms()">ZUM JOBPORTAL</button>
+  </div>
   <div class="stadtheader-right">
     <div class="hide-mobile">
       <a routerLink="/">Home</a>
@@ -71,6 +78,7 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
       <button #toggleButton (click)="toggleMenu($event)" class="dropbtn">
         <i class="fa fa-bars custome" style="pointer-events: none;"></i></button>
       <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="isMenuOpen">
+        <button class="admin-button" (click)="forms()">ZUM JOBPORTAL</button>
         <a routerLink="/">Home</a>
         <a routerLink="/jobs">Jobs</a>
         <a routerLink="/stadt">Stadt</a>
@@ -138,6 +146,9 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
   <a class="logo">
     <img src="assets/img/RD3 - Style2-02.png" class="img-logo-sport hide-mobile" routerLink="/">
   </a>
+  <div class="hide-mobile">
+    <button class="admin-button" (click)="forms()">ZUM JOBPORTAL</button>
+  </div>
   <div class="sportsheader-right">
     <div class="hide-mobile">
       <a routerLink="/">Home</a>
@@ -165,6 +176,7 @@ router.url === '/vision' || router.url === '/privacy' || router.url === '/imprin
       <button #toggleButton (click)="toggleMenu($event)" class="dropbtn">
         <i class="fa fa-bars custome" style="pointer-events: none;"></i></button>
       <div id="myDropdown" class="dropdown-content new-custom-dp show" *ngIf="isMenuOpen">
+        <button class="admin-button" (click)="forms()">ZUM JOBPORTAL</button>
         <a routerLink="/">Home</a>
         <a routerLink="/jobs">Jobs</a>
         <a routerLink="/stadt">Stadt</a>

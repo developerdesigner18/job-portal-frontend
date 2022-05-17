@@ -23,8 +23,11 @@ tab6:boolean = false;
   }
 
    clickdata(event:any){
+     console.log("called")
+     console.log("data",this.data)
     this.data = event.target.innerText
     if(this.data == "Login"){
+      console.log("called here")
       this.tab1 = true
       this.tab2 = false
       this.tab3 = false
