@@ -8,13 +8,17 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { AdminSportsComponent } from './admin-sports/admin-sports.component';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { AdminUsersComponent } from './admin-users/admin-users.component';
+import { AdminHomeComponent } from './admin-home/admin-home.component';
 
 
 @NgModule({
   declarations: [
     AdminLoginComponent,
     AdminDashboardComponent,
-    AdminSportsComponent
+    AdminSportsComponent,
+    AdminUsersComponent,
+    AdminHomeComponent
   ],
   imports: [
     CommonModule,

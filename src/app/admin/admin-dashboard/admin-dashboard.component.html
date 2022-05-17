@@ -6,9 +6,9 @@
 
         <ul class="list-unstyled components text-secondary">
 
-            <li class="active">
+            <li>
                 <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
-                    [ngClass]="{'actives': tab1===true}" (click)="clickdata($event)"><i
+                    [ngClass]="{'actives': tab5===true}" (click)="clickdata($event)"><i
                         class="fas fa-file-alt"></i>Home</a>
                 <ul class="collapse list-unstyled" id="homeSubmenu">
                     <li>
@@ -23,11 +23,26 @@
                 </ul>
             </li>
             <li>
-                <a>Login</a>
+                <a href="#loginSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
+                    [ngClass]="{'actives': tab1===true}" (click)="clickdata($event)"><i
+                        class="fas fa-file-alt"></i>Login</a>
+                <ul class="collapse list-unstyled" id="loginSubmenu">
+                    <li>
+                        <a>Login 1</a>
+                    </li>
+                    <li>
+                        <a>Login 2</a>
+                    </li>
+                    <li>
+                        <a>Login 3</a>
+                    </li>
+                </ul>
             </li>
             <li>
-                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Jobs</a>
-                <ul class="collapse list-unstyled" id="pageSubmenu">
+                <a href="#jobSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
+                    [ngClass]="{'actives': tab2===true}" (click)="clickdata($event)"><i
+                        class="fas fa-file-alt"></i>Jobs</a>
+                <ul class="collapse list-unstyled" id="jobSubmenu">
                     <li>
                         <a>Jobs 1</a>
                     </li>
@@ -40,16 +55,52 @@
                 </ul>
             </li>
             <li>
-                <a>Stadt</a>
+                <a href="#Stadtmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
+                    [ngClass]="{'actives': tab3===true}" (click)="clickdata($event)"><i
+                        class="fas fa-file-alt"></i>Stadt</a>
+                <ul class="collapse list-unstyled" id="Stadtmenu">
+                    <li>
+                        <a>Stadt</a>
+                    </li>
+                    <li>
+                        <a>Stadt</a>
+                    </li>
+                    <li>
+                        <a>Stadt</a>
+                    </li>
+                </ul>
             </li>
             <li>
-                <a>Sports</a>
+                <a href="#sportsmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
+                    [ngClass]="{'actives': tab4===true}" (click)="clickdata($event)"><i
+                        class="fas fa-file-alt"></i>Sports</a>
+                <ul class="collapse list-unstyled" id="sportsmenu">
+                    <li>
+                        <a>Sports</a>
+                    </li>
+                    <li>
+                        <a>Sports</a>
+                    </li>
+                    <li>
+                        <a>Sports</a>
+                    </li>
+                </ul>
             </li>
             <li>
-                <a>Users</a>
-            </li>
-            <li>
-                <a>Settings</a>
+                <a href="#usersmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
+                    [ngClass]="{'actives': tab6===true}" (click)="clickdata($event)"><i
+                        class="fas fa-file-alt"></i>Users</a>
+                <ul class="collapse list-unstyled" id="usersmenu">
+                    <li>
+                        <a>Users</a>
+                    </li>
+                    <li>
+                        <a>Users</a>
+                    </li>
+                    <li>
+                        <a>Users</a>
+                    </li>
+                </ul>
             </li>
         </ul>
     </nav>

@@ -11,9 +11,9 @@ declare var $: any;
 export class AdminDashboardComponent implements OnInit {
 data:any;
 @Input() parent: any; // decorate the property with @Input()
-tab1 : boolean  = false;
-tab2: boolean = false;
-tab3: boolean = false;
+tab1:boolean  = false;
+tab2:boolean = false;
+tab3:boolean = false;
 tab4:boolean = false;
 tab5:boolean = false;
 tab6:boolean = false;
@@ -23,11 +23,8 @@ tab6:boolean = false;
   }
 
    clickdata(event:any){
-     console.log("called")
-     console.log("data",this.data)
     this.data = event.target.innerText
     if(this.data == "Login"){
-      console.log("called here")
       this.tab1 = true
       this.tab2 = false
       this.tab3 = false
@@ -55,7 +52,7 @@ tab6:boolean = false;
 
   }
   else if(this.data == "Sports"){
-    
+
     this.tab1 = false
     this.tab2 = false
     this.tab3 = false
@@ -63,19 +60,10 @@ tab6:boolean = false;
     this.tab5 = false
     this.tab6 = false
 
-  }
-  else if(this.data == "Users"){
-    
-    this.tab1 = false
-    this.tab2 = false
-    this.tab3 = false
-    this.tab4 = false
-    this.tab5 = false
-    this.tab6 = true
 
   }
   else if(this.data == "Home"){
-    
+
     this.tab1 = false
     this.tab2 = false
     this.tab3 = false
@@ -83,6 +71,17 @@ tab6:boolean = false;
     this.tab5 = true
     this.tab6 = false
 
+  }
+  else if(this.data == "Users"){  
+    
+    this.tab1 = false
+    this.tab2 = false
+    this.tab3 = false
+    this.tab4 = false
+    this.tab5 = false
+    this.tab6 = true
+    
+    console.log("---",this.tab6 , this.data)
   }
   }
 
