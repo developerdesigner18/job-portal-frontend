@@ -35,33 +35,18 @@ export class HomeComponent implements OnInit {
   imagelogo = [{
  
     image: "/assets/img/LOGO@2x.png",
-    thumbImage: '/assets/img/LOGO@2x.png',
-    title: 'RD3 lOGO'
+    thumbImage: '/assets/img/Gastro Haring.png',
+    title: 'Partner #1 "Restaurant Volkshaus"'
   },
   {
     image: "/assets/img/LOGO@2x.png",
-    thumbImage: '/assets/img/LOGO@2x.png',
-    title: 'RD3 lOGO'
+    thumbImage: '/assets/img/rieder-bier.png',
+    title: 'Partner #2 "Rieder Bier" needs to link to'
   },
   {
     image: "/assets/img/LOGO@2x.png",
-    thumbImage: '/assets/img/LOGO@2x.png',
-    title: 'RD3 lOGO'
-  },
-  {
-    image: "/assets/img/LOGO@2x.png",
-    thumbImage: '/assets/img/LOGO@2x.png',
-    title: 'RD3 lOGO'
-  },
-  {
-    image: "/assets/img/LOGO@2x.png",
-    thumbImage: '/assets/img/LOGO@2x.png',
-    title: 'RD3 lOGO'
-  },
-  {
-    image: "/assets/img/LOGO@2x.png",
-    thumbImage: '/assets/img/LOGO@2x.png',
-    title: 'RD3 lOGO'
+    thumbImage: '/assets/img/volkshauspark.png',
+    title: 'Partner #3 "Gastro Haring"'
   },
   ];
 
