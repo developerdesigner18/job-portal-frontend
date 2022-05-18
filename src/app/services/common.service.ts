@@ -19,6 +19,7 @@ export class CommonService {
 
 // Api code start
 
+// auth apis
 
 adminLogin(payload: {
   username: string;
@@ -27,8 +28,70 @@ adminLogin(payload: {
   return this.httpClient.post(`${this.BASE_URI}/auth/signin`, payload);
 }
 
+// home apis
+
+    
+deletehomeImage(home_id: any, image_id: any): Observable<any> {
+  let header = this.initHeaders();
+  return this.httpClient.delete(`${this.BASE_URI}/api/home/deletehomeImage`, { params: { bid: home_id, iid: image_id }, headers: header, observe: 'response' as 'body'}).pipe(
+    catchError(this.handleError)
+  )
+}
+
+gethomeInfoAll(
+  ): Observable<any> {
+    return this.httpClient.get(`${this.BASE_URI}/api/home/gethomeInfoAll`).pipe(
+      catchError(this.handleError)
+    )
+  }
+
+  inserthomeInfo(payload: any): Observable<any> {
+    let header = this.initHeaders();
+    return this.httpClient.post(`${this.BASE_URI}/api/home/inserthomeInfo`, payload, { headers: header, observe: 'response' as 'body'}).pipe(
+      catchError(this.handleError)
+    )
+  }
+
+  updatehomeInfo(home_id: any, payload: {
+  }): Observable<any> {
+    let header = this.initHeaders();
+    return this.httpClient.post(`${this.BASE_URI}/api/home/updatehomeInfo`, payload, { params: { bid: home_id }, headers: header, observe: 'response' as 'body'}).pipe(
+      catchError(this.handleError)
+    )
+  }
+
+  deletehomeInfo(home_id: any): Observable<any> {
+    let header = this.initHeaders();
+    return this.httpClient.delete(`${this.BASE_URI}/api/home/deletehomeInfo`, { params: { bid: home_id }, headers: header, observe: 'response' as 'body'}).pipe(
+      catchError(this.handleError)
+    )
+  }
+
+
+
+
+
+
 
 // Api code end
+
+private initHeaders() {
+  let token: any = localStorage.getItem('auth_token');    
+  var headers = new HttpHeaders();
+
+  if (token !== null) {
+    headers = headers.append('Authorization', token);
+  }
+
+  headers = headers
+  .append('Access-Control-Allow-Origin', '*')
+  // .append('Content-Type', 'undefined')
+  .append('Pragma', 'no-cache')
+  .append('charset', 'utf-8')
+  
+  return headers;
+}
+
 
   private handleError(error: HttpErrorResponse) {
     let msg = '';    
