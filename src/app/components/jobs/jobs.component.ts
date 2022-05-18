@@ -39,39 +39,56 @@ export class JobsComponent implements OnInit {
   
   imagelogo = [{
  
-    image: "/assets/img/LOGO@2x.png",
-    thumbImage: '/assets/img/LOGO@2x.png',
-    title: 'RD3 lOGO'
+    image: '/assets/img/Gastro Haring.png',
+    thumbImage: '/assets/img/Gastro Haring.png',
+    title: 'Partner #1 "Restaurant Volkshaus"'
   },
   {
-    image: "/assets/img/LOGO@2x.png",
-    thumbImage: '/assets/img/LOGO@2x.png',
-    title: 'RD3 lOGO'
+    image:  '/assets/img/rieder-bier.png',
+    thumbImage: '/assets/img/rieder-bier.png',
+    title: 'Partner #2 "Rieder Bier" needs to link to'
   },
   {
-    image: "/assets/img/LOGO@2x.png",
-    thumbImage: '/assets/img/LOGO@2x.png',
-    title: 'RD3 lOGO'
+    image: '/assets/img/volkshauspark.png',
+    thumbImage: '/assets/img/volkshauspark.png',
+    title: 'Partner #3 "Gastro Haring"'
   },
   {
-    image: "/assets/img/LOGO@2x.png",
-    thumbImage: '/assets/img/LOGO@2x.png',
-    title: 'RD3 lOGO'
+    image: '/assets/img/Gastro Haring.png',
+    thumbImage: '/assets/img/Gastro Haring.png',
+    title: 'Partner #1 "Restaurant Volkshaus"'
   },
   {
-    image: "/assets/img/LOGO@2x.png",
-    thumbImage: '/assets/img/LOGO@2x.png',
-    title: 'RD3 lOGO'
+    image: '/assets/img/rieder-bier.png',
+    thumbImage: '/assets/img/rieder-bier.png',
+    title: 'Partner #2 "Rieder Bier" needs to link to'
   },
   {
-    image: "/assets/img/LOGO@2x.png",
-    thumbImage: '/assets/img/LOGO@2x.png',
-    title: 'RD3 lOGO'
+    image: '/assets/img/volkshauspark.png',
+    thumbImage: '/assets/img/volkshauspark.png',
+    title: 'Partner #3 "Gastro Haring"'
   },
   ];
   constructor(private router:Router , private activatedroute:ActivatedRoute) { }
 
 
+  async imageClickRedirect(event: any) {
+    console.log(event);
+    if(event == 0 || event == 3){
+      return
+    }
+    else if(event == 1 || event == 4){
+      let url2 = "https://jobs.rd3.at/jobs/Careers/42780000000391021/LKW-Fahrer-In-Brauerei-Ried?source=CareerSite"
+      window.open(url2, "_blank");
+    }
+    else if(event == 2 || event == 5){
+      let url1 = "https://jobs.rd3.at/jobs/restaurant_volkshauspark"
+      window.open(url1, "_blank"); 
+    }
+  }
+
+
+  
   first(){
     let url = "https://jobs.rd3.at/jobs"
     window.open(url, "_blank");

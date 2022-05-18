@@ -5,7 +5,7 @@
 				[images]="imageObject"
 				[autoSlide]="1"
 				[infinite]="true"
-				[animationSpeed]="3"	
+				[animationSpeed]="2"	
 				[imagePopup]="false"
 				[imageSize]="{width: '100%', height: '50%' ,space: 4}"
 				slideImage="1"></ng-image-slider>	
@@ -519,8 +519,11 @@
 		<div class="container">
 			<!-- <div class="row"> -->
 				<!-- <div class="col-md-12"> -->
-					<ng-image-slider #nav [images]="imagelogo" [infinite]="true" [autoSlide]="1" [animationSpeed]="1"
-						[imageSize]="{space: 4}" slideImage="1"></ng-image-slider>
+					<ng-image-slider #nav [images]="imagelogo" [autoSlide]="true"  
+					[infinite]="true" [animationSpeed]="2" 
+					[imagePopup]="false" (imageClick)="imageClickRedirect($event)" 
+					[imageSize]="{width: '365px', height: '400px' ,space: 0}" 
+					[manageImageRatio]="false"></ng-image-slider>
 				<!-- </div> -->
 			<!-- </div> -->
 		</div>

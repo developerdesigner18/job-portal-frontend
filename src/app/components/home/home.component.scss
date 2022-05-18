@@ -1,18 +1,18 @@
 ::ng-deep .custom-image-main img{
-  background-color: #fff;
-  filter: brightness(.7);
+  // background-color: #ffff;
+  // filter: brightness(.7);
 }
 .custom_model{
   width: 100% !important;
 }
 
-// ::ng-deep .ng-image-slider {
-//   height: 300px !important;
-// }
+::ng-deep .ng-image-slider {
+  height: 300px !important;
+}
 
-// ::ng-deep .ng-image-slider .ng-image-slider-container .main {
-//   height: 300px !important;
-// }
+::ng-deep .ng-image-slider .ng-image-slider-container .main {
+  height: 300px !important;
+}
 
   .modal-dialog{
     width: 33%!important;
@@ -646,13 +646,13 @@ h1.custom-business {
   #home span{
     font-size: 65px;
   }
-  // ::ng-deep .ng-image-slider {
-  //   height: 400px !important;
-  // }
+  ::ng-deep .ng-image-slider {
+    height: 400px !important;
+  }
   
-  // ::ng-deep .ng-image-slider .ng-image-slider-container .main {
-  //   height: 400px !important;
-  // }
+  ::ng-deep .ng-image-slider .ng-image-slider-container .main {
+    height: 400px !important;
+  }
   
 }
 @media (min-width: 1700px){
@@ -893,17 +893,12 @@ h1.custom-business {
   margin: 0 0px;
 }
 
-// ::ng-deep .ng-image-slider .ng-image-slider-container .main {
-//   height: 200px !important;
-// }
-// ::ng-deep .ng-image-slider {
-//   height: 200px !important;
-// }
-// #sport span {
-//   font-size: 30px !important;
-//   color: #FFFFFF !important;
-//   font-family: "Bebas Neue", cursive;
-// }
+::ng-deep .ng-image-slider .ng-image-slider-container .main {
+  height: 200px !important;
+}
+::ng-deep .ng-image-slider {
+  height: 200px !important;
+}
 
 #home span {
   font-size: 30px !important;
@@ -1028,13 +1023,15 @@ h1.custom-business {
   top: 20px;
 }*/
 
-// ::ng-deep .ng-image-slider {
-//   height: 150px !important;
-// }
+::ng-deep .ng-image-slider {
+  height: 150px !important;
+}
 
-// ::ng-deep .ng-image-slider .ng-image-slider-container .main {
-//   height: 150px !important;
-// }
+
+
+::ng-deep .ng-image-slider .ng-image-slider-container .main {
+  height: 150px !important;
+}
 #home span{
   font-size: 24px !important;
   color: #FFFFFF !important;
