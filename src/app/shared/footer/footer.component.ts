@@ -23,7 +23,7 @@ env:any;
     window.open(url, "_blank");
   } 
   else{
-    let url = "http://localhost:4200/sitemap.xml"
+    let url = "http://localhost:400/sitemap.xml"
     window.open(url, "_blank");
   }
   }

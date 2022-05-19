@@ -10,6 +10,7 @@ import { AdminSportsComponent } from './admin-sports/admin-sports.component';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { AdminUsersComponent } from './admin-users/admin-users.component';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
+import { SportsDataComponent } from './admin-sports/sports-data/sports-data.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { AdminHomeComponent } from './admin-home/admin-home.component';
     AdminDashboardComponent,
     AdminSportsComponent,
     AdminUsersComponent,
-    AdminHomeComponent
+    AdminHomeComponent,
+    SportsDataComponent
   ],
   imports: [
     CommonModule,

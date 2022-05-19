@@ -52,13 +52,13 @@ tab6:boolean = false;
 
   }
   else if(this.data == "Sports"){
-
     this.tab1 = false
     this.tab2 = false
     this.tab3 = false
     this.tab4 = true
     this.tab5 = false
     this.tab6 = false
+    // console.log(this.tab4)
 
 
   }

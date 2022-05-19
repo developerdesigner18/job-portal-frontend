@@ -28,49 +28,22 @@ adminLogin(payload: {
   return this.httpClient.post(`${this.BASE_URI}/auth/signin`, payload);
 }
 
-// home apis
+// Travel Info apis
 
     
-deletehomeImage(home_id: any, image_id: any): Observable<any> {
-  let header = this.initHeaders();
-  return this.httpClient.delete(`${this.BASE_URI}/api/home/deletehomeImage`, { params: { bid: home_id, iid: image_id }, headers: header, observe: 'response' as 'body'}).pipe(
-    catchError(this.handleError)
-  )
-}
-
-gethomeInfoAll(
-  ): Observable<any> {
-    return this.httpClient.get(`${this.BASE_URI}/api/home/gethomeInfoAll`).pipe(
-      catchError(this.handleError)
-    )
-  }
-
-  inserthomeInfo(payload: any): Observable<any> {
+  inserttravelInfo(payload: any): Observable<any> {
     let header = this.initHeaders();
-    return this.httpClient.post(`${this.BASE_URI}/api/home/inserthomeInfo`, payload, { headers: header, observe: 'response' as 'body'}).pipe(
+    return this.httpClient.post(`${this.BASE_URI}/api/sports/inserttravelinfo`, payload, { headers: header, observe: 'response' as 'body'}).pipe(
       catchError(this.handleError)
     )
   }
 
-  updatehomeInfo(home_id: any, payload: {
-  }): Observable<any> {
-    let header = this.initHeaders();
-    return this.httpClient.post(`${this.BASE_URI}/api/home/updatehomeInfo`, payload, { params: { bid: home_id }, headers: header, observe: 'response' as 'body'}).pipe(
-      catchError(this.handleError)
-    )
-  }
-
-  deletehomeInfo(home_id: any): Observable<any> {
-    let header = this.initHeaders();
-    return this.httpClient.delete(`${this.BASE_URI}/api/home/deletehomeInfo`, { params: { bid: home_id }, headers: header, observe: 'response' as 'body'}).pipe(
-      catchError(this.handleError)
-    )
-  }
-
-
-
-
-
+  gettravelInfoAll(
+    ): Observable<any> {
+      return this.httpClient.get(`${this.BASE_URI}/api/sports/getTravelInfoAll`).pipe(
+        catchError(this.handleError)
+      )
+    }
 
 
 // Api code end
