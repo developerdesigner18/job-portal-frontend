@@ -8,22 +8,24 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
-                            <form accept-charset="utf-8">
+                            <form [formGroup]="travelInfoForm" (ngSubmit)="insertTravelInfo()">
+                                <div formGroupName="travel_info">
                                 <div class="mb-3">
-                                    <label for="email" class="form-label">Title</label>
-                                    <input type="email" name="email" placeholder="enter a text here"
-                                        class="form-control" required>
+                                    <label for="name" class="form-label">Title</label>
+                                    <input type="text" name="name" placeholder="enter a text here"
+                                        class="form-control"  formControlName="name" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="email" class="form-label">Description</label>
-                                    <input type="email" name="email" placeholder="enter a description here"
-                                        class="form-control" required>
+                                    <label for="description" class="form-label">Description</label>
+                                    <input type="text" name="description" placeholder="enter a description here"
+                                        class="form-control" formControlName="description" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="formFileMultiple" class="form-label">Multiple files input
                                         example</label>
-                                    <input class="form-control" type="file" id="formFileMultiple" multiple />
+                                    <input class="form-control" (change)="onCoverImageUpload($event)" type="file" name="file"  accept="image/jpeg,image/jpg,image/png" id="formFileMultiple" multiple />
                                 </div>
+                            </div>
                                 <div class="mb-3">
                                     <input type="submit" class="btn btn-primary">
                                 </div>
@@ -61,31 +63,39 @@
                                             <th class="sorting sorting_asc" tabindex="0"
                                                 aria-controls="dataTables-example" rowspan="1" colspan="1"
                                                 style="width: 163px;" aria-sort="ascending"
-                                                aria-label="Name: activate to sort column descending">Name</th>
-                                            <th class="sorting" tabindex="0" aria-controls="dataTables-example"
+                                                aria-label="Name: activate to sort column descending">No</th>
+                                            <th class="sorting sorting_asc" tabindex="0"
+                                                aria-controls="dataTables-example" rowspan="1" colspan="1"
+                                                style="width: 163px;" aria-sort="ascending"
+                                                aria-label="Name: activate to sort column descending">Title</th>
+                                            <!-- <th class="sorting" tabindex="0" aria-controls="dataTables-example"
                                                 rowspan="1" colspan="1" style="width: 308px;"
-                                                aria-label="Email: activate to sort column ascending">Email</th>
+                                                aria-label="Email: activate to sort column ascending">Email</th> -->
                                             <th class="sorting" tabindex="0" aria-controls="dataTables-example"
                                                 rowspan="1" colspan="1" style="width: 139px;"
-                                                aria-label="Role: activate to sort column ascending">Role</th>
+                                                aria-label="Role: activate to sort column ascending">Description</th>
                                             <th class="sorting" tabindex="0" aria-controls="dataTables-example"
                                                 rowspan="1" colspan="1" style="width: 81px;"
-                                                aria-label="Type: activate to sort column ascending">Type</th>
-                                            <th class="sorting" tabindex="0" aria-controls="dataTables-example"
+                                                aria-label="Type: activate to sort column ascending">Image</th>
+                                            <!-- <th class="sorting" tabindex="0" aria-controls="dataTables-example"
                                                 rowspan="1" colspan="1" style="width: 101px;"
-                                                aria-label="Status: activate to sort column ascending">Status</th>
+                                                aria-label="Status: activate to sort column ascending">Status</th> -->
                                             <th class="sorting" tabindex="0" aria-controls="dataTables-example"
                                                 rowspan="1" colspan="1" style="width: 79px;"
-                                                aria-label=": activate to sort column ascending"></th>
+                                                aria-label=": activate to sort column ascending">Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="odd">
-                                            <td class="dtr-control sorting_1" tabindex="0">Doris Greene</td>
-                                            <td>ms.greene@outlook.com</td>
-                                            <td>Writer</td>
-                                            <td>Staff</td>
-                                            <td>Active</td>
+                                        <tr class="odd" *ngFor="let traveldata of travelInfoDataAll; let i = index">
+                                            <td>{{i+1}}</td>
+                                            <td class="dtr-control sorting_1" tabindex="0">{{traveldata?.travel_info?.name}}</td>
+                                            <!-- <td>ms.greene@outlook.com</td> -->
+                                            <td>{{traveldata?.travel_info?.description}}</td>
+                                            <td><img width="525" style="padding-left: 10px;"
+                                                src="{{BASE_URI}}{{traveldata?.cover_image_travel}}"
+                                                class="attachment-large size-large" alt="Boat Image" loading="lazy"
+                                                sizes="100vw"></td>
+                                            <!-- <td>Active</td> -->
                                             <td class="text-end">
                                                 <a href="" class="btn btn-outline-info btn-rounded"><i
                                                         class="fas fa-pen"></i></a>
@@ -93,7 +103,7 @@
                                                         class="fas fa-trash"></i></a>
                                             </td>
                                         </tr>
-                                        <tr class="even">
+                                        <!-- <tr class="even">
                                             <td class="dtr-control sorting_1" tabindex="0">Jessie Williams</td>
                                             <td>jessie@gmail.com</td>
                                             <td>Administrator</td>
@@ -105,7 +115,7 @@
                                                 <a href="" class="btn btn-outline-danger btn-rounded"><i
                                                         class="fas fa-trash"></i></a>
                                             </td>
-                                        </tr>
+                                        </tr> -->
                                     </tbody>
                                 </table>
                             </div>

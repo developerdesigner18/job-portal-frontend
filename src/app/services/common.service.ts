@@ -31,9 +31,9 @@ adminLogin(payload: {
 // Travel Info apis
 
     
-  inserttravelInfo(payload: any): Observable<any> {
+  inserttravelInfo(payload: any , data:any): Observable<any> {
     let header = this.initHeaders();
-    return this.httpClient.post(`${this.BASE_URI}/api/sports/inserttravelinfo`, payload, { headers: header, observe: 'response' as 'body'}).pipe(
+    return this.httpClient.post(`${this.BASE_URI}/api/sports/inserttravelinfo`, payload , { headers: header, observe: 'response' as 'body'}).pipe(
       catchError(this.handleError)
     )
   }
@@ -45,6 +45,27 @@ adminLogin(payload: {
       )
     }
 
+    getTravelinfobyid(travel_id: any
+      ): Observable<any> {
+        return this.httpClient.get(`${this.BASE_URI}/api/sports/getTravelinfobyid`, { params: { travel_id: travel_id } }).pipe(
+          catchError(this.handleError)
+        )
+      }
+
+    updateTravelInfo(travel_id: any, payload: {
+    }): Observable<any> {
+      let header = this.initHeaders();
+      return this.httpClient.post(`${this.BASE_URI}/api/sports/updateTravelInfo`, payload, { params: { travel_id: travel_id }, headers: header, observe: 'response' as 'body'}).pipe(
+        catchError(this.handleError)
+      )
+    }
+
+    deleteTravelInfo(travel_id: any): Observable<any> {
+      let header = this.initHeaders();
+      return this.httpClient.delete(`${this.BASE_URI}/api/sports/deleteTravelInfo`, { params: { travel_id: travel_id }, headers: header, observe: 'response' as 'body'}).pipe(
+        catchError(this.handleError)
+      )
+    }
 
 // Api code end
 
