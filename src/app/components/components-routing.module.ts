@@ -48,7 +48,11 @@ const routes: Routes = [
     path: 'agb',
     loadChildren: () => import('./agb/agb.module').then(m => m.AgbModule),
   },
- 
+  { path: 'sitemap', 
+    loadChildren: () => import('./sitemap/sitemap.module').then(m => m.SitemapModule) 
+},
+
+
 ];
 @NgModule({
   imports: [RouterModule.forChild(routes)],

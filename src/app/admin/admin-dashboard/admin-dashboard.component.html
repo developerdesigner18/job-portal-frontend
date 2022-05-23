@@ -112,17 +112,16 @@
                 <button type="button" id="sidebarCollapse" class="btn btn-info">
                     <i class="fa fa-bars"></i>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="dropdown">
                         <button class="custom_toggle_btn" type="button" data-toggle="dropdown">
                             <i class="fa fa-user"></i>
-                            <span>John Doe</span></button>
+                            <span>{{Userinfobyid?.firstName}} {{Userinfobyid?.lastName}}</span></button>
                         <ul class="dropdown-menu">
                             <li><a><i class="fas fa-address-card"></i> Profile</a></li>
                             <li><a><i class="fas fa-envelope"></i> Message</a></li>
                             <li><a><i class="fas fa-cog"></i>Settings</a></li>
-                            <li><a><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                            <li (click)="logout()"><a><i class="fas fa-sign-out-alt"></i> Logout</a></li>
                         </ul>
                     </div>
                 </div>

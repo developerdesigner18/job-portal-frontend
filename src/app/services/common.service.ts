@@ -67,6 +67,16 @@ adminLogin(payload: {
       )
     }
 
+  // get user info data  
+  
+  getUserInfoById(uid: any
+    ): Observable<any> {
+      return this.httpClient.get(`${this.BASE_URI}/api/users/getuserinfoById`, { params: { uid: uid } }).pipe(
+        catchError(this.handleError)
+      )
+    }
+  
+
 // Api code end
 
 private initHeaders() {
