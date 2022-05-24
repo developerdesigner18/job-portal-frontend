@@ -1,5 +1,5 @@
 <div id="body" class="active">
-    <div class="content">
+    <div class="content" *ngIf="show_form">
         <div class="container">
             <div class="page-title">
                 <h3>Add Reise-Empfehlungen data</h3>
@@ -8,7 +8,7 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
-                            <form [formGroup]="travelInfoForm" (ngSubmit)="insertTravelInfo()">
+                            <form [formGroup]="travelInfoForm" (ngSubmit)="insertTravelInfo()"  [@enterAnimation]>
                                 <div formGroupName="travel_info">
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Title</label>
@@ -19,6 +19,11 @@
                                     <label for="description" class="form-label">Description</label>
                                     <input type="text" name="description" placeholder="enter a description here"
                                         class="form-control" formControlName="description" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Url" class="form-label">Url</label>
+                                    <input type="url" name="Url" placeholder="enter a url here"
+                                        class="form-control" formControlName="Url" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="formFileMultiple" class="form-label">Multiple files input
@@ -47,11 +52,6 @@
                     <div id="dataTables-example_wrapper" class="dataTables_wrapper dt-bootstrap5 no-footer">
                         <div class="row">
                             <div class="col-sm-12 col-md-6"></div>
-                            <!-- <div class="col-sm-12 col-md-6">
-                                <div id="dataTables-example_filter" class="dataTables_filter"><label>Search:<input
-                                            type="search" class="form-control form-control-sm" placeholder=""
-                                            aria-controls="dataTables-example"></label></div>
-                            </div> -->
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
@@ -68,18 +68,15 @@
                                                 aria-controls="dataTables-example" rowspan="1" colspan="1"
                                                 style="width: 163px;" aria-sort="ascending"
                                                 aria-label="Name: activate to sort column descending">Title</th>
-                                            <!-- <th class="sorting" tabindex="0" aria-controls="dataTables-example"
-                                                rowspan="1" colspan="1" style="width: 308px;"
-                                                aria-label="Email: activate to sort column ascending">Email</th> -->
                                             <th class="sorting" tabindex="0" aria-controls="dataTables-example"
                                                 rowspan="1" colspan="1" style="width: 139px;"
                                                 aria-label="Role: activate to sort column ascending">Description</th>
                                             <th class="sorting" tabindex="0" aria-controls="dataTables-example"
+                                                rowspan="1" colspan="1" style="width: 139px;"
+                                                aria-label="Role: activate to sort column ascending">URL</th>
+                                            <th class="sorting" tabindex="0" aria-controls="dataTables-example"
                                                 rowspan="1" colspan="1" style="width: 81px;"
                                                 aria-label="Type: activate to sort column ascending">Image</th>
-                                            <!-- <th class="sorting" tabindex="0" aria-controls="dataTables-example"
-                                                rowspan="1" colspan="1" style="width: 101px;"
-                                                aria-label="Status: activate to sort column ascending">Status</th> -->
                                             <th class="sorting" tabindex="0" aria-controls="dataTables-example"
                                                 rowspan="1" colspan="1" style="width: 79px;"
                                                 aria-label=": activate to sort column ascending">Actions</th>
@@ -89,60 +86,23 @@
                                         <tr class="odd" *ngFor="let traveldata of travelInfoDataAll; let i = index">
                                             <td>{{i+1}}</td>
                                             <td class="dtr-control sorting_1" tabindex="0">{{traveldata?.travel_info?.name}}</td>
-                                            <!-- <td>ms.greene@outlook.com</td> -->
                                             <td>{{traveldata?.travel_info?.description}}</td>
+                                            <td>{{traveldata?.travel_info?.Url}}</td>
                                             <td><img width="525" style="padding-left: 10px;"
                                                 src="{{BASE_URI}}{{traveldata?.cover_image_travel}}"
                                                 class="attachment-large size-large" alt="Boat Image" loading="lazy"
                                                 sizes="100vw"></td>
-                                            <!-- <td>Active</td> -->
                                             <td class="text-end">
-                                                <a href="" class="btn btn-outline-info btn-rounded"><i
-                                                        class="fas fa-pen"></i></a>
-                                                <a href="" class="btn btn-outline-danger btn-rounded"><i
-                                                        class="fas fa-trash"></i></a>
+                                                <a class="btn btn-outline-info btn-rounded" (click)="uppdatetravelinfo(traveldata?._id)"><i
+                                                        class="fas fa-pen" ></i></a>
+                                                <a class="btn btn-outline-danger btn-rounded" (click)="deleteTravelInfo(traveldata?._id)"><i
+                                                        class="fas fa-trash" ></i></a>
                                             </td>
                                         </tr>
-                                        <!-- <tr class="even">
-                                            <td class="dtr-control sorting_1" tabindex="0">Jessie Williams</td>
-                                            <td>jessie@gmail.com</td>
-                                            <td>Administrator</td>
-                                            <td>Admin</td>
-                                            <td>Active</td>
-                                            <td class="text-end">
-                                                <a href="" class="btn btn-outline-info btn-rounded"><i
-                                                        class="fas fa-pen"></i></a>
-                                                <a href="" class="btn btn-outline-danger btn-rounded"><i
-                                                        class="fas fa-trash"></i></a>
-                                            </td>
-                                        </tr> -->
                                     </tbody>
                                 </table>
                             </div>
                         </div>
-                        <!-- <div class="row">
-                            <div class="col-sm-12 col-md-5">
-                                <div class="dataTables_info" id="dataTables-example_info" role="status"
-                                    aria-live="polite">
-                                    Showing 1 to 7 of 7 entries</div>
-                            </div>
-                            <div class="col-sm-12 col-md-7">
-                                <div class="dataTables_paginate paging_simple_numbers" id="dataTables-example_paginate">
-                                    <ul class="pagination">
-                                        <li class="paginate_button page-item previous disabled"
-                                            id="dataTables-example_previous"><a href="#"
-                                                aria-controls="dataTables-example" data-dt-idx="0" tabindex="0"
-                                                class="page-link">Previous</a></li>
-                                        <li class="paginate_button page-item active"><a href="#"
-                                                aria-controls="dataTables-example" data-dt-idx="1" tabindex="0"
-                                                class="page-link">1</a></li>
-                                        <li class="paginate_button page-item next disabled"
-                                            id="dataTables-example_next"><a href="#" aria-controls="dataTables-example"
-                                                data-dt-idx="2" tabindex="0" class="page-link">Next</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </div>

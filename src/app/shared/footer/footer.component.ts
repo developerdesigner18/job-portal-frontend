@@ -11,7 +11,7 @@ export class FooterComponent implements OnInit {
 env:any;
   constructor(public router:Router, private actroute : ActivatedRoute) { 
     this.env = environment.production ? 'https://www.rd3.at' : 'http://localhost:8000'
-    console.log("===========",this.env)
+    // console.log("===========",this.env)
 
 
   }

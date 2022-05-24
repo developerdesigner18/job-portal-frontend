@@ -30,7 +30,7 @@ userdata:any
     ) { 
 
       this.Userinfodata = localStorage.getItem('u_info');
-      console.log("================",JSON.parse(this.Userinfodata)._id)
+      // console.log("================",JSON.parse(this.Userinfodata)?._id)
       this.userdata = JSON.parse(this.Userinfodata)._id
       this.getuserdetails()
     this.tab4 = true
@@ -108,7 +108,7 @@ userdata:any
       res => {
         Notiflix.Loading.remove();
         this.Userinfobyid = res.data
-        console.log('this.Userinfobyid', this.Userinfobyid);
+        // console.log('this.Userinfobyid', this.Userinfobyid);
         if (!res.success) { Notiflix.Notify.failure(res.error); }
       },
       err => {     
