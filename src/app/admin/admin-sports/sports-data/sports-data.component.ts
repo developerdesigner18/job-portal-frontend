@@ -47,10 +47,15 @@ export class SportsDataComponent implements OnInit {
   travel_images: any = [];
   userdata: any;
   uinfo: any;
-  utoken: string | null;
+  utoken: any;
 
   constructor(public formbuilder: FormBuilder, public commanservice: CommonService) {
     this.BASE_URI = environment.apiUrl;
+  }
+
+
+  async addnewdata(){
+    this.show_form = true;
   }
 
   ngOnInit(): void {
@@ -66,7 +71,7 @@ export class SportsDataComponent implements OnInit {
     this.utoken = localStorage.getItem('auth_token');
     // console.log("================",JSON.parse(this.userdata))
     this.userdata = JSON.parse(this.uinfo)
-    this.getTravelInfoAll()
+    // this.getTravelInfoAll()
   }
 
   getControlValidation(key: string): boolean {
@@ -78,11 +83,14 @@ export class SportsDataComponent implements OnInit {
   getTravelInfoAll() {
     this.commanservice.gettravelInfoAll().subscribe(
       res => {
+        // this.travel_id = res.data._id
         this.travelInfoDataAll = res.data
+        // this.travelInfoDataAll = []
         console.log("all travel data",this.travelInfoDataAll)
         this.travelInfoForm.patchValue(res.data.content)        
         // console.log('###edit-travel-info', this.travelInfoDataAll);
-        if (!res.success) { Notiflix.Notify.failure(res.error); }
+        if (!res.success) { Notiflix.Notify.failure(res.error);  }
+        
       },
       err => {        
         Notiflix.Notify.failure(err.error?.message);
@@ -90,14 +98,15 @@ export class SportsDataComponent implements OnInit {
     );
   }
 
-  getTravelinfobyid(boat_id: any) {
-    this.commanservice.getTravelinfobyid(boat_id).subscribe(
+  getTravelinfobyid(travel_id: any) {
+    this.commanservice.getTravelinfobyid(travel_id).subscribe(
   res => {
     Notiflix.Loading.remove();
     this.travelInfoById = res.data
+    // console.log('this.boatInfoById', this.boatInfoById.boat_images);
 
     this.travelInfoForm.patchValue(res.data)
-    console.log('###boatInfoById', this.travelInfoById);
+    console.log('###travelInfoById', this.travelInfoById.length);
     if (!res.success) { Notiflix.Notify.failure(res.error); }
   },
   err => {        
@@ -115,28 +124,28 @@ insertTravelInfo(){
 
 }
 
- uppdatetravelinfo(datas:any){
+ uppdatetravelinfo(travel_id:any){
   this.show_form = true;
   Notiflix.Loading.standard({
     cssAnimationDuration: 2000,
     backgroundColor: '0, 0, 0, 0.0',
   },
   )
-  this.getTravelinfobyid(datas)
+  this.getTravelinfobyid(travel_id)
 }
 
-
-// deleteBoatImage(boat_id: any, image_id: any) {
+// changeBoatStatus(travel_id: any, status: any) {
 //   Notiflix.Loading.standard({
 //     cssAnimationDuration: 2000,
 //     backgroundColor: '0, 0, 0, 0.0',
 //   },
 //   )
-//   this.commanservice.deleteBoatImage(boat_id, image_id).subscribe(
+//   status == 'active' ? status = 'inactive' : status = 'active';
+//   this.editBoatInfoService.changeBoatStatus(travel_id, status).subscribe(
 //     res => {
 //       Notiflix.Loading.remove();
 //       Notiflix.Notify.success(res.body.message);        
-//       this.getBoatInfoById(boat_id)
+//       this.getBoatInfoAll()
 //       if (!res.body.success) { Notiflix.Notify.failure(res.error); }
 //     },
 //     err => {
@@ -146,7 +155,27 @@ insertTravelInfo(){
 //   )
 // }
 
-deleteTravelInfo(boat_id: any) {
+// deleteBoatImage(travel_id: any, image_id: any) {
+//   Notiflix.Loading.standard({
+//     cssAnimationDuration: 2000,
+//     backgroundColor: '0, 0, 0, 0.0',
+//   },
+//   )
+//   this.commanservice.deleteBoatImage(travel_id, image_id).subscribe(
+//     res => {
+//       Notiflix.Loading.remove();
+//       Notiflix.Notify.success(res.body.message);        
+//       this.getBoatInfoById(travel_id)
+//       if (!res.body.success) { Notiflix.Notify.failure(res.error); }
+//     },
+//     err => {
+//       Notiflix.Loading.remove();
+//       Notiflix.Notify.failure(err.error?.message);
+//     }
+//   )
+// }
+
+deleteTravelInfo(travel_id: any) {
   Notiflix.Loading.standard({
     cssAnimationDuration: 2000,
     backgroundColor: '0, 0, 0, 0.0',
@@ -156,7 +185,7 @@ deleteTravelInfo(boat_id: any) {
     user:this.utoken
   }
   // console.log("api called ",data)
-  this.commanservice.deleteTravelInfo(boat_id , data).subscribe(
+  this.commanservice.deleteTravelInfo(travel_id , data).subscribe(
     res => {
       Notiflix.Loading.remove();
       Notiflix.Notify.success(res.body.message);        
@@ -210,8 +239,6 @@ onBoatImagesUpload(event: any) {
   Notiflix.Loading.remove();
 }
 
- 
-
 
 
   removeCoverImage() {
@@ -240,7 +267,7 @@ onBoatImagesUpload(event: any) {
 
  async submitdata(){
   if (this.travelInfoForm.value._id != null) {
-    // console.log("called update") 
+    console.log("called update") 
 
     if (this.travelInfoForm.pristine && !this.cover_image_travel ) {
       return;
