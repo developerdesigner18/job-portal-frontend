@@ -274,10 +274,10 @@ onBoatImagesUpload(event: any) {
     value.cover_image_travel = this.cover_image_travel
 
 
-    // console.log(value);
-    // var data = {
-    //   user:this.userdata
-    // }
+    console.log(value);
+    var data = {
+      user:this.userdata
+    }
     var fd = new FormData();
     fd.append('name', value.travel_info.name);
     fd.append('description', value.travel_info.description);
@@ -288,10 +288,11 @@ onBoatImagesUpload(event: any) {
       backgroundColor: '0, 0, 0, 0.0',
     },
     )
-    this.commanservice.updateTravelInfo(this.travelInfoForm.value._id, fd).subscribe(
+    this.commanservice.updateTravelInfo(this.travelInfoForm.value._id, fd , data).subscribe(
       res => {
         Notiflix.Loading.remove();
         Notiflix.Notify.success(res.body.message);
+        this.getTravelInfoAll()
         this.getTravelinfobyid(this.travelInfoForm.value._id)
         this.remove_image_all()
         if (!res.body.success) { Notiflix.Notify.failure(res.body.error); }

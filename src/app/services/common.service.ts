@@ -38,7 +38,7 @@ adminLogin(payload: {
     )
   }
 
-  updateTravelInfo(travel_id: any, payload: {
+  updateTravelInfo(travel_id: any, payload:any , data: {
   }): Observable<any> {
     let header = this.initHeaders();
     return this.httpClient.post(`${this.BASE_URI}/api/sports/updateTravelInfo`, payload, { params: { travel_id: travel_id }, headers: header, observe: 'response' as 'body'}).pipe(
