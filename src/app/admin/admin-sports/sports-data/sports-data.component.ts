@@ -54,10 +54,6 @@ export class SportsDataComponent implements OnInit {
   }
 
 
-  async addnewdata(){
-    this.show_form = true;
-  }
-
   ngOnInit(): void {
     this.travelInfoForm = this.formbuilder.group({
       _id: [null, Validators.required],
@@ -69,9 +65,8 @@ export class SportsDataComponent implements OnInit {
     });
     this.uinfo = localStorage.getItem('u_info');
     this.utoken = localStorage.getItem('auth_token');
-    // console.log("================",JSON.parse(this.userdata))
     this.userdata = JSON.parse(this.uinfo)
-    // this.getTravelInfoAll()
+    this.getTravelInfoAll()
   }
 
   getControlValidation(key: string): boolean {
@@ -87,7 +82,7 @@ export class SportsDataComponent implements OnInit {
         this.travelInfoDataAll = res.data
         // this.travelInfoDataAll = []
         console.log("all travel data",this.travelInfoDataAll)
-        this.travelInfoForm.patchValue(res.data.content)        
+        this.travelInfoForm.patchValue(res.data)        
         // console.log('###edit-travel-info', this.travelInfoDataAll);
         if (!res.success) { Notiflix.Notify.failure(res.error);  }
         
@@ -123,6 +118,15 @@ insertTravelInfo(){
   this.show_form = true;
 
 }
+
+resetForm() {
+  this.travelInfoForm.reset()
+  this.travelInfoById = []
+  this.removeCoverImage()
+  this.remove_image_all()
+  this.show_form = false;
+}
+
 
  uppdatetravelinfo(travel_id:any){
   this.show_form = true;
@@ -175,7 +179,7 @@ insertTravelInfo(){
 //   )
 // }
 
-deleteTravelInfo(travel_id: any) {
+async deleteTravelInfo(travel_id: any) {
   Notiflix.Loading.standard({
     cssAnimationDuration: 2000,
     backgroundColor: '0, 0, 0, 0.0',
@@ -187,8 +191,10 @@ deleteTravelInfo(travel_id: any) {
   // console.log("api called ",data)
   this.commanservice.deleteTravelInfo(travel_id , data).subscribe(
     res => {
+      // console.log("res",res.)
       Notiflix.Loading.remove();
-      Notiflix.Notify.success(res.body.message);        
+      Notiflix.Notify.success(res.body.message);     
+      console.log("delete called")   
       this.getTravelInfoAll()
       if (!res.body.success) { Notiflix.Notify.failure(res.error); }
     },
@@ -256,14 +262,6 @@ onBoatImagesUpload(event: any) {
     this.travel_images = []
   }
 
-  resetForm() {
-    this.travelInfoForm.reset()
-    this.travelInfoById = []
-    this.removeCoverImage()
-    this.remove_image_all()
-    this.show_form = false;
-  }
-
 
  async submitdata(){
   if (this.travelInfoForm.value._id != null) {
@@ -277,9 +275,9 @@ onBoatImagesUpload(event: any) {
 
 
     // console.log(value);
-    var data = {
-      user:this.userdata
-    }
+    // var data = {
+    //   user:this.userdata
+    // }
     var fd = new FormData();
     fd.append('name', value.travel_info.name);
     fd.append('description', value.travel_info.description);
@@ -290,12 +288,12 @@ onBoatImagesUpload(event: any) {
       backgroundColor: '0, 0, 0, 0.0',
     },
     )
-    this.commanservice.updateTravelInfo(this.travelInfoForm.value._id, fd ,data).subscribe(
+    this.commanservice.updateTravelInfo(this.travelInfoForm.value._id, fd).subscribe(
       res => {
         Notiflix.Loading.remove();
         Notiflix.Notify.success(res.body.message);
         this.getTravelinfobyid(this.travelInfoForm.value._id)
-        // this.remove_image_all()
+        this.remove_image_all()
         if (!res.body.success) { Notiflix.Notify.failure(res.body.error); }
       },
       err => {

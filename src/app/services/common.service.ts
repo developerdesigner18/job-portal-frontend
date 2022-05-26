@@ -38,7 +38,7 @@ adminLogin(payload: {
     )
   }
 
-  updateTravelInfo(travel_id: any, data:any, payload: {
+  updateTravelInfo(travel_id: any, payload: {
   }): Observable<any> {
     let header = this.initHeaders();
     return this.httpClient.post(`${this.BASE_URI}/api/sports/updateTravelInfo`, payload, { params: { travel_id: travel_id }, headers: header, observe: 'response' as 'body'}).pipe(
@@ -99,7 +99,9 @@ private initHeaders() {
 
 
   private handleError(error: HttpErrorResponse) {
-    let msg = '';    
+    let msg = '';
+    console.log("-=-=-=handleError", error);
+     
     
     if (error.error instanceof ErrorEvent) {
       console.error('An error occurred:', error.error.message);
