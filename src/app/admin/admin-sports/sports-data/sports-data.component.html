@@ -30,6 +30,7 @@
                                     <input type="url" name="Url" placeholder="enter a url here"
                                         class="form-control" formControlName="Url" required>
                                 </div>
+
                                 <div class="mb-3">
                                     <label for="formFileMultiple" class="form-label">Single file upload
                                         example</label>
@@ -61,6 +62,24 @@
                                 </div>
 
                                 </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="state" class="form-label">Filter Option</label>
+                                <!-- <select name="state" class="form-select" required=""> -->
+                                <select name="state" class="form-select" (change)="changeFilteroption($event)" formControlName="filteroptions">
+                                    <!-- <option value="" selected="">Choose...</option>
+                                    <option value="Pauschalreisen">Pauschalreisen</option>
+                                    <option value="Unterkunfte">Unterkunfte</option>
+                                    <option value="Sportreisen">Sportreisen</option>
+                                    <option value="sprachreisen">sprachreisen </option>
+                                    <option value="Schiffsreisen">Schiffsreisen </option>
+                                    <option value="Camping">Camping </option>
+                                    <option value="Autoveimičtung">Autoveimičtung </option> -->
+                                    <option value="">Choose...</option>
+                                    <option *ngFor="let data of fiterdata" [ngValue]="data">{{data}}</option>
+                                </select>
+                                <div class="valid-feedback">Looks good!</div>
+                                <div class="invalid-feedback">Please select a State.</div>
                             </div>
                                 <div class="mb-3">
                                     <input type="submit" class="btn btn-primary">
@@ -99,7 +118,7 @@
                                             <th class="sorting sorting_asc" tabindex="0"
                                                 aria-controls="dataTables-example" rowspan="1" colspan="1"
                                                 style="width: 163px;" aria-sort="ascending"
-                                                aria-label="Name: activate to sort column descending">Title</th>
+                                                aria-label="Name: activate to sort column descending">Name</th>
                                             <th class="sorting" tabindex="0" aria-controls="dataTables-example"
                                                 rowspan="1" colspan="1" style="width: 139px;"
                                                 aria-label="Role: activate to sort column ascending">Description</th>
@@ -107,8 +126,11 @@
                                                 rowspan="1" colspan="1" style="width: 139px;"
                                                 aria-label="Role: activate to sort column ascending">URL</th>
                                             <th class="sorting" tabindex="0" aria-controls="dataTables-example"
+                                                rowspan="1" colspan="1" style="width: 139px;"
+                                                aria-label="Role: activate to sort column ascending">Filteroptions</th>
+                                            <!-- <th class="sorting" tabindex="0" aria-controls="dataTables-example"
                                                 rowspan="1" colspan="1" style="width: 81px;"
-                                                aria-label="Type: activate to sort column ascending">Image</th>
+                                                aria-label="Type: activate to sort column ascending">Image</th> -->
                                             <th class="sorting" tabindex="0" aria-controls="dataTables-example"
                                                 rowspan="1" colspan="1" style="width: 79px;"
                                                 aria-label=": activate to sort column ascending">Actions</th>
@@ -120,10 +142,11 @@
                                             <td class="dtr-control sorting_1" tabindex="0">{{traveldata?.travel_info?.name}}</td>
                                             <td>{{traveldata?.travel_info?.description}}</td>
                                             <td>{{traveldata?.travel_info?.Url}}</td>
-                                            <td><img width="525" style="padding-left: 10px;"
+                                            <td>{{traveldata?.filteroptions}}</td>
+                                            <!-- <td><img width="525" style="padding-left: 10px;"
                                                 src="{{BASE_URI}}{{traveldata?.cover_image_travel}}"
                                                 class="attachment-large size-large" alt="Boat Image" loading="lazy"
-                                                sizes="100vw"></td>
+                                                sizes="100vw"></td> -->
                                             <td class="text-end">
                                                 <a class="btn btn-outline-info btn-rounded" (click)="uppdatetravelinfo(traveldata?._id)"><i
                                                         class="fas fa-pen" ></i></a>

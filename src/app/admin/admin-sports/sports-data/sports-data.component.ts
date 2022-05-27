@@ -48,20 +48,38 @@ export class SportsDataComponent implements OnInit {
   userdata: any;
   uinfo: any;
   utoken: any;
+  isSubmitted = false;
+
+  fiterdata :  any = ['Pauschalreisen', 'Unterkunfte', 'Sportreisen', 'Sprachreisen' , 'Schiffsreisen' , 'Camping' , 'Autoveimičtung']
 
   constructor(public formbuilder: FormBuilder, public commanservice: CommonService) {
     this.BASE_URI = environment.apiUrl;
   }
+  
+  changeFilteroption(e:any) {
+    // console.log(e)
+    // console.log(e.target.value)
+    var data = e.target.value
+    data = data.substring(3);
+    console.log(data)
+    this.filteroptions?.setValue(data, {
+      onlySelf: true
+    })
+  }
 
+  get filteroptions() {
+    return this.travelInfoForm.get('filteroptions');
+  }
 
   ngOnInit(): void {
     this.travelInfoForm = this.formbuilder.group({
       _id: [null, Validators.required],
+      filteroptions : ["", Validators.required],
       travel_info: this.formbuilder.group({
         name: ["", Validators.required],
         description: ["", Validators.required],
         Url: ["", Validators.required],
-      })
+      }),
     });
     this.uinfo = localStorage.getItem('u_info');
     this.utoken = localStorage.getItem('auth_token');
@@ -282,6 +300,7 @@ onBoatImagesUpload(event: any) {
     fd.append('name', value.travel_info.name);
     fd.append('description', value.travel_info.description);
     fd.append('Url', value.travel_info.Url);
+    fd.append('filteroptions', value.filteroptions);
     fd.append('cover_image_travel', value.cover_image_travel);
     Notiflix.Loading.standard({
       cssAnimationDuration: 2000,
@@ -305,7 +324,6 @@ onBoatImagesUpload(event: any) {
  
   }
   else{
-    console.log("called insert") 
 
     if (this.travelInfoForm.pristine && !this.cover_image_travel) {
       return;
@@ -321,6 +339,8 @@ onBoatImagesUpload(event: any) {
     fd.append('description', value.travel_info.description);
     fd.append('Url', value.travel_info.Url);
     fd.append('cover_image_travel', value.cover_image_travel);
+    fd.append('filteroptions', value.filteroptions);
+
 
     var data = {
       user:this.userdata
