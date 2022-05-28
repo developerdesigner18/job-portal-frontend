@@ -54,22 +54,7 @@ export class SportsDataComponent implements OnInit {
 
   constructor(public formbuilder: FormBuilder, public commanservice: CommonService) {
     this.BASE_URI = environment.apiUrl;
-
-  }
-  
-  changeFilteroption(e:any) {
-    // console.log(e)
-    // console.log(e.target.value)
-    var data = e.target.value
-    data = data.substring(3);
-    console.log(data)
-    this.filteroptions?.setValue(data, {
-      onlySelf: true
-    })
-  }
-
-  get filteroptions() {
-    return this.travelInfoForm.get('filteroptions');
+    
   }
 
   ngOnInit(): void {
@@ -87,6 +72,21 @@ export class SportsDataComponent implements OnInit {
     this.userdata = JSON.parse(this.uinfo)
     this.getTravelInfoAll()
   }
+  
+  changeFilteroption(e:any) {
+    var data = e.target.value
+    data = data.substring(3);
+    console.log(data)
+    this.filteroptions?.setValue(data, {
+      onlySelf: true
+    })
+  }
+
+  get filteroptions() {
+    return this.travelInfoForm.get('filteroptions');
+  }
+
+
 
   getControlValidation(key: string): boolean {
     const { invalid, touched, dirty } = this.travelInfoForm.get(key) as FormGroup;
@@ -117,9 +117,8 @@ export class SportsDataComponent implements OnInit {
   res => {
     Notiflix.Loading.remove();
     this.travelInfoById = res.data
-
+    console.log("============",this.travelInfoById)
     this.travelInfoForm.patchValue(res.data)
-    console.log('###travelInfoById', this.travelInfoById.length);
     if (!res.success) { Notiflix.Notify.failure(res.error); }
   },
   err => {        
@@ -156,7 +155,7 @@ resetForm() {
   this.getTravelinfobyid(travel_id)
 }
 
-deleteBoatImage(travel_id: any, image_id: any) {
+deleteTravelImage(travel_id: any, image_id: any) {
   Notiflix.Loading.standard({
     cssAnimationDuration: 2000,
     backgroundColor: '0, 0, 0, 0.0',
