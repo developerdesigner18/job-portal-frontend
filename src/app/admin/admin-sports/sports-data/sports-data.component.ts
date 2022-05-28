@@ -54,6 +54,7 @@ export class SportsDataComponent implements OnInit {
 
   constructor(public formbuilder: FormBuilder, public commanservice: CommonService) {
     this.BASE_URI = environment.apiUrl;
+
   }
   
   changeFilteroption(e:any) {
@@ -116,7 +117,6 @@ export class SportsDataComponent implements OnInit {
   res => {
     Notiflix.Loading.remove();
     this.travelInfoById = res.data
-    // console.log('this.boatInfoById', this.boatInfoById.boat_images);
 
     this.travelInfoForm.patchValue(res.data)
     console.log('###travelInfoById', this.travelInfoById.length);
@@ -156,46 +156,25 @@ resetForm() {
   this.getTravelinfobyid(travel_id)
 }
 
-// changeBoatStatus(travel_id: any, status: any) {
-//   Notiflix.Loading.standard({
-//     cssAnimationDuration: 2000,
-//     backgroundColor: '0, 0, 0, 0.0',
-//   },
-//   )
-//   status == 'active' ? status = 'inactive' : status = 'active';
-//   this.editBoatInfoService.changeBoatStatus(travel_id, status).subscribe(
-//     res => {
-//       Notiflix.Loading.remove();
-//       Notiflix.Notify.success(res.body.message);        
-//       this.getBoatInfoAll()
-//       if (!res.body.success) { Notiflix.Notify.failure(res.error); }
-//     },
-//     err => {
-//       Notiflix.Loading.remove();
-//       Notiflix.Notify.failure(err.error?.message);
-//     }
-//   )
-// }
-
-// deleteBoatImage(travel_id: any, image_id: any) {
-//   Notiflix.Loading.standard({
-//     cssAnimationDuration: 2000,
-//     backgroundColor: '0, 0, 0, 0.0',
-//   },
-//   )
-//   this.commanservice.deleteBoatImage(travel_id, image_id).subscribe(
-//     res => {
-//       Notiflix.Loading.remove();
-//       Notiflix.Notify.success(res.body.message);        
-//       this.getBoatInfoById(travel_id)
-//       if (!res.body.success) { Notiflix.Notify.failure(res.error); }
-//     },
-//     err => {
-//       Notiflix.Loading.remove();
-//       Notiflix.Notify.failure(err.error?.message);
-//     }
-//   )
-// }
+deleteBoatImage(travel_id: any, image_id: any) {
+  Notiflix.Loading.standard({
+    cssAnimationDuration: 2000,
+    backgroundColor: '0, 0, 0, 0.0',
+  },
+  )
+  this.commanservice.deleteTravelImage(travel_id, image_id).subscribe(
+    res => {
+      Notiflix.Loading.remove();
+      Notiflix.Notify.success(res.body.message);        
+      this.getTravelinfobyid(travel_id)
+      if (!res.body.success) { Notiflix.Notify.failure(res.error); }
+    },
+    err => {
+      Notiflix.Loading.remove();
+      Notiflix.Notify.failure(err.error?.message);
+    }
+  )
+}
 
 async deleteTravelInfo(travel_id: any) {
   Notiflix.Loading.standard({
@@ -243,7 +222,7 @@ onCoverImageUpload(event: any) {
   Notiflix.Loading.remove();
 }
 
-onBoatImagesUpload(event: any) {
+onTravelImagesUpload(event: any) {
   Notiflix.Loading.standard({
     cssAnimationDuration: 2000,
     backgroundColor: '0, 0, 0, 0.0',
@@ -285,11 +264,12 @@ onBoatImagesUpload(event: any) {
   if (this.travelInfoForm.value._id != null) {
     console.log("called update") 
 
-    if (this.travelInfoForm.pristine && !this.cover_image_travel ) {
+    if (this.travelInfoForm.pristine && !this.cover_image_travel && !this.travel_images ) {
       return;
     }
     const { value } = this.travelInfoForm;
     value.cover_image_travel = this.cover_image_travel
+    value.travel_images = this.travel_images
 
 
     console.log(value);
@@ -302,6 +282,10 @@ onBoatImagesUpload(event: any) {
     fd.append('Url', value.travel_info.Url);
     fd.append('filteroptions', value.filteroptions);
     fd.append('cover_image_travel', value.cover_image_travel);
+    for (let i=0;i<value.travel_images.length;i++) {
+      fd.append('travel_images', value.travel_images[i]);
+    }
+
     Notiflix.Loading.standard({
       cssAnimationDuration: 2000,
       backgroundColor: '0, 0, 0, 0.0',
@@ -325,12 +309,13 @@ onBoatImagesUpload(event: any) {
   }
   else{
 
-    if (this.travelInfoForm.pristine && !this.cover_image_travel) {
+    if (this.travelInfoForm.pristine && !this.cover_image_travel && !this.travel_images) {
       return;
     }
 
     const { value } = this.travelInfoForm;
     value.cover_image_travel = this.cover_image_travel
+    value.travel_images = this.travel_images
 
     // console.log(value);
 
@@ -340,7 +325,9 @@ onBoatImagesUpload(event: any) {
     fd.append('Url', value.travel_info.Url);
     fd.append('cover_image_travel', value.cover_image_travel);
     fd.append('filteroptions', value.filteroptions);
-
+    for (let i=0;i<value.travel_images.length;i++) {
+      fd.append('travel_images', value.travel_images[i]);
+    }
 
     var data = {
       user:this.userdata

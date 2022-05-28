@@ -33,20 +33,20 @@
 
                                 <div class="mb-3">
                                     <label for="formFileMultiple" class="form-label">Single file upload
-                                        example</label>
+                                    </label>
                                     <input class="form-control" (change)="onCoverImageUpload($event)" type="file" name="file"  accept="image/jpeg,image/jpg,image/png" id="formFileMultiple" />
                                     <div style="display: flex; flex-direction: row;">
                                     <div style="padding-top: 15px;" *ngIf="travelInfoById?.length != 0">
                                         <label class="form-label form-label-top form-label-auto"> Current Preview </label>
                                         <img width="525" style="padding-left: 10px;"
                                         src="{{BASE_URI}}{{travelInfoById?.cover_image_travel}}"
-                                        class="attachment-large size-large" alt="Boat Image" loading="lazy"
+                                        class="attachment-large size-large" alt="Travel Image" loading="lazy"
                                         sizes="100vw">
                                     </div> 
                                     <div style="padding-top: 15px;" *ngIf="cover_image_url">
                                         <label class="form-label form-label-top form-label-auto"> New Preview </label>
                                         <img width="525" style="padding-left: 10px;"
-                                        class="attachment-large size-large" alt="Boat Image" loading="lazy" sizes="100vw"
+                                        class="attachment-large size-large" alt="Travel Image" loading="lazy" sizes="100vw"
                                         [src]="cover_image_url">
                                         <div (click)="removeCoverImage()" style="
                                         vertical-align: top;
@@ -60,7 +60,33 @@
                                         </div>
                                     </div>
                                 </div>
-
+                                </div>
+                                <div class="mb-3">
+                                    <label for="formFileMultiple" class="form-label">Multiple file upload
+                                        </label>
+                                    <input class="form-control" (change)="onTravelImagesUpload($event)" type="file" name="file"  accept="image/jpeg,image/jpg,image/png" id="formFileMultiple" multiple/>
+                                        <label class="form-label form-label-top form-label-auto"  *ngIf="travel_images_url.length != 0"> Uploaded Images </label>
+                                        <div *ngFor="let url of travel_images_url; let i = index">
+                                            <img width="200" style="padding: 5px;"
+                                            [src]="url"
+                                            class="attachment-large size-large" alt="Travel Images" loading="lazy"
+                                            sizes="100vw">
+                                            <div (click)="remove_image(i)" style="
+                                                vertical-align: top;
+                                                display: inline-block;
+                                                border-radius: 60px;
+                                                box-shadow: 0 0 2px #888;
+                                                padding: 0px 7px;
+                                                margin-right: 15px;
+                                                cursor: pointer;
+                                                position: relative;
+                                                right: 22px;
+                                                top: -4px;
+                                                color: #fff;
+                                                background-color: #798598;">
+                                                <i class="fa fa-close" *ngIf="travel_images_url.length != 0" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
                                 </div>
                             </div>
                             <div class="mb-3">
@@ -145,7 +171,7 @@
                                             <td>{{traveldata?.filteroptions}}</td>
                                             <!-- <td><img width="525" style="padding-left: 10px;"
                                                 src="{{BASE_URI}}{{traveldata?.cover_image_travel}}"
-                                                class="attachment-large size-large" alt="Boat Image" loading="lazy"
+                                                class="attachment-large size-large" alt="Travel Image" loading="lazy"
                                                 sizes="100vw"></td> -->
                                             <td class="text-end">
                                                 <a class="btn btn-outline-info btn-rounded" (click)="uppdatetravelinfo(traveldata?._id)"><i
