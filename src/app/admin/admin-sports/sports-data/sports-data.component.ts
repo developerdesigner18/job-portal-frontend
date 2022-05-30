@@ -161,7 +161,10 @@ deleteTravelImage(travel_id: any, image_id: any) {
     backgroundColor: '0, 0, 0, 0.0',
   },
   )
-  this.commanservice.deleteTravelImage(travel_id, image_id).subscribe(
+  var data = {
+    user:this.utoken
+  }
+  this.commanservice.deleteTravelImage(travel_id, image_id ,data).subscribe(
     res => {
       Notiflix.Loading.remove();
       Notiflix.Notify.success(res.body.message);        

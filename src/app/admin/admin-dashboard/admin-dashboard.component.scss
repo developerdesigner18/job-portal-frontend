@@ -142,15 +142,18 @@
     padding: 10px;
     font-size: 16px;
     display: block;
+    color: #4c5c68;
+    text-decoration: none!important;
 }
 
 
 #sidebar ul li a:hover {
-   color: #4c5c68;
+   color: #4c5c68!important;
     background: #fff;
+    text-decoration: none!important;
 }
 .btn-info {
-    color: #fff;
+    color: #fff!important;
     background-color: #4c5c68 !important;
     border-color: #4c5c68 !important;
 }
@@ -160,7 +163,7 @@
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    color: #fff;
+    color: #fff!important;
     background:#4c5c68;
 }
 
@@ -225,6 +228,8 @@ ul.CTAs a {
     border-radius: 5px;
     margin-bottom: 5px;
 }
+
+
 
 a.download {
     background: #fff;

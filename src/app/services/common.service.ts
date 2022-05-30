@@ -68,9 +68,9 @@ adminLogin(payload: {
       )
     }
 
-    deleteTravelImage(travel_id: any, image_id: any): Observable<any> {
+    deleteTravelImage(travel_id: any, image_id: any ,data:any): Observable<any> {
       let header = this.initHeaders();
-      return this.httpClient.delete(`${this.BASE_URI}/api/sports/deleteTravelImage`, { params: { travel_id: travel_id, iid: image_id }, headers: header, observe: 'response' as 'body'}).pipe(
+      return this.httpClient.post(`${this.BASE_URI}/api/sports/deleteTravelImage`, data.u_info ,{ params: { travel_id: travel_id, iid: image_id }, headers: header, observe: 'response' as 'body'}).pipe(
         catchError(this.handleError)
       )
     }

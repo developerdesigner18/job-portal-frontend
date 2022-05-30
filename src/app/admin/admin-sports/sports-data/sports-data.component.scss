@@ -1,4 +1,4 @@
-.crossicon{
+.crossicon {
     vertical-align: top;
     display: inline-block;
     border-radius: 60px;
@@ -10,7 +10,23 @@
     background: #1e3252;
 }
 
-.deletetravelimage{
+.deletetravelimage {
+    vertical-align: top;
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0 0 2px #888;
+    padding: 0px 7px;
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+    right: 22px;
+    top: -4px;
+    color: #fff;
+    background-color: #798598;
+    height: 25px;
+}
+
+.remove_image {
     vertical-align: top;
     display: inline-block;
     border-radius: 60px;
@@ -24,3 +40,64 @@
     color: #fff;
     background-color: #798598;
 }
+
+.removeCoverImage {
+    vertical-align: top;
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0 0 2px #888;
+    padding: 8px 14px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.custom_grid_set {
+    display: inline-flex;
+    width: 240px;
+}
+.custom_form_label{
+    display: flex;
+}
+
+.remove_image {
+        border-radius: 50%;
+       padding: 0;
+    margin-right: 7px;
+        position: relative;
+        height: 42px;
+        font-size: 18px;
+        width: 45px;
+    right: 22px;
+    top: -4px;
+    }
+
+    .remove_image i {
+        position: absolute;
+        left: 16px;
+        top: 11px;
+    }
+
+    .remove_image2 {
+        border-radius: 50%;
+        padding: 0;
+        margin-right: 0px;
+        position: relative;
+        height: 36px;
+        font-size: 15px;
+        width: 35px;
+        right: 22px;
+        top: -9px;
+        color: #fff;
+        cursor: pointer;
+        box-shadow: 0 0 2px #888;
+        vertical-align: top;
+        display: inline-block;
+        background-color: #798598;
+    }
+    
+
+    .remove_image2 i {
+        position: absolute;
+    left: 13px;
+    top: 9px;
+    }

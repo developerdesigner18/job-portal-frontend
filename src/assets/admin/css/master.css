@@ -150,11 +150,23 @@ body {
 }
 
 .page-title {
-    margin: 0;
+    margin: 0 0 20px;
     font-size: 1.5rem;
     line-height: 1.5555556;
+    display: flex;
+    align-items: center;
+    align-items: end;
+    justify-content: space-between;
 }
-
+.page-title1{
+    margin: 0 0 20px;
+    font-size: 1.5rem;
+    line-height: 1.5555556;
+   
+    align-items: center;
+    align-items: end;
+    justify-content: space-between; 
+}
 .detail-subtitle {
     font-size: .8rem;
     text-transform: uppercase;
