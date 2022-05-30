@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import * as Notiflix from 'notiflix';
+import { CommonService } from 'src/app/services/common.service';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-sport',
@@ -34,14 +37,21 @@ export class SportComponent implements OnInit {
     id: 3, name: 'Italy'
   },
   ];
+  travelInfoDataAll: any = [];
+  BASE_URI: string;
 
   
   constructor(
     public activatedRoute: ActivatedRoute,
     public router:Router,
-    private modalService: NgbModal
+    private modalService: NgbModal,
+    private commanservice:CommonService
 
-  ) { }
+  ) { 
+    this.BASE_URI = environment.apiUrl;
+
+    this.getTravelInfoAll()
+  }
   closeResult = '';
 
 
@@ -82,6 +92,27 @@ export class SportComponent implements OnInit {
     } else {
       return `with: ${reason}`;
     }
+  }
+
+  getTravelInfoAll() {
+    this.commanservice.gettravelInfoAll().subscribe(
+      res => {
+        this.travelInfoDataAll = res.data
+        console.log("all travel data",this.travelInfoDataAll)
+
+        if (!res.success) { Notiflix.Notify.failure(res.error);  }
+        
+      },
+      err => {        
+        Notiflix.Notify.failure(err.error?.message);
+      }
+    );
+  }
+
+  getselectvalue(event:any){
+    // console.log("============",event.taget.value);
+    console.log("============",event);
+    
   }
 
 

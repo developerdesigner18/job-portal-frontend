@@ -594,7 +594,7 @@
 
 <!-- deactivated session start -->
 
-<!-- <section class="sport-section-3" id="athleten">
+<section class="sport-section-3" id="athleten">
     <div class="container">
         <h1 class="sport-section-3-heading">RD3 Athleten</h1>
         <div class="sport-section-3-line">
@@ -603,7 +603,7 @@
 
         <div class="sport-section-3-Athletes-box">
             <i class="fa fa-search search-fa-color-1">
-                <select class="search-box-1">
+                <select class="search-box-1" (click)="getselectvalue($event)">
                     <option selected>Pauschalreisen</option>
                     <option>Unterkünfte </option>
                     <option>sportreisen</option>
@@ -611,35 +611,35 @@
                     <option>Schiffsreisen </option>
                     <option>Autoveimietung </option>
                 </select></i>
-            <i class="fa fa-map-marker map-fa-color-1"><label class="location-box-1">Lorem</label></i>
-            <label class="Athletes-box">Lorem</label>
+            <!-- <i class="fa fa-map-marker map-fa-color-1"><label class="location-box-1">Lorem</label></i> -->
+            <label class="Athletes-box">clear filter</label>
         </div>
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-md-4 mobile-pd">
+            <div class="col-md-4 mobile-pd" *ngFor="let data of travelInfoDataAll; let i = index">
                 <div class="section-3-main-box">
                     <div class="section-3-main-box-left-1">
-                        <img src="assets/img/kl-rahul.png">
+                        <img src="{{BASE_URI}}{{data?.cover_image_travel}}">
                         <div class="main-box-inner">
-                            <span class="main-box-left-1-span">Lorem</span>
+                            <span class="main-box-left-1-span">{{data?.travel_info?.name}}</span>
                         </div>
                         <div class="inner-img-kl">
-                            <img src="assets/img/k-l-rahul-inner.png" class="inner-img-kl-1">
+                            <img class="inner-img-kl-1" src="{{BASE_URI}}{{data?.travel_images[0].name}}">  
                         </div>
                     </div>
                     <div class="section-3-main-box-left-2">
                         <div class="main-box-left-2-inner">
                             <img src="assets/img/flag.png" class="img-flag">
-                            <span>Lorem</span>
+                            <span>{{data?.travel_info?.description}}</span>
                         </div>
-                        <span class="second-text-align">Lorem</span>
+                        <span class="second-text-align">{{data?.travel_info?.Url}}</span>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <!-- <div class="col-md-4">
                 <div class="section-3-main-box">
                     <div class="section-3-main-box-left-1">
                         <img src="assets/img/Ashwini Ponnappa.png">
@@ -679,11 +679,11 @@
                         <span class="second-text-align">Lorem</span>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </div>
-</section> -->
+</section>
 
 <!-- <section class="sport-section-4" id="partner&sponseren">
     <div class="container">

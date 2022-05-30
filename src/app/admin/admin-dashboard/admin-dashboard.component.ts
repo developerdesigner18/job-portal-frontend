@@ -129,6 +129,8 @@ userdata:any
       $('#sidebar').toggleClass('active');
       $('#body').toggleClass('active');
   });
+  this.tab4 = true
+
   // this.route.queryParams.subscribe(params => {
   //   console.log(params)
   //   var uid = params.uid;

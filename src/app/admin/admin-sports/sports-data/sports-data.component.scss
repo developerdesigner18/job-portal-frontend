@@ -26,6 +26,8 @@
     height: 25px;
 }
 
+
+
 .remove_image {
     vertical-align: top;
     display: inline-block;
@@ -35,12 +37,14 @@
     margin-right: 15px;
     cursor: pointer;
     position: relative;
-    right: 22px;
-    top: -4px;
+    right: 0;
+   
     color: #fff;
     background-color: #798598;
 }
-
+.custom_img_width{
+    width: 100%;
+}
 .removeCoverImage {
     vertical-align: top;
     display: inline-block;
@@ -68,7 +72,8 @@
         font-size: 18px;
         width: 45px;
     right: 22px;
-    top: -4px;
+    left: 22.5em;
+    top: -14em;
     }
 
     .remove_image i {

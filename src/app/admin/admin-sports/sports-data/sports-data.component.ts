@@ -300,6 +300,7 @@ onTravelImagesUpload(event: any) {
         this.getTravelInfoAll()
         this.getTravelinfobyid(this.travelInfoForm.value._id)
         this.remove_image_all()
+        this.resetForm()
         if (!res.body.success) { Notiflix.Notify.failure(res.body.error); }
       },
       err => {

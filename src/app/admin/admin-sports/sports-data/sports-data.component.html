@@ -7,7 +7,7 @@
             <div class="page-title">
                     <h3>Add Reise-Empfehlungen data</h3>
                     <div class="crossicon" (click)="resetForm()">
-                        <i class="fa fa-close" aria-hidden="true"></i>
+                        <i class="fas fa-times" aria-hidden="true"></i>
                     </div>
                 
                
@@ -43,16 +43,16 @@
                                         <label class="form-label form-label-top form-label-auto"> Current Preview </label>
                                         <img width="525" style="padding-left: 10px;"
                                         src="{{BASE_URI}}{{travelInfoById?.cover_image_travel}}"
-                                        class="attachment-large size-large" alt="Travel Image" loading="lazy"
+                                        class="attachment-large size-large custom_img_width" alt="Travel Image" loading="lazy"
                                         sizes="100vw">
                                     </div> 
                                     <div style="padding-top: 15px;" *ngIf="cover_image_url">
                                         <label class="form-label form-label-top form-label-auto"> New Preview </label>
                                         <img width="525" style="padding-left: 10px;"
-                                        class="attachment-large size-large" alt="Travel Image" loading="lazy" sizes="100vw"
+                                        class="attachment-large size-large custom_img_width" alt="Travel Image" loading="lazy" sizes="100vw"
                                         [src]="cover_image_url">
                                         <div (click)="removeCoverImage()" class="remove_image">
-                                            <i class="fa fa-close" *ngIf="cover_image_url" aria-hidden="true"></i>
+                                            <i class="fas fa-times" *ngIf="cover_image_url" aria-hidden="true"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -68,7 +68,7 @@
                                             class="attachment-large size-large" alt="Travel Images" loading="lazy"
                                             sizes="100vw">
                                             <div class="remove_image2"(click)="remove_image(i)">
-                                                <i class="fa fa-close" *ngIf="travel_images_url.length != 0" aria-hidden="true"></i>
+                                                <i class="fas fa-times" *ngIf="travel_images_url.length != 0" aria-hidden="true"></i>
                                             </div>
                                         </div>
                                 </div>
@@ -80,7 +80,7 @@
                                             class="attachment-large size-large" alt="Boat Images" loading="lazy"
                                             sizes="100vw">
                                             <div (click)="deleteTravelImage(travelInfoById?._id, images._id)" class="deletetravelimage">
-                                                <i class="fa fa-close" aria-hidden="true"></i>
+                                                <i class="fas fa-times" aria-hidden="true"></i>
                                             </div>
                                         </div>
                                 </div>
