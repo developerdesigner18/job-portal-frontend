@@ -2121,9 +2121,19 @@ span.section-6-span-text-1 a{
     font-size: 20px;
 }
 
+.custom-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.together_sport {
+  display: flex;
+  align-items: center;
+}
+
 .sport-section-1-main-box{
   position: relative;
-    top: 50px;
+    top: 15px;
 }
 .sport-section-1-box{
   width: 100%;
@@ -2395,6 +2405,9 @@ tr{
 .sport-section-6{
    padding: 15px 0 50px;
 }
+
+
+
 /*media query start*/
 @media screen and (max-width: 500px) {
   .sportsheader a {
