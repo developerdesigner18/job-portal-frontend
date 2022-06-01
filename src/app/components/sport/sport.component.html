@@ -642,7 +642,9 @@
                         <div class="main-box-left-2-inner">
                             <span><strong>{{data?.travel_info?.description}}</strong></span>
                         </div>
-                        <span class="second-text-align" (click)="redirectUrl(data?.travel_info?.Url)"><strong>{{data?.travel_info?.player_names}}</strong></span>
+                        <!-- <span class="second-text-align" (click)="redirectUrl(data?.travel_info?.Url)"><strong>{{data?.travel_info?.player_names}}</strong></span> -->
+                        <span class="second-text-align"><strong>{{data?.travel_info?.player_names}}</strong></span>
+                        <span class="second-text-align" (click)="redirectUrl(data?.travel_info?.Url)"><strong>{{data?.travel_info?.Url}}</strong></span>
                     </div>
                 </div>
             </div>

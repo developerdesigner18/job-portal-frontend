@@ -61,25 +61,37 @@
 }
 .custom_form_label{
     display: flex;
+    margin-top: 20px;
 }
-
+.custom_set{
+    display: flex;
+    flex-direction: column;
+}
 .remove_image {
-        border-radius: 50%;
-       padding: 0;
+    border-radius: 50%;
+    padding: 0;
     margin-right: 7px;
-        position: relative;
-        height: 42px;
-        font-size: 18px;
-        width: 45px;
+    position: relative;
+    height: 60px;
+    font-size: 18px;
+    width: 60px;
     right: 22px;
-    left: 22.5em;
-    top: -14em;
+    left: 30.5em;
+    top: -29em;
     }
-
+    .custom_img_set_new{
+        width: 600px;
+        height: 500px;
+    }
+  .custom_current_img_multiple{
+      display: flex;
+      flex-direction: column;
+  }
     .remove_image i {
         position: absolute;
-        left: 16px;
-        top: 11px;
+        left: 24px;
+        top: 18px;
+        font-size: 25px;
     }
 
     .remove_image2 {

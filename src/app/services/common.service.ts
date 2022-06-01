@@ -76,6 +76,45 @@ adminLogin(payload: {
     }
 
 
+//home crud
+gethomeInfoAll(): Observable<any> {
+  let header = this.initHeaders();
+  return this.httpClient.get(`${this.BASE_URI}/api/home/gethomeInfoAll`, {headers: header, observe: 'response' as 'body'}).pipe(
+    catchError(this.handleError)
+  )
+}
+getHomeinfobyid(home_id: any
+  ): Observable<any> {
+    let header = this.initHeaders();
+    return this.httpClient.get(`${this.BASE_URI}/api/home/gethomeinfobyid`, { headers: header, params: { home_id: home_id } }).pipe(
+      catchError(this.handleError)
+    )
+  }
+inserthomeInfo(payload: any , data:any): Observable<any> {
+  let header = this.initHeaders();
+  return this.httpClient.post(`${this.BASE_URI}/api/home/inserthomeinfo`, payload , { headers: header, observe: 'response' as 'body'}).pipe(
+    catchError(this.handleError)
+  )
+}
+updateHomeInfo(payload:any): Observable<any> {
+  let header = this.initHeaders();
+  return this.httpClient.post(`${this.BASE_URI}/api/home/updatehomeInfo`, payload, { headers: header, observe: 'response' as 'body'}).pipe(
+    catchError(this.handleError)
+  )
+}
+deleteHomeInfo(home_id: any): Observable<any> {
+  let header = this.initHeaders();
+  return this.httpClient.delete(`${this.BASE_URI}/api/home/deletehomeInfo`, { params: { home_id: home_id }, headers: header, observe: 'response' as 'body'}).pipe(
+    catchError(this.handleError)
+  )
+}
+deleteHomeImage(home_id: any, image_id: any ,data:any): Observable<any> {
+  let header = this.initHeaders();
+  return this.httpClient.post(`${this.BASE_URI}/api/home/deleteHomeImage`, data.u_info ,{ params: { home_id: home_id, image_id: image_id }, headers: header, observe: 'response' as 'body'}).pipe(
+    catchError(this.handleError)
+  )
+}
+
 
   // get user info data  
   

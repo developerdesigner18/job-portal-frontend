@@ -54,7 +54,7 @@ export class SportsDataComponent implements OnInit {
 
   constructor(public formbuilder: FormBuilder, public commanservice: CommonService) {
     this.BASE_URI = environment.apiUrl;
-    
+    this.show_form = false
   }
 
   ngOnInit(): void {
