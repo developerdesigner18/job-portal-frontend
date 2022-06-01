@@ -13,6 +13,7 @@ const routes: Routes = [
 { path: 'admin-stadt', loadChildren: () => import('./admin-stadt/admin-stadt.module').then(m => m.AdminStadtModule) },
 { path: 'admin-users', loadChildren: () => import('./admin-users/admin-users.module').then(m => m.AdminUsersModule) },
 { path: 'admin-home', loadChildren: () => import('./admin-home/admin-home.module').then(m => m.AdminHomeModule) },
+{ path: 'admin-blog', loadChildren: () => import('./admin-blog/admin-blog.module').then(m => m.AdminBlogModule) },
 ];
 
 @NgModule({

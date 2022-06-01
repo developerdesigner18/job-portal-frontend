@@ -54,6 +54,9 @@ export class SportComponent implements OnInit {
   }
   closeResult = '';
 
+  redirectUrl(url: string) {
+    window.open(url, '_blank')
+  }
 
   open1(content1:any) {
     this.modalService.open(content1, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {

@@ -1032,7 +1032,7 @@ button.service-btn {
 }
 .service-box-2 h5, span{
   // color:#4c5c68;
-  font-size: 22px;
+  font-size: 25px;
 }
 .service-box-2 span{
   font-size: 16px;
@@ -2124,16 +2124,28 @@ span.section-6-span-text-1 a{
 .custom-icon {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+ 
 }
 .together_sport {
   display: flex;
   align-items: center;
+  margin-right: 8em;
 }
 
 .sport-section-1-main-box{
   position: relative;
-    top: 15px;
+    top: 20px;
+}
+.blog_kilgers_img{
+  border-radius: 20px 20px 20px 20px;
+}
+.temp-center{
+  margin: 0 auto;
+}
+
+.sport-section-2-main-box{
+  position: relative;
+  top: 15px;
 }
 .sport-section-1-box{
   width: 100%;
@@ -2142,7 +2154,7 @@ span.section-6-span-text-1 a{
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
     border-radius: 20px;
     position: relative;
-    top: 50px;
+    top: 65px;
     bottom: 0;
 }
 
@@ -2279,10 +2291,11 @@ padding-bottom: 15px;
     position: relative;
   }
   .section-3-main-box-left-2{
-    padding: 70px 20px 20px;
+    padding: 110px 10px 20px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
   }
 
   ::ng-deep .d-block.modal.fade.show {
@@ -2293,12 +2306,12 @@ padding-bottom: 15px;
 }
   .section-3-main-box-left-2 span{
     color: #707070;
-    font-size: 18px;
+    font-size: 22px;
     margin-left: 15px;
   }
   .main-box-inner{
    position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 30px;
@@ -2316,13 +2329,13 @@ padding-bottom: 15px;
 
 .inner-img-kl-1 {
   width: 100%;
-  max-width: 165px;
+  max-width: 160px;
   border-radius: 15px;
 }
 .inner-img-kl {
   position: absolute;
   left: 50%;
-  top: 29em;
+  top: 17em;
   transform: translate(-50%,-50%);
 }
 

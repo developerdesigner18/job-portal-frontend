@@ -60,10 +60,11 @@ export class SportsDataComponent implements OnInit {
   ngOnInit(): void {
     this.travelInfoForm = this.formbuilder.group({
       _id: [null, Validators.required],
-      filteroptions : ["", Validators.required],
+      // filteroptions : ["", Validators.required],
       travel_info: this.formbuilder.group({
         name: ["", Validators.required],
         description: ["", Validators.required],
+        player_names: ["", Validators.required],
         Url: ["", Validators.required],
       }),
     });
@@ -281,6 +282,7 @@ onTravelImagesUpload(event: any) {
     var fd = new FormData();
     fd.append('name', value.travel_info.name);
     fd.append('description', value.travel_info.description);
+    fd.append('player_names', value.travel_info.player_names);
     fd.append('Url', value.travel_info.Url);
     fd.append('filteroptions', value.filteroptions);
     fd.append('cover_image_travel', value.cover_image_travel);
@@ -288,6 +290,8 @@ onTravelImagesUpload(event: any) {
       fd.append('travel_images', value.travel_images[i]);
     }
 
+    console.log(fd);
+    
     Notiflix.Loading.standard({
       cssAnimationDuration: 2000,
       backgroundColor: '0, 0, 0, 0.0',
@@ -325,6 +329,7 @@ onTravelImagesUpload(event: any) {
     var fd = new FormData();
     fd.append('name', value.travel_info.name);
     fd.append('description', value.travel_info.description);
+    fd.append('player_names', value.travel_info.player_names);
     fd.append('Url', value.travel_info.Url);
     fd.append('cover_image_travel', value.cover_image_travel);
     fd.append('filteroptions', value.filteroptions);

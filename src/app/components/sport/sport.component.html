@@ -565,7 +565,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <div class="sport-section-1-main-box">
+                <div class="sport-section-2-main-box">
                     <h3 class="section-2-h3">Werde RD3 Partner</h3>
                     <div class="section-2-ul">
                         <p class="section-2-li">
@@ -579,13 +579,15 @@
                             </span>
                         </p>
                         <div class="custom-icon">
-                            <i class="fab fa-wpforms custom" style="cursor: pointer;" (click)="forms2()"></i>
-                            <a href="mailto:info@rd3.at" class="custom-icon-pd"><i class="fa fa-envelope custom"
-                                    style="cursor: pointer;"></i></a>
-                            <a href="tel: +43 (0) 3126 324 64"><i class="fa fa-phone custom"
-                                    style="cursor: pointer;"></i></a>
+                            <div class="together_sport">
+                                <i class="fab fa-wpforms custom" style="cursor: pointer;" (click)="forms2()"></i>
+                                <a href="mailto:info@rd3.at" class="custom-icon-pd"><i class="fa fa-envelope custom"
+                                        style="cursor: pointer;"></i></a>
+                                <a href="tel: +43 (0) 3126 324 64"><i class="fa fa-phone custom" style="cursor: pointer;"></i></a>
+                            </div>
+                            <button class="sport-section-2-btn" (click)="forms2()">Jetzt ansuchen</button>
                         </div>
-                        <button class="sport-section-2-btn" (click)="forms2()">Jetzt ansuchen</button>
+                       
                     </div>
                 </div>
 
@@ -625,43 +627,22 @@
 
     <div class="container">
         <div class="row">
-            <!-- <div class="col-md-4 mobile-pd" *ngFor="let data of travelInfoDataAll; let i = index">
+                <div class="col-md-4 mobile-pd" *ngFor="let data of travelInfoDataAll; let i = index">
                 <div class="section-3-main-box">
                     <div class="section-3-main-box-left-1">
-                        <img src="{{BASE_URI}}{{data?.cover_image_travel}}">
+                        <img src="{{BASE_URI}}{{data?.cover_image_travel}}" class="sport_img_1">
                         <div class="main-box-inner">
-                            <span class="main-box-left-1-span">{{data?.travel_info?.name}}</span>
+                            <span class="main-box-left-1-span"><strong>{{data?.travel_info?.name}}</strong></span>
                         </div>
                         <div class="inner-img-kl">
-                            <img class="inner-img-kl-1" src="{{BASE_URI}}{{data?.travel_images[0].name}}">  
+                            <img src="{{BASE_URI}}{{data?.travel_images[0].name}}" class="inner-img-kl-1">  
                         </div>
                     </div>
                     <div class="section-3-main-box-left-2">
                         <div class="main-box-left-2-inner">
-                            <img src="assets/img/flag.png" class="img-flag">
-                            <span>{{data?.travel_info?.description}}</span>
+                            <span><strong>{{data?.travel_info?.description}}</strong></span>
                         </div>
-                        <span class="second-text-align">{{data?.travel_info?.Url}}</span>
-                    </div>
-                </div>
-            </div> -->
-
-            <div class="col-md-4 mobile-pd">
-                <div class="section-3-main-box">
-                    <div class="section-3-main-box-left-1">
-                        <img src="assets/img/Klingers_Portrait2.jpg" class="sport_img_1">
-                        <div class="main-box-inner">
-                            <span class="main-box-left-1-span">Beach Volleyball</span>
-                        </div>
-                        <div class="inner-img-kl">
-                            <img src="assets/img/Klingers_Portrait1.jpeg" class="inner-img-kl-1">
-                        </div>
-                    </div>
-                    <div class="section-3-main-box-left-2">
-                        <div class="main-box-left-2-inner">
-                            <span>The Klingers</span>
-                        </div>
-                        <span class="second-text-align">Dorina Klinger|Ronja Klinger</span>
+                        <span class="second-text-align" (click)="redirectUrl(data?.travel_info?.Url)"><strong>{{data?.travel_info?.player_names}}</strong></span>
                     </div>
                 </div>
             </div>
@@ -730,10 +711,10 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-4 mobile-pd">
+            <div class="col-md-4 mobile-pd temp-center">
                 <div class="section-5-main-box">
                     <div class="section-3-main-box-left-1">
-                        <img src="assets/img/blogimage.jpeg">
+                        <img src="assets/img/blogimage.jpeg" class="blog_kilgers_img">
 
                     </div>
                     <div class="section-5-main-box-left-2">

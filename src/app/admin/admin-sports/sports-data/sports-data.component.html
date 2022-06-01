@@ -19,17 +19,22 @@
                             <form [formGroup]="travelInfoForm" (ngSubmit)="submitdata()"  [@enterAnimation]>
                                 <div formGroupName="travel_info">
                                 <div class="mb-3">
-                                    <label for="name" class="form-label">Title</label>
+                                    <label for="name" class="form-label">Sport name</label>
                                     <input type="text" name="name" placeholder="enter a text here"
                                         class="form-control"  formControlName="name" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="description" class="form-label">Description</label>
+                                    <label for="description" class="form-label">Sport Description</label>
                                     <input type="text" name="description" placeholder="enter a description here"
                                         class="form-control" formControlName="description" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="Url" class="form-label">Url</label>
+                                    <label for="player_names" class="form-label">Player Names</label>
+                                    <input type="text" name="player_names" placeholder="enter player names here"
+                                        class="form-control" formControlName="player_names" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Url" class="form-label">Sport URL</label>
                                     <input type="url" name="Url" placeholder="enter a url here"
                                         class="form-control" formControlName="Url" required>
                                 </div>
@@ -85,7 +90,7 @@
                                         </div>
                                 </div>
                             </div>
-                            <div class="mb-3">
+                            <!-- <div class="mb-3">
                                 <label for="state" class="form-label">Filter Option</label>
                                 <select name="state" class="form-select" (change)="changeFilteroption($event)" formControlName="filteroptions">
                                     <option value="">Choose...</option>
@@ -93,7 +98,7 @@
                                 </select>
                                 <div class="valid-feedback">Looks good!</div>
                                 <div class="invalid-feedback">Please select a State.</div>
-                            </div>
+                            </div> -->
                                 <div class="mb-3">
                                     <input type="submit" class="btn btn-primary">
                                 </div>
@@ -131,16 +136,19 @@
                                             <th class="sorting sorting_asc" tabindex="0"
                                                 aria-controls="dataTables-example" rowspan="1" colspan="1"
                                                 style="width: 163px;" aria-sort="ascending"
-                                                aria-label="Name: activate to sort column descending">Name</th>
+                                                aria-label="Name: activate to sort column descending">Sport Name</th>
                                             <th class="sorting" tabindex="0" aria-controls="dataTables-example"
                                                 rowspan="1" colspan="1" style="width: 139px;"
-                                                aria-label="Role: activate to sort column ascending">Description</th>
+                                                aria-label="Role: activate to sort column ascending"> Sport Description</th>
+                                            <th class="sorting" tabindex="0" aria-controls="dataTables-example"
+                                                    rowspan="1" colspan="1" style="width: 139px;"
+                                                    aria-label="Role: activate to sort column ascending">Player names</th>
                                             <th class="sorting" tabindex="0" aria-controls="dataTables-example"
                                                 rowspan="1" colspan="1" style="width: 139px;"
-                                                aria-label="Role: activate to sort column ascending">URL</th>
-                                            <th class="sorting" tabindex="0" aria-controls="dataTables-example"
+                                                aria-label="Role: activate to sort column ascending">Sport URL</th>
+                                            <!-- <th class="sorting" tabindex="0" aria-controls="dataTables-example"
                                                 rowspan="1" colspan="1" style="width: 139px;"
-                                                aria-label="Role: activate to sort column ascending">Filteroptions</th>
+                                                aria-label="Role: activate to sort column ascending">Filteroptions</th> -->
                                             <th class="sorting" tabindex="0" aria-controls="dataTables-example"
                                                 rowspan="1" colspan="1" style="width: 79px;"
                                                 aria-label=": activate to sort column ascending">Actions</th>
@@ -151,8 +159,9 @@
                                             <td>{{i+1}}</td>
                                             <td class="dtr-control sorting_1" tabindex="0">{{traveldata?.travel_info?.name}}</td>
                                             <td>{{traveldata?.travel_info?.description}}</td>
+                                            <td>{{traveldata?.travel_info?.player_names}}</td>
                                             <td>{{traveldata?.travel_info?.Url}}</td>
-                                            <td>{{traveldata?.filteroptions}}</td>
+                                            <!-- <td>{{traveldata?.filteroptions}}</td> -->
                                             <!-- <td><img width="525" style="padding-left: 10px;"
                                                 src="{{BASE_URI}}{{traveldata?.cover_image_travel}}"
                                                 class="attachment-large size-large" alt="Travel Image" loading="lazy"
