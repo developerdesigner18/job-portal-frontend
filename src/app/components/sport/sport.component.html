@@ -523,12 +523,12 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="sport-section-1-box">
-                    <img src="assets/img/RD3 Athlet werden.png" class="img-screen">
+                    <img src="assets/img/RD3-new.png" class="img-screen">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="sport-section-1-main-box">
-                    <h3 class="section-2-h3">Werde RD3 Athlet</h3>
+                    <h3 class="section-2-h3">Werde RD3 Sportler</h3>
                     <div class="section-2-ul">
                         <p class="section-2-li">
                             <span>Du bist ein aufstrebender Sportler? Du willst Dich weiter entwickeln, Erfolge feiern
@@ -593,10 +593,9 @@
 </section>
 
 <!-- deactivated session start -->
-
 <section class="sport-section-3" id="athleten">
     <div class="container">
-        <h1 class="sport-section-3-heading">RD3 Athleten</h1>
+        <h1 class="sport-section-3-heading">RD3 Sportler</h1>
         <div class="sport-section-3-line">
             <img src="assets/img/cream-business.png" class="section-title-img">
         </div>
@@ -604,21 +603,22 @@
         <div class="sport-section-3-Athletes-box">
             <i class="fa fa-search search-fa-color-1">
                 <select class="search-box-1" (click)="getselectvalue($event)">
-                    <option selected>Pauschalreisen</option>
-                    <option>Unterkünfte </option>
+                    <option selected>Sportlername</option>
+                    <!-- <option>Unterkünfte </option>
                     <option>sportreisen</option>
                     <option>Sprachreisen</option>
                     <option>Schiffsreisen </option>
-                    <option>Autoveimietung </option>
+                    <option>Autoveimietung </option> -->
                 </select></i>
-            <!-- <i class="fa fa-map-marker map-fa-color-1"><label class="location-box-1">Lorem</label></i> -->
-            <label class="Athletes-box">clear filter</label>
+            <i class="fa fa-map-marker map-fa-color-1"><label class="location-box-1">Sportart</label></i>
+
+                <label class="Athletes-box">Suchen</label>
         </div>
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-md-4 mobile-pd" *ngFor="let data of travelInfoDataAll; let i = index">
+            <!-- <div class="col-md-4 mobile-pd" *ngFor="let data of travelInfoDataAll; let i = index">
                 <div class="section-3-main-box">
                     <div class="section-3-main-box-left-1">
                         <img src="{{BASE_URI}}{{data?.cover_image_travel}}">
@@ -637,55 +637,35 @@
                         <span class="second-text-align">{{data?.travel_info?.Url}}</span>
                     </div>
                 </div>
-            </div>
-
-            <!-- <div class="col-md-4">
-                <div class="section-3-main-box">
-                    <div class="section-3-main-box-left-1">
-                        <img src="assets/img/Ashwini Ponnappa.png">
-                        <div class="main-box-inner">
-                            <span class="main-box-left-1-span">Lorem</span>
-                        </div>
-                        <div class="inner-img-kl">
-                            <img src="assets/img/Ashwini Ponnappa-inner.png" class="inner-img-kl-1">
-                        </div>
-                    </div>
-                    <div class="section-3-main-box-left-2">
-                        <div class="main-box-left-2-inner">
-                            <img src="assets/img/flag.png" class="img-flag">
-                            <span>Lorem</span>
-                        </div>
-                        <span class="second-text-align">Lorem</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="section-3-main-box">
-                    <div class="section-3-main-box-left-1">
-                        <img src="assets/img/Riyan Parag.png">
-                        <div class="main-box-inner">
-                            <span class="main-box-left-1-span">Lorem</span>
-                        </div>
-                        <div class="inner-img-kl">
-                            <img src="assets/img/riyan-parag-inner.png" class="inner-img-kl-1">
-                        </div>
-                    </div>
-                    <div class="section-3-main-box-left-2">
-                        <div class="main-box-left-2-inner">
-                            <img src="assets/img/flag.png" class="img-flag">
-                            <span>Lorem</span>
-                        </div>
-                        <span class="second-text-align">Lorem</span>
-                    </div>
-                </div>
             </div> -->
+
+            <div class="col-md-4 mobile-pd">
+                <div class="section-3-main-box">
+                    <div class="section-3-main-box-left-1">
+                        <img src="assets/img/Klingers_Portrait1.jpeg" class="sport_img_1">
+                        <div class="main-box-inner">
+                            <span class="main-box-left-1-span">Beach Volleyball</span>
+                        </div>
+                        <div class="inner-img-kl">
+                            <img src="assets/img/Klingers_Portrait2.jpg" class="inner-img-kl-1">
+                        </div>
+                    </div>
+                    <div class="section-3-main-box-left-2">
+                        <div class="main-box-left-2-inner">
+                            <span>The Klingers</span>
+                        </div>
+                        <span class="second-text-align">Dorina Klinger|Ronja Klinger</span>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
 </section>
 
-<!-- <section class="sport-section-4" id="partner&sponseren">
+
+<section class="sport-section-4" id="partner&sponseren">
+   
     <div class="container">
         <h1 class="sport-section-3-heading">RD3-partner</h1>
 
@@ -696,7 +676,7 @@
         <div class="sport-section-3-Athletes-box">
             <i class="fa fa-search search-fa-color-1"><label class="search-box-1">Name</label></i>
             <i class="fa fa-map-marker map-fa-color-1"><label class="location-box-1">Region</label></i>
-            <label class="Athletes-box">Find Partner</label>
+            <label class="Athletes-box">Suchen</label>
         </div>
 
         <table>
@@ -730,12 +710,12 @@
 
 
     </div>
-</section> -->
+</section>
 
 
-<!-- <section class="sport-section-5">
+<section class="sport-section-5">
     <div class="container">
-        <h1 class="sport-section-3-heading">Bloggen</h1>
+        <h1 class="sport-section-3-heading">Blog</h1>
 
         <div class="sport-section-3-line">
             <img src="assets/img/cream-business.png" class="section-title-img">
@@ -746,16 +726,15 @@
             <div class="col-md-4 mobile-pd">
                 <div class="section-5-main-box">
                     <div class="section-3-main-box-left-1">
-                        <img src="assets/img/bloggen-image.png">
+                        <img src="assets/img/blogimage.jpeg">
 
                     </div>
                     <div class="section-5-main-box-left-2">
-                        <span>Bloggen<span>
-                                <p>Lorem ipsum dolor sit
-                                    amet, consectetur adipisicing
-                                    elit, sed do eiusmod
-                                    tempor incididunt ut labore
-                                    et dolore magna aliqua.</p>
+                        <span>The Klingers<span>
+                                <p>Sensationell, wir starten den RD3 Sportler Pool
+                                    mit dem Top Damen Beach Volleyball Duo "Dorina &
+                                    Ronja Klinger Nicht weniger als olympia"lautet das
+                                    9emeinsame Ziel</p>
                                 <button class="bloggen-btn">Weiterlesen</button>
                             </span></span>
                     </div>
@@ -802,12 +781,9 @@
 
         </div>
     </div>
-</section> -->
+</section>
 
 <!-- deactivated session end -->
-
-
-
 
 
 <section class="job-section-5">

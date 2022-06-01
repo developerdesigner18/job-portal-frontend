@@ -1,4 +1,14 @@
 // new job pages css start
+::ng-deep .prev-icon  {
+    text-decoration: none !important;
+    background-color: #fff !important;
+    color: #000 !important;
+ }
+ ::ng-deep .next-icon{
+   text-decoration: none !important;
+   background-color: #fff !important;
+   color: #000 !important;
+ }
 .job-section-1{
     padding: 50px 0 0 0;
 }

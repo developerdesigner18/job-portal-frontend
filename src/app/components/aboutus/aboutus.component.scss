@@ -1211,9 +1211,9 @@ tr{
 .about-us-main-img{
   width: 100%;
   max-width: 400px;
-  position: absolute;
-    bottom: 40px;
-    right: 40px;
+  position: relative;
+  bottom: 17px;
+  right: 25px;
 }
 .about-us-box-2{
     width: 100%;
@@ -1221,10 +1221,7 @@ tr{
     height: 100%;
     max-height: 360px;
     background-color: #4c5c68;
-    position: absolute;
-    bottom: 20px;
-    left: 70px;
-    z-index: 1;
+      z-index: 1;
     border-radius: 30px;
 }
 .about-us-section-2{
@@ -1240,11 +1237,11 @@ tr{
 }
 
 .about-us-box-orange{
-     width: 100%;
-   background-color: #f49e55;
-    padding: 15em;
-    position: relative;
-    border-radius: 30px;
+  width: 93%;
+  background-color: #f49e55;
+  padding: 10em;
+  position: relative;
+  border-radius: 30px;
 }
 .about-us-box-orange-txt{
      position: absolute;
@@ -1258,22 +1255,28 @@ tr{
 
 }
 .about-us-box-green{
-   width: 100%;
-   background-color: #9CB900;
-    padding: 15em;
+  width: 93%;
+    
+    padding: 10em;
     position: relative;
     border-radius: 30px;
+ 
+   background-color: #9CB900;
+  
 }
 .about-us-box-cream{
-   width: 100%;
-   background-color:#D1B681;
-    padding: 15em;
+  width: 93%;
+  
+    padding: 10em;
     position: relative;
     border-radius: 30px;
+   background-color:#D1B681;
+   
 }
 .about-us-mb{
   margin-top: 4em;
-    width: 100%;
+   display: flex;
+   justify-content: space-between;
 }
 /*media query start*/
 @media screen and (max-width: 500px) {
@@ -2078,6 +2081,9 @@ font-family: 'Bebas Neue', cursive;
   .carousel-text-span {
     font-size: 38px;
   }
+  .about-us-mb {
+        flex-direction: column;
+   }
 }
 @media (max-width:480px){
   .about-us-section-3-line:before {

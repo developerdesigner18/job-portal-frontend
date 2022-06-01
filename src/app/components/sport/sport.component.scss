@@ -1,4 +1,14 @@
 // first popup started 
+::ng-deep .prev-icon  {
+  text-decoration: none !important;
+  background-color: #fff !important;
+  color: #000 !important;
+}
+::ng-deep .next-icon{
+ text-decoration: none !important;
+ background-color: #fff !important;
+ color: #000 !important;
+}
 
 img.popup-3-arrow {
   width: 100%;
@@ -1022,7 +1032,7 @@ button.service-btn {
 }
 .service-box-2 h5, span{
   // color:#4c5c68;
-  font-size: 20px;
+  font-size: 22px;
 }
 .service-box-2 span{
   font-size: 16px;
@@ -1876,7 +1886,9 @@ h1.custom-business {
   padding: 50px 0;
     background-color: #fff;
 }
-
+.sport_img_1{
+  opacity: 0.3;
+}
 .custom-partners {
     font-size: 46px;
     text-transform: uppercase;
@@ -2213,6 +2225,8 @@ padding-bottom: 15px;
     margin-left: 20px;
     font-size: 21px;
     outline: 0 !important;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
 }
 .map-fa-color-1{
   color: #D1B681;
@@ -2226,6 +2240,8 @@ padding-bottom: 15px;
     color:#D1B681;
     margin-left: 20px;
     font-size: 21px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 }
   .Athletes-box{
     font-size: 24px;
@@ -2253,19 +2269,26 @@ padding-bottom: 15px;
     position: relative;
   }
   .section-3-main-box-left-2{
-   padding: 115px 50px 50px;
+    padding: 70px 20px 20px;
     display: flex;
     flex-direction: column;
     text-align: center;
   }
+
+  ::ng-deep .d-block.modal.fade.show {
+    opacity: 1!important;
+}
+::ng-deep .modal-dialog {
+  width: 90% !important;
+}
   .section-3-main-box-left-2 span{
     color: #707070;
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 15px;
   }
   .main-box-inner{
    position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 30px;
@@ -2282,14 +2305,15 @@ padding-bottom: 15px;
 }
 
 .inner-img-kl-1 {
-    width: 100%;
-    max-width: 125px;
+  width: 100%;
+  max-width: 165px;
+  border-radius: 15px;
 }
 .inner-img-kl {
-    position: absolute;
-    left: 50%;
-    top: 232px;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 29em;
+  transform: translate(-50%,-50%);
 }
 
 .sport-section-4{
