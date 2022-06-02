@@ -61,10 +61,8 @@ export class AdminHomeComponent implements OnInit {
   getHomeInfoAll(){
     this.commanservice.gethomeInfoAll().subscribe(
       res => {
-        console.log("=-=-=-=-res", res);
         this.homeInfoDataAll = res.body.data
-        console.log("all home data",this.homeInfoDataAll)
-        if (!res.success) { Notiflix.Notify.failure(res.error);  }
+        if (!res.body.success) { Notiflix.Notify.failure(res.error);  }
       },
       err => {
         Notiflix.Notify.failure(err.error?.message);
@@ -72,7 +70,6 @@ export class AdminHomeComponent implements OnInit {
     );
   }
   async submitdata(){
-    console.log("=-=-=-=-this.homeInfoForm.value", this.homeInfoForm.value);
     if (this.homeInfoForm.value._id != null) {
       if (this.homeInfoForm.pristine && !this.home_images ) {
         return;
@@ -148,22 +145,28 @@ export class AdminHomeComponent implements OnInit {
       )
     }
    }
-   uppdatethomeinfo(home_id:any){
+  
+  uppdatethomeinfo(home_id:any){
     this.show_form = true;
-    Notiflix.Loading.standard({
-      cssAnimationDuration: 2000,
-      backgroundColor: '0, 0, 0, 0.0',
-    },
-    )
+      Notiflix.Loading.standard({
+        cssAnimationDuration: 2000,
+        backgroundColor: '0, 0, 0, 0.0',
+      })
     this.getHomeinfobyid(home_id)
   }
-   resetForm(){
+
+  resetForm(){
     this.homeInfoForm.reset()
     this.homeInfoById = []
-    // this.removeCoverImage()
-    // this.remove_image_all()
+    this.remove_image_all()
     this.show_form = false;
-    }
+  }
+
+  remove_image_all(){
+    this.home_images_url = []
+    this.home_images = []
+  }
+
    getHomeinfobyid(home_id: any){
     this.commanservice.getHomeinfobyid(home_id).subscribe(
       res => {
@@ -197,6 +200,7 @@ export class AdminHomeComponent implements OnInit {
         }
       }
     }
+    event.target.value = null;
     Notiflix.Loading.remove();
   }
   async deleteHomeInfo(home_id: any) {
