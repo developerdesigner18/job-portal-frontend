@@ -8,7 +8,7 @@
 
             <li>
                 <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
-                    [ngClass]="{'actives': tab5===true}" (click)="clickdata($event)"><i
+                    [ngClass]="{'actives': tab1===true}" (click)="clickdata($event)"><i
                         class="fas fa-file-alt"></i>Home</a>
                 <!-- <ul class="collapse list-unstyled" id="homeSubmenu">
                     <li>
@@ -22,11 +22,10 @@
                     </li>
                 </ul> -->
             </li>
-            <!-- <li>
+            <li>
                 <a href="#jobSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
-                    [ngClass]="{'actives': tab2===true}" (click)="clickdata($event)"><i
-                        class="fas fa-file-alt"></i>Jobs</a>
-                <ul class="collapse list-unstyled" id="jobSubmenu">
+                    [ngClass]="{'actives': tab2===true}" (click)="clickdata($event)"><i class="fas fa-user-md"></i>Jobs</a>
+                <!-- <ul class="collapse list-unstyled" id="jobSubmenu">
                     <li>
                         <a>Jobs 1</a>
                     </li>
@@ -36,61 +35,60 @@
                     <li>
                         <a>Jobs 3</a>
                     </li>
-                </ul>
-            </li> -->
-            <!-- <li>
+                </ul> -->
+            </li>
+            <li>
                 <a href="#Stadtmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
                     [ngClass]="{'actives': tab3===true}" (click)="clickdata($event)"><i
                         class="fas fa-file-alt"></i>Stadt</a>
-                <ul class="collapse list-unstyled" id="Stadtmenu">
+                <!-- <ul class="collapse list-unstyled" id="sportsmenu">
                     <li>
-                        <a>Stadt</a>
+                        <a>Add data</a>
                     </li>
                     <li>
-                        <a>Stadt</a>
+                        <a>Sports</a>
                     </li>
                     <li>
-                        <a>Stadt</a>
+                        <a>Sports</a>
+                    </li>
+                </ul> -->
+            </li>
+            <li>
+                <a href="#sportsmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
+                    [ngClass]="{'actives': tab4===true}" (click)="clickdata($event)"><i class="fas fa-baseball-ball"></i>Sports</a>
+                <ul class="collapse list-unstyled" id="sportsmenu">
+                    <!-- <li [ngClass]="{'actives': tab4===true}">
+                        <a  (click)="clickdata($event)">RD3-Sportler</a>
+                    </li> -->
+                    <li>
+                        <a>RD3-Partner</a>
+                    </li>
+                    <li>
+                        <a>Blog</a>
                     </li>
                 </ul>
-            </li> -->
+            </li>
             <li>
-                <a href="#sportsmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
-                    [ngClass]="{'actives': tab4===true}" (click)="clickdata($event)"><i
-                        class="fas fa-file-alt"></i>Sports</a>
-                <!-- <ul class="collapse list-unstyled" id="sportsmenu">
+                <a href="#usersmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
+                    [ngClass]="{'actives': tab5===true}" (click)="clickdata($event)">
+                    <i class="fas fa-info"></i>imprint</a>
+                <!-- <ul class="collapse list-unstyled" id="usersmenu">
                     <li>
-                        <a>Add data</a>
+                        <a>Users</a>
                     </li>
                     <li>
-                        <a>Sports</a>
+                        <a>Users</a>
                     </li>
                     <li>
-                        <a>Sports</a>
+                        <a>Users</a>
                     </li>
                 </ul> -->
             </li>
             <li>
-                <a href="#sportsmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
-                    [ngClass]="{'actives': tab4===true}" (click)="clickdata($event)"><i
-                        class="fas fa-file-alt"></i>Blogs</a>
-                <!-- <ul class="collapse list-unstyled" id="sportsmenu">
-                    <li>
-                        <a>Add data</a>
-                    </li>
-                    <li>
-                        <a>Sports</a>
-                    </li>
-                    <li>
-                        <a>Sports</a>
-                    </li>
-                </ul> -->
-            </li>
-            <!-- <li>
                 <a href="#usersmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
                     [ngClass]="{'actives': tab6===true}" (click)="clickdata($event)"><i
-                        class="fas fa-file-alt"></i>Users</a>
-                <ul class="collapse list-unstyled" id="usersmenu">
+                        class="fas fa-file-alt"></i>about-us</a>
+                <!-- <ul class="collapse list-unstyled" id="usersmenu">
                     <li>
                         <a>Users</a>
                     </li>
@@ -100,8 +98,24 @@
                     <li>
                         <a>Users</a>
                     </li>
-                </ul>
-            </li> -->
+                </ul> -->
+            </li>
+            <li>
+                <a href="#usersmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
+                    [ngClass]="{'actives': tab7===true}" (click)="clickdata($event)">
+                    <i class="fas fa-address-book"></i>contact-us</a>
+                <!-- <ul class="collapse list-unstyled" id="usersmenu">
+                    <li>
+                        <a>Users</a>
+                    </li>
+                    <li>
+                        <a>Users</a>
+                    </li>
+                    <li>
+                        <a>Users</a>
+                    </li>
+                </ul> -->
+            </li>
         </ul>
     </nav>
     <div id="content">
@@ -118,9 +132,9 @@
                             <i class="fa fa-user"></i>
                             <span>{{Userinfobyid?.firstName}} {{Userinfobyid?.lastName}}</span></button>
                         <ul class="dropdown-menu">
-                            <li><a><i class="fas fa-address-card"></i> Profile</a></li>
+                            <!-- <li><a><i class="fas fa-address-card"></i> Profile</a></li>
                             <li><a><i class="fas fa-envelope"></i> Message</a></li>
-                            <li><a><i class="fas fa-cog"></i>Settings</a></li>
+                            <li><a><i class="fas fa-cog"></i>Settings</a></li> -->
                             <li (click)="logout()"><a><i class="fas fa-sign-out-alt"></i> Logout</a></li>
                         </ul>
                     </div>
@@ -129,13 +143,13 @@
         </nav>
         <div class="content">
             <div class="container">
-                <app-admin-login *ngIf="tab1 == true"></app-admin-login>
+                <app-admin-home *ngIf="tab1 == true"></app-admin-home>
                 <app-admin-jobs *ngIf="tab2 == true"></app-admin-jobs>
                 <app-admin-stadt *ngIf="tab3 == true"></app-admin-stadt>
-                <!-- <app-admin-sports *ngIf="tab4 == true"></app-admin-sports> -->
                 <app-sports-data *ngIf="tab4 == true"></app-sports-data>
-                <app-admin-home *ngIf="tab5 == true"></app-admin-home>
-                <app-admin-users *ngIf="tab6 == true"></app-admin-users>
+                <app-admin-imprint *ngIf="tab5 == true"></app-admin-imprint>
+                <app-admin-about-us *ngIf="tab6 == true"></app-admin-about-us>
+                <app-admin-contact-us *ngIf="tab7 == true"></app-admin-contact-us>
             </div>
     </div>
 </div>

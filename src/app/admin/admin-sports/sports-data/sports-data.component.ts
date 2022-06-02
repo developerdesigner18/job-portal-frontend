@@ -51,6 +51,11 @@ export class SportsDataComponent implements OnInit {
   isSubmitted = false;
 
   fiterdata :  any = ['Pauschalreisen', 'Unterkunfte', 'Sportreisen', 'Sprachreisen' , 'Schiffsreisen' , 'Camping' , 'Autoveimičtung']
+  flagdata:any = [ 
+    "assets/flags/BDF.jpg",
+    "assets/flags/BDF.jpg",
+  ]
+
 
   constructor(public formbuilder: FormBuilder, public commanservice: CommonService) {
     this.BASE_URI = environment.apiUrl;
@@ -66,6 +71,7 @@ export class SportsDataComponent implements OnInit {
         description: ["", Validators.required],
         player_names: ["", Validators.required],
         Url: ["", Validators.required],
+        // flag: ["", Validators.required],
       }),
     });
     this.uinfo = localStorage.getItem('u_info');
@@ -83,9 +89,29 @@ export class SportsDataComponent implements OnInit {
     })
   }
 
+  flags(e:any) {
+    console.log("called",e.target.currentSrc)
+    var data = e.target.currentSrc
+    // var data = e.target.value
+    // data = data.substring(3);
+    // console.log(data)
+    this.flag?.setValue(data, {
+      onlySelf: true
+    })
+  }
+
+
+
   get filteroptions() {
     return this.travelInfoForm.get('filteroptions');
   }
+
+
+  get flag() {
+    return this.travelInfoForm.get('flag');
+  }
+
+  
 
 
 
@@ -284,6 +310,7 @@ onTravelImagesUpload(event: any) {
     fd.append('description', value.travel_info.description);
     fd.append('player_names', value.travel_info.player_names);
     fd.append('Url', value.travel_info.Url);
+    fd.append('flag',value.travel_info.flag)
     fd.append('filteroptions', value.filteroptions);
     fd.append('cover_image_travel', value.cover_image_travel);
     for (let i=0;i<value.travel_images.length;i++) {
@@ -333,6 +360,7 @@ onTravelImagesUpload(event: any) {
     fd.append('Url', value.travel_info.Url);
     fd.append('cover_image_travel', value.cover_image_travel);
     fd.append('filteroptions', value.filteroptions);
+    fd.append('flag',value.travel_info.flag)
     for (let i=0;i<value.travel_images.length;i++) {
       fd.append('travel_images', value.travel_images[i]);
     }

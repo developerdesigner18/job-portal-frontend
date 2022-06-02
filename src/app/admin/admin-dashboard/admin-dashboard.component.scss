@@ -12,6 +12,17 @@
     
 // }
 
+.actives{
+    color: #fff !important;
+    background: #4c5c68;
+        
+}
+
+
+
+#sidebar .dropdown-toggle:hover:after {
+    transform: rotate(-90deg);
+}
 /* ---------------------------------------------------
     NAVBAR STYLE
 ----------------------------------------------------- */

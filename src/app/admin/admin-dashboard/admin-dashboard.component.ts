@@ -15,12 +15,15 @@ declare var $: any;
 export class AdminDashboardComponent implements OnInit {
 data:any;
 @Input() parent: any; // decorate the property with @Input()
-tab1:boolean  = false;
+tab1:boolean = false;
 tab2:boolean = false;
 tab3:boolean = false;
 tab4:boolean = false;
 tab5:boolean = false;
 tab6:boolean = false;
+tab7:boolean = false;
+rd3partner:boolean = false;
+rd3blog:boolean = false;
 Userinfobyid: any;
 Userinfodata: any;
 userdata:any
@@ -38,13 +41,14 @@ userdata:any
 
    clickdata(event:any){
     this.data = event.target.innerText
-    if(this.data == "Login"){
+    if(this.data == "Home"){
       this.tab1 = true
       this.tab2 = false
       this.tab3 = false
       this.tab4 = false
       this.tab5 = false
       this.tab6 = false
+      this.tab7 =  false
 
   }else if(this.data == "Jobs"){
     this.tab1 = false
@@ -53,6 +57,7 @@ userdata:any
     this.tab4 = false
     this.tab5 = false
     this.tab6 = false
+    this.tab7 =  false
 
   }
   else if(this.data == "Stadt"){
@@ -63,20 +68,19 @@ userdata:any
     this.tab4 = false
     this.tab5 = false
     this.tab6 = false
+    this.tab7 =  false
 
   }
-  else if(this.data == "Sports"){
-    this.tab1 = false
-    this.tab2 = false
-    this.tab3 = false
-    this.tab4 = true
-    this.tab5 = false
-    this.tab6 = false
-    // console.log(this.tab4)
-
-
+  else if(this.data == "Sports" || this.data == "RD3-Sportler" ){
+      this.tab1 = false
+      this.tab2 = false
+      this.tab3 = false
+      this.tab4 = true
+      this.tab5 = false
+      this.tab6 = false
+      this.tab7 =  false
   }
-  else if(this.data == "Home"){
+  else if(this.data == "imprint"){
 
     this.tab1 = false
     this.tab2 = false
@@ -84,9 +88,10 @@ userdata:any
     this.tab4 = false
     this.tab5 = true
     this.tab6 = false
+    this.tab7 =  false
 
   }
-  else if(this.data == "Users"){  
+  else if(this.data == "about-us"){  
     
     this.tab1 = false
     this.tab2 = false
@@ -94,8 +99,19 @@ userdata:any
     this.tab4 = false
     this.tab5 = false
     this.tab6 = true
+    this.tab7 =  false
+  
+  }
+  else if(this.data == "contact-us"){  
     
-    console.log("---",this.tab6 , this.data)
+    this.tab1 = false
+    this.tab2 = false
+    this.tab3 = false
+    this.tab4 = false
+    this.tab5 = false
+    this.tab6 = false
+    this.tab7 =  true
+  
   }
   }
 
@@ -129,7 +145,7 @@ userdata:any
       $('#sidebar').toggleClass('active');
       $('#body').toggleClass('active');
   });
-  this.tab4 = true
+  // this.tab4 = true
 
   // this.route.queryParams.subscribe(params => {
   //   console.log(params)

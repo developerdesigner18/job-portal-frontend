@@ -91,11 +91,23 @@
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label for="state" class="form-label">Filter Option</label>
-                                <select name="state" class="form-select" (change)="changeFilteroption($event)" formControlName="filteroptions">
-                                    <option value="">Choose...</option>
-                                    <option *ngFor="let data of fiterdata" [ngValue]="data">{{data}}</option>
-                                </select>
+                                <label for="state" class="form-label">Select Flags</label>
+                                <div class="dropdown">
+                                    <button class="btn btn-primary_custom_box" type="button" data-toggle="dropdown">
+                                    <span class="caret"></span></button>
+                                    <ul class="dropdown-menu" (click)="flags($event)" formControlName="flag"> 
+                                      <li><img src="assets/flags/BDF.jpg" class="custom-select-image"></li>
+                                      <li><img src="assets/flags/Bgld.jpg" class="custom-select-image"></li>
+                                      <li><img src="assets/flags/Ktn.jpg" class="custom-select-image"></li>
+                                      <li><img src="assets/flags/Noe.jpg" class="custom-select-image"></li>
+                                      <li><img src="assets/flags/Ooe.jpg" class="custom-select-image"></li>
+                                      <li><img src="assets/flags/Sbg.jpg" class="custom-select-image"></li>
+                                      <li><img src="assets/flags/Stk.jpg" class="custom-select-image"></li>
+                                      <li><img src="assets/flags/Tirol.jpg" class="custom-select-image"></li>
+                                      <li><img src="assets/flags/Vbg.jpg" class="custom-select-image"></li>
+                                      <li><img src="assets/flags/Wien.jpg" class="custom-select-image"></li>
+                                    </ul>
+                                  </div>
                                 <div class="valid-feedback">Looks good!</div>
                                 <div class="invalid-feedback">Please select a State.</div>
                             </div>

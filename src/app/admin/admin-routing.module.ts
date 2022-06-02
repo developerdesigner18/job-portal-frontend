@@ -13,7 +13,9 @@ const routes: Routes = [
 { path: 'admin-stadt', loadChildren: () => import('./admin-stadt/admin-stadt.module').then(m => m.AdminStadtModule) },
 { path: 'admin-users', loadChildren: () => import('./admin-users/admin-users.module').then(m => m.AdminUsersModule) },
 { path: 'admin-home', loadChildren: () => import('./admin-home/admin-home.module').then(m => m.AdminHomeModule) },
-{ path: 'admin-blog', loadChildren: () => import('./admin-blog/admin-blog.module').then(m => m.AdminBlogModule) },
+{ path: 'admin-imprint', loadChildren: () => import('./admin-imprint/admin-imprint.module').then(m => m.AdminImprintModule) },
+{ path: 'admin-contact-us', loadChildren: () => import('./admin-contact-us/admin-contact-us.module').then(m => m.AdminContactUsModule) },
+{ path: 'admin-about-us', loadChildren: () => import('./admin-about-us/admin-about-us.module').then(m => m.AdminAboutUsModule) },
 ];
 
 @NgModule({
