@@ -22,8 +22,10 @@ tab4:boolean = false;
 tab5:boolean = false;
 tab6:boolean = false;
 tab7:boolean = false;
+rd3adminresiemphe:boolean = false;
 rd3partner:boolean = false;
 rd3blog:boolean = false;
+
 Userinfobyid: any;
 Userinfodata: any;
 userdata:any
@@ -36,59 +38,65 @@ userdata:any
       // console.log("================",JSON.parse(this.Userinfodata)?._id)
       this.userdata = JSON.parse(this.Userinfodata)._id
       this.getuserdetails()
-    this.tab4 = true
+    this.rd3adminresiemphe = true
   }
 
    clickdata(event:any){
     this.data = event.target.innerText
     if(this.data == "Home"){
-      this.tab1 = true
       this.tab2 = false
       this.tab3 = false
       this.tab4 = false
       this.tab5 = false
       this.tab6 = false
       this.tab7 =  false
+      this.rd3partner = false
+      this.rd3blog = false
+      this.rd3adminresiemphe = false
+      this.tab1 = true
 
   }else if(this.data == "Jobs"){
     this.tab1 = false
-    this.tab2 = true
     this.tab3 = false
     this.tab4 = false
     this.tab5 = false
     this.tab6 = false
     this.tab7 =  false
+    this.rd3partner = false
+    this.rd3blog = false
+    this.rd3adminresiemphe = false
+    this.tab2 = true
 
   }
   else if(this.data == "Stadt"){
     
     this.tab1 = false
     this.tab2 = false
-    this.tab3 = true
     this.tab4 = false
     this.tab5 = false
     this.tab6 = false
     this.tab7 =  false
+    this.rd3partner = false
+    this.rd3blog = false
+    this.rd3adminresiemphe = false
+    this.tab3 = true
+
 
   }
-  else if(this.data == "Sports" || this.data == "RD3-Sportler" ){
-      this.tab1 = false
-      this.tab2 = false
-      this.tab3 = false
-      this.tab4 = true
-      this.tab5 = false
-      this.tab6 = false
-      this.tab7 =  false
-  }
+
   else if(this.data == "imprint"){
 
     this.tab1 = false
     this.tab2 = false
     this.tab3 = false
     this.tab4 = false
-    this.tab5 = true
     this.tab6 = false
     this.tab7 =  false
+    this.rd3partner = false
+    this.rd3blog = false
+    this.rd3adminresiemphe = false
+    this.tab5 = true
+
 
   }
   else if(this.data == "about-us"){  
@@ -98,8 +106,12 @@ userdata:any
     this.tab3 = false
     this.tab4 = false
     this.tab5 = false
-    this.tab6 = true
     this.tab7 =  false
+    this.rd3partner = false
+    this.rd3blog = false
+    this.rd3adminresiemphe = false
+    this.tab6 = true
+
   
   }
   else if(this.data == "contact-us"){  
@@ -110,9 +122,63 @@ userdata:any
     this.tab4 = false
     this.tab5 = false
     this.tab6 = false
+    this.rd3partner = false
+    this.rd3blog = false
+    this.rd3adminresiemphe = false
     this.tab7 =  true
-  
+
   }
+  else if(this.data == "Sports"){
+    this.tab1 = false
+    this.tab2 = false
+    this.tab3 = false
+    this.tab5 = false
+    this.tab6 = false
+    this.tab7 =  false
+    this.rd3partner = false
+    this.rd3blog = false
+    this.rd3adminresiemphe = false
+    this.tab4 = true
+}
+  else if(this.data == "RD3-Sportler"){
+    this.tab1 = false
+    this.tab2 = false
+    this.tab3 = false
+    this.tab4 = false
+    this.tab5 = false
+    this.tab6 = false
+    this.tab7 =  false
+    this.rd3partner = false
+    this.rd3blog = false
+    this.rd3adminresiemphe = true
+}
+  else if(this.data == "RD3-Partner"){
+    this.tab1 = false
+    this.tab2 = false
+    this.tab3 = false
+    this.tab4 = false
+    this.tab5 = false
+    this.tab6 = false
+    this.tab7 =  false
+    this.rd3adminresiemphe = false
+    this.rd3blog = false
+    this.rd3partner = true
+
+
+  }
+  else if(this.data == "Blog"){
+    this.tab1 = false
+    this.tab2 = false
+    this.tab3 = false
+    this.tab4 = false
+    this.tab5 = false
+    this.tab6 = false
+    this.tab7 =  false
+    this.rd3partner = false
+    this.rd3adminresiemphe = false
+    this.rd3blog = true
+  }
+ 
   }
 
 

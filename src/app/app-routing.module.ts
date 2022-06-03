@@ -11,6 +11,7 @@ const routes: Routes = [
     loadChildren: () => import('./components/components-routing.module').then(m => m.ComponentsRoutingModule),
   },
 
+
 ];
 
 @NgModule({

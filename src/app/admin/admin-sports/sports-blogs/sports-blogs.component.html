@@ -1,1 +1,197 @@
-<p>sports-blogs works!</p>
+
+
+
+<div id="body" class="active">
+    <div class="content" *ngIf="show_form">
+        <div class="container">
+            <div class="page-title">
+                    <h3>Add Here Blog data</h3>
+                    <div class="crossicon" (click)="resetForm()">
+                        <i class="fas fa-times" aria-hidden="true"></i>
+                    </div>
+                
+               
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <form [formGroup]="travelInfoForm" (ngSubmit)="submitdata()"  [@enterAnimation]>
+                                <div formGroupName="travel_info">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Sport name</label>
+                                    <input type="text" name="name" placeholder="enter a text here"
+                                        class="form-control"  formControlName="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="description" class="form-label">Sport Description</label>
+                                    <input type="text" name="description" placeholder="enter a description here"
+                                        class="form-control" formControlName="description" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="player_names" class="form-label">Player Names</label>
+                                    <input type="text" name="player_names" placeholder="enter player names here"
+                                        class="form-control" formControlName="player_names" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Url" class="form-label">Sport URL</label>
+                                    <input type="url" name="Url" placeholder="enter a url here"
+                                        class="form-control" formControlName="Url" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="formFileMultiple" class="form-label">Single file upload
+                                    </label>
+                                    <input class="form-control" (change)="onCoverImageUpload($event)" type="file" name="file"  accept="image/jpeg,image/jpg,image/png" id="formFileMultiple" />
+                                    <div style="display: flex; flex-direction: row;">
+                                    <div style="padding-top: 15px;" *ngIf="travelInfoById?.length != 0" class="custom_set">
+                                        <label class="form-label form-label-top form-label-auto"> Current Preview </label>
+                                        <img width="525" style="padding-left: 10px;"
+                                        src="{{BASE_URI}}{{travelInfoById?.cover_image_travel}}"
+                                        class="attachment-large size-large custom_img_set_new" alt="Travel Image" loading="lazy"
+                                        sizes="100vw">
+                                    </div> 
+                                    <div style="padding-top: 15px;" *ngIf="cover_image_url" class="custom_set">
+                                        <label class="form-label form-label-top form-label-auto"> New Preview </label>
+                                        <img width="525" style="padding-left: 10px;"
+                                        class="attachment-large size-large custom_img_set_new" alt="Travel Image" loading="lazy" sizes="100vw"
+                                        [src]="cover_image_url">
+                                        <div (click)="removeCoverImage()" class="remove_image">
+                                            <i class="fas fa-times" *ngIf="cover_image_url" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="formFileMultiple" class="form-label">Multiple file upload
+                                        </label>
+                                    <input class="form-control" (change)="onTravelImagesUpload($event)" type="file" name="file"  accept="image/jpeg,image/jpg,image/png" id="formFileMultiple" multiple/>
+                                        <label class="form-label form-label-top form-label-auto custom_form_label"  *ngIf="travel_images_url.length != 0"> Uploaded Images </label>
+                                        <div *ngFor="let url of travel_images_url; let i = index" class="custom_grid_set">
+                                            <img width="200" style="padding: 5px;"
+                                            [src]="url"
+                                            class="attachment-large size-large" alt="Travel Images" loading="lazy"
+                                            sizes="100vw">
+                                            <div class="remove_image2"(click)="remove_image(i)">
+                                                <i class="fas fa-times" *ngIf="travel_images_url.length != 0" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="mb-3 custom_current_img_multiple">
+                                        <label class="form-label form-label-top form-label-auto" id="label_7" for="input_7" *ngIf="travelInfoById?.length != 0"> Current Images </label>
+                                        <div style="padding-top: 15px;" *ngFor="let images of travelInfoById?.travel_images" class="custom_grid_set">
+                                            <img width="200" style="padding: 5px;"
+                                            src="{{BASE_URI}}{{images.name}}"
+                                            class="attachment-large size-large" alt="Boat Images" loading="lazy"
+                                            sizes="100vw">
+                                            <div (click)="deleteTravelImage(travelInfoById?._id, images._id)" class="deletetravelimage">
+                                                <i class="fas fa-times" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="state" class="form-label">Select Flags</label>
+                                <div class="dropdown">
+                                    <button class="btn btn-primary_custom_box" type="button" data-toggle="dropdown">
+                                    <span class="caret"></span></button>
+                                    <ul class="dropdown-menu" (click)="flags($event)">
+                                    <li *ngFor="let flags of flagdata" ><img src="{{flags}}" class="custom-select-image"> </li>
+                                    </ul>
+                                  </div>
+                                <div class="valid-feedback">Looks good!</div>
+                                <div class="invalid-feedback">Please select a State.</div>
+                            </div>
+                            <!-- <div class="mb-3">
+                                <label for="state" class="form-label">Filter Option</label>
+                                <select name="state" class="form-select" (change)="changeFilteroption($event)" formControlName="filteroptions">
+                                    <option value="">Choose...</option>
+                                    <option *ngFor="let data of fiterdata" [ngValue]="data">{{data}}</option>
+                                </select>
+                                <div class="valid-feedback">Looks good!</div>
+                                <div class="invalid-feedback">Please select a State.</div>
+                            </div> -->
+                                <div class="mb-3">
+                                    <input type="submit" class="btn btn-primary">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="page-title1">
+                <h3>Blog data
+                    <a class="btn btn-sm btn-outline-primary float-end" (click)="insertTravelInfo()"><i  class="fas fa-user-shield"></i> Add New Data</a>
+                </h3>
+            </div>
+            <div class="box box-primary">
+                <div class="box-body">
+                    <div id="dataTables-example_wrapper" class="dataTables_wrapper dt-bootstrap5 no-footer">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <table width="100%" class="table table-hover dataTable no-footer dtr-inline"
+                                    id="dataTables-example" role="grid" aria-describedby="dataTables-example_info"
+                                    style="width: 100%;">
+                                    <thead>
+                                        <tr role="row">
+                                            <th class="sorting sorting_asc" tabindex="0"
+                                                aria-controls="dataTables-example" rowspan="1" colspan="1"
+                                                style="width: 163px;" aria-sort="ascending"
+                                                aria-label="Name: activate to sort column descending">No</th>
+                                            <th class="sorting sorting_asc" tabindex="0"
+                                                aria-controls="dataTables-example" rowspan="1" colspan="1"
+                                                style="width: 163px;" aria-sort="ascending"
+                                                aria-label="Name: activate to sort column descending">Sport Name</th>
+                                            <th class="sorting" tabindex="0" aria-controls="dataTables-example"
+                                                rowspan="1" colspan="1" style="width: 139px;"
+                                                aria-label="Role: activate to sort column ascending"> Sport Description</th>
+                                            <th class="sorting" tabindex="0" aria-controls="dataTables-example"
+                                                    rowspan="1" colspan="1" style="width: 139px;"
+                                                    aria-label="Role: activate to sort column ascending">Player names</th>
+                                            <th class="sorting" tabindex="0" aria-controls="dataTables-example"
+                                                rowspan="1" colspan="1" style="width: 139px;"
+                                                aria-label="Role: activate to sort column ascending">Sport URL</th>
+                                            <!-- <th class="sorting" tabindex="0" aria-controls="dataTables-example"
+                                                rowspan="1" colspan="1" style="width: 139px;"
+                                                aria-label="Role: activate to sort column ascending">Filteroptions</th> -->
+                                            <th class="sorting" tabindex="0" aria-controls="dataTables-example"
+                                                rowspan="1" colspan="1" style="width: 79px;"
+                                                aria-label=": activate to sort column ascending">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="odd" *ngFor="let traveldata of travelInfoDataAll; let i = index">
+                                            <td>{{i+1}}</td>
+                                            <td class="dtr-control sorting_1" tabindex="0">{{traveldata?.travel_info?.name}}</td>
+                                            <td>{{traveldata?.travel_info?.description}}</td>
+                                            <td>{{traveldata?.travel_info?.player_names}}</td>
+                                            <td>{{traveldata?.travel_info?.Url}}</td>
+                                            <!-- <td>{{traveldata?.filteroptions}}</td> -->
+                                            <!-- <td><img width="525" style="padding-left: 10px;"
+                                                src="{{BASE_URI}}{{traveldata?.cover_image_travel}}"
+                                                class="attachment-large size-large" alt="Travel Image" loading="lazy"
+                                                sizes="100vw"></td> -->
+                                            <td class="text-end">
+                                                <a class="btn btn-outline-info btn-rounded" (click)="uppdatetravelinfo(traveldata?._id)"><i
+                                                        class="fas fa-edit" ></i></a>
+                                                <a class="btn btn-outline-danger btn-rounded" (click)="deleteTravelInfo(traveldata?._id)"><i
+                                                        class="fas fa-trash" ></i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

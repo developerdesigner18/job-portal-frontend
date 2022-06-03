@@ -4,7 +4,6 @@ import * as Notiflix from 'notiflix';
 import { CommonService } from 'src/app/services/common.service';
 import { environment } from '../../../../environments/environment';
 import { trigger, style, animate, transition } from '@angular/animations';
-import { chainedInstruction } from '@angular/compiler/src/render3/view/util';
 
 @Component({
   selector: 'app-sports-data',
@@ -52,8 +51,16 @@ export class SportsDataComponent implements OnInit {
 
   fiterdata :  any = ['Pauschalreisen', 'Unterkunfte', 'Sportreisen', 'Sprachreisen' , 'Schiffsreisen' , 'Camping' , 'Autoveimičtung']
   flagdata:any = [ 
+    "assets/flags/Ooe.jpg",
     "assets/flags/BDF.jpg",
-    "assets/flags/BDF.jpg",
+    "assets/flags/Bgld.jpg",
+    "assets/flags/Ktn.jpg",
+    "assets/flags/Noe.jpg",
+    "assets/flags/Wien.jpg",
+    "assets/flags/Sbg.jpg",
+    "assets/flags/Stk.jpg",
+    "assets/flags/Tirol.jpg",
+    "assets/flags/Vbg.jpg",
   ]
 
 
@@ -71,7 +78,7 @@ export class SportsDataComponent implements OnInit {
         description: ["", Validators.required],
         player_names: ["", Validators.required],
         Url: ["", Validators.required],
-        // flag: ["", Validators.required],
+        flag: ["", Validators.required],
       }),
     });
     this.uinfo = localStorage.getItem('u_info');
@@ -80,14 +87,14 @@ export class SportsDataComponent implements OnInit {
     this.getTravelInfoAll()
   }
   
-  changeFilteroption(e:any) {
-    var data = e.target.value
-    data = data.substring(3);
-    console.log(data)
-    this.filteroptions?.setValue(data, {
-      onlySelf: true
-    })
-  }
+  // changeFilteroption(e:any) {
+  //   var data = e.target.value
+  //   data = data.substring(3);
+  //   console.log(data)
+  //   this.filteroptions?.setValue(data, {
+  //     onlySelf: true
+  //   })
+  // }
 
   flags(e:any) {
     console.log("called",e.target.currentSrc)
@@ -98,13 +105,15 @@ export class SportsDataComponent implements OnInit {
     this.flag?.setValue(data, {
       onlySelf: true
     })
+
+    this.travelInfoForm.value.travel_info.flag = data
   }
 
 
 
-  get filteroptions() {
-    return this.travelInfoForm.get('filteroptions');
-  }
+  // get filteroptions() {
+  //   return this.travelInfoForm.get('filteroptions');
+  // }
 
 
   get flag() {
@@ -311,7 +320,7 @@ onTravelImagesUpload(event: any) {
     fd.append('player_names', value.travel_info.player_names);
     fd.append('Url', value.travel_info.Url);
     fd.append('flag',value.travel_info.flag)
-    fd.append('filteroptions', value.filteroptions);
+    // fd.append('filteroptions', value.filteroptions);
     fd.append('cover_image_travel', value.cover_image_travel);
     for (let i=0;i<value.travel_images.length;i++) {
       fd.append('travel_images', value.travel_images[i]);
@@ -359,7 +368,7 @@ onTravelImagesUpload(event: any) {
     fd.append('player_names', value.travel_info.player_names);
     fd.append('Url', value.travel_info.Url);
     fd.append('cover_image_travel', value.cover_image_travel);
-    fd.append('filteroptions', value.filteroptions);
+    // fd.append('filteroptions', value.filteroptions);
     fd.append('flag',value.travel_info.flag)
     for (let i=0;i<value.travel_images.length;i++) {
       fd.append('travel_images', value.travel_images[i]);

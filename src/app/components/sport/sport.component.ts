@@ -39,6 +39,8 @@ export class SportComponent implements OnInit {
   ];
   travelInfoDataAll: any = [];
   BASE_URI: string;
+  currentUrl: any;
+  sliceurl:any;
 
   
   constructor(
@@ -46,16 +48,25 @@ export class SportComponent implements OnInit {
     public router:Router,
     private modalService: NgbModal,
     private commanservice:CommonService
-
+    
   ) { 
     this.BASE_URI = environment.apiUrl;
-
     this.getTravelInfoAll()
+    this.sliceurls()
   }
   closeResult = '';
 
   redirectUrl(url: string) {
     window.open(url, '_blank')
+  }
+
+
+  sliceurls(){
+    console.log( window.location.href);
+    this.currentUrl = window.location.href
+    this.sliceurl = this.currentUrl;
+    this.sliceurl = this.sliceurl.slice(0, -6); 
+    console.log(this.sliceurl); 
   }
 
   open1(content1:any) {
@@ -101,7 +112,7 @@ export class SportComponent implements OnInit {
     this.commanservice.gettravelInfoAll().subscribe(
       res => {
         this.travelInfoDataAll = res.data
-        console.log("all travel data",this.travelInfoDataAll)
+        // console.log("all travel data",this.travelInfoDataAll)
 
         if (!res.success) { Notiflix.Notify.failure(res.error);  }
         
@@ -122,6 +133,10 @@ export class SportComponent implements OnInit {
   forms(){
     let url = "https://forms.zohopublic.eu/rd3/form/RD3SportlerPoolAufnahmeAntrag/formperma/y9Pd6AdP2SSQbxOxSno6KSq4-IzzAAeEXEktieDXaaY"
     window.open(url, "_blank");
+  }
+
+  zuminfoblatt(){    
+    window.open(this.sliceurl + '/assets/html/RD3-Sport-Infoblatt.html', '_blank')
   }
 
   forms2(){

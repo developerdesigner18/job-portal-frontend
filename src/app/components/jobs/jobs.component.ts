@@ -69,7 +69,11 @@ export class JobsComponent implements OnInit {
     title: 'Partner #3 "Gastro Haring"'
   },
   ];
-  constructor(private router:Router , private activatedroute:ActivatedRoute) { }
+  currentUrl: any;
+  sliceurl: any;
+  constructor(private router:Router , private activatedroute:ActivatedRoute) {
+    this.sliceurls()
+   }
 
 
   async imageClickRedirect(event: any) {
@@ -87,6 +91,22 @@ export class JobsComponent implements OnInit {
     }
   }
 
+
+  sliceurls(){
+    console.log( window.location.href);
+    this.currentUrl = window.location.href
+    this.sliceurl = this.currentUrl;
+    this.sliceurl = this.sliceurl.slice(0, -5); 
+    console.log(this.sliceurl); 
+  }
+
+  Arbeitgerber(){    
+    window.open(this.sliceurl + '/assets/html/RD3-Jobs-Infoblatt-Arbeitgeber.html', '_blank')
+  }
+
+  Bewerber(){    
+    window.open(this.sliceurl + '/assets/html/RD3-Jobs-Infoblatt-Bewerber.html', '_blank')
+  }
 
   
   first(){

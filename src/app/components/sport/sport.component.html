@@ -552,6 +552,8 @@
                                         style="cursor: pointer;"></i></a>
                             </div>
                             <button class="sport-section-1-btn" (click)="forms()">Jetzt ansuchen</button>
+                            <!-- <button class="sport-section-22-btn"><a href="/assets/html/RD3-Sport-Infoblatt.html" target="_blank">zum infoblatt</a></button> -->
+                            <button class="sport-section-22-btn" (click)="zuminfoblatt()">zum infoblatt</button>
                         </div>
                     </div>
                 </div>
@@ -640,7 +642,7 @@
                     </div>
                     <div class="section-3-main-box-left-2">
                         <div class="main-box-left-2-inner">
-                            <img src="/assets/img/Austria-Flag.png" class="img-flag">
+                            <img src="{{data?.travel_info?.flag}}" class="img-flag">
                             <span><strong>{{data?.travel_info?.description}}</strong></span>
                         </div>
                         <!-- <span class="second-text-align" (click)="redirectUrl(data?.travel_info?.Url)"><strong>{{data?.travel_info?.player_names}}</strong></span> -->
@@ -726,6 +728,23 @@
                                     Duo "Dorina & Ronja Klinger". Nicht weniger als "Olympia" lautet das gemeinsame
                                     Ziel.</p>
                                 <button class="bloggen-btn">Weiterlesen</button>
+                                <div class="social_icon">
+                                    <div class="box_social _icon">
+                                    <i class="fa fa-facebook-f  custom_facebook_icon"></i>
+                                    </div>
+                                    <div class="box_social _icon">
+                                     <i class="fa fa-share-alt custom_facebook_icon"></i>
+                                    </div>
+                                    <div class="box_social _icon">
+                                      <i class="fa fa-whatsapp custom_facebook_icon"></i>
+                                    </div>
+                                    <div class="box_social _icon">
+                                        <i class="fa fa-envelope custom_facebook_icon"></i>
+                                    </div>
+                                    <div class="box_social _icon">
+                                       <i class="fa fa-twitter custom_facebook_icon"></i>
+                                    </div>
+                                    </div>
                             </span></span>
                     </div>
                 </div>

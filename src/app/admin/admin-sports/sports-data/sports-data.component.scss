@@ -359,18 +359,21 @@ img.custom-select-image {
     max-width: 65px;
 }
 .dropdown-menu {
-    min-width: 25rem !important;
+    min-width: 13rem !important;
 }
 ul.dropdown-menu.show li:hover img{
-    box-shadow: #000 0 0 5px;
+    box-shadow: #000 0 0 8px;
 }
 ul.dropdown-menu.show li {
     display: flex;
     justify-content: center;
 }
-ul.dropdown-menu.show li:nth-child(2)
+ul.dropdown-menu.show li
 {
-    margin: 20px 0;
+    margin-bottom: 15px;
+}
+ul.dropdown-menu.show li:last-child{
+    margin-bottom: 0;
 }
 .dd .ddArrow {
     width: 16px;

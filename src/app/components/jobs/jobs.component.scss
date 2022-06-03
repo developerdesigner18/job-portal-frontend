@@ -1157,6 +1157,26 @@ section.slider-bottom {
     width: 25px;
 }
 
+
+.jobs_btn {
+    margin: 0 auto 2em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+button.job_btn_1 {
+    background-color: #F49E55;
+    padding: 20px 80px;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+
 .carousel-caption{
     position: absolute;
     right: 15%;

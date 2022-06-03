@@ -15,6 +15,7 @@ import { NgImageSliderModule } from 'ng-image-slider';
 import { StadtComponent } from './components/stadt/stadt.component';
 import { SportComponent } from './components/sport/sport.component';
 import { AgbComponent } from './components/agb/agb.component';
+import { TravelDataComponent } from './components/travel-data/travel-data.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { AgbComponent } from './components/agb/agb.component';
     StadtComponent,
     SportComponent,
     AgbComponent,
+    TravelDataComponent
     // AdminSportsComponent
 
   ],
