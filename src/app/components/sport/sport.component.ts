@@ -41,6 +41,7 @@ export class SportComponent implements OnInit {
   BASE_URI: string;
   currentUrl: any;
   sliceurl:any;
+  bloginfoalldata: any = [];
 
   
   constructor(
@@ -52,6 +53,7 @@ export class SportComponent implements OnInit {
   ) { 
     this.BASE_URI = environment.apiUrl;
     this.getTravelInfoAll()
+    this.getblogInfoAll()
     this.sliceurls()
   }
   closeResult = '';
@@ -116,6 +118,18 @@ export class SportComponent implements OnInit {
 
         if (!res.success) { Notiflix.Notify.failure(res.error);  }
         
+      },
+      err => {        
+        Notiflix.Notify.failure(err.error?.message);
+      }
+    );
+  }
+
+  getblogInfoAll() {
+    this.commanservice.getBlogInfoAll().subscribe(
+      res => {
+        this.bloginfoalldata = res.data
+        if (!res.success) { Notiflix.Notify.failure(res.error);  }  
       },
       err => {        
         Notiflix.Notify.failure(err.error?.message);

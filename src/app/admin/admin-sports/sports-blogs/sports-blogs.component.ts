@@ -34,36 +34,20 @@ import { environment } from '../../../../environments/environment';
 })
 export class SportsBlogsComponent implements OnInit {
   BASE_URI: string;
-  travelInfoDataAll: any = [];
-  travelInfoById: any;
-  travelInfoForm: FormGroup;
+  bloginfoDataAll: any = [];
+  blogInfoById: any;
+  blogInfoForm: FormGroup;
   show_form: boolean = true;
   url: any;
   format: any;
   cover_image_url: any;
-  travel_images_url: any = [];
-  cover_image_travel: any;
-  travel_images: any = [];
+  blog_images_url: any = [];
+  cover_image_blog: any;
+  blog_images: any = [];
   userdata: any;
   uinfo: any;
   utoken: any;
   isSubmitted = false;
-
-  fiterdata :  any = ['Pauschalreisen', 'Unterkunfte', 'Sportreisen', 'Sprachreisen' , 'Schiffsreisen' , 'Camping' , 'Autoveimičtung']
-  flagdata:any = [ 
-    "assets/flags/Ooe.jpg",
-    "assets/flags/BDF.jpg",
-    "assets/flags/Bgld.jpg",
-    "assets/flags/Ktn.jpg",
-    "assets/flags/Noe.jpg",
-    "assets/flags/Wien.jpg",
-    "assets/flags/Sbg.jpg",
-    "assets/flags/Stk.jpg",
-    "assets/flags/Tirol.jpg",
-    "assets/flags/Vbg.jpg",
-  ]
-
-
 
   constructor(public formbuilder: FormBuilder, public commanservice: CommonService) {
     this.BASE_URI = environment.apiUrl;
@@ -71,77 +55,34 @@ export class SportsBlogsComponent implements OnInit {
    }
 
    ngOnInit(): void {
-    this.travelInfoForm = this.formbuilder.group({
+    this.blogInfoForm = this.formbuilder.group({
       _id: [null, Validators.required],
-      // filteroptions : ["", Validators.required],
-      travel_info: this.formbuilder.group({
+      blog_info: this.formbuilder.group({
         name: ["", Validators.required],
         description: ["", Validators.required],
-        player_names: ["", Validators.required],
-        Url: ["", Validators.required],
-        flag: ["", Validators.required],
+        fulltext: ["", Validators.required],     
       }),
     });
     this.uinfo = localStorage.getItem('u_info');
     this.utoken = localStorage.getItem('auth_token');
     this.userdata = JSON.parse(this.uinfo)
-    this.getTravelInfoAll()
+    this.getBlogInfoAll()
   }
-
-
-
-   // changeFilteroption(e:any) {
-  //   var data = e.target.value
-  //   data = data.substring(3);
-  //   console.log(data)
-  //   this.filteroptions?.setValue(data, {
-  //     onlySelf: true
-  //   })
-  // }
-
-  flags(e:any) {
-    console.log("called",e.target.currentSrc)
-    var data = e.target.currentSrc
-    // var data = e.target.value
-    // data = data.substring(3);
-    // console.log(data)
-    this.flag?.setValue(data, {
-      onlySelf: true
-    })
-
-    this.travelInfoForm.value.travel_info.flag = data
-  }
-
-
-
-  // get filteroptions() {
-  //   return this.travelInfoForm.get('filteroptions');
-  // }
-
-
-  get flag() {
-    return this.travelInfoForm.get('flag');
-  }
-
-  
 
 
 
   getControlValidation(key: string): boolean {
-    const { invalid, touched, dirty } = this.travelInfoForm.get(key) as FormGroup;
+    const { invalid, touched, dirty } = this.blogInfoForm.get(key) as FormGroup;
     // console.log(key);
     return invalid && (touched || dirty);
   }
 
-  getTravelInfoAll() {
-    this.commanservice.gettravelInfoAll().subscribe(
+  getBlogInfoAll() {
+    this.commanservice.getBlogInfoAll().subscribe(
       res => {
-        // this.travel_id = res.data._id
-        this.travelInfoDataAll = res.data
-        // this.travelInfoDataAll = []
-        console.log("all travel data",this.travelInfoDataAll)
-        this.travelInfoForm.patchValue(res.data)        
-        // console.log('###edit-travel-info', this.travelInfoDataAll);
+        this.bloginfoDataAll = res.data
+        // console.log("all blog data",this.bloginfoDataAll)
+        this.blogInfoForm.patchValue(res.data)        
         if (!res.success) { Notiflix.Notify.failure(res.error);  }
         
       },
@@ -151,13 +92,13 @@ export class SportsBlogsComponent implements OnInit {
     );
   }
 
-  getTravelinfobyid(travel_id: any) {
-    this.commanservice.getTravelinfobyid(travel_id).subscribe(
+  getBloginfobyid(blog_id: any) {
+    this.commanservice.getBloginfobyid(blog_id).subscribe(
   res => {
     Notiflix.Loading.remove();
-    this.travelInfoById = res.data
-    console.log("============",this.travelInfoById)
-    this.travelInfoForm.patchValue(res.data)
+    this.blogInfoById = res.data
+    console.log("============",this.blogInfoById)
+    this.blogInfoForm.patchValue(res.data)
     if (!res.success) { Notiflix.Notify.failure(res.error); }
   },
   err => {        
@@ -166,9 +107,9 @@ export class SportsBlogsComponent implements OnInit {
 );
 }
 
-insertTravelInfo(){
-  this.travelInfoForm.reset()
-  this.travelInfoById = []
+insertBlogInfo(){
+  this.blogInfoForm.reset()
+  this.blogInfoById = []
   this.removeCoverImage()
   this.remove_image_all()
   this.show_form = true;
@@ -176,25 +117,25 @@ insertTravelInfo(){
 }
 
 resetForm() {
-  this.travelInfoForm.reset()
-  this.travelInfoById = []
+  this.blogInfoForm.reset()
+  this.blogInfoById = []
   this.removeCoverImage()
   this.remove_image_all()
   this.show_form = false;
 }
 
 
- uppdatetravelinfo(travel_id:any){
+ uppdatebloginfo(blog_id:any){
   this.show_form = true;
   Notiflix.Loading.standard({
     cssAnimationDuration: 2000,
     backgroundColor: '0, 0, 0, 0.0',
   },
   )
-  this.getTravelinfobyid(travel_id)
+  this.getBloginfobyid(blog_id)
 }
 
-deleteTravelImage(travel_id: any, image_id: any) {
+deleteBlogImage(blog_id: any, image_id: any) {
   Notiflix.Loading.standard({
     cssAnimationDuration: 2000,
     backgroundColor: '0, 0, 0, 0.0',
@@ -203,11 +144,11 @@ deleteTravelImage(travel_id: any, image_id: any) {
   var data = {
     user:this.utoken
   }
-  this.commanservice.deleteTravelImage(travel_id, image_id ,data).subscribe(
+  this.commanservice.deleteBlogImage(blog_id, image_id ,data).subscribe(
     res => {
       Notiflix.Loading.remove();
       Notiflix.Notify.success(res.body.message);        
-      this.getTravelinfobyid(travel_id)
+      this.getBloginfobyid(blog_id)
       if (!res.body.success) { Notiflix.Notify.failure(res.error); }
     },
     err => {
@@ -217,7 +158,7 @@ deleteTravelImage(travel_id: any, image_id: any) {
   )
 }
 
-async deleteTravelInfo(travel_id: any) {
+async deleteBlogInfo(blog_id: any) {
   Notiflix.Loading.standard({
     cssAnimationDuration: 2000,
     backgroundColor: '0, 0, 0, 0.0',
@@ -227,13 +168,13 @@ async deleteTravelInfo(travel_id: any) {
     user:this.utoken
   }
   // console.log("api called ",data)
-  this.commanservice.deleteTravelInfo(travel_id , data).subscribe(
+  this.commanservice.deleteBlogInfo(blog_id , data).subscribe(
     res => {
       // console.log("res",res.)
       Notiflix.Loading.remove();
       Notiflix.Notify.success(res.body.message);     
       console.log("delete called")   
-      this.getTravelInfoAll()
+      this.getBlogInfoAll()
       if (!res.body.success) { Notiflix.Notify.failure(res.error); }
     },
     err => {
@@ -254,7 +195,7 @@ onCoverImageUpload(event: any) {
     var reader = new FileReader();
     reader.readAsDataURL(file);
     if(file.type.indexOf('image')> -1){
-      this.cover_image_travel = file
+      this.cover_image_blog = file
       reader.onload = (event) => {
         this.cover_image_url = (<FileReader>event.target).result;
       }
@@ -263,7 +204,7 @@ onCoverImageUpload(event: any) {
   Notiflix.Loading.remove();
 }
 
-onTravelImagesUpload(event: any) {
+onBlogImagesUpload(event: any) {
   Notiflix.Loading.standard({
     cssAnimationDuration: 2000,
     backgroundColor: '0, 0, 0, 0.0',
@@ -274,9 +215,9 @@ onTravelImagesUpload(event: any) {
     var reader = new FileReader();
     reader.readAsDataURL(file);
     if(file.type.indexOf('image')> -1){        
-      this.travel_images.push(file)
+      this.blog_images.push(file)
       reader.onload = (event) => {
-        this.travel_images_url.push((<FileReader>event.target).result);
+        this.blog_images_url.push((<FileReader>event.target).result);
       }
     }
   }    
@@ -287,30 +228,30 @@ onTravelImagesUpload(event: any) {
 
   removeCoverImage() {
     this.cover_image_url = undefined
-    this.cover_image_travel = undefined
+    this.cover_image_blog = undefined
   }
 
   remove_image(index: any) {
-    this.travel_images_url.splice(index, 1)
-    this.travel_images.splice(index, 1)
+    this.blog_images_url.splice(index, 1)
+    this.blog_images.splice(index, 1)
   }
   
   remove_image_all() {
-    this.travel_images_url = []
-    this.travel_images = []
+    this.blog_images_url = []
+    this.blog_images = []
   }
 
 
  async submitdata(){
-  if (this.travelInfoForm.value._id != null) {
+  if (this.blogInfoForm.value._id != null) {
     console.log("called update") 
 
-    if (this.travelInfoForm.pristine && !this.cover_image_travel && !this.travel_images ) {
+    if (this.blogInfoForm.pristine && !this.cover_image_blog && !this.blog_images ) {
       return;
     }
-    const { value } = this.travelInfoForm;
-    value.cover_image_travel = this.cover_image_travel
-    value.travel_images = this.travel_images
+    const { value } = this.blogInfoForm;
+    value.cover_image_blog = this.cover_image_blog
+    value.blog_images = this.blog_images
 
 
     console.log(value);
@@ -318,16 +259,13 @@ onTravelImagesUpload(event: any) {
       user:this.userdata
     }
     var fd = new FormData();
-    fd.append('name', value.travel_info.name);
-    fd.append('description', value.travel_info.description);
-    fd.append('player_names', value.travel_info.player_names);
-    fd.append('Url', value.travel_info.Url);
-    fd.append('flag',value.travel_info.flag)
-    // fd.append('filteroptions', value.filteroptions);
-    fd.append('cover_image_travel', value.cover_image_travel);
-    for (let i=0;i<value.travel_images.length;i++) {
-      fd.append('travel_images', value.travel_images[i]);
-    }
+    fd.append('name', value.blog_info.name);
+    fd.append('description', value.blog_info.description);
+    fd.append('fulltext', value.blog_info.fulltext);
+    fd.append('cover_image_blog', value.cover_image_blog);
+    // for (let i=0;i<value.blog_images.length;i++) {
+    //   fd.append('blog_images', value.blog_images[i]);
+    // }
 
     console.log(fd);
     
@@ -336,12 +274,12 @@ onTravelImagesUpload(event: any) {
       backgroundColor: '0, 0, 0, 0.0',
     },
     )
-    this.commanservice.updateTravelInfo(this.travelInfoForm.value._id, fd , data).subscribe(
+    this.commanservice.updateblogInfo(this.blogInfoForm.value._id, fd , data).subscribe(
       res => {
         Notiflix.Loading.remove();
         Notiflix.Notify.success(res.body.message);
-        this.getTravelInfoAll()
-        this.getTravelinfobyid(this.travelInfoForm.value._id)
+        this.getBlogInfoAll()
+        this.getBloginfobyid(this.blogInfoForm.value._id)
         this.remove_image_all()
         this.resetForm()
         if (!res.body.success) { Notiflix.Notify.failure(res.body.error); }
@@ -355,27 +293,24 @@ onTravelImagesUpload(event: any) {
   }
   else{
 
-    if (this.travelInfoForm.pristine && !this.cover_image_travel && !this.travel_images) {
+    if (this.blogInfoForm.pristine && !this.cover_image_blog && !this.blog_images) {
       return;
     }
 
-    const { value } = this.travelInfoForm;
-    value.cover_image_travel = this.cover_image_travel
-    value.travel_images = this.travel_images
+    const { value } = this.blogInfoForm;
+    value.cover_image_blog = this.cover_image_blog
+    value.blog_images = this.blog_images
 
     // console.log(value);
 
     var fd = new FormData();
-    fd.append('name', value.travel_info.name);
-    fd.append('description', value.travel_info.description);
-    fd.append('player_names', value.travel_info.player_names);
-    fd.append('Url', value.travel_info.Url);
-    fd.append('cover_image_travel', value.cover_image_travel);
-    // fd.append('filteroptions', value.filteroptions);
-    fd.append('flag',value.travel_info.flag)
-    for (let i=0;i<value.travel_images.length;i++) {
-      fd.append('travel_images', value.travel_images[i]);
-    }
+    fd.append('name', value.blog_info.name);
+    fd.append('description', value.blog_info.description);
+    fd.append('fulltext', value.blog_info.fulltext);
+    fd.append('cover_image_blog', value.cover_image_blog);
+    // for (let i=0;i<value.blog_images.length;i++) {
+    //   fd.append('blog_images', value.blog_images[i]);
+    // }
 
     var data = {
       user:this.userdata
@@ -387,12 +322,12 @@ onTravelImagesUpload(event: any) {
     },
     )
 
-    this.commanservice.inserttravelInfo(fd , data).subscribe(
+    this.commanservice.insertblogInfo(fd , data).subscribe(
       res => {
         // console.log("response",res)
         Notiflix.Loading.remove();
         Notiflix.Notify.success(res.body.message);
-        this.getTravelInfoAll()
+        this.getBlogInfoAll()
         this.resetForm()
         if (!res.body.success) { Notiflix.Notify.failure(res.body.error); }
       },

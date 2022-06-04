@@ -136,7 +136,7 @@ export class SportsDataComponent implements OnInit {
         // this.travel_id = res.data._id
         this.travelInfoDataAll = res.data
         // this.travelInfoDataAll = []
-        console.log("all travel data",this.travelInfoDataAll)
+        // console.log("all travel data",this.travelInfoDataAll)
         this.travelInfoForm.patchValue(res.data)        
         // console.log('###edit-travel-info', this.travelInfoDataAll);
         if (!res.success) { Notiflix.Notify.failure(res.error);  }

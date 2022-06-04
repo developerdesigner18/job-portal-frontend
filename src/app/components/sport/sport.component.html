@@ -489,7 +489,7 @@
                         <div class="popup-box-1">
                             <div class="popup-border-box">
                                 <div class="popup-circle"><span>4</span></div>
-                                <span class="common-span">RRD3 Sport- Teamplayer T-Shirt</span>
+                                <span class="common-span">RD3 Sport- Teamplayer T-Shirt</span>
 
                                 <img src="/assets/img/popup4-img2.png" class="popup4-img2">
                             </div>
@@ -645,7 +645,6 @@
                             <img src="{{data?.travel_info?.flag}}" class="img-flag">
                             <span><strong>{{data?.travel_info?.description}}</strong></span>
                         </div>
-                        <!-- <span class="second-text-align" (click)="redirectUrl(data?.travel_info?.Url)"><strong>{{data?.travel_info?.player_names}}</strong></span> -->
                         <span class="second-text-align"><strong>{{data?.travel_info?.player_names}}</strong></span>
                         <span class="second-text-align" (click)="redirectUrl(data?.travel_info?.Url)"><strong>{{data?.travel_info?.Url}}</strong></span>
                     </div>
@@ -716,33 +715,36 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-4 mobile-pd temp-center">
+            <!-- <div class="col-md-4 mobile-pd temp-center"> -->
+            <div class="col-md-4 mobile-pd"  *ngFor="let blogdata of bloginfoalldata; let i = index">
                 <div class="section-5-main-box">
                     <div class="section-3-main-box-left-1">
-                        <img src="assets/img/blogimage.jpeg" class="blog_kilgers_img">
-
+                        <!-- <img src="assets/img/blogimage.jpeg" class="blog_kilgers_img"> -->
+                        <img src="{{BASE_URI}}{{blogdata?.cover_image_blog}}" class="blog_kilgers_img">
                     </div>
                     <div class="section-5-main-box-left-2">
-                        <span>The Klingers<span>
-                                <p>Sensationell, wir starten den RD3 Sportler Pool mit dem Top Damen Beach Volleyball
+                        <!-- <span>The Klingers<span> -->
+                        <span>{{blogdata?.blog_info?.name}}<span>
+                                <!-- <p>Sensationell, wir starten den RD3 Sportler Pool mit dem Top Damen Beach Volleyball
                                     Duo "Dorina & Ronja Klinger". Nicht weniger als "Olympia" lautet das gemeinsame
-                                    Ziel.</p>
+                                    Ziel.</p> -->
+                                <p>{{blogdata?.blog_info?.description}}</p>
                                 <button class="bloggen-btn">Weiterlesen</button>
                                 <div class="social_icon">
                                     <div class="box_social _icon">
-                                    <i class="fa fa-facebook-f  custom_facebook_icon"></i>
+                                    <i class="fab fa-facebook-f  custom_facebook_icon"></i>
                                     </div>
                                     <div class="box_social _icon">
                                      <i class="fa fa-share-alt custom_facebook_icon"></i>
                                     </div>
                                     <div class="box_social _icon">
-                                      <i class="fa fa-whatsapp custom_facebook_icon"></i>
+                                      <i class="fab fa-whatsapp custom_facebook_icon"></i>
                                     </div>
                                     <div class="box_social _icon">
                                         <i class="fa fa-envelope custom_facebook_icon"></i>
                                     </div>
                                     <div class="box_social _icon">
-                                       <i class="fa fa-twitter custom_facebook_icon"></i>
+                                       <i class="fab fa-twitter custom_facebook_icon"></i>
                                     </div>
                                     </div>
                             </span></span>

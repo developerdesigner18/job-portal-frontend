@@ -28,6 +28,55 @@ adminLogin(payload: {
   return this.httpClient.post(`${this.BASE_URI}/auth/signin`, payload);
 }
 
+
+// blog Info apis
+
+    
+insertblogInfo(payload: any , data:any): Observable<any> {
+  let header = this.initHeaders();
+  return this.httpClient.post(`${this.BASE_URI}/api/sports/insertbloginfo`, payload , { headers: header, observe: 'response' as 'body'}).pipe(
+    catchError(this.handleError)
+  )
+}
+
+updateblogInfo(blog_id: any, payload:any , data: {
+}): Observable<any> {
+  let header = this.initHeaders();
+  return this.httpClient.post(`${this.BASE_URI}/api/sports/updatebloginfo`, payload, { params: { blog_id: blog_id }, headers: header, observe: 'response' as 'body'}).pipe(
+    catchError(this.handleError)
+  )
+}
+
+
+getBlogInfoAll(
+  ): Observable<any> {
+    return this.httpClient.get(`${this.BASE_URI}/api/sports/getBlogInfoAll`).pipe(
+      catchError(this.handleError)
+    )
+  }
+
+  getBloginfobyid(blog_id: any
+    ): Observable<any> {
+      return this.httpClient.get(`${this.BASE_URI}/api/sports/getbloginfobyid`, { params: { blog_id: blog_id } }).pipe(
+        catchError(this.handleError)
+      )
+    }
+
+  deleteBlogInfo(blog_id: any , data:any): Observable<any> {
+    let header = this.initHeaders();
+    return this.httpClient.post(`${this.BASE_URI}/api/sports/deleteBlogInfo`, data.u_info,{ params: { blog_id: blog_id }, headers: header, observe: 'response' as 'body'}).pipe(
+      catchError(this.handleError)
+    )
+  }
+
+  deleteBlogImage(blog_id: any, image_id: any ,data:any): Observable<any> {
+    let header = this.initHeaders();
+    return this.httpClient.post(`${this.BASE_URI}/api/sports/deleteBlogImage`, data.u_info ,{ params: { blog_id: blog_id, image_id: image_id }, headers: header, observe: 'response' as 'body'}).pipe(
+      catchError(this.handleError)
+    )
+  }
+
+
 // Travel Info apis
 
     
