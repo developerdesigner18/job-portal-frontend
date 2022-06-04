@@ -18,6 +18,7 @@ import { AgbComponent } from './agb/agb.component';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { AdminComponent } from '../admin/admin.component';
+import { TravelDataComponent } from './travel-data/travel-data.component';
 
 //Module decorator specifying all the components used in the application 
 @NgModule({
@@ -31,6 +32,7 @@ import { AdminComponent } from '../admin/admin.component';
      PrivacyComponent,
      ImprintComponent,
      AgbComponent,
+     TravelDataComponent,
      AdminComponent,
 
   ],

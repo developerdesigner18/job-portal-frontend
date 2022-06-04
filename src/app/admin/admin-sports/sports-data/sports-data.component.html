@@ -95,17 +95,8 @@
                                 <div class="dropdown">
                                     <button class="btn btn-primary_custom_box" type="button" data-toggle="dropdown">
                                     <span class="caret"></span></button>
-                                    <ul class="dropdown-menu" (click)="flags($event)" formControlName="flag"> 
-                                      <li><img src="assets/flags/BDF.jpg" class="custom-select-image"></li>
-                                      <li><img src="assets/flags/Bgld.jpg" class="custom-select-image"></li>
-                                      <li><img src="assets/flags/Ktn.jpg" class="custom-select-image"></li>
-                                      <li><img src="assets/flags/Noe.jpg" class="custom-select-image"></li>
-                                      <li><img src="assets/flags/Ooe.jpg" class="custom-select-image"></li>
-                                      <li><img src="assets/flags/Sbg.jpg" class="custom-select-image"></li>
-                                      <li><img src="assets/flags/Stk.jpg" class="custom-select-image"></li>
-                                      <li><img src="assets/flags/Tirol.jpg" class="custom-select-image"></li>
-                                      <li><img src="assets/flags/Vbg.jpg" class="custom-select-image"></li>
-                                      <li><img src="assets/flags/Wien.jpg" class="custom-select-image"></li>
+                                    <ul class="dropdown-menu" (click)="flags($event)">
+                                    <li *ngFor="let flags of flagdata" ><img src="{{flags}}" class="custom-select-image"> </li>
                                     </ul>
                                   </div>
                                 <div class="valid-feedback">Looks good!</div>

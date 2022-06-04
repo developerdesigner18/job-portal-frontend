@@ -51,6 +51,9 @@ const routes: Routes = [
   { path: 'sitemap', 
     loadChildren: () => import('./sitemap/sitemap.module').then(m => m.SitemapModule) 
 },
+  { path: 'reiseempfehlungen', 
+    loadChildren: () => import('./travel-data/travel-data.module').then(m => m.TravelDataModule) 
+},
 
 
 ];

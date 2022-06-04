@@ -8,7 +8,7 @@ const routes: Routes = [
 // { path: '',component:AdminComponent },
 { path: 'admin-login', loadChildren: () => import('./admin-login/admin-login.module').then(m => m.AdminLoginModule) },
 { path: 'admin-dashboard', loadChildren: () => import('./admin-dashboard/admin-dashboard.module').then(m => m.AdminDashboardModule) },
-{ path: 'reiseempfehlungen', loadChildren: () => import('./admin-sports/admin-sports.module').then(m => m.AdminSportsModule) },
+{ path: 'admin-sports', loadChildren: () => import('./admin-sports/admin-sports.module').then(m => m.AdminSportsModule) },
 { path: 'admin-jobs', loadChildren: () => import('./admin-jobs/admin-jobs.module').then(m => m.AdminJobsModule) },
 { path: 'admin-stadt', loadChildren: () => import('./admin-stadt/admin-stadt.module').then(m => m.AdminStadtModule) },
 { path: 'admin-users', loadChildren: () => import('./admin-users/admin-users.module').then(m => m.AdminUsersModule) },

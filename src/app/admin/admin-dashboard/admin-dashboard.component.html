@@ -57,14 +57,14 @@
                 <a href="#sportsmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
                     [ngClass]="{'actives': tab4===true}" (click)="clickdata($event)"><i class="fas fa-baseball-ball"></i>Sports</a>
                 <ul class="collapse list-unstyled" id="sportsmenu">
-                    <!-- <li [ngClass]="{'actives': tab4===true}">
+                    <li [ngClass]="{'actives': rd3adminresiemphe===true}">
                         <a  (click)="clickdata($event)">RD3-Sportler</a>
-                    </li> -->
-                    <li>
-                        <a>RD3-Partner</a>
                     </li>
-                    <li>
-                        <a>Blog</a>
+                    <li [ngClass]="{'actives': rd3partner===true}">
+                        <a (click)="clickdata($event)">RD3-Partner</a>
+                    </li>
+                    <li [ngClass]="{'actives': rd3blog===true}">
+                        <a  (click)="clickdata($event)">Blog</a>
                     </li>
                 </ul>
             </li>
@@ -146,7 +146,10 @@
                 <app-admin-home *ngIf="tab1 == true"></app-admin-home>
                 <app-admin-jobs *ngIf="tab2 == true"></app-admin-jobs>
                 <app-admin-stadt *ngIf="tab3 == true"></app-admin-stadt>
-                <app-sports-data *ngIf="tab4 == true"></app-sports-data>
+                <app-admin-sports *ngIf="tab4 == true"></app-admin-sports>
+                <app-sports-data *ngIf="rd3adminresiemphe == true"></app-sports-data>
+                <app-sports-blogs *ngIf="rd3blog == true"></app-sports-blogs>
+                <app-sports-partner *ngIf="rd3partner == true"></app-sports-partner>
                 <app-admin-imprint *ngIf="tab5 == true"></app-admin-imprint>
                 <app-admin-about-us *ngIf="tab6 == true"></app-admin-about-us>
                 <app-admin-contact-us *ngIf="tab7 == true"></app-admin-contact-us>
