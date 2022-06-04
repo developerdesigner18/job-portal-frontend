@@ -25,8 +25,8 @@
 		<div class="carousel-inner">
 			<div class="carousel-item active">
 
-				<ng-image-slider #nav [images]="imageObject" [autoSlide]="1" [infinite]="true" [animationSpeed]="3"
-				[imagePopup]="false" [imageSize]="{width: '100%', height: '100%' ,space: 4}" slideImage="1">
+			<ng-image-slider #nav [images]="imageObject" [autoSlide]="1" [infinite]="true" [animationSpeed]="3"
+				[imagePopup]="false" [imageSize]="{width: '100%', height: '320px'}" slideImage="1">
 			</ng-image-slider>
 				<div class="carousel-caption" id="home">
 					<span class="carousel-text-span">Regionales und digitales<br>
@@ -36,20 +36,22 @@
 		</div>
 	</div>
 	<section class="custom-pd">
-		<h1 class="custom-business">RD3 ZONE</h1>
+		<h1 class="custom-business">{{homeInfoDataAll[0]?.rd3_zone.title}}</h1>
 		<div class="line">
 			<img src="assets/img/business-img.png" class="section-title-img">
 		</div>
 		<div class="zone-txt">
 			<label>
 				<p>
-					Wenn Sie Ihre geschäftlichen und sportlichen Fähigkeiten stärken wollen, sind Sie bei RD3 genau
+					{{homeInfoDataAll[0]?.rd3_zone.description}}
+					<!-- Wenn Sie Ihre geschäftlichen und sportlichen Fähigkeiten stärken wollen, sind Sie bei RD3 genau
 					richtig. Mit dem innovativen Drei-Säulen-Konzept (Jobportal, Stadtmarketing, Sportmarketing) bietet
 					RD3 die Werkzeuge, die Sie brauchen, um in
 					der digitalen Welt von heute erfolgreich zu sein. Ganz gleich, ob Sie als lokaler Betrieb Produkte
 					oder Services vermarkten wollen, Mitarbeiter suchen oder als Gemeinde die heimischen Betriebe
 					unterstützen wollen, RD3 verfügt über das Know-how, das Ihnen hilft, Ihre Ziele zu erreichen. Warten
-					Sie also nicht länger - starten Sie noch heute mit RD3!</p>
+					Sie also nicht länger - starten Sie noch heute mit RD3! -->
+				</p>
 			</label>
 		</div>
 		<div class="container-fluid">
@@ -65,9 +67,11 @@
 												<div class="card-body custom-card" routerLink="/jobs">
 													<img src="assets/img/card-header-1.png" class="custom-img-orange">
 													<div class="box">
-														<h4>Jobportal</h4>
+														<!-- <h4>Jobportal</h4> -->
+														<h4>{{homeInfoDataAll[0]?.rd3_zone.job_portal.title}}</h4>
 
-														<p class="jobs">
+														<p class="jobs">{{homeInfoDataAll[0]?.rd3_zone.job_portal.description}}</p>
+														<!-- <p class="jobs">
 															Das RD3 Jobportal ermöglicht es Ihnen, Stellen nach Branche
 															und Region zu filtern, und erleichtert Ihnen so die
 															regionale Suche nach Stellen, die gut zu Ihren Fähigkeiten
@@ -81,7 +85,7 @@
 															klassischen Inserat bis zur professionellen Evaluierung
 															(Assessment Center mit RD3 Arbeitspsychologin). Starten Sie
 															Ihre Stellensuche jetzt auf unserer Website!
-														</p>
+														</p> -->
 														<button class="orange-btn">Weiterlesen</button>
 													</div>
 
@@ -98,8 +102,10 @@
 											<div class="card-body custom-card" routerLink="/stadt">
 												<img src="assets/img/card-header-2.png" class="custom-img-green">
 												<div class="box">
-													<h4>Stadtmarketing</h4>
-													<p class="stadt">
+													<!-- <h4>Stadtmarketing</h4> -->
+													<h4>{{homeInfoDataAll[0]?.rd3_zone.stadtmarketing.title}}</h4>
+													<p class="stadt"> {{homeInfoDataAll[0]?.rd3_zone.stadtmarketing.description}} </p>
+													<!-- <p class="stadt">
 														Die kostengünstige und digitale Präsenz für Gemeinden in 3D, im
 														Web und als App. Wir erstellen professionelle Landingpages in
 														Deutsch und Englisch, die jeden Betrieb und Verein in der Region
@@ -111,7 +117,7 @@
 														können wir unsere traditionellen Stadtzentren und Ortskerne
 														gemeinsam am Leben erhalten! Gleichzeitig wird auf diese Weise
 														der Städtetourismus gestärkt.
-													</p>
+													</p> -->
 													<button class="green-btn">Weiterlesen</button>
 												</div>
 
@@ -128,9 +134,10 @@
 										<div class="card-body custom-card" routerLink="/sport">
 											<img src="assets/img/card-header-3.png" class="custom-img-cream">
 											<div class="box">
-												<h4>Sportmarketing</h4>
-
-												<p class="sport">
+												<!-- <h4>Sportmarketing</h4> -->
+												<h4>{{homeInfoDataAll[0]?.rd3_zone.sportmarketing.title}}</h4>
+												<p class="sport"> {{homeInfoDataAll[0]?.rd3_zone.sportmarketing.description}} </p>
+												<!-- <p class="sport">
 													RD3 Sport unterstützt Sportler in den Anfangsphasen ihrer Karriere
 													durch ein Pool-Konzept, bei dem sich mehrere Sportler
 													Werbepartner aus ihrer Region teilen. Wir sorgen dafür, dass
@@ -144,7 +151,7 @@
 													Sie also nicht die Chance, Teil von etwas Besonderem
 													zu sein - kontaktieren Sie uns noch heute, um mehr über RD3 Sport zu
 													erfahren.
-												</p>
+												</p> -->
 												<button class="cream-btn">Weiterlesen</button>
 											</div>
 
@@ -167,12 +174,12 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-6" *ngIf="tab1">
-					<img src="assets/img/clemens_doppler_portrait.jpeg" class="unser-left-img">
+					<img src="{{BASE_URL}}{{homeInfoDataAll[0]?.rd3_references[0]?.rd3_image}}" class="unser-left-img">
 
 					<!-- <img src="assets/img/unser-left.png" class="unser-left-img"> -->
 				</div>
 				<div class="col-md-6" *ngIf="tab2 == true">
-					<img src="assets/img/Attila_Kiss.jpeg" class="unser-left-img">
+					<img src="{{BASE_URL}}{{homeInfoDataAll[0]?.rd3_references[1]?.rd3_image}}" class="unser-left-img">
 
 					<!-- <img src="assets/img/unser-left.png" class="unser-left-img"> -->
 				</div>
@@ -180,15 +187,17 @@
 					<div class="slideshow-container">
 
 						<div class="mySlides" *ngIf="tab1">
-							<h3 class="title">Was Unsere Kunden Sagen?</h3>
-							<p class="testimonial-txt">Als ich mit Helly (Helmut Hirner) 1996 und 1997 unsere ersten
+							<!-- <h3 class="title">Was Unsere Kunden Sagen?</h3> -->
+							<h3 class="title"> {{homeInfoDataAll[0]?.rd3_references[0].question}} </h3>
+							<p class="testimonial-txt"> {{homeInfoDataAll[0]?.rd3_references[0].description}} </p>
+							<!-- <p class="testimonial-txt">Als ich mit Helly (Helmut Hirner) 1996 und 1997 unsere ersten
 								großen Erfolge feierte (zB Vize EM Titel bei den Junioren) waren wir ständig auf der
 								Suche nach Unterstützern und Sponsoren um die internationalen Turniere und die vielen
 								Trainingslager zu ermöglichen. Durch viel Einsatz und mit der wachsenden Erfahrung
 								gelang uns das auch immer besser. Helly hat Sportmarketing jedenfalls von Grund auf in
 								der Praxis gelernt und er kann heute auf seine umfassende Erfahrung zurückgreifen. Es
 								freut mich, dass er heute mit RD3 dieses Wissen nutzt, um jungen SportlerInnen zu
-								helfen.</p>
+								helfen.</p> -->
 							<div class="author-txt">
 								<a href="https://clemensdoppler.com/" target="_blank">
 									<!-- <div class="ref-image">
@@ -196,20 +205,24 @@
 									</div> -->
 								</a>
 								<span class="author">
-									<h3 class="title-h3">Clemens Doppler</h3>
-									<h5 class="title-h5">Vize Weltmeister und zweifacher Europameister im Beach
-										Volleyball</h5>
+									<!-- <h3 class="title-h3">Clemens Doppler</h3> -->
+									<h3 class="title-h3">{{homeInfoDataAll[0]?.rd3_references[0].name}}</h3>
+									<h5 class="title-h5">{{homeInfoDataAll[0]?.rd3_references[0].designation}}</h5>
+									<!-- <h5 class="title-h5">Vize Weltmeister und zweifacher Europameister im Beach
+										Volleyball</h5> -->
 								</span>
 							</div>
 						</div>
 
 						<div class="mySlides" *ngIf="tab2 == true">
-							<h3 class="title">Was Unsere Kunden Sagen?</h3>
-							<p class="testimonial-txt">Ich bin sehr dankbar, dass mir das Team von RD3 Jobs in dieser
+							<!-- <h3 class="title">Was Unsere Kunden Sagen?</h3> -->
+							<h3 class="title">{{homeInfoDataAll[0]?.rd3_references[1].question}}</h3>
+							<!-- <p class="testimonial-txt">Ich bin sehr dankbar, dass mir das Team von RD3 Jobs in dieser
 								herausfordernden Zeit geholfen hat. Trotz des enormen Arbeitskräftemangels in der
 								Gastrononmie, konnten wir gemeinsam eine Assistenz der Geschäftsführung,
 								Restaurantleiterin und einen neuen Chefkellner finden. Wir sind sehr glücklich, dass wir
-								dank RD3 Jobs wieder ein tolles Team im Restaurant haben.</p>
+								dank RD3 Jobs wieder ein tolles Team im Restaurant haben.</p> -->
+								<p class="testimonial-txt"> {{homeInfoDataAll[0]?.rd3_references[1].description}} </p>
 							<div class="author-txt">
 								<a href="https://clemensdoppler.com/" target="_blank">
 									<!-- <div class="ref-image">
@@ -217,9 +230,11 @@
 									</div> -->
 								</a>
 								<span class="author">
-									<h3 class="title-h3">Attila Kiss</h3>
-									<h5 class="title-h5">Geschäftsführer der Froh Gast GMBH, Chefkoch im Restaurant
-										Volkshauspark</h5>
+									<!-- <h3 class="title-h3">Attila Kiss</h3> -->
+									<h3 class="title-h3"> {{homeInfoDataAll[0]?.rd3_references[1].name}} </h3>
+									<h5 class="title-h5"> {{homeInfoDataAll[0]?.rd3_references[1].designation}} </h5>
+									<!-- <h5 class="title-h5">Geschäftsführer der Froh Gast GMBH, Chefkoch im Restaurant
+										Volkshauspark</h5> -->
 								</span>
 							</div>
 						</div>

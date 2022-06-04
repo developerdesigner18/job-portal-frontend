@@ -42,6 +42,8 @@ export class AdminHomeComponent implements OnInit {
   BASE_URI: any;
   show_form: boolean = true;
   homeInfoById: any;
+  rd3_images: any[] = [];
+  rd3_images_url: any[] = [];
   constructor(public formbuilder: FormBuilder, public commanservice: CommonService) {
     this.BASE_URI = environment.apiUrl;
   }
@@ -49,6 +51,22 @@ export class AdminHomeComponent implements OnInit {
     this.homeInfoForm = this.formbuilder.group({
       _id: [null, Validators.required],
       title : ["", Validators.required],
+      rd3_zone_title: ["", Validators.required],
+      job_portal_title: ["", Validators.required],
+      job_portal_description: ["", Validators.required],
+      city_marketing_title: ["", Validators.required],
+      city_marketing_description: ["", Validators.required],
+      sports_marketing_title: ["", Validators.required],
+      sports_marketing_description: ["", Validators.required],
+      reference_question: ["", Validators.required],
+      reference_description: ["", Validators.required],
+      reference_designation: ["", Validators.required],
+      zone_description: ["", Validators.required],
+      reference_name: ["", Validators.required],
+      image_title: ["", Validators.required],
+      home_image_title_1: ["", Validators.required],
+      home_image_title_2: ["", Validators.required],
+      home_image_title_3: ["", Validators.required],
       home_images: this.formbuilder.group({
         name: ["", Validators.required]
       }),
@@ -114,13 +132,38 @@ export class AdminHomeComponent implements OnInit {
       const { value } = this.homeInfoForm;
       // value.home_images = this.home_images
       value.home_images = this.home_images
+      value.rd3_references_image = this.rd3_images
       // console.log(value);
+
+      console.log("=-=-=-=-value.rd3_references_rd3_image", value.rd3_references_rd3_image);
+      
       var fd = new FormData();
       fd.append('title', value.title);
+      fd.append('rd3_zone_title', value.rd3_zone_title);
+      fd.append('rd3_zone_job_portal_title', value.job_portal_title);
+      fd.append('rd3_zone_job_portal_description', value.job_portal_description);
+      fd.append('rd3_zone_stadtmarketing_title', value.city_marketing_title);
+      fd.append('rd3_zone_stadtmarketing_description', value.city_marketing_description);
+      fd.append('rd3_zone_sportmarketing_title', value.sports_marketing_title);
+      fd.append('rd3_zone_sportmarketing_description', value.sports_marketing_description);
+      fd.append('rd3_references_question', value.reference_question);
+      fd.append('rd3_references_description', value.reference_description);
+      fd.append('rd3_references_designation', value.reference_designation);
+      fd.append('rd3_zone_description', value.zone_description);
+      fd.append('rd3_references_name', value.reference_name);
+      fd.append('home_image_title', value.image_title);
+      fd.append('home_image_title[0]', value.home_image_title_1);
+      fd.append('home_image_title[1]', value.home_image_title_2);
+      fd.append('home_image_title[2]', value.home_image_title_3);
       // fd.append('name', value.home_images);
+      fd.append('rd3_references_image', value.rd3_references_image[0]);
       for (let i=0;i<value.home_images.length;i++) {
         fd.append('home_images', value.home_images[i]);
       }
+
+      // for (let j=0;j<value.rd3_references_rd3_image.length;j++) {
+      //   fd.append('rd3_references_image', value.rd3_references_rd3_image[j]);
+      // }
       var data = {
         user:this.userdata
       }
@@ -203,6 +246,29 @@ export class AdminHomeComponent implements OnInit {
     event.target.value = null;
     Notiflix.Loading.remove();
   }
+
+
+
+  onRd3ImagesUpload(event: any) {
+    Notiflix.Loading.standard({
+      cssAnimationDuration: 2000,
+      backgroundColor: '0, 0, 0, 0.0',
+    })
+    for (let index = 0; index < event.target.files.length; index++) {
+      const file = event.target.files[index];
+      var reader = new FileReader();
+      reader.readAsDataURL(file);
+      if(file.type.indexOf('image')> -1){
+        this.rd3_images.push(file)
+        reader.onload = (event) => {
+          this.rd3_images_url.push((<FileReader>event.target).result);
+        }
+      }
+    }
+    event.target.value = null;
+    Notiflix.Loading.remove();
+  }
+
   async deleteHomeInfo(home_id: any) {
     Notiflix.Loading.standard({
       cssAnimationDuration: 2000,
@@ -249,5 +315,10 @@ export class AdminHomeComponent implements OnInit {
   remove_image(index: any){
     this.home_images_url.splice(index, 1)
     this.home_images.splice(index, 1)
+  }
+
+  remove_rd3_image(index: any){
+    this.rd3_images_url.splice(index, 1)
+    this.rd3_images.splice(index, 1)
   }
 }

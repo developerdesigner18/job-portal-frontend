@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { NgbModal , ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { interval } from 'rxjs';
 import { CommonService } from 'src/app/services/common.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -16,11 +17,12 @@ export class HomeComponent implements OnInit {
   tab1: boolean = false;
   tab2:boolean = false;
   // tab3:boolean = false;
+  public BASE_URL: String = environment.apiUrl
 
 
   imageObject = [{
     image: "",
-    thumbImage: "",
+    thumbImage: ""
   }];
   
   imagelogo = [{
@@ -113,51 +115,23 @@ export class HomeComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.commanservice.gethomeInfoAll().subscribe(
-      res => {
-        this.homeInfoDataAll = res.body.data
-        console.log("=-=-=-homeInfoDataAll", this.homeInfoDataAll[0].home_images);
-        // for(let i=0;i<this.homeInfoDataAll.length;i++){
-          for(let j=0;j<this.homeInfoDataAll[0].home_images.length;j++){
-
-            console.log("=--==-this.homeInfoDataAll[i].home_images[j].name", 'http://localhost:8400'+this.homeInfoDataAll[0].home_images[j].name);
-            
-
-            this.imageObject[0].image = 'http://localhost:8400'+this.homeInfoDataAll[0].home_images[j].name
-            this.imageObject[0].thumbImage = 'http://localhost:8400'+this.homeInfoDataAll[0].home_images[j].name
-            // this.homeInfoDataAll.push(image)
-          }
-        // }
-        
-      }
-    );
+    this.getHomeInfoAll()
     this.tab1 = true
     interval(5000).subscribe((data) => {
       this.tab1 = !this.tab1
       this.tab2 = !this.tab2      
     });
-    this.imageObject = [...this.imageObject]
-    console.log("=-=-=-this.imageObject", this.imageObject);
-    
   }
 
   getHomeInfoAll(){
     this.commanservice.gethomeInfoAll().subscribe(
       res => {
-        this.homeInfoDataAll = res.body.data
-        console.log("=-=-=-homeInfoDataAll", this.homeInfoDataAll[0].home_images);
-        // for(let i=0;i<this.homeInfoDataAll.length;i++){
-          for(let j=0;j<this.homeInfoDataAll[0].home_images.length;j++){
-
-            console.log("=--==-this.homeInfoDataAll[i].home_images[j].name", 'http://localhost:8400'+this.homeInfoDataAll[0].home_images[j].name);
-            
-
-            this.imageObject[0].image = 'http://localhost:8400'+this.homeInfoDataAll[0].home_images[j].name
-            this.imageObject[0].thumbImage = 'http://localhost:8400'+this.homeInfoDataAll[0].home_images[j].name
-            // this.homeInfoDataAll.push(image)
-          }
-        // }
+        this.homeInfoDataAll = res.body.data;
+        console.log("-==-=-this.homeInfoDataAll", this.homeInfoDataAll);
         
+        for(let j=0;j<this.homeInfoDataAll[0].home_images.length;j++){
+          this.imageObject.push({image: this.BASE_URL+this.homeInfoDataAll[0].home_images[j].name, thumbImage: environment.apiUrl+this.homeInfoDataAll[0].home_images[j].name})
+        }
       }
     );
   }
